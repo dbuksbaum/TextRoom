@@ -1,0 +1,26 @@
+* icons and artwork
+* drag & drop files directly to TextRoom
+* indent on/off (BUG: select all, and paste: indent loss)
+* paragraph margins on/off
+* file properties info
+* find dialog
+* system tray
+* print dialog
+* set text dimensions
+customizable statistics calculations [NEEDED]
+context menu [NEEDED]
+progress indicator [NEEDED]
+save cursor position in text [NEEDED]
+replace dialog [NEEDED]
+translation
+recent files
+rich text
+spell-check
+show/hide status bar
+export to PDF, ODT and HTML
+KDE4 integration
+customizable keyboard shortcuts
+bookmarks
+? open another TextRoom instance, or notes section
+? per document settings
+? favourites/project folders

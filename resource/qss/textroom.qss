@@ -1,0 +1,17 @@
+.mainwindow {
+	background-color: %2;
+	color: %3;
+}
+
+QTextEdit {
+	background-color: %2;
+	selection-color: %2;
+	selection-background-color: %1;
+	color: %1;
+}
+
+QLabel {
+	border: none;
+	padding: 0;
+	background: none;
+}

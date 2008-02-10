@@ -1,0 +1,6 @@
+<!DOCTYPE RCC><RCC version="1.0">
+ <qresource>
+     <file>qss/textroom.qss</file>
+     <file>images/splash.jpg</file>
+ </qresource>
+</RCC>
