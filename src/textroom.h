@@ -35,7 +35,8 @@ class QShortcut;
 class QFileSystemWatcher;
 class OptionsDialog;
 class HelpDialog;
- 
+class SearchDialog;
+
 class TextRoom : public QWidget, public Ui::TextRoomMain
 {
 	Q_OBJECT
@@ -51,6 +52,9 @@ private slots:
 	void about();
 	void options();
 	void help();
+	void find();
+	void find_next();
+	void find_previous();
 	void togleFullScreen();
 	void togleEscape();
 	void indentFirstLines();
@@ -76,9 +80,11 @@ private:
 
 	HelpDialog *helpDialog;
 	OptionsDialog *optionsDialog;
+	SearchDialog *searchDialog;
 	Ui::TextRoomMain ui;
 	QString curFile;
 	QString curDir;
+	QString lastSearch;
 	int sentenceTally;
 	QFileSystemWatcher* fw;
 	bool optOpenLastFile;

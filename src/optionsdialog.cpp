@@ -30,7 +30,7 @@
 #include "textroom.h"
 
 OptionsDialog::OptionsDialog(QWidget *parent)
-    : QDialog(parent)
+	: QDialog(parent)
 {
 	ui.setupUi(this);
 	reaSettings();
@@ -60,31 +60,31 @@ void OptionsDialog::activateApply()
 void OptionsDialog::reaSettings()
 {
 #ifdef Q_OS_WIN32
-    QSettings settings(QDir::homePath()+"/Application Data/"+qApp->applicationName()+".ini", QSettings::IniFormat);
+	QSettings settings(QDir::homePath()+"/Application Data/"+qApp->applicationName()+".ini", QSettings::IniFormat);
 #else
 
-    QSettings settings;
+	QSettings settings;
 #endif
 
 	QStringList fontS;
-    QFont font;
+	QFont font;
 
-    fontS << settings.value("Font/Font_Settings",  ui.editorFontComboBox->currentFont() ).toString() 
-    	<< settings.value("Font/FileName_Settings", ui.statusbarFontComboBox->currentFont() ).toString()
-    	<< settings.value("Font/Statistics_Settings", ui.statusbarFontComboBox->currentFont() ).toString();
+	fontS << settings.value("Font/Font_Settings",  ui.editorFontComboBox->currentFont() ).toString() 
+		<< settings.value("Font/FileName_Settings", ui.statusbarFontComboBox->currentFont() ).toString()
+		<< settings.value("Font/Statistics_Settings", ui.statusbarFontComboBox->currentFont() ).toString();
 	
 	font.fromString(fontS.at(0));
-    ui.editorFontComboBox->setCurrentFont( font );
-    ui.editorBoldCheckBox->setChecked( font.bold() );
-    ui.editorItalicCheckBox->setChecked( font.italic() );
-    ui.editorSpinBox->setValue( font.pointSize() );
-    
-    font.fromString(fontS.at(1));
-    ui.statusbarFontComboBox->setCurrentFont( font );
-    ui.statusbarBoldCheckBox->setChecked( font.bold() );
-    ui.statusbarItalicCheckBox->setChecked( font.italic() );
-    ui.statusbarSpinBox->setValue( font.pointSize() );
-    
+	ui.editorFontComboBox->setCurrentFont( font );
+	ui.editorBoldCheckBox->setChecked( font.bold() );
+	ui.editorItalicCheckBox->setChecked( font.italic() );
+	ui.editorSpinBox->setValue( font.pointSize() );
+	
+	font.fromString(fontS.at(1));
+	ui.statusbarFontComboBox->setCurrentFont( font );
+	ui.statusbarBoldCheckBox->setChecked( font.bold() );
+	ui.statusbarItalicCheckBox->setChecked( font.italic() );
+	ui.statusbarSpinBox->setValue( font.pointSize() );
+	
 	ui.loadOnStartCheckBox->setChecked( settings.value( "RecentFiles/OpenLastFile", true ).toBool() );
 	ui.fullScreenCheckBox->setChecked( settings.value("WindowState/ShowFullScreen", true).toBool() );
 	ui.splashScreenCheckBox->setChecked( settings.value("WindowState/ShowSplashScreen", true).toBool() );
@@ -112,13 +112,13 @@ void OptionsDialog::writSettings()
 {
 
 #ifdef Q_OS_WIN32
-    QSettings settings(QDir::homePath()+"/Application Data/"+qApp->applicationName()+".ini", QSettings::IniFormat);
+	QSettings settings(QDir::homePath()+"/Application Data/"+qApp->applicationName()+".ini", QSettings::IniFormat);
 #else
 
-    QSettings settings;
+	QSettings settings;
 #endif
 
-    
+	
 	settings.setValue("Colors/Foreground", fgcolor.name() );
 	settings.setValue("Colors/Background", bgcolor.name() );
 	settings.setValue("Colors/StatusColor", scolor.name() );
@@ -128,25 +128,25 @@ void OptionsDialog::writSettings()
 	settings.setValue("WindowState/ShowSplashScreen", ui.splashScreenCheckBox->isChecked() );
 	settings.setValue("AutoSave", ui.autoSaveCheckBox->isChecked() );
 	settings.setValue("FlowMode", ui.flowModeCheckBox->isChecked() );
-    
-    QFont font;
-    
-    font = ui.editorFontComboBox->currentFont();
-    font.setBold(ui.editorBoldCheckBox->isChecked() );
-    font.setItalic(ui.editorItalicCheckBox->isChecked() );
-    font.setPointSize(ui.editorSpinBox->value() );
+	
+	QFont font;
+	
+	font = ui.editorFontComboBox->currentFont();
+	font.setBold(ui.editorBoldCheckBox->isChecked() );
+	font.setItalic(ui.editorItalicCheckBox->isChecked() );
+	font.setPointSize(ui.editorSpinBox->value() );
 	settings.setValue("Font/Font_Settings", font.toString() );
 	
-    font = ui.statusbarFontComboBox->currentFont();
-    font.setBold(ui.statusbarBoldCheckBox->isChecked() );
-    font.setItalic(ui.statusbarItalicCheckBox->isChecked() );
-    font.setPointSize(ui.statusbarSpinBox->value() );
+	font = ui.statusbarFontComboBox->currentFont();
+	font.setBold(ui.statusbarBoldCheckBox->isChecked() );
+	font.setItalic(ui.statusbarItalicCheckBox->isChecked() );
+	font.setPointSize(ui.statusbarSpinBox->value() );
 	settings.setValue("Font/FileName_Settings", font.toString() );
 	
-    font = ui.statusbarFontComboBox->currentFont();
-    font.setBold(ui.statusbarBoldCheckBox->isChecked() );
-    font.setItalic(ui.statusbarItalicCheckBox->isChecked() );
-    font.setPointSize(ui.statusbarSpinBox->value() );
+	font = ui.statusbarFontComboBox->currentFont();
+	font.setBold(ui.statusbarBoldCheckBox->isChecked() );
+	font.setItalic(ui.statusbarItalicCheckBox->isChecked() );
+	font.setPointSize(ui.statusbarSpinBox->value() );
 	settings.setValue("Font/Statistics_Settings", font.toString() );
 
    	

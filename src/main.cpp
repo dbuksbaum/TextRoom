@@ -32,18 +32,18 @@
  
 int main(int argc, char ** argv)
 {
-    QApplication app(argc, argv);
-    app.setQuitOnLastWindowClosed(true);
-    app.setOrganizationName("textroom");
-    app.setOrganizationDomain("petartoushkov.hit.bg");
-    app.setApplicationName("TextRoom");
-    
+	QApplication app(argc, argv);
+	app.setQuitOnLastWindowClosed(true);
+	app.setOrganizationName("textroom");
+	app.setOrganizationDomain("petartoushkov.hit.bg");
+	app.setApplicationName("TextRoom");
+	
 	// show splashscreen
 #ifdef Q_OS_WIN32
-    QSettings settings(QDir::homePath()+"/Application Data/"+qApp->applicationName()+".ini", QSettings::IniFormat);
+	QSettings settings(QDir::homePath()+"/Application Data/"+qApp->applicationName()+".ini", QSettings::IniFormat);
 #else
 
-    QSettings settings;
+	QSettings settings;
 #endif
 	QSplashScreen *splash = NULL;
 	if ( settings.value( "WindowState/ShowSplashScreen", true ).toBool() )
@@ -57,7 +57,7 @@ int main(int argc, char ** argv)
 		}
 	}
 	
-    TextRoom *win = new TextRoom(NULL);
+	TextRoom *win = new TextRoom(NULL);
 	win->show();
 	
 	if (splash)
@@ -68,5 +68,5 @@ int main(int argc, char ** argv)
 		timer->start(800);
 		//splash->finish(win);
 	}
-    return app.exec();
+	return app.exec();
 }

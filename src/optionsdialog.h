@@ -33,16 +33,16 @@
 
 class OptionsDialog : public QDialog
 {
-    Q_OBJECT
+	Q_OBJECT
 
 public:
-    OptionsDialog(QWidget *parent = 0);
+	OptionsDialog(QWidget *parent = 0);
 
 private slots:
-    void reaSettings();
-    void writSettings();
+	void reaSettings();
+	void writSettings();
 	void activateApply();
-    void on_pushButtonOK_clicked();
+	void on_pushButtonOK_clicked();
 	void on_pushButtonApply_clicked();
 	void on_pbEditorColor_clicked();
 	void on_pbEditorBackColor_clicked();
@@ -58,10 +58,10 @@ private:
 
 private:
 
-    Ui::OptionsDialog ui;
+	Ui::OptionsDialog ui;
 
 protected:
-    void showEvent( QShowEvent * );
+	void showEvent( QShowEvent * );
 };
 
 #endif // __OPTIONSDIALOG_H__

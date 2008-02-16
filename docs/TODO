@@ -3,7 +3,6 @@
 * indent on/off (BUG: select all, and paste: indent loss)
 * paragraph margins on/off
 * file properties info
-* find dialog
 * system tray
 * print dialog
 * set text dimensions
@@ -12,7 +11,7 @@ context menu [NEEDED]
 progress indicator [NEEDED]
 save cursor position in text [NEEDED]
 replace dialog [NEEDED]
-translation
+translations
 recent files
 rich text
 spell-check

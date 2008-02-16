@@ -34,16 +34,14 @@ class QTextEdit;
 
 class HelpDialog : public QDialog
 {
-    Q_OBJECT
+	Q_OBJECT
 
 public:
-    HelpDialog(QWidget *parent = 0);
-
-private slots:
+	HelpDialog(QWidget *parent = 0);
 
 private:
-    QTextEdit *textEdit;
-    QDialogButtonBox *buttonBox;
+	QTextEdit *textEdit;
+	QDialogButtonBox *buttonBox;
 };
 
 #endif // __HELPDIALOG_H__
