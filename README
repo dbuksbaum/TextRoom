@@ -13,7 +13,7 @@ Copyright (C) 2006 Jacob R Rideout <jacob@jacobrideout.net>
 
 Additional help, code and insights by:
 adamvert - from http://ubuntuforums.org/
-zebulon M - from http://ubuntuforums.org/
+Magnus Edvardsson (a.k.a. zebulon M) - from http://ubuntuforums.org/
 
 
 1. Introduction
@@ -89,7 +89,6 @@ statusbar (right and left lower corners of the screen).
 * indent on/off (BUG: select all, and paste: indent loss)
 * paragraph margins on/off
 * file properties info
-* find dialog
 * system tray
 * print dialog
 * set text dimensions

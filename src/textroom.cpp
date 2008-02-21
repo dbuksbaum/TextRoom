@@ -142,10 +142,11 @@ void TextRoom::about()
 {
 	QMessageBox::about(this,"About TextRoom",
 				"TextRoom Editor ver. 0.2.3\n\n"
+		"Project home page: http://code.google.com/p/textroom/\n\n"
 		"Code, help and insights (in alphabetical order) by:\n"
-		"adamvert - from ubuntuforums.org\n"
-		"bagofchickens - from ubuntuforums.org\n"
-		"zebulon M - from ubuntuforums.org\n\n"
+		"Adamvert (from ubuntuforums.org),\n"
+		"Magnus Edvardsson (a.k.a. zebulon M),\n"
+		"Peter Toushkov\n\n"
 		"TextRoom is partially based on\n"
 		"The Phrasis project by Jacob R. Rideout:\n"
 		"http://code.google.com/p/phrasis/");
