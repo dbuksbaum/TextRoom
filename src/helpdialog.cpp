@@ -64,6 +64,7 @@ HelpDialog::HelpDialog(QWidget *parent) : QDialog(parent)
 					"Ctrl+A - Select All\n"
 					"Ctrl+Z - Undo (Ctrl+Shift+Z to Redo)\n"
 					"Ctrl+T - Indent first lines (useful due to unresolved bug)\n"
+					"Shift+F4 - Go back to cursor position\n"
 					"Ctrl+F - Find\n"
 					"F3 - Find next\n"
 					"Shift+F3 - Find previous\n"

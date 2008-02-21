@@ -55,6 +55,7 @@ private slots:
 	void find();
 	void find_next();
 	void find_previous();
+	void sCursor();
 	void togleFullScreen();
 	void togleEscape();
 	void indentFirstLines();
@@ -64,10 +65,7 @@ private slots:
 	void dateTimeStatsLabel();
 	void getFileStatus();
 	void readSettings();
-	void loadStyleSheet(const QString &sheetName,
-		const QString &fcolor,
-		const QString &bcolor,
-		const QString &scolor);
+	void loadStyleSheet(const QString &fcolor, const QString &bcolor, const QString &scolor);
 
 private:
 	bool maybeSave();

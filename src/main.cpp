@@ -65,7 +65,7 @@ int main(int argc, char ** argv)
 		QTimer *timer = new QTimer(win);
 		QObject::connect(timer, SIGNAL(timeout()), splash, SLOT(close()));
 		timer->setSingleShot(true);
-		timer->start(800);
+		timer->start(400);
 		//splash->finish(win);
 	}
 	return app.exec();

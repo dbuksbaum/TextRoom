@@ -9,8 +9,75 @@
     <height>430</height>
    </rect>
   </property>
+  <property name="palette" >
+   <palette>
+    <active>
+     <colorrole role="Base" >
+      <brush brushstyle="SolidPattern" >
+       <color alpha="255" >
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Window" >
+      <brush brushstyle="SolidPattern" >
+       <color alpha="255" >
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </active>
+    <inactive>
+     <colorrole role="Base" >
+      <brush brushstyle="SolidPattern" >
+       <color alpha="255" >
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Window" >
+      <brush brushstyle="SolidPattern" >
+       <color alpha="255" >
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </inactive>
+    <disabled>
+     <colorrole role="Base" >
+      <brush brushstyle="SolidPattern" >
+       <color alpha="255" >
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Window" >
+      <brush brushstyle="SolidPattern" >
+       <color alpha="255" >
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </disabled>
+   </palette>
+  </property>
   <property name="windowTitle" >
    <string>TextRoom</string>
+  </property>
+  <property name="autoFillBackground" >
+   <bool>true</bool>
   </property>
   <layout class="QVBoxLayout" >
    <item>
@@ -124,6 +191,9 @@
        <property name="contextMenuPolicy" >
         <enum>Qt::DefaultContextMenu</enum>
        </property>
+       <property name="autoFillBackground" >
+        <bool>true</bool>
+       </property>
        <property name="frameShape" >
         <enum>QFrame::NoFrame</enum>
        </property>
@@ -151,8 +221,8 @@
        <property name="html" >
         <string>&lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;style type="text/css">
 p, li { white-space: pre-wrap; }
-&lt;/style>&lt;/head>&lt;body style=" font-family:'Candara'; font-size:12pt; font-weight:400; font-style:normal;">
-&lt;p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Monospace'; font-size:10pt;">&lt;/p>&lt;/body>&lt;/html></string>
+&lt;/style>&lt;/head>&lt;body style=" font-family:'Tahoma'; font-size:10pt; font-weight:400; font-style:normal;">
+&lt;p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Monospace';">&lt;/p>&lt;/body>&lt;/html></string>
        </property>
        <property name="tabStopWidth" >
         <number>50</number>
@@ -254,6 +324,9 @@ p, li { white-space: pre-wrap; }
        <property name="font" >
         <font/>
        </property>
+       <property name="autoFillBackground" >
+        <bool>true</bool>
+       </property>
        <property name="text" >
         <string>untitled.txt</string>
        </property>
@@ -340,6 +413,9 @@ p, li { white-space: pre-wrap; }
        </property>
        <property name="font" >
         <font/>
+       </property>
+       <property name="autoFillBackground" >
+        <bool>true</bool>
        </property>
        <property name="text" >
         <string/>

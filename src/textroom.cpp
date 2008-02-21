@@ -35,7 +35,7 @@ TextRoom::TextRoom(QWidget *parent, Qt::WFlags f)
 {
 	setupUi(this);
 	setObjectName("textroom");
-	setProperty("class", "mainwindow QLabel");
+	//setProperty("class", "mainwindow QLabel");
 
 	readSettings();
 
@@ -60,6 +60,9 @@ TextRoom::TextRoom(QWidget *parent, Qt::WFlags f)
 	new QShortcut ( QKeySequence(tr("Ctrl+M", "Minimize TextRoom")) , this, SLOT( showMinimized() ) );
 	new QShortcut ( QKeySequence(tr("F3", "Find Next")) , this, SLOT( find_next() ) );
 	new QShortcut ( QKeySequence(tr("Shift+F3", "Find Previous")) , this, SLOT( find_previous() ) );
+	
+	// Service: show cursor
+	new QShortcut ( QKeySequence(tr("Shift+F4", "Show Cursor")) , this, SLOT( sCursor() ) );
 	
 	#ifdef Q_OS_WIN32
 
@@ -117,10 +120,10 @@ void TextRoom::togleEscape()
 void TextRoom::togleFullScreen()
 {
 	if ( !isFullScreen() )
-			showFullScreen();
-		else
+		showFullScreen();
+	else
 		showNormal();
-
+	textEdit->ensureCursorVisible();
 }
 
 void TextRoom::closeEvent(QCloseEvent *event)
@@ -141,7 +144,7 @@ void TextRoom::closeEvent(QCloseEvent *event)
 void TextRoom::about() 
 {
 	QMessageBox::about(this,"About TextRoom",
-				"TextRoom Editor ver. 0.2.3\n\n"
+				"TextRoom Editor ver. 0.2.4 beta\n\n"
 		"Project home page: http://code.google.com/p/textroom/\n\n"
 		"Code, help and insights (in alphabetical order) by:\n"
 		"Adamvert (from ubuntuforums.org),\n"
@@ -435,6 +438,14 @@ void TextRoom::readSettings()
 
 	QSettings settings;
 #endif
+
+	QFile file( settings.fileName() );
+	if ( !file.exists() )
+	{
+		togleFullScreen();
+		writeSettings();
+		return;
+	}
 	
 	QPoint pos = settings.value("WindowState/TopLeftPosition", QPoint(100, 100)).toPoint();
 	QSize size = settings.value("WindowState/WindowSize", QSize(300, 200)).toSize();
@@ -443,24 +454,30 @@ void TextRoom::readSettings()
 	QString back = settings.value("Colors/Background", "black" ).toString();
 	QString status_c = settings.value("Colors/StatusColor", "#404040" ).toString();
 
-	loadStyleSheet("TextRoom", color, back, status_c);
+	loadStyleSheet(color, back, status_c);
 
 	// oxygen does weird stuff with the background
 	QApplication::setStyle("plastique");
 
 	QStringList fontS;
 	QFont font;
-	fontS << settings.value("Font/Font_Settings", textEdit->font() ).toString() 
+	fontS << settings.value("Font/Font_Settings", textEdit->currentFont() ).toString() 
 		<< settings.value("Font/FileName_Settings", label->font() ).toString()
 		<< settings.value("Font/Statistics_Settings", statsLabel->font() ).toString();
 	
 	font.fromString(fontS.at(1));
-	label->setFont( font );
-	label->setProperty("class", "mainwindow QLabel");
+	if (!(label->font() == font)) 
+	{
+		label->setFont( font );
+		//label->setProperty("class", "mainwindow QLabel");
+	}
 	
 	font.fromString(fontS.at(2));
-	statsLabel->setFont( font );
-	statsLabel->setProperty("class", "mainwindow QLabel");
+	if (!(statsLabel->font() == font))
+	{
+		statsLabel->setFont( font );
+		//statsLabel->setProperty("class", "mainwindow QLabel");
+	}
 	
 	if ( settings.value("WindowState/ShowFullScreen", true).toBool() )
 	{
@@ -485,7 +502,7 @@ void TextRoom::readSettings()
 	curDir = settings.value("RecentFiles/LastDir", curDir).toString();
 	lastSearch = settings.value("TextSearch/LastPhrase", lastSearch).toString();
 
-	isAutoSave = settings.value("AutoSave", true).toBool();
+	isAutoSave = settings.value("AutoSave", false).toBool();
 	isFlowMode= settings.value("FlowMode", false).toBool();
 
 }
@@ -511,6 +528,18 @@ void TextRoom::writeSettings()
 	settings.setValue("RecentFiles/LastFile", curFile);
 	settings.setValue("RecentFiles/LastDir", curDir);
 	settings.setValue("TextSearch/LastPhrase", lastSearch);
+
+/*	QFont font;
+	
+	font = textEdit->currentFont();
+	settings.setValue("Font/Font_Settings", font.toString() );
+	
+	font = label->font();
+	settings.setValue("Font/FileName_Settings", font.toString() );
+	
+	font = statsLabel->font();
+	settings.setValue("Font/Statistics_Settings", font.toString() );
+*/
 }
 
 void TextRoom::options()
@@ -524,16 +553,29 @@ void TextRoom::help()
 	helpDialog->showNormal();
 }
 
-void TextRoom::loadStyleSheet(const QString &sheetName,
-	const QString &fcolor,
-	const QString &bcolor,
-	const QString &scolor)
+void TextRoom::loadStyleSheet(const QString &fcolor, const QString &bcolor, const QString &scolor)
 {
-	QFile file(":/qss/" + sheetName.toLower() + ".qss");
+	QPalette palette;
+
+	palette.setColor(QPalette::Text, fcolor);
+	palette.setColor(QPalette::Base, bcolor);
+	textEdit->setPalette(palette);
+
+	palette.setColor(QPalette::Window, bcolor);
+	TextRoom::setPalette(palette);
+
+	palette.setColor(QPalette::WindowText, scolor);
+	label->setPalette(palette);
+	statsLabel->setPalette(palette);
+	
+//	Too slow; viewport changes on readSettings
+
+/*	QFile file(":/qss/" + sheetName.toLower() + ".qss");
 	file.open(QFile::ReadOnly);
 	QString styleSheet = QLatin1String(file.readAll());
-
 	setStyleSheet( QString(styleSheet).arg(fcolor).arg(bcolor).arg(scolor) );
+*/
+
 }
 
 void TextRoom::find()
@@ -543,6 +585,7 @@ void TextRoom::find()
 	{
 		lastSearch = sString;
 		textEdit->find( sString );
+		writeSettings();
 	}
 	
 }
@@ -561,4 +604,9 @@ void TextRoom::find_previous()
 	{
 		textEdit->find( lastSearch, QTextDocument::FindBackward );
 	}
+}
+
+void TextRoom::sCursor()
+{
+	textEdit->ensureCursorVisible();
 }

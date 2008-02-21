@@ -88,7 +88,7 @@ void OptionsDialog::reaSettings()
 	ui.loadOnStartCheckBox->setChecked( settings.value( "RecentFiles/OpenLastFile", true ).toBool() );
 	ui.fullScreenCheckBox->setChecked( settings.value("WindowState/ShowFullScreen", true).toBool() );
 	ui.splashScreenCheckBox->setChecked( settings.value("WindowState/ShowSplashScreen", true).toBool() );
-	ui.autoSaveCheckBox->setChecked( settings.value("AutoSave", true).toBool() );
+	ui.autoSaveCheckBox->setChecked( settings.value("AutoSave", false).toBool() );
 	ui.flowModeCheckBox->setChecked( settings.value("FlowMode", false).toBool() );
 
 

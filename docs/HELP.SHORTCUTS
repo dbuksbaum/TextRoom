@@ -18,6 +18,7 @@ Ctrl+V - Paste
 Ctrl+A - Select All
 Ctrl+Z - Undo (Ctrl+Shift+Z to Redo)
 Ctrl+T - Indent first lines (useful due to unresolved bug)
+Shift+F4 - Go back to cursor position
 Ctrl+F - Find
 F3 - Find Next
 Shift+F3 - Find previous

@@ -76,13 +76,13 @@
         <attribute name="title" >
          <string>Fonts and colors</string>
         </attribute>
-        <widget class="QWidget" name="layoutWidget" >
+        <widget class="QWidget" name="" >
          <property name="geometry" >
           <rect>
            <x>10</x>
-           <y>10</y>
-           <width>436</width>
-           <height>158</height>
+           <y>11</y>
+           <width>415</width>
+           <height>168</height>
           </rect>
          </property>
          <layout class="QVBoxLayout" >
@@ -290,6 +290,22 @@
            </layout>
           </item>
           <item>
+           <spacer>
+            <property name="orientation" >
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeType" >
+             <enum>QSizePolicy::Fixed</enum>
+            </property>
+            <property name="sizeHint" >
+             <size>
+              <width>111</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
            <layout class="QHBoxLayout" >
             <item>
              <widget class="QPushButton" name="pbEditorBackColor" >
@@ -378,7 +394,7 @@
            <x>10</x>
            <y>10</y>
            <width>411</width>
-           <height>133</height>
+           <height>211</height>
           </rect>
          </property>
          <layout class="QVBoxLayout" >
