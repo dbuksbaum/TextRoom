@@ -43,6 +43,7 @@ OptionsDialog::OptionsDialog(QWidget *parent)
 	connect(ui.statusbarBoldCheckBox, SIGNAL( clicked() ), this, SLOT( activateApply() ) );
 	connect(ui.statusbarItalicCheckBox, SIGNAL( clicked() ), this, SLOT( activateApply() ) );
 	connect(ui.loadOnStartCheckBox, SIGNAL( clicked() ), this, SLOT( activateApply() ) );
+	connect(ui.saveCursorCheckBox, SIGNAL( clicked() ), this, SLOT( activateApply() ) );
 	connect(ui.fullScreenCheckBox, SIGNAL( clicked() ), this, SLOT( activateApply() ) );
 	connect(ui.splashScreenCheckBox, SIGNAL( clicked() ), this, SLOT( activateApply() ) );
 	connect(ui.autoSaveCheckBox, SIGNAL( clicked() ), this, SLOT( activateApply() ) );
@@ -86,6 +87,10 @@ void OptionsDialog::reaSettings()
 	ui.statusbarSpinBox->setValue( font.pointSize() );
 	
 	ui.loadOnStartCheckBox->setChecked( settings.value( "RecentFiles/OpenLastFile", true ).toBool() );
+	ui.saveCursorCheckBox->setChecked( settings.value( "RecentFiles/SavePosition", true ).toBool() );
+	if ( !ui.loadOnStartCheckBox->isChecked() )
+		ui.saveCursorCheckBox->setEnabled( false );
+
 	ui.fullScreenCheckBox->setChecked( settings.value("WindowState/ShowFullScreen", true).toBool() );
 	ui.splashScreenCheckBox->setChecked( settings.value("WindowState/ShowSplashScreen", true).toBool() );
 	ui.autoSaveCheckBox->setChecked( settings.value("AutoSave", false).toBool() );
@@ -124,6 +129,8 @@ void OptionsDialog::writSettings()
 	settings.setValue("Colors/StatusColor", scolor.name() );
 
 	settings.setValue("RecentFiles/OpenLastFile", ui.loadOnStartCheckBox->isChecked() );
+	settings.setValue("RecentFiles/SavePosition", ui.saveCursorCheckBox->isChecked() );
+
 	settings.setValue("WindowState/ShowFullScreen", ui.fullScreenCheckBox->isChecked() );
 	settings.setValue("WindowState/ShowSplashScreen", ui.splashScreenCheckBox->isChecked() );
 	settings.setValue("AutoSave", ui.autoSaveCheckBox->isChecked() );

@@ -84,6 +84,9 @@ TextRoom::TextRoom(QWidget *parent, Qt::WFlags f)
 	connect(textEdit->document(), SIGNAL(contentsChanged()),
 			this, SLOT(documentWasModified()));
 
+	connect(textEdit, SIGNAL(cursorPositionChanged()),
+			this, SLOT(cPositionChanged()));
+
 	// check if we need to open some file at startup
 	const QStringList args = QCoreApplication::arguments();
 	if (args.count() == 2)
@@ -98,20 +101,29 @@ TextRoom::TextRoom(QWidget *parent, Qt::WFlags f)
 	else
 		newFile();
 
+
+	// set cursor position
+	if ( isSaveCursor )
+	{
+		QTextCursor c;
+		c = textEdit->textCursor();
+		c.setPosition(cPosition);
+		textEdit->setTextCursor(c);
+	}
+
 	writeSettings();
 	
 	// auto save counter
 	numChanges = 0;
-
 	prevLength = 0;
 	
-//	textEdit->setWordWrapMode(QTextOption::WrapAtWordBoundaryOrAnywhere);
+//	sCursor();
 }
 
 void TextRoom::togleEscape()
 {
 	if ( isFullScreen() )
-			togleFullScreen();
+		togleFullScreen();
 	else
 		close();
 
@@ -119,11 +131,12 @@ void TextRoom::togleEscape()
 
 void TextRoom::togleFullScreen()
 {
+
 	if ( !isFullScreen() )
 		showFullScreen();
 	else
 		showNormal();
-	textEdit->ensureCursorVisible();
+//	sCursor();
 }
 
 void TextRoom::closeEvent(QCloseEvent *event)
@@ -132,6 +145,15 @@ void TextRoom::closeEvent(QCloseEvent *event)
 	if (maybeSave())
 	{
 		fw->disconnect();
+
+		// save cursor position
+		if ( isSaveCursor )
+		{
+			QTextCursor c;
+			c = textEdit->textCursor();
+			cPosition = c.position();
+		}
+
 		writeSettings();
 		event->accept();
 	}
@@ -446,9 +468,20 @@ void TextRoom::readSettings()
 		writeSettings();
 		return;
 	}
-	
-	QPoint pos = settings.value("WindowState/TopLeftPosition", QPoint(100, 100)).toPoint();
-	QSize size = settings.value("WindowState/WindowSize", QSize(300, 200)).toSize();
+
+	if ( settings.value("WindowState/ShowFullScreen", true).toBool() )
+	{
+		if ( !isFullScreen() )
+			showFullScreen();
+   	}
+	else
+	{
+		showNormal();
+		QPoint pos = settings.value("WindowState/TopLeftPosition", QPoint(100, 100)).toPoint();
+		QSize size = settings.value("WindowState/WindowSize", QSize(300, 200)).toSize();
+		resize(size);
+		move(pos);
+	}
 
 	QString color = settings.value("Colors/Foreground", "#d0a100" ).toString();
 	QString back = settings.value("Colors/Background", "black" ).toString();
@@ -479,21 +512,6 @@ void TextRoom::readSettings()
 		//statsLabel->setProperty("class", "mainwindow QLabel");
 	}
 	
-	if ( settings.value("WindowState/ShowFullScreen", true).toBool() )
-	{
-		if ( !isFullScreen() )
-			showFullScreen();
-   	}
-	else
-	{
-		showNormal();
-		resize(size);
-		move(pos);
-   	}
-	
-	if ( optOpenLastFile = settings.value("RecentFiles/OpenLastFile", true).toBool() )
-		curFile = settings.value("RecentFiles/LastFile", curFile).toString();
-
 	font.fromString(fontS.at(0));
 	if (!(textEdit->currentFont() == font)) 
 		textEdit->setFont( font );
@@ -503,7 +521,16 @@ void TextRoom::readSettings()
 	lastSearch = settings.value("TextSearch/LastPhrase", lastSearch).toString();
 
 	isAutoSave = settings.value("AutoSave", false).toBool();
-	isFlowMode= settings.value("FlowMode", false).toBool();
+	isFlowMode = settings.value("FlowMode", false).toBool();
+
+	if ( optOpenLastFile = settings.value("RecentFiles/OpenLastFile", true).toBool() )
+	{
+		curFile = settings.value("RecentFiles/LastFile", curFile).toString();
+		if ( isSaveCursor = settings.value("RecentFiles/SavePosition", true).toBool() )
+			cPosition = settings.value("RecentFiles/AtPosition", cPosition).toInt();
+	}
+
+//	sCursor();
 
 }
 
@@ -524,22 +551,18 @@ void TextRoom::writeSettings()
 	}
 
 	settings.setValue("WindowState/ShowFullScreen", isFullScreen());
-	settings.setValue("RecentFiles/OpenLastFile", optOpenLastFile);
 	settings.setValue("RecentFiles/LastFile", curFile);
 	settings.setValue("RecentFiles/LastDir", curDir);
 	settings.setValue("TextSearch/LastPhrase", lastSearch);
 
-/*	QFont font;
-	
-	font = textEdit->currentFont();
-	settings.setValue("Font/Font_Settings", font.toString() );
-	
-	font = label->font();
-	settings.setValue("Font/FileName_Settings", font.toString() );
-	
-	font = statsLabel->font();
-	settings.setValue("Font/Statistics_Settings", font.toString() );
-*/
+	settings.setValue("RecentFiles/OpenLastFile", optOpenLastFile);
+	if ( optOpenLastFile )
+	{
+		settings.setValue("RecentFiles/SavePosition", isSaveCursor);
+		if ( isSaveCursor )
+			settings.setValue("RecentFiles/AtPosition", cPosition);
+	}
+
 }
 
 void TextRoom::options()
@@ -567,14 +590,6 @@ void TextRoom::loadStyleSheet(const QString &fcolor, const QString &bcolor, cons
 	palette.setColor(QPalette::WindowText, scolor);
 	label->setPalette(palette);
 	statsLabel->setPalette(palette);
-	
-//	Too slow; viewport changes on readSettings
-
-/*	QFile file(":/qss/" + sheetName.toLower() + ".qss");
-	file.open(QFile::ReadOnly);
-	QString styleSheet = QLatin1String(file.readAll());
-	setStyleSheet( QString(styleSheet).arg(fcolor).arg(bcolor).arg(scolor) );
-*/
 
 }
 
@@ -609,4 +624,16 @@ void TextRoom::find_previous()
 void TextRoom::sCursor()
 {
 	textEdit->ensureCursorVisible();
+}
+
+void TextRoom::cPositionChanged()
+{
+	
+}
+
+void TextRoom::resizeEvent(QResizeEvent *event)
+{
+	update();
+	sCursor();
+	QWidget::resizeEvent(event);
 }

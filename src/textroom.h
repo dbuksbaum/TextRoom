@@ -65,6 +65,7 @@ private slots:
 	void dateTimeStatsLabel();
 	void getFileStatus();
 	void readSettings();
+	void cPositionChanged();
 	void loadStyleSheet(const QString &fcolor, const QString &bcolor, const QString &scolor);
 
 private:
@@ -86,13 +87,16 @@ private:
 	int sentenceTally;
 	QFileSystemWatcher* fw;
 	bool optOpenLastFile;
+	bool isSaveCursor;
 	int numChanges;
 	int prevLength;
+	int cPosition;
 	bool isAutoSave;
 	bool isFlowMode;
 
 protected:
-	void closeEvent(QCloseEvent *event);	
+	void closeEvent(QCloseEvent *event);
+	void resizeEvent(QResizeEvent *event);	
 };
  
  
