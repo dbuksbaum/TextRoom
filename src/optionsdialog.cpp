@@ -38,10 +38,10 @@ OptionsDialog::OptionsDialog(QWidget *parent)
 	connect(ui.statusbarSpinBox, SIGNAL( valueChanged(int) ), this, SLOT( activateApply() ) );
 	connect(ui.editorSpinBox, SIGNAL( valueChanged(int) ), this, SLOT( activateApply() ) );
 	connect(ui.editorBoldCheckBox, SIGNAL( clicked() ), this, SLOT( activateApply() ) );
-
 	connect(ui.editorItalicCheckBox, SIGNAL( clicked() ), this, SLOT( activateApply() ) );
 	connect(ui.statusbarBoldCheckBox, SIGNAL( clicked() ), this, SLOT( activateApply() ) );
 	connect(ui.statusbarItalicCheckBox, SIGNAL( clicked() ), this, SLOT( activateApply() ) );
+	connect(ui.scrollBarCheckBox, SIGNAL( clicked() ), this, SLOT( changeScrollBarColorControlsState() ) );
 	connect(ui.loadOnStartCheckBox, SIGNAL( clicked() ), this, SLOT( activateApply() ) );
 	connect(ui.saveCursorCheckBox, SIGNAL( clicked() ), this, SLOT( activateApply() ) );
 	connect(ui.fullScreenCheckBox, SIGNAL( clicked() ), this, SLOT( activateApply() ) );
@@ -51,6 +51,21 @@ OptionsDialog::OptionsDialog(QWidget *parent)
 	connect(ui.editorFontComboBox, SIGNAL( activated(int) ), this, SLOT( activateApply() ) );
 	connect(ui.statusbarFontComboBox, SIGNAL( activated(int) ), this, SLOT( activateApply() ) );
 
+}
+
+void OptionsDialog::changeScrollBarColorControlsState()
+{
+	if ( ui.scrollBarCheckBox->isChecked() )
+	{
+		ui.scrollBarColorLabel->setEnabled(true);
+		ui.pbScrollBarColor->setEnabled(true);
+	}
+	else
+	{
+		ui.scrollBarColorLabel->setEnabled(false);
+		ui.pbScrollBarColor->setEnabled(false);
+	}
+	activateApply();
 }
 
 void OptionsDialog::activateApply()
@@ -95,6 +110,12 @@ void OptionsDialog::reaSettings()
 	ui.splashScreenCheckBox->setChecked( settings.value("WindowState/ShowSplashScreen", true).toBool() );
 	ui.autoSaveCheckBox->setChecked( settings.value("AutoSave", false).toBool() );
 	ui.flowModeCheckBox->setChecked( settings.value("FlowMode", false).toBool() );
+	ui.scrollBarCheckBox->setChecked( settings.value("EnableScrollBar", true).toBool() );
+	if ( !ui.scrollBarCheckBox->isChecked() )
+	{
+		ui.scrollBarColorLabel->setEnabled(false);
+		ui.pbScrollBarColor->setEnabled(false);
+	}
 
 
 	QPalette palette;
@@ -110,6 +131,10 @@ void OptionsDialog::reaSettings()
 	palette.setColor(ui.pbEditorBackColor->backgroundRole(),
 		bgcolor = settings.value("Colors/Background", "black" ).toString());
 	ui.pbEditorBackColor->setPalette(palette);
+
+	palette.setColor(ui.pbScrollBarColor->backgroundRole(),
+		sbcolor = settings.value("Colors/ScrollBarColor", "#1E1E1E" ).toString());
+	ui.pbScrollBarColor->setPalette(palette);
 
 }
 
@@ -127,7 +152,9 @@ void OptionsDialog::writSettings()
 	settings.setValue("Colors/Foreground", fgcolor.name() );
 	settings.setValue("Colors/Background", bgcolor.name() );
 	settings.setValue("Colors/StatusColor", scolor.name() );
+	settings.setValue("Colors/ScrollBarColor", sbcolor.name() );
 
+	settings.setValue("EnableScrollbar", ui.scrollBarCheckBox->isChecked() );
 	settings.setValue("RecentFiles/OpenLastFile", ui.loadOnStartCheckBox->isChecked() );
 	settings.setValue("RecentFiles/SavePosition", ui.saveCursorCheckBox->isChecked() );
 
@@ -135,6 +162,7 @@ void OptionsDialog::writSettings()
 	settings.setValue("WindowState/ShowSplashScreen", ui.splashScreenCheckBox->isChecked() );
 	settings.setValue("AutoSave", ui.autoSaveCheckBox->isChecked() );
 	settings.setValue("FlowMode", ui.flowModeCheckBox->isChecked() );
+	settings.setValue("EnableScrollBar", ui.scrollBarCheckBox->isChecked() );
 	
 	QFont font;
 	
@@ -173,6 +201,27 @@ void OptionsDialog::on_pushButtonApply_clicked()
 void OptionsDialog::showEvent( QShowEvent * )
 {
 	reaSettings();
+}
+
+
+// SCROLLBAR
+
+void OptionsDialog::on_pbScrollBarColor_clicked()
+{
+	showScrollBarColorDialog();
+	ui.pushButtonApply->setEnabled(true);
+}
+
+void OptionsDialog::showScrollBarColorDialog()
+{
+	QColor c = QColorDialog::getColor(sbcolor, this);
+	if (c.isValid())
+	{
+		QPalette palette;
+		palette.setColor(ui.pbScrollBarColor->backgroundRole(), sbcolor = c);
+		ui.pbScrollBarColor->setPalette(palette);
+		ui.pbScrollBarColor->setAutoFillBackground(true);
+	}
 }
 
 // FOREGROUND

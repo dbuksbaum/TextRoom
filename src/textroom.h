@@ -65,8 +65,9 @@ private slots:
 	void dateTimeStatsLabel();
 	void getFileStatus();
 	void readSettings();
-	void cPositionChanged();
-	void loadStyleSheet(const QString &fcolor, const QString &bcolor, const QString &scolor);
+	void vPositionChanged();
+	void hSliderPositionChanged();
+	void loadStyleSheet(const QString &fcolor, const QString &bcolor, const QString &scolor, const QString &sbcolor);
 
 private:
 	bool maybeSave();
@@ -93,6 +94,7 @@ private:
 	int cPosition;
 	bool isAutoSave;
 	bool isFlowMode;
+	bool isScrollBarVisible;
 
 protected:
 	void closeEvent(QCloseEvent *event);

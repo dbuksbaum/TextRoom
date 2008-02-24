@@ -84,8 +84,13 @@ TextRoom::TextRoom(QWidget *parent, Qt::WFlags f)
 	connect(textEdit->document(), SIGNAL(contentsChanged()),
 			this, SLOT(documentWasModified()));
 
-	connect(textEdit, SIGNAL(cursorPositionChanged()),
-			this, SLOT(cPositionChanged()));
+//	connect(textEdit, SIGNAL(cursorPositionChanged()), this, SLOT(vPositionChanged()));
+
+	connect(textEdit->verticalScrollBar(), SIGNAL(valueChanged(int)),
+			this, SLOT(vPositionChanged()));
+
+	connect(horizontalSlider, SIGNAL(valueChanged(int)),
+			this, SLOT(hSliderPositionChanged()));
 
 	// check if we need to open some file at startup
 	const QStringList args = QCoreApplication::arguments();
@@ -117,7 +122,6 @@ TextRoom::TextRoom(QWidget *parent, Qt::WFlags f)
 	numChanges = 0;
 	prevLength = 0;
 	
-//	sCursor();
 }
 
 void TextRoom::togleEscape()
@@ -192,6 +196,10 @@ void TextRoom::newFile()
 		textEdit->setUndoRedoEnabled(true);
 		textEdit->document()->setModified(false);
 		setStatsLabelText(0,0,0);
+		horizontalSlider->setVisible(false);
+		textEdit->verticalScrollBar()->setValue(0);
+		qDebug() << "newFile" << horizontalSlider->isVisible();
+
 	}
 }
 
@@ -272,6 +280,8 @@ void TextRoom::loadFile(const QString &fileName)
 
 	setCurrentFile(fileName);
 	setStatsLabelText(0,0,0);
+
+	vPositionChanged();
 }
 
 bool TextRoom::maybeSave()
@@ -449,6 +459,8 @@ void TextRoom::documentWasModified()
 
 	prevLength=textEdit->document()->toPlainText().size();
 
+	vPositionChanged();
+
 	getFileStatus();
 }
 
@@ -486,8 +498,9 @@ void TextRoom::readSettings()
 	QString color = settings.value("Colors/Foreground", "#d0a100" ).toString();
 	QString back = settings.value("Colors/Background", "black" ).toString();
 	QString status_c = settings.value("Colors/StatusColor", "#404040" ).toString();
+	QString scrollb_c = settings.value("Colors/ScrollBarColor", "#1E1E1E" ).toString();
 
-	loadStyleSheet(color, back, status_c);
+	loadStyleSheet(color, back, status_c, scrollb_c);
 
 	// oxygen does weird stuff with the background
 	QApplication::setStyle("plastique");
@@ -511,7 +524,7 @@ void TextRoom::readSettings()
 		statsLabel->setFont( font );
 		//statsLabel->setProperty("class", "mainwindow QLabel");
 	}
-	
+
 	font.fromString(fontS.at(0));
 	if (!(textEdit->currentFont() == font)) 
 		textEdit->setFont( font );
@@ -523,6 +536,10 @@ void TextRoom::readSettings()
 	isAutoSave = settings.value("AutoSave", false).toBool();
 	isFlowMode = settings.value("FlowMode", false).toBool();
 
+	horizontalSlider->setVisible( settings.value("EnableScrollBar", true).toBool() );
+	isScrollBarVisible = horizontalSlider->isVisible();
+	vPositionChanged();
+
 	if ( optOpenLastFile = settings.value("RecentFiles/OpenLastFile", true).toBool() )
 	{
 		curFile = settings.value("RecentFiles/LastFile", curFile).toString();
@@ -530,7 +547,6 @@ void TextRoom::readSettings()
 			cPosition = settings.value("RecentFiles/AtPosition", cPosition).toInt();
 	}
 
-//	sCursor();
 
 }
 
@@ -576,13 +592,14 @@ void TextRoom::help()
 	helpDialog->showNormal();
 }
 
-void TextRoom::loadStyleSheet(const QString &fcolor, const QString &bcolor, const QString &scolor)
+void TextRoom::loadStyleSheet(const QString &fcolor, const QString &bcolor, const QString &scolor, const QString &sbcolor)
 {
 	QPalette palette;
 
 	palette.setColor(QPalette::Text, fcolor);
 	palette.setColor(QPalette::Base, bcolor);
 	textEdit->setPalette(palette);
+	horizontalSlider->setPalette(palette);
 
 	palette.setColor(QPalette::Window, bcolor);
 	TextRoom::setPalette(palette);
@@ -590,7 +607,10 @@ void TextRoom::loadStyleSheet(const QString &fcolor, const QString &bcolor, cons
 	palette.setColor(QPalette::WindowText, scolor);
 	label->setPalette(palette);
 	statsLabel->setPalette(palette);
+	horizontalSlider->setPalette(palette);
 
+	palette.setColor(QPalette::Button, sbcolor);
+	horizontalSlider->setPalette(palette);
 }
 
 void TextRoom::find()
@@ -626,14 +646,25 @@ void TextRoom::sCursor()
 	textEdit->ensureCursorVisible();
 }
 
-void TextRoom::cPositionChanged()
+void TextRoom::vPositionChanged()
 {
-	
+	horizontalSlider->setMinimum(textEdit->verticalScrollBar()->minimum());
+	horizontalSlider->setMaximum(textEdit->verticalScrollBar()->maximum());
+	if ( isScrollBarVisible )
+		horizontalSlider->setVisible(textEdit->verticalScrollBar()->maximum());
+	horizontalSlider->setValue( textEdit->verticalScrollBar()->value());
+}
+
+void TextRoom::hSliderPositionChanged()
+{
+	textEdit->verticalScrollBar()->setValue( horizontalSlider->value() );
 }
 
 void TextRoom::resizeEvent(QResizeEvent *event)
 {
 	update();
 	sCursor();
+	vPositionChanged();
 	QWidget::resizeEvent(event);
+
 }
