@@ -198,7 +198,6 @@ void TextRoom::newFile()
 		setStatsLabelText(0,0,0);
 		horizontalSlider->setVisible(false);
 		textEdit->verticalScrollBar()->setValue(0);
-		qDebug() << "newFile" << horizontalSlider->isVisible();
 
 	}
 }

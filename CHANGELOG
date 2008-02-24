@@ -1,7 +1,23 @@
+ver.0.2.4beta1 - 2008-02-24
 
-ver.0.2.2 - 2008-02-09
+* Added Progress slider option
+* Added Restore cursor position option
+* Removed style sheet, it was too slow; color and font changes are now applied through setPalette
 
-	* added "Flow mode" option
-	* rearranged Options dialog
-	* textroom.pro is now set to "release" mode
 
+ver.0.2.3 - 2008-02-16 
+
+* added simple Find dialog 
+* horizontalScrollBarPolicy set to ScrollBarAsNeeded 
+
+
+ver.0.2.2 - 2008-02-09 
+
+* the project is now hosted by code.google.com 
+* added "Flow mode" option (thanks to zebulon M) 
+* rearranged Options dialog 
+* textroom.pro is now set to "release" mode
+
+ver.0.2.1 - 2008-01-31 
+* added "Auto save" option (thanks to adamvert) 
+* minor bugfixes

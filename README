@@ -1,4 +1,5 @@
 TextRoom v0.2.4 beta
+http://code.google.com/p/textroom/
 
 (c)by Petar Toushkov 2008 <peter dot toushkov at gmail.com>
 released under terms of GNU General Public License v2
@@ -82,32 +83,5 @@ You can get some additional information on your current file
 by placing the mouse pointer over its name or statistics in the
 statusbar (right and left lower corners of the screen).
 
-5. TODO
---------
 
-* icons and artwork
-* drag & drop files directly to TextRoom
-* indent on/off (BUG: select all, and paste: indent loss)
-* paragraph margins on/off
-* file properties info
-* system tray
-* print dialog
-* set text dimensions
-customizable statistics calculations [NEEDED]
-context menu [NEEDED]
-progress indicator [NEEDED]
-save cursor position in text [NEEDED]
-replace dialog [NEEDED]
-translation
-recent files
-rich text
-spell-check
-show/hide status bar
-export to PDF, ODT and HTML
-KDE4 integration
-customizable keyboard shortcuts
-bookmarks
-? open another TextRoom instance, or notes section
-? per document settings
-? favourites/project folders
  
