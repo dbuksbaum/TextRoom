@@ -123,6 +123,11 @@ TextRoom::TextRoom(QWidget *parent, Qt::WFlags f)
 	numChanges = 0;
 	prevLength = 0;
 
+     QTimer *timer = new QTimer(this);
+     connect(timer, SIGNAL(timeout()), this, SLOT(getFileStatus()));
+     timer->start(1000);
+
+     getFileStatus();
 }
 
 void TextRoom::paintEvent(QPaintEvent *)
