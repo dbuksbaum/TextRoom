@@ -50,7 +50,7 @@ TextRoom::TextRoom(QWidget *parent, Qt::WFlags f)
 	new QShortcut ( QKeySequence(QKeySequence::HelpContents), this, SLOT( help() ) );
 	new QShortcut ( QKeySequence(QKeySequence::Underline), this, SLOT( options() ) );
 	new QShortcut ( QKeySequence(tr("Ctrl+Shift+S", "Save As")), this, SLOT( saveAs() ) );
-	new QShortcut ( QKeySequence(tr("Ctrl+T", "Indent First Lines")), this, SLOT( indentFirstLines() ) );
+	new QShortcut ( QKeySequence(tr("Ctrl+T", "Toggle Indent First Lines")), this, SLOT( indentFirstLines() ) );
 	new QShortcut ( QKeySequence(tr("Ctrl+H", "About TextRoom")), this, SLOT( about() ) );
 	new QShortcut ( QKeySequence(tr("Ctrl+Q", "Quit Application")) , this, SLOT( close() ) );
 	new QShortcut ( QKeySequence(tr("Alt+F4", "Quit Application")) , this, SLOT( close() ) );
@@ -195,16 +195,19 @@ void TextRoom::closeEvent(QCloseEvent *event)
  
 void TextRoom::about() 
 {
-	QMessageBox::about(this,"About TextRoom",
+	QMessageBox::about(this,"About TextRoom RealTime",
 				"TextRoom Editor ver. 0.2.4 beta\n\n"
 		"Project home page: http://code.google.com/p/textroom/\n\n"
 		"Code, help and insights (in alphabetical order) by:\n"
 		"Adamvert (from ubuntuforums.org),\n"
 		"Magnus Edvardsson (a.k.a. zebulon M),\n"
+		"Omer Bahri Gordebak,\n"
 		"Peter Toushkov\n\n"
 		"TextRoom is partially based on\n"
 		"The Phrasis project by Jacob R. Rideout:\n"
-		"http://code.google.com/p/phrasis/");
+		"http://code.google.com/p/phrasis/\n\n"
+		"TextRoom RealTime is a stripped down version\n"
+		"For writers in mind.\n");
 }
 
 void TextRoom::newFile()
