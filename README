@@ -47,7 +47,14 @@ You can change its path by editing textroom.pro
 
 The program stores its preferences in ~/.config/textroom/TextRoom.conf
 
-4. How to use TextRoom
+4. Features
+
+  * configurable colors and fonts
+  * configurable behavior: full-screen on/off, auto save, flow mode (disable delete and backspace keys), load last document on startup, remember position in text for the last file, horizontal progress slider
+  * display current time and date, some statistics
+  * keyboard shortcuts for the most common tasks (if you start the program for the first time, just press F1 for help)
+
+5. How to use TextRoom
 ----------------------
 
 Keyboard shortcuts:
