@@ -27,9 +27,11 @@
 #include <QApplication>
 #include <QSplashScreen>
 #include <QTimer>
+#include <QtGui>
+#include <QPaintDevice>
  
 #include "textroom.h"
- 
+
 int main(int argc, char ** argv)
 {
 	QApplication app(argc, argv);
@@ -56,9 +58,12 @@ int main(int argc, char ** argv)
 			splash->showMessage("[Press F1 for help]", Qt::AlignBottom+Qt::AlignHCenter, Qt::white);
 		}
 	}
+
+
 	
 	TextRoom *win = new TextRoom(NULL);
 	win->show();
+
 	
 	if (splash)
 	{

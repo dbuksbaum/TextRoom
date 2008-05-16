@@ -127,6 +127,10 @@ void OptionsDialog::reaSettings()
 	palette.setColor(ui.pbStatusBarColor->backgroundRole(),
 		scolor = settings.value("Colors/StatusColor", "#404040" ).toString());
 	ui.pbStatusBarColor->setPalette(palette);
+
+	palette.setColor(ui.pbStatusBarBgColor->backgroundRole(),
+		sbgcolor = settings.value("Colors/StatusBarBgColor", "#323232" ).toString());
+	ui.pbStatusBarBgColor->setPalette(palette);
 	
 	palette.setColor(ui.pbEditorBackColor->backgroundRole(),
 		bgcolor = settings.value("Colors/Background", "black" ).toString());
@@ -151,6 +155,7 @@ void OptionsDialog::writSettings()
 	
 	settings.setValue("Colors/Foreground", fgcolor.name() );
 	settings.setValue("Colors/Background", bgcolor.name() );
+	settings.setValue("Colors/StatusBarBgColor", sbgcolor.name() );
 	settings.setValue("Colors/StatusColor", scolor.name() );
 	settings.setValue("Colors/ScrollBarColor", sbcolor.name() );
 
@@ -220,7 +225,27 @@ void OptionsDialog::showScrollBarColorDialog()
 		QPalette palette;
 		palette.setColor(ui.pbScrollBarColor->backgroundRole(), sbcolor = c);
 		ui.pbScrollBarColor->setPalette(palette);
-		ui.pbScrollBarColor->setAutoFillBackground(true);
+		ui.pbScrollBarColor->setAutoFillBackground(false);
+	}
+}
+
+// STATUSBAR BACKGROUND
+
+void OptionsDialog::on_pbStatusBarBgColor_clicked()
+{
+	showStatusBarBgColorDialog();
+	ui.pushButtonApply->setEnabled(true);
+}
+
+void OptionsDialog::showStatusBarBgColorDialog()
+{
+	QColor c = QColorDialog::getColor(sbgcolor, this);
+	if (c.isValid())
+	{
+		QPalette palette;
+		palette.setColor(ui.pbStatusBarBgColor->backgroundRole(), sbgcolor = c);
+		ui.pbStatusBarBgColor->setPalette(palette);
+		ui.pbStatusBarBgColor->setAutoFillBackground(true);
 	}
 }
 
@@ -240,7 +265,7 @@ void OptionsDialog::showForegroundDialog()
 		QPalette palette;
 		palette.setColor(ui.pbEditorColor->backgroundRole(), fgcolor = c);
 		ui.pbEditorColor->setPalette(palette);
-		ui.pbEditorColor->setAutoFillBackground(true);
+		ui.pbEditorColor->setAutoFillBackground(false);
 	}
 }
 
@@ -280,6 +305,6 @@ void OptionsDialog::showStatusColorDialog()
 		QPalette palette;
 		palette.setColor(ui.pbStatusBarColor->backgroundRole(), scolor = c);
 		ui.pbStatusBarColor->setPalette(palette);
-		ui.pbStatusBarColor->setAutoFillBackground(true);
+		ui.pbStatusBarColor->setAutoFillBackground(false);
 	}
 }

@@ -59,15 +59,12 @@ private slots:
 	void togleFullScreen();
 	void togleEscape();
 	void indentFirstLines();
-	void setStatsLabelText(int position, int charsRemoved, int charsAdded);
 	void documentWasModified();	
-	void cramStatsLabel();
-	void dateTimeStatsLabel();
 	void getFileStatus();
 	void readSettings();
 	void vPositionChanged();
 	void hSliderPositionChanged();
-	void loadStyleSheet(const QString &fcolor, const QString &bcolor, const QString &scolor, const QString &sbcolor);
+	void loadStyleSheet(const QString &fcolor, const QString &bcolor, const QString &sbgcolor, const QString &scolor, const QString &sbcolor);
 
 private:
 	bool maybeSave();
@@ -92,11 +89,13 @@ private:
 	int numChanges;
 	int prevLength;
 	int cPosition;
+	bool ind;
 	bool isAutoSave;
 	bool isFlowMode;
 	bool isScrollBarVisible;
 
 protected:
+	void paintEvent(QPaintEvent *);
 	void closeEvent(QCloseEvent *event);
 	void resizeEvent(QResizeEvent *event);	
 };
