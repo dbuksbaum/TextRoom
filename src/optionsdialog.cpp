@@ -45,7 +45,6 @@ OptionsDialog::OptionsDialog(QWidget *parent)
 	connect(ui.editorItalicCheckBox, SIGNAL( clicked() ), this, SLOT( activateApply() ) );
 	connect(ui.statusbarBoldCheckBox, SIGNAL( clicked() ), this, SLOT( activateApply() ) );
 	connect(ui.statusbarItalicCheckBox, SIGNAL( clicked() ), this, SLOT( activateApply() ) );
-	//connect(ui.scrollBarCheckBox, SIGNAL( clicked() ), this, SLOT( changeScrollBarColorControlsState() ) );
 	connect(ui.loadOnStartCheckBox, SIGNAL( clicked() ), this, SLOT( activateApply() ) );
 	connect(ui.saveCursorCheckBox, SIGNAL( clicked() ), this, SLOT( activateApply() ) );
 	connect(ui.fullScreenCheckBox, SIGNAL( clicked() ), this, SLOT( activateApply() ) );
@@ -55,24 +54,8 @@ OptionsDialog::OptionsDialog(QWidget *parent)
 	connect(ui.editorFontComboBox, SIGNAL( activated(int) ), this, SLOT( activateApply() ) );
 	connect(ui.statusbarFontComboBox, SIGNAL( activated(int) ), this, SLOT( activateApply() ) );
 	connect(ui.calendarWidget, SIGNAL( selectionChanged() ), this, SLOT( activateApply() ) );
-	//connect(ui.lineEdit, SIGNAL( textChanged() ), this, SLOT(activateApply() ) );
 
 }
-
-/*void OptionsDialog::changeScrollBarColorControlsState()
-{
-	if ( ui.scrollBarCheckBox->isChecked() )
-	{
-		ui.scrollBarColorLabel->setEnabled(true);
-		ui.pbScrollBarColor->setEnabled(true);
-	}
-	else
-	{
-		ui.scrollBarColorLabel->setEnabled(false);
-		ui.pbScrollBarColor->setEnabled(false);
-	}
-	activateApply();
-}*/
 
 void OptionsDialog::activateApply()
 {
@@ -120,20 +103,12 @@ void OptionsDialog::reaSettings()
 	ui.soundCheckBox->setChecked( settings.value("Sound", true).toBool() );
 	ui.autoSaveCheckBox->setChecked( settings.value("AutoSave", false).toBool() );
 	ui.flowModeCheckBox->setChecked( settings.value("FlowMode", false).toBool() );
-	//ui.scrollBarCheckBox->setChecked( settings.value("EnableScrollBar", true).toBool() );
 	QString datetext = settings.value("Deadline", todaytext).toString();
 	QDate date;
 	QDate dateselected = date.fromString(datetext, "yyyyMMdd");
 	ui.calendarWidget->setSelectedDate(dateselected);
 	ui.editorWidthSpinBox->setValue( settings.value	("EditorWidth", 800).toInt());
 	
-	/*	
-	if ( !ui.scrollBarCheckBox->isChecked() )
-	{
-		ui.scrollBarColorLabel->setEnabled(false);
-		ui.pbScrollBarColor->setEnabled(false);
-	}*/
-
 	QPalette palette;
 
 	palette.setColor(ui.pbEditorColor->backgroundRole(),
@@ -144,17 +119,15 @@ void OptionsDialog::reaSettings()
 		scolor = settings.value("Colors/StatusColor", "#404040" ).toString());
 	ui.pbStatusBarColor->setPalette(palette);
 
-	palette.setColor(ui.pbStatusBarBgColor->backgroundRole(),
-		sbgcolor = settings.value("Colors/StatusBarBgColor", "#323232" ).toString());
-	ui.pbStatusBarBgColor->setPalette(palette);
 	
 	palette.setColor(ui.pbEditorBackColor->backgroundRole(),
 		bgcolor = settings.value("Colors/Background", "black" ).toString());
 	ui.pbEditorBackColor->setPalette(palette);
+	
+	palette.setColor(ui.pbStatusBarBgColor->backgroundRole(),
+		sbcolor = settings.value("Colors/StatusBg", "#e8e8e8").toString());
+	ui.pbStatusBarBgColor->setPalette(palette);
 
-	/*palette.setColor(ui.pbScrollBarColor->backgroundRole(),
-		sbcolor = settings.value("Colors/ScrollBarColor", "#1E1E1E" ).toString());
-	ui.pbScrollBarColor->setPalette(palette);*/
 
 }
 
@@ -171,11 +144,9 @@ void OptionsDialog::writSettings()
 	
 	settings.setValue("Colors/Foreground", fgcolor.name() );
 	settings.setValue("Colors/Background", bgcolor.name() );
-	settings.setValue("Colors/StatusBarBgColor", sbgcolor.name() );
 	settings.setValue("Colors/StatusColor", scolor.name() );
-	settings.setValue("Colors/ScrollBarColor", sbcolor.name() );
+	settings.setValue("Colors/StatusBg", sbcolor.name() );
 
-	//settings.setValue("EnableScrollbar", ui.scrollBarCheckBox->isChecked() );
 	settings.setValue("RecentFiles/OpenLastFile", ui.loadOnStartCheckBox->isChecked() );
 	settings.setValue("RecentFiles/SavePosition", ui.saveCursorCheckBox->isChecked() );
 
@@ -185,7 +156,6 @@ void OptionsDialog::writSettings()
 	settings.setValue("AutoSave", ui.autoSaveCheckBox->isChecked() );
 	settings.setValue("FlowMode", ui.flowModeCheckBox->isChecked() );
 	settings.setValue("WordCount", ui.wordCountSpinBox->value() );
-	//settings.setValue("EnableScrollBar", ui.scrollBarCheckBox->isChecked() );
 	settings.setValue("Deadline", ui.calendarWidget->selectedDate().toString("yyyyMMdd"));
 	settings.setValue("EditorWidth", ui.editorWidthSpinBox->value() );
 
@@ -229,47 +199,6 @@ void OptionsDialog::showEvent( QShowEvent * )
 	reaSettings();
 }
 
-
-// SCROLLBAR
-/*
-void OptionsDialog::on_pbScrollBarColor_clicked()
-{
-	showScrollBarColorDialog();
-	ui.pushButtonApply->setEnabled(true);
-}
-
-void OptionsDialog::showScrollBarColorDialog()
-{
-	QColor c = QColorDialog::getColor(sbcolor, this);
-	if (c.isValid())
-	{
-		QPalette palette;
-		palette.setColor(ui.pbScrollBarColor->backgroundRole(), sbcolor = c);
-		ui.pbScrollBarColor->setPalette(palette);
-		ui.pbScrollBarColor->setAutoFillBackground(false);
-	}
-}
-*/
-// STATUSBAR BACKGROUND
-
-void OptionsDialog::on_pbStatusBarBgColor_clicked()
-{
-	showStatusBarBgColorDialog();
-	ui.pushButtonApply->setEnabled(true);
-}
-
-void OptionsDialog::showStatusBarBgColorDialog()
-{
-	QColor c = QColorDialog::getColor(sbgcolor, this);
-	if (c.isValid())
-	{
-		QPalette palette;
-		palette.setColor(ui.pbStatusBarBgColor->backgroundRole(), sbgcolor = c);
-		ui.pbStatusBarBgColor->setPalette(palette);
-		ui.pbStatusBarBgColor->setAutoFillBackground(true);
-	}
-}
-
 // FOREGROUND
 
 void OptionsDialog::on_pbEditorColor_clicked()
@@ -289,6 +218,26 @@ void OptionsDialog::showForegroundDialog()
 		ui.pbEditorColor->setAutoFillBackground(false);
 	}
 }
+
+//STATUS BACKGROUND
+void OptionsDialog::on_pbStatusBarBgColor_clicked()
+{
+	showStatusBarBgColorDialog();
+	ui.pushButtonApply->setEnabled(true);
+}
+
+void OptionsDialog::showStatusBarBgColorDialog()
+{
+	QColor c = QColorDialog::getColor(sbcolor, this);
+	if (c.isValid())
+	{
+		QPalette palette;
+		palette.setColor(ui.pbStatusBarBgColor->backgroundRole(), sbcolor = c);
+		ui.pbStatusBarBgColor->setPalette(palette);
+		ui.pbStatusBarBgColor->setAutoFillBackground(true);
+	}
+}
+
 
 // BACKGROUND
 

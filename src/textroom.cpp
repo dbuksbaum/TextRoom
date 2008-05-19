@@ -38,12 +38,10 @@ TextRoom::TextRoom(QWidget *parent, Qt::WFlags f)
 {
 	setupUi(this);
 	setObjectName("textroom");
-	//setProperty("class", "mainwindow QLabel");
 
 	numChanges = 0;
 	prevLength = 0;
 	parasold = 0;
-	//deadline = 0;
 	wordcount = 0;
 
 	readSettings();
@@ -123,25 +121,6 @@ TextRoom::TextRoom(QWidget *parent, Qt::WFlags f)
      timer->start(1000);
 
      getFileStatus();
-}
-
-void TextRoom::paintEvent(QPaintEvent *)
-{
-#ifdef Q_OS_WIN32
-	QSettings settings(QDir::homePath()+"/Application Data/"+qApp->applicationName()+".ini", QSettings::IniFormat);
-#else
-
-	QSettings settings;
-#endif
-	QString statbg = settings.value("Colors/StatusBarBgColor", "#323232").toString();
-	bool ok;
-	int clr = statbg.mid(1, 6).toInt(&ok, 16);
-	int x = width();
-	int y = height();
-	int top = y-34;
-	QPainter painter(this);
-	painter.setBrush(QColor(QRgb(clr)));
-	painter.drawRect(0, top, x, y);
 }
 
 void TextRoom::playSound(QString &filenm)
@@ -799,11 +778,10 @@ void TextRoom::readSettings()
 
 	QString color = settings.value("Colors/Foreground", "#d0a100" ).toString();
 	QString back = settings.value("Colors/Background", "black" ).toString();
-	QString statbg = settings.value("Colors/StatusBarBgColor", "#323232").toString();
 	QString status_c = settings.value("Colors/StatusColor", "#404040" ).toString();
-	QString scrollb_c = settings.value("Colors/ScrollBarColor", "#1E1E1E" ).toString();
+	QString status_b = settings.value("Colors/StatusBg", "#e8e8e8" ).toString();
 
-	loadStyleSheet(color, back, statbg, status_c, scrollb_c);
+	loadStyleSheet(color, back, status_c, status_b);
 
 	// oxygen does weird stuff with the background
 	QApplication::setStyle("plastique");
@@ -902,7 +880,7 @@ void TextRoom::help()
 	helpDialog->showNormal();
 }
 
-void TextRoom::loadStyleSheet(const QString &fcolor, const QString &bcolor, const QString &sbgcolor, const QString &scolor, const QString &sbcolor)
+void TextRoom::loadStyleSheet(const QString &fcolor, const QString &bcolor, const QString &scolor, const QString &sbcolor)
 {
 	QPalette palette;
 
@@ -913,18 +891,17 @@ void TextRoom::loadStyleSheet(const QString &fcolor, const QString &bcolor, cons
 	palette.setColor(QPalette::Window, bcolor);
 	TextRoom::setPalette(palette);
 
-	palette.setColor(QPalette::WindowText, scolor);
-
 	QPalette palette2;
-	palette2.setColor(QPalette::Background, sbgcolor);
-	palette2.setColor(QPalette::Text, scolor);
-	palette2.setColor(QPalette::WindowText, scolor);
+	palette2.setColor(QPalette::Foreground, scolor);
+	palette2.setColor(QPalette::Window, sbcolor);
 
 	label->setPalette(palette2);
 	statsLabel->setPalette(palette2);
 	deadlineLabel->setPalette(palette2);
-
-	palette2.setColor(QPalette::Button, sbcolor);
+	
+	label->setAutoFillBackground(true);
+	statsLabel->setAutoFillBackground(true);
+	deadlineLabel->setAutoFillBackground(true);
 
 }
 
