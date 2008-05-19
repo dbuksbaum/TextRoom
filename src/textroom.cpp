@@ -1,5 +1,6 @@
 /****************************************************************************
 ** Copyright (C) 2008 Petar Toushkov <peter dot toushkov at gmail.com>
+** Copyright (C) 2008 Omer Bahri Gordebak <gordebak at gmail.com>
 **
 ** Additional help, code and insights by:
 ** adamvert - from http://ubuntuforums.org/
@@ -25,17 +26,25 @@
 ****************************************************************************/
 
 #include <QtGui> 
+#include <QPaintDevice>
 #include "textroom.h"
 #include "optionsdialog.h"
 #include "helpdialog.h"
 #include "searchdialog.h"
  
+	
 TextRoom::TextRoom(QWidget *parent, Qt::WFlags f)
 		: QWidget(parent, f), sentenceTally(0)
 {
 	setupUi(this);
 	setObjectName("textroom");
 	//setProperty("class", "mainwindow QLabel");
+
+	numChanges = 0;
+	prevLength = 0;
+	parasold = 0;
+	//deadline = 0;
+	wordcount = 0;
 
 	readSettings();
 
@@ -48,9 +57,8 @@ TextRoom::TextRoom(QWidget *parent, Qt::WFlags f)
 	new QShortcut ( QKeySequence(QKeySequence::HelpContents), this, SLOT( help() ) );
 	new QShortcut ( QKeySequence(QKeySequence::Underline), this, SLOT( options() ) );
 	new QShortcut ( QKeySequence(tr("Ctrl+Shift+S", "Save As")), this, SLOT( saveAs() ) );
-	new QShortcut ( QKeySequence(tr("Ctrl+D", "Get Date/Time")), this, SLOT( dateTimeStatsLabel() ) );
-	new QShortcut ( QKeySequence(tr("Ctrl+L", "Get Statistics")), this, SLOT( cramStatsLabel() ) );
-	new QShortcut ( QKeySequence(tr("Ctrl+T", "Indent First Lines")), this, SLOT( indentFirstLines() ) );
+	new QShortcut ( QKeySequence(tr("Ctrl+D", "Insert Date")), this, SLOT( insertDate() ) );
+	new QShortcut ( QKeySequence(tr("Ctrl+T", "Insert Time")), this, SLOT( insertTime() ) );	
 	new QShortcut ( QKeySequence(tr("Ctrl+H", "About TextRoom")), this, SLOT( about() ) );
 	new QShortcut ( QKeySequence(tr("Ctrl+Q", "Quit Application")) , this, SLOT( close() ) );
 	new QShortcut ( QKeySequence(tr("Alt+F4", "Quit Application")) , this, SLOT( close() ) );
@@ -84,14 +92,6 @@ TextRoom::TextRoom(QWidget *parent, Qt::WFlags f)
 	connect(textEdit->document(), SIGNAL(contentsChanged()),
 			this, SLOT(documentWasModified()));
 
-//	connect(textEdit, SIGNAL(cursorPositionChanged()), this, SLOT(vPositionChanged()));
-
-	connect(textEdit->verticalScrollBar(), SIGNAL(valueChanged(int)),
-			this, SLOT(vPositionChanged()));
-
-	connect(horizontalSlider, SIGNAL(valueChanged(int)),
-			this, SLOT(hSliderPositionChanged()));
-
 	// check if we need to open some file at startup
 	const QStringList args = QCoreApplication::arguments();
 	if (args.count() == 2)
@@ -118,10 +118,38 @@ TextRoom::TextRoom(QWidget *parent, Qt::WFlags f)
 
 	writeSettings();
 	
-	// auto save counter
-	numChanges = 0;
-	prevLength = 0;
-	
+     QTimer *timer = new QTimer(this);
+     connect(timer, SIGNAL(timeout()), this, SLOT(getFileStatus()));
+     timer->start(1000);
+
+     getFileStatus();
+}
+
+void TextRoom::paintEvent(QPaintEvent *)
+{
+#ifdef Q_OS_WIN32
+	QSettings settings(QDir::homePath()+"/Application Data/"+qApp->applicationName()+".ini", QSettings::IniFormat);
+#else
+
+	QSettings settings;
+#endif
+	QString statbg = settings.value("Colors/StatusBarBgColor", "#323232").toString();
+	bool ok;
+	int clr = statbg.mid(1, 6).toInt(&ok, 16);
+	int x = width();
+	int y = height();
+	int top = y-34;
+	QPainter painter(this);
+	painter.setBrush(QColor(QRgb(clr)));
+	painter.drawRect(0, top, x, y);
+}
+
+void TextRoom::playSound(QString &filenm)
+{
+	if (isSound)
+	{
+	QSound::play(filenm);
+	}
 }
 
 void TextRoom::togleEscape()
@@ -131,6 +159,28 @@ void TextRoom::togleEscape()
 	else
 		close();
 
+}
+
+void TextRoom::insertDate()
+{
+	QDateTime today = QDateTime::currentDateTime();
+	QString date = today.toString("dd MMMM yyyy dddd");
+	setWindowModified(textEdit->document()->isModified());
+
+	const QString text( textEdit->document()->toPlainText() );
+
+	textEdit->insertPlainText(date);
+}
+
+void TextRoom::insertTime()
+{
+	QDateTime now = QDateTime::currentDateTime();
+	QString clock = now.toString("hh:mm");
+	setWindowModified(textEdit->document()->isModified());
+
+	const QString text( textEdit->document()->toPlainText() );
+
+	textEdit->insertPlainText(clock);
 }
 
 void TextRoom::togleFullScreen()
@@ -170,15 +220,16 @@ void TextRoom::closeEvent(QCloseEvent *event)
 void TextRoom::about() 
 {
 	QMessageBox::about(this,"About TextRoom",
-				"TextRoom Editor ver. 0.2.4 beta\n\n"
+				"TextRoom Editor ver. 0.2.5\n\n"
 		"Project home page: http://code.google.com/p/textroom/\n\n"
 		"Code, help and insights (in alphabetical order) by:\n"
 		"Adamvert (from ubuntuforums.org),\n"
 		"Magnus Edvardsson (a.k.a. zebulon M),\n"
+		"Omer Bahri Gordebak,\n"
 		"Peter Toushkov\n\n"
 		"TextRoom is partially based on\n"
 		"The Phrasis project by Jacob R. Rideout:\n"
-		"http://code.google.com/p/phrasis/");
+		"http://code.google.com/p/phrasis/\n\n");
 }
 
 void TextRoom::newFile()
@@ -191,12 +242,8 @@ void TextRoom::newFile()
 		textEdit->document()->blockSignals(false);
 		
 		setCurrentFile("");
-		textEdit->setUndoRedoEnabled(false);
-		indentFirstLines();
 		textEdit->setUndoRedoEnabled(true);
 		textEdit->document()->setModified(false);
-		setStatsLabelText(0,0,0);
-		horizontalSlider->setVisible(false);
 		textEdit->verticalScrollBar()->setValue(0);
 
 	}
@@ -261,7 +308,6 @@ void TextRoom::loadFile(const QString &fileName)
 	QByteArray data = file.readAll();
 	QTextCodec *codec = QTextCodec::codecForName("UTF-8");
 	QString str = codec->toUnicode(data);
-	str = QString::fromLocal8Bit(data);
 	
 	QApplication::setOverrideCursor(Qt::WaitCursor);
 
@@ -269,22 +315,25 @@ void TextRoom::loadFile(const QString &fileName)
 	textEdit->document()->blockSignals(true);
 	textEdit->setPlainText("");
 	textEdit->setUndoRedoEnabled(false);
-	indentFirstLines();
 	textEdit->append(str);
 	textEdit->moveCursor(QTextCursor::Start);
 	textEdit->setUndoRedoEnabled(true);
 	textEdit->document()->blockSignals(false);
+	indentFirstLines();
 
 	QApplication::restoreOverrideCursor();
 
 	setCurrentFile(fileName);
-	setStatsLabelText(0,0,0);
+	getFileStatus();
 
-	vPositionChanged();
 }
 
 bool TextRoom::maybeSave()
 {
+	if (textEdit->document()->isEmpty())
+	{
+	return true;
+	}
 	if (textEdit->document()->isModified())
 	{
 		QMessageBox::StandardButton ret;
@@ -359,7 +408,10 @@ QString TextRoom::strippedName(const QString &fullFileName)
 
 void TextRoom::indentFirstLines()
 {
-	// does the user want this, or not?
+	bool soundstatus;
+	soundstatus = isSound;
+	isSound = false;
+
 	QTextBlockFormat modifier;
 	modifier.setTextIndent(50);
 	modifier.setBottomMargin(10);
@@ -367,14 +419,294 @@ void TextRoom::indentFirstLines()
 	do {
 		cursor.mergeBlockFormat(modifier);
 	} while (cursor.movePosition(QTextCursor::NextBlock));
+
+	isSound = soundstatus;
 }
 
-void TextRoom::setStatsLabelText(int position, int charsRemoved, int charsAdded)
+void TextRoom::getFileStatus()
 {
-	Q_UNUSED(charsRemoved);
-	Q_UNUSED(charsAdded);
+	QString showdeadline;
+	QString targetday = deadline.toString("dd");
+	QString targetmonth = deadline.toString("MM");
+	QString targetyear = deadline.toString("yyyy");
+	QString target;
+	int targetdayint = targetday.toInt();
+	int targetmonthint = targetmonth.toInt();
+	int targetyearint = targetyear.toInt();
+	today = QDate::currentDate();
+	QString daytoday = today.toString("dd");
+	QString thismonth = today.toString("MM");
+	QString thisyear = today.toString("yyyy");
+	int daytodayint = daytoday.toInt();
+	int thismonthint = thismonth.toInt(); 
+	int thisyearint = thisyear.toInt();
+	int daysremaining = (targetdayint-daytodayint);
+	int monthsremaining = targetmonthint-thismonthint;
+	int yearsremaining = targetyearint-thisyearint;
+	QString daysto;
+	daysto.setNum(daysremaining);
+	QString monthsto;
+	monthsto.setNum(monthsremaining);
+	QString yearsto;
+	yearsto.setNum(yearsremaining);
+	if (yearsremaining < 0)
+	{
+		showdeadline = "";
+	}
+	else if (yearsremaining == 0 && monthsremaining <0)
+	{
+		showdeadline="";
+	}
+	else if (yearsremaining == 0 && monthsremaining==0)
+	{
+		if (daysremaining<=0)
+		{
+		showdeadline="";
+		}
+		if (daysremaining>0)
+		{
+		showdeadline = daysto + " Day(s) ";
+		}
+	}
+	else if (yearsremaining == 0 && monthsremaining > 0)
+	{
+		if (daysremaining == 0)
+		{
+			showdeadline = monthsto + " Month(s) ";
+		}
+		if (daysremaining > 0)
+		{
+			showdeadline = monthsto + " Month(s), " + daysto + " Day(s) ";
+		}
+		if (daysremaining < 0)
+		{
+			QString monthstominusone;
+			monthstominusone.setNum(monthsremaining-1);
+			QString ismonths;
+			if (monthsremaining-1 == 0)
+			{
+				ismonths = "";
+			}
+			if (monthsremaining-1 > 0)
+			{
+				ismonths = monthstominusone + " Month(s), ";
+			}
+		if (thismonthint == 1 || thismonthint == 3 || thismonthint == 5 || thismonthint == 7 || thismonthint == 8 || thismonthint == 10 ||thismonthint == 12)
+		{
+			QString daystoplusthirtyone;
+			daystoplusthirtyone.setNum(daysremaining+31);
+			showdeadline = ismonths + daystoplusthirtyone + " Day(s) ";
+		}
+		if (thismonthint == 2)
+		{
+			int daystoplusonefebruary;
+			daystoplusonefebruary = daysremaining + 28;
+			if (yearsremaining%4==0)
+			{
+				daystoplusonefebruary = daystoplusonefebruary + 1;
+			}
+			QString daysforfebruary;
+			daysforfebruary.setNum(daystoplusonefebruary);
+			showdeadline = ismonths + daysforfebruary + " Day(s) ";
+		}
+		if (thismonthint == 4 || thismonthint == 6 || thismonthint == 9 || thismonthint == 11)
+		{
+			int daystoplusthirty;
+			daystoplusthirty = daysremaining + 30;
+			QString daysforothers;
+			daysforothers.setNum(daystoplusthirty);
+			showdeadline = ismonths + daysforothers + " Day(s) ";
+		}
 
-	setWindowModified(textEdit->document()->isModified());
+		}
+	}
+	else if (yearsremaining > 0 && monthsremaining > 0)
+	{
+		if (daysremaining == 0)
+		{
+		showdeadline= monthsto + " Month(s)  ";			
+		}
+		if (daysremaining > 0)
+		{
+		showdeadline = monthsto + " Month(s), " + daysto + " Day(s) ";			
+		}
+		if (daysremaining<0)
+		{
+		QString isyears;
+		if (yearsremaining == 0)
+		{
+			isyears = "";
+		}
+		else
+		isyears = yearsto + " Year(s), ";
+		QString monthstominusone;
+		monthstominusone.setNum(monthsremaining-1);
+		QString ismonths;
+		if (monthsremaining-1 == 0)
+		{
+			ismonths = "";			
+		}
+		else
+		{
+			ismonths = monthstominusone + " Month(s), ";
+		}
+		if (thismonthint == 1 || thismonthint == 3 || thismonthint == 5 || thismonthint == 7 || thismonthint == 8 || thismonthint == 10 ||thismonthint == 12)
+		{
+			
+			QString daystoplusthirtyone;
+			daystoplusthirtyone.setNum(daysremaining+31);
+			showdeadline = isyears + ismonths + daystoplusthirtyone + " Day(s) ";
+		}
+		if (thismonthint == 2)
+		{
+			int daystoplusonefebruary;
+			daystoplusonefebruary = daysremaining + 28;
+			if (yearsremaining%4==0)
+			{
+				daystoplusonefebruary = daystoplusonefebruary + 1;
+			}
+			QString daysforfebruary;
+			daysforfebruary.setNum(daystoplusonefebruary);
+			showdeadline = isyears + ismonths + daysforfebruary + " Day(s) ";
+		}
+		if (thismonthint == 4 || thismonthint == 6 || thismonthint == 9 || thismonthint == 11)
+		{
+			int daystoplusthirty;
+			daystoplusthirty = daysremaining + 30;
+			QString daysforothers;
+			daysforothers.setNum(daystoplusthirty);
+			showdeadline = isyears  + ismonths + daysforothers + " Day(s) ";
+		}
+	}
+	}
+	else if (yearsremaining > 0 && monthsremaining == 0)
+	{
+		if (daysremaining == 0)
+		{
+			showdeadline = yearsto + " Year(s) ";
+		}
+		if (daysremaining > 0)
+		{
+			showdeadline = yearsto + " Year(s), " + daysto + " Day(s) "; 
+		}
+		if (daysremaining < 0)
+		{
+			QString isyears;
+			isyears.setNum(yearsremaining-1);
+			QString monthstopluseleven;
+			monthstopluseleven.setNum(monthsremaining+11);
+			if (yearsremaining-1 == 0)
+			{
+			isyears="";
+			}
+		QString ismonths = monthstopluseleven + " Month(s), ";
+		if (thismonthint == 1 || thismonthint == 3 || thismonthint == 5 || thismonthint == 7 || thismonthint == 8 || thismonthint == 10 ||thismonthint == 12)
+		{
+			
+			QString daystoplusthirtyone;
+			daystoplusthirtyone.setNum(daysremaining+31);
+			showdeadline = isyears + ismonths + daystoplusthirtyone + " Day(s) ";
+		}
+		if (thismonthint == 2)
+		{
+			int daystoplusonefebruary;
+			daystoplusonefebruary = daysremaining + 28;
+			if (thisyearint%4==0)
+			{
+				daystoplusonefebruary = daystoplusonefebruary + 1;
+			}
+			QString daysforfebruary;
+			daysforfebruary.setNum(daystoplusonefebruary);
+			showdeadline = isyears + ismonths + daysforfebruary + " Day(s) ";
+		}
+		if (thismonthint == 4 || thismonthint == 6 || thismonthint == 9 || thismonthint == 11)
+		{
+			int daystoplusthirty;
+			daystoplusthirty = daysremaining + 30;
+			QString daysforothers;
+			daysforothers.setNum(daystoplusthirty);
+			showdeadline = isyears  + ismonths + daysforothers + " Day(s) ";
+		}
+	}
+}
+	else if (yearsremaining > 0 && monthsremaining < 0)
+	{
+		QString yearstominusone;
+		yearstominusone.setNum(yearsremaining-1);
+		QString isyears = yearstominusone + " Year(s), ";
+		if (daysremaining==0)
+		{
+			QString monthstoplustwelve;
+			monthstoplustwelve.setNum(monthsremaining+12);
+			if (yearsremaining-1 == 0)
+			{
+				isyears="";
+			}
+			showdeadline= isyears + monthstoplustwelve + " Month(s) ";
+		}
+		if (daysremaining < 0)
+		{
+			QString monthstopluseleven;
+			monthstopluseleven.setNum(monthsremaining+11);
+			if (yearsremaining-1 == 0)
+			{
+			isyears="";
+			}
+		QString ismonths = monthstopluseleven + " Month(s), ";
+		if (thismonthint == 1 || thismonthint == 3 || thismonthint == 5 || thismonthint == 7 || thismonthint == 8 || thismonthint == 10 ||thismonthint == 12)
+		{
+			
+			QString daystoplusthirtyone;
+			daystoplusthirtyone.setNum(daysremaining+31);
+			showdeadline = isyears + ismonths + daystoplusthirtyone + " Day(s) ";
+		}
+		if (thismonthint == 2)
+		{
+			int daystoplusonefebruary;
+			daystoplusonefebruary = daysremaining + 28;
+			if (thisyearint%4==0)
+			{
+				daystoplusonefebruary = daystoplusonefebruary + 1;
+			}
+			QString daysforfebruary;
+			daysforfebruary.setNum(daystoplusonefebruary);
+			showdeadline = isyears + ismonths + daysforfebruary + " Day(s) ";
+		}
+		if (thismonthint == 4 || thismonthint == 6 || thismonthint == 9 || thismonthint == 11)
+		{
+			int daystoplusthirty;
+			daystoplusthirty = daysremaining + 30;
+			QString daysforothers;
+			daysforothers.setNum(daystoplusthirty);
+			showdeadline = isyears  + ismonths + daysforothers + " Day(s) ";
+		}
+		}
+		if (daysremaining > 0)
+		{
+		int yearstominusone = yearsremaining - 1;
+		QString monthstoplustwelve;
+		monthstoplustwelve.setNum(monthsremaining+12);
+		if (yearstominusone == 0)
+		{
+			showdeadline = monthstoplustwelve + " Month(s), " + daysto + " Day(s) ";
+		}
+		if (yearstominusone > 0)
+		{
+			showdeadline = yearstominusone + " Year(s), " + monthstoplustwelve + " Month(s), " + daysto +" Day(s) ";
+		}
+		}
+	}
+	QString remain;
+	if (showdeadline == "")
+		remain = "";
+		else
+			remain = "remaining to deadline.    ";
+	int percent;
+	QString percenttext;
+	QString statsLabelStr;
+	QString statsLabelToolTip;
+	QDateTime now = QDateTime::currentDateTime();
+	QString clock = now.toString("hh:mm");
 
 	const QString text( textEdit->document()->toPlainText() );
 
@@ -382,69 +714,27 @@ void TextRoom::setStatsLabelText(int position, int charsRemoved, int charsAdded)
 	QRegExp wordsRX("\\s+");
 	QStringList list = text.split(wordsRX,QString::SkipEmptyParts);
 	const int words = list.count();
-
-	//Compute paras
-	list = text.split("\n",QString::SkipEmptyParts);
-	const int paras = list.count();
-
-	//Compute sentences
-	QTextBlock block = textEdit->document()->findBlock ( position );
-
-	// 1. characters, 2. words, 3. paragraphs
-	
-	statsLabel->setText(tr(""
-						   "%1 / "
-						   ""
-						   "%2 / "
-						   ""
-						   "%3 / "
-						   ""
-						   "%4 ",
-						   "Statistics"
-						  ).arg( text.size() ).arg( words ).arg( paras ).arg( (float)text.size()/1800 )
-					   );
-	statsLabel->setToolTip(tr("characters / words / paragraphs / pages"));
-
-//	QTimer::singleShot( 3500, this, SLOT( getFileStatus() ) );
-}
-
-void TextRoom::cramStatsLabel()
-{
-	statsLabel->setText("Calculating...");
-	setStatsLabelText(0,0,0);
-}
-
-void TextRoom::dateTimeStatsLabel()
-{
-	QDateTime now = QDateTime::currentDateTime();
-	QString text = now.toString("ddd, d MMM yyyy, hh:mm");
-	statsLabel->setText( text );
-	statsLabel->setToolTip(tr("Current date and time"));
-	QTimer::singleShot( 3500, this, SLOT( getFileStatus() ) );
-
-}
-
-void TextRoom::getFileStatus()
-{
-	QString statsLabelStr;
-	QString statsLabelToolTip;
-	if (!textEdit->document()->isModified())
+	if (wordcount == 0)
 	{
-		statsLabelStr = tr("OK");
-		statsLabelToolTip = tr("Your file is saved.");
+		target = " words.   ";
 	}
-	else	
+	else if (words < wordcount || words > wordcount)
 	{
-		statsLabelStr = tr("CHANGED");
-		statsLabelToolTip = tr("Your file is not saved!");
+		float f = words*100/wordcount;
+		percent = (int)f;
+		percenttext = percenttext.setNum(percent);
+		target = " of " + wordcounttext + " words  (%" + percenttext + ")   ";
 	}
-	statsLabel->setText( statsLabelStr );
-	statsLabel->setToolTip( statsLabelToolTip );
+	statsLabel->setText(tr("%1").arg(words) + target + clock);
+	deadlineLabel->setText(showdeadline + remain);
 }
 
 void TextRoom::documentWasModified()
 {
 	setWindowModified(textEdit->document()->isModified());
+	
+	QString text = textEdit->document()->toPlainText();
+	parasnew = text.count("\n", Qt::CaseSensitive);
 
 	if (isAutoSave && numChanges++ > 3) {
 		numChanges = 0;	
@@ -455,10 +745,23 @@ void TextRoom::documentWasModified()
 		textEdit->undo();
 	} 
 
-
 	prevLength=textEdit->document()->toPlainText().size();
 
-	vPositionChanged();
+	QTextCursor cursor(textEdit->document());
+	cursor.movePosition(QTextCursor::Left, QTextCursor::KeepAnchor, 1);
+	QString selected = cursor.selectedText();
+	cursor.movePosition(QTextCursor::Right, QTextCursor::MoveAnchor, 1);
+	QString filenm;	
+
+	if (parasnew > parasold)
+	{ filenm = "/usr/local/share/textroom/keyenter.wav"; }
+	else
+	{ filenm = "/usr/local/share/textroom/keyany.wav"; }
+
+	parasold = parasnew;
+
+	playSound(filenm);
+	
 
 	getFileStatus();
 }
@@ -496,10 +799,11 @@ void TextRoom::readSettings()
 
 	QString color = settings.value("Colors/Foreground", "#d0a100" ).toString();
 	QString back = settings.value("Colors/Background", "black" ).toString();
+	QString statbg = settings.value("Colors/StatusBarBgColor", "#323232").toString();
 	QString status_c = settings.value("Colors/StatusColor", "#404040" ).toString();
 	QString scrollb_c = settings.value("Colors/ScrollBarColor", "#1E1E1E" ).toString();
 
-	loadStyleSheet(color, back, status_c, scrollb_c);
+	loadStyleSheet(color, back, statbg, status_c, scrollb_c);
 
 	// oxygen does weird stuff with the background
 	QApplication::setStyle("plastique");
@@ -521,6 +825,7 @@ void TextRoom::readSettings()
 	if (!(statsLabel->font() == font))
 	{
 		statsLabel->setFont( font );
+		deadlineLabel->setFont ( font) ;
 		//statsLabel->setProperty("class", "mainwindow QLabel");
 	}
 
@@ -532,12 +837,21 @@ void TextRoom::readSettings()
 	curDir = settings.value("RecentFiles/LastDir", curDir).toString();
 	lastSearch = settings.value("TextSearch/LastPhrase", lastSearch).toString();
 
+	QDateTime today = QDateTime::currentDateTime();
+	QString todaytext = today.toString("yyyyMMdd");
+
 	isAutoSave = settings.value("AutoSave", false).toBool();
 	isFlowMode = settings.value("FlowMode", false).toBool();
+	isSound = settings.value("Sound", true).toBool();
+	deadlinetext = settings.value("Deadline", todaytext).toString();
+	deadline = QDate::fromString(deadlinetext, "yyyyMMdd");
+	wordcount = settings.value("WordCount", 0).toInt();
+	wordcounttext = settings.value("WordCount", 0).toString();
+	editorWidth = settings.value("EditorWidth", 800).toInt();
+	
+	textEdit->setMaximumWidth(editorWidth);
 
-	horizontalSlider->setVisible( settings.value("EnableScrollBar", true).toBool() );
-	isScrollBarVisible = horizontalSlider->isVisible();
-	vPositionChanged();
+	indentFirstLines();	
 
 	if ( optOpenLastFile = settings.value("RecentFiles/OpenLastFile", true).toBool() )
 	{
@@ -545,8 +859,6 @@ void TextRoom::readSettings()
 		if ( isSaveCursor = settings.value("RecentFiles/SavePosition", true).toBool() )
 			cPosition = settings.value("RecentFiles/AtPosition", cPosition).toInt();
 	}
-
-
 }
 
 void TextRoom::writeSettings()
@@ -577,7 +889,6 @@ void TextRoom::writeSettings()
 		if ( isSaveCursor )
 			settings.setValue("RecentFiles/AtPosition", cPosition);
 	}
-
 }
 
 void TextRoom::options()
@@ -591,25 +902,30 @@ void TextRoom::help()
 	helpDialog->showNormal();
 }
 
-void TextRoom::loadStyleSheet(const QString &fcolor, const QString &bcolor, const QString &scolor, const QString &sbcolor)
+void TextRoom::loadStyleSheet(const QString &fcolor, const QString &bcolor, const QString &sbgcolor, const QString &scolor, const QString &sbcolor)
 {
 	QPalette palette;
 
 	palette.setColor(QPalette::Text, fcolor);
 	palette.setColor(QPalette::Base, bcolor);
 	textEdit->setPalette(palette);
-	horizontalSlider->setPalette(palette);
 
 	palette.setColor(QPalette::Window, bcolor);
 	TextRoom::setPalette(palette);
 
 	palette.setColor(QPalette::WindowText, scolor);
-	label->setPalette(palette);
-	statsLabel->setPalette(palette);
-	horizontalSlider->setPalette(palette);
 
-	palette.setColor(QPalette::Button, sbcolor);
-	horizontalSlider->setPalette(palette);
+	QPalette palette2;
+	palette2.setColor(QPalette::Background, sbgcolor);
+	palette2.setColor(QPalette::Text, scolor);
+	palette2.setColor(QPalette::WindowText, scolor);
+
+	label->setPalette(palette2);
+	statsLabel->setPalette(palette2);
+	deadlineLabel->setPalette(palette2);
+
+	palette2.setColor(QPalette::Button, sbcolor);
+
 }
 
 void TextRoom::find()
@@ -645,25 +961,10 @@ void TextRoom::sCursor()
 	textEdit->ensureCursorVisible();
 }
 
-void TextRoom::vPositionChanged()
-{
-	horizontalSlider->setMinimum(textEdit->verticalScrollBar()->minimum());
-	horizontalSlider->setMaximum(textEdit->verticalScrollBar()->maximum());
-	if ( isScrollBarVisible )
-		horizontalSlider->setVisible(textEdit->verticalScrollBar()->maximum());
-	horizontalSlider->setValue( textEdit->verticalScrollBar()->value());
-}
-
-void TextRoom::hSliderPositionChanged()
-{
-	textEdit->verticalScrollBar()->setValue( horizontalSlider->value() );
-}
-
 void TextRoom::resizeEvent(QResizeEvent *event)
 {
 	update();
 	sCursor();
-	vPositionChanged();
 	QWidget::resizeEvent(event);
 
 }

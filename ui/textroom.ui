@@ -5,7 +5,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
+    <width>640</width>
     <height>430</height>
    </rect>
   </property>
@@ -79,7 +79,19 @@
   <property name="autoFillBackground" >
    <bool>true</bool>
   </property>
+  <property name="locale" >
+   <locale country="UnitedStates" language="English" />
+  </property>
   <layout class="QVBoxLayout" >
+   <property name="spacing" >
+    <number>9</number>
+   </property>
+   <property name="leftMargin" >
+    <number>9</number>
+   </property>
+   <property name="topMargin" >
+    <number>9</number>
+   </property>
    <item>
     <layout class="QHBoxLayout" >
      <property name="spacing" >
@@ -93,7 +105,7 @@
        <property name="sizeType" >
         <enum>QSizePolicy::Minimum</enum>
        </property>
-       <property name="sizeHint" >
+       <property name="sizeHint" stdset="0" >
         <size>
          <width>150</width>
          <height>20</height>
@@ -103,6 +115,12 @@
      </item>
      <item>
       <widget class="QTextEdit" name="textEdit" >
+       <property name="sizePolicy" >
+        <sizepolicy vsizetype="Expanding" hsizetype="Expanding" >
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
        <property name="minimumSize" >
         <size>
          <width>320</width>
@@ -111,8 +129,14 @@
        </property>
        <property name="maximumSize" >
         <size>
-         <width>640</width>
+         <width>1000</width>
          <height>16777215</height>
+        </size>
+       </property>
+       <property name="sizeIncrement" >
+        <size>
+         <width>1</width>
+         <height>1</height>
         </size>
        </property>
        <property name="baseSize" >
@@ -186,13 +210,19 @@
         </palette>
        </property>
        <property name="font" >
-        <font/>
+        <font>
+         <family>Courier New</family>
+         <pointsize>12</pointsize>
+        </font>
        </property>
        <property name="contextMenuPolicy" >
         <enum>Qt::DefaultContextMenu</enum>
        </property>
        <property name="autoFillBackground" >
         <bool>true</bool>
+       </property>
+       <property name="locale" >
+        <locale country="UnitedStates" language="English" />
        </property>
        <property name="frameShape" >
         <enum>QFrame::NoFrame</enum>
@@ -210,7 +240,7 @@
         <enum>Qt::ScrollBarAlwaysOff</enum>
        </property>
        <property name="horizontalScrollBarPolicy" >
-        <enum>Qt::ScrollBarAsNeeded</enum>
+        <enum>Qt::ScrollBarAlwaysOff</enum>
        </property>
        <property name="autoFormatting" >
         <set>QTextEdit::AutoNone</set>
@@ -219,10 +249,11 @@
         <enum>QTextEdit::WidgetWidth</enum>
        </property>
        <property name="html" >
-        <string>&lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;style type="text/css">
+        <string>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+&lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;style type="text/css">
 p, li { white-space: pre-wrap; }
-&lt;/style>&lt;/head>&lt;body style=" font-family:'Tahoma'; font-size:10pt; font-weight:400; font-style:normal;">
-&lt;p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Monospace';">&lt;/p>&lt;/body>&lt;/html></string>
+&lt;/style>&lt;/head>&lt;body style=" font-family:'Courier New'; font-size:12pt; font-weight:400; font-style:normal;">
+&lt;p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Monospace'; font-size:10pt;">&lt;/p>&lt;/body>&lt;/html></string>
        </property>
        <property name="tabStopWidth" >
         <number>50</number>
@@ -230,8 +261,11 @@ p, li { white-space: pre-wrap; }
        <property name="acceptRichText" >
         <bool>false</bool>
        </property>
+       <property name="cursorWidth" >
+        <number>3</number>
+       </property>
        <property name="textInteractionFlags" >
-        <set>Qt::LinksAccessibleByMouse|Qt::NoTextInteraction|Qt::TextEditable|Qt::TextEditorInteraction|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
+        <set>Qt::LinksAccessibleByMouse|Qt::TextEditable|Qt::TextEditorInteraction|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
        </property>
       </widget>
      </item>
@@ -243,7 +277,7 @@ p, li { white-space: pre-wrap; }
        <property name="sizeType" >
         <enum>QSizePolicy::Minimum</enum>
        </property>
-       <property name="sizeHint" >
+       <property name="sizeHint" stdset="0" >
         <size>
          <width>150</width>
          <height>20</height>
@@ -255,6 +289,18 @@ p, li { white-space: pre-wrap; }
    </item>
    <item>
     <layout class="QHBoxLayout" >
+     <property name="spacing" >
+      <number>0</number>
+     </property>
+     <property name="sizeConstraint" >
+      <enum>QLayout::SetDefaultConstraint</enum>
+     </property>
+     <property name="leftMargin" >
+      <number>0</number>
+     </property>
+     <property name="topMargin" >
+      <number>0</number>
+     </property>
      <item>
       <widget class="QLabel" name="label" >
        <property name="palette" >
@@ -322,172 +368,34 @@ p, li { white-space: pre-wrap; }
         </palette>
        </property>
        <property name="font" >
-        <font/>
-       </property>
-       <property name="autoFillBackground" >
-        <bool>true</bool>
-       </property>
-       <property name="text" >
-        <string>untitled.txt</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <spacer>
-       <property name="orientation" >
-        <enum>Qt::Horizontal</enum>
-       </property>
-       <property name="sizeType" >
-        <enum>QSizePolicy::MinimumExpanding</enum>
-       </property>
-       <property name="sizeHint" >
-        <size>
-         <width>20</width>
-         <height>20</height>
-        </size>
-       </property>
-      </spacer>
-     </item>
-     <item>
-      <widget class="QScrollBar" name="horizontalSlider" >
-       <property name="sizePolicy" >
-        <sizepolicy vsizetype="Fixed" hsizetype="Expanding" >
-         <horstretch>224</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="minimumSize" >
-        <size>
-         <width>320</width>
-         <height>0</height>
-        </size>
-       </property>
-       <property name="maximumSize" >
-        <size>
-         <width>16777215</width>
-         <height>16777215</height>
-        </size>
-       </property>
-       <property name="palette" >
-        <palette>
-         <active>
-          <colorrole role="WindowText" >
-           <brush brushstyle="SolidPattern" >
-            <color alpha="255" >
-             <red>64</red>
-             <green>64</green>
-             <blue>64</blue>
-            </color>
-           </brush>
-          </colorrole>
-          <colorrole role="Button" >
-           <brush brushstyle="SolidPattern" >
-            <color alpha="255" >
-             <red>20</red>
-             <green>20</green>
-             <blue>20</blue>
-            </color>
-           </brush>
-          </colorrole>
-          <colorrole role="Base" >
-           <brush brushstyle="SolidPattern" >
-            <color alpha="255" >
-             <red>0</red>
-             <green>0</green>
-             <blue>0</blue>
-            </color>
-           </brush>
-          </colorrole>
-         </active>
-         <inactive>
-          <colorrole role="WindowText" >
-           <brush brushstyle="SolidPattern" >
-            <color alpha="255" >
-             <red>64</red>
-             <green>64</green>
-             <blue>64</blue>
-            </color>
-           </brush>
-          </colorrole>
-          <colorrole role="Button" >
-           <brush brushstyle="SolidPattern" >
-            <color alpha="255" >
-             <red>20</red>
-             <green>20</green>
-             <blue>20</blue>
-            </color>
-           </brush>
-          </colorrole>
-          <colorrole role="Base" >
-           <brush brushstyle="SolidPattern" >
-            <color alpha="255" >
-             <red>0</red>
-             <green>0</green>
-             <blue>0</blue>
-            </color>
-           </brush>
-          </colorrole>
-         </inactive>
-         <disabled>
-          <colorrole role="WindowText" >
-           <brush brushstyle="SolidPattern" >
-            <color alpha="255" >
-             <red>128</red>
-             <green>128</green>
-             <blue>128</blue>
-            </color>
-           </brush>
-          </colorrole>
-          <colorrole role="Button" >
-           <brush brushstyle="SolidPattern" >
-            <color alpha="255" >
-             <red>20</red>
-             <green>20</green>
-             <blue>20</blue>
-            </color>
-           </brush>
-          </colorrole>
-          <colorrole role="Base" >
-           <brush brushstyle="SolidPattern" >
-            <color alpha="255" >
-             <red>64</red>
-             <green>64</green>
-             <blue>64</blue>
-            </color>
-           </brush>
-          </colorrole>
-         </disabled>
-        </palette>
+        <font>
+         <family>Bookman Old Style</family>
+         <pointsize>8</pointsize>
+        </font>
        </property>
        <property name="autoFillBackground" >
         <bool>false</bool>
        </property>
-       <property name="maximum" >
-        <number>2</number>
+       <property name="text" >
+        <string>untitled.txt</string>
        </property>
-       <property name="singleStep" >
-        <number>20</number>
-       </property>
-       <property name="orientation" >
-        <enum>Qt::Horizontal</enum>
+       <property name="alignment" >
+        <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
        </property>
       </widget>
      </item>
      <item>
-      <spacer>
-       <property name="orientation" >
-        <enum>Qt::Horizontal</enum>
+      <widget class="QLabel" name="deadlineLabel" >
+       <property name="locale" >
+        <locale country="UnitedStates" language="English" />
        </property>
-       <property name="sizeType" >
-        <enum>QSizePolicy::MinimumExpanding</enum>
+       <property name="text" >
+        <string>TextLabel</string>
        </property>
-       <property name="sizeHint" >
-        <size>
-         <width>20</width>
-         <height>20</height>
-        </size>
+       <property name="alignment" >
+        <set>Qt::AlignBottom|Qt::AlignHCenter</set>
        </property>
-      </spacer>
+      </widget>
      </item>
      <item>
       <widget class="QLabel" name="statsLabel" >
@@ -556,7 +464,9 @@ p, li { white-space: pre-wrap; }
         </palette>
        </property>
        <property name="font" >
-        <font/>
+        <font>
+         <family>Bookman Old Style</family>
+        </font>
        </property>
        <property name="layoutDirection" >
         <enum>Qt::LeftToRight</enum>
@@ -565,7 +475,10 @@ p, li { white-space: pre-wrap; }
         <bool>true</bool>
        </property>
        <property name="text" >
-        <string>0 / 0 / 0 / 0</string>
+        <string/>
+       </property>
+       <property name="alignment" >
+        <set>Qt::AlignBottom|Qt::AlignRight|Qt::AlignTrailing</set>
        </property>
       </widget>
      </item>

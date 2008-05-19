@@ -1,5 +1,6 @@
 /****************************************************************************
 ** Copyright (C) 2008 Petar Toushkov <peter dot toushkov at gmail.com>
+** Copyright (C) 2008 Omer Bahri Gordebak <gordebak at gmail.com>
 **
 ** Additional help, code and insights by:
 ** adamvert - from http://ubuntuforums.org/
@@ -52,22 +53,20 @@ private slots:
 	void about();
 	void options();
 	void help();
+	void insertDate();
+	void insertTime();
 	void find();
+	void playSound(QString &filenm);
 	void find_next();
 	void find_previous();
 	void sCursor();
 	void togleFullScreen();
 	void togleEscape();
 	void indentFirstLines();
-	void setStatsLabelText(int position, int charsRemoved, int charsAdded);
 	void documentWasModified();	
-	void cramStatsLabel();
-	void dateTimeStatsLabel();
 	void getFileStatus();
 	void readSettings();
-	void vPositionChanged();
-	void hSliderPositionChanged();
-	void loadStyleSheet(const QString &fcolor, const QString &bcolor, const QString &scolor, const QString &sbcolor);
+	void loadStyleSheet(const QString &fcolor, const QString &bcolor, const QString &sbgcolor, const QString &scolor, const QString &sbcolor);
 
 private:
 	bool maybeSave();
@@ -85,18 +84,31 @@ private:
 	QString curFile;
 	QString curDir;
 	QString lastSearch;
+	QString text;
+	QString deadlinetext;
+	QDate deadline;
+	QDate today;
+	int wordcount;
+	QString wordcounttext;
 	int sentenceTally;
 	QFileSystemWatcher* fw;
 	bool optOpenLastFile;
 	bool isSaveCursor;
+	int editorWidth;
 	int numChanges;
 	int prevLength;
+	int parasold;
+	int parasnew;
 	int cPosition;
+	bool ind;
 	bool isAutoSave;
 	bool isFlowMode;
+	bool isSound;
+	bool isIndent;
 	bool isScrollBarVisible;
 
 protected:
+	void paintEvent(QPaintEvent *);
 	void closeEvent(QCloseEvent *event);
 	void resizeEvent(QResizeEvent *event);	
 };

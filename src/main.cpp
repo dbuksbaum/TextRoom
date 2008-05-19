@@ -1,5 +1,6 @@
 /****************************************************************************
 ** Copyright (C) 2008 Petar Toushkov <peter dot toushkov at gmail.com>
+** Copyright (C) 2008 Omer Bahri Gordebak <gordebak at gmail.com>
 **
 ** Additional help, code and insights by:
 ** adamvert - from http://ubuntuforums.org/
@@ -27,9 +28,10 @@
 #include <QApplication>
 #include <QSplashScreen>
 #include <QTimer>
+#include <QtGui>
  
 #include "textroom.h"
- 
+
 int main(int argc, char ** argv)
 {
 	QApplication app(argc, argv);
@@ -56,9 +58,12 @@ int main(int argc, char ** argv)
 			splash->showMessage("[Press F1 for help]", Qt::AlignBottom+Qt::AlignHCenter, Qt::white);
 		}
 	}
+
+
 	
 	TextRoom *win = new TextRoom(NULL);
 	win->show();
+
 	
 	if (splash)
 	{

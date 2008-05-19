@@ -1,5 +1,6 @@
 /****************************************************************************
 ** Copyright (C) 2008 Petar Toushkov <peter dot toushkov at gmail.com>
+** Copyright (C) 2008 Omer Bahri Gordebak <gordebak at gmail.com>
 **
 ** Additional help, code and insights by:
 ** adamvert - from http://ubuntuforums.org/
@@ -47,16 +48,19 @@ private slots:
 	void on_pbEditorColor_clicked();
 	void on_pbEditorBackColor_clicked();
 	void on_pbStatusBarColor_clicked();
-	void on_pbScrollBarColor_clicked();
+	void on_pbStatusBarBgColor_clicked();
+	//void on_pbScrollBarColor_clicked();
 	void showForegroundDialog();
 	void showBackgroundDialog();
 	void showStatusColorDialog();
-	void showScrollBarColorDialog();
-	void changeScrollBarColorControlsState();
+	void showStatusBarBgColorDialog();
+	//void showScrollBarColorDialog();
+	//void changeScrollBarColorControlsState();
 
 private:
 	QColor fgcolor;
 	QColor bgcolor;
+	QColor sbgcolor;
 	QColor scolor;
 	QColor sbcolor;
 
