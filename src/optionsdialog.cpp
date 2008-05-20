@@ -54,12 +54,19 @@ OptionsDialog::OptionsDialog(QWidget *parent)
 	connect(ui.editorFontComboBox, SIGNAL( activated(int) ), this, SLOT( activateApply() ) );
 	connect(ui.statusbarFontComboBox, SIGNAL( activated(int) ), this, SLOT( activateApply() ) );
 	connect(ui.calendarWidget, SIGNAL( selectionChanged() ), this, SLOT( activateApply() ) );
-	connect(ui.timeEdit, SIGNAL( timeChanged(const QTime &) ), this, SLOT( activateApply() ) );
+	connect(ui.pushButton, SIGNAL( clicked() ), this, SLOT( startAlarm() ) );
 }
 
 void OptionsDialog::activateApply()
 {
 	ui.pushButtonApply->setEnabled(true);
+}
+
+void OptionsDialog::startAlarm()
+{
+	alarm = ui.spinBox->value();
+	writSettings();
+	close();
 }
 
 void OptionsDialog::reaSettings()
@@ -107,12 +114,9 @@ void OptionsDialog::reaSettings()
 	QDate date;
 	QDate dateselected = date.fromString(datetext, "yyyyMMdd");
 	ui.calendarWidget->setSelectedDate(dateselected);
-	ui.editorWidthSpinBox->setValue( settings.value	("EditorWidth", 800).toInt());
-     QString timetext = settings.value("TimedWriting", "0:0").toString();
-	QTime time; 
-	QTime alarmtime = time.fromString(timetext, "H:m");
-	ui.timeEdit->setTime(alarmtime);
-	
+	ui.editorWidthSpinBox->setValue( settings.value	("EditorWidth", 800).toInt());    
+	int alarm = settings.value("TimedWriting", 0 ).toInt();
+
 	QPalette palette;
 
 	palette.setColor(ui.pbEditorColor->backgroundRole(),
@@ -162,8 +166,7 @@ void OptionsDialog::writSettings()
 	settings.setValue("WordCount", ui.wordCountSpinBox->value() );
 	settings.setValue("Deadline", ui.calendarWidget->selectedDate().toString("yyyyMMdd"));
 	settings.setValue("EditorWidth", ui.editorWidthSpinBox->value() );
-	settings.setValue("TimedWriting", ui.timeEdit->time().toString("H:m") );
-	settings.setValue("AlarmSet", QTime::currentTime().toString("H:m") );
+	settings.setValue("TimedWriting", alarm );
 
 	QFont font;
 	

@@ -783,7 +783,7 @@ p, li { white-space: pre-wrap; }
            <x>40</x>
            <y>180</y>
            <width>151</width>
-           <height>83</height>
+           <height>101</height>
           </rect>
          </property>
          <layout class="QVBoxLayout" name="verticalLayout_3" >
@@ -801,35 +801,20 @@ p, li { white-space: pre-wrap; }
           <item>
            <layout class="QHBoxLayout" name="horizontalLayout_10" >
             <item>
-             <widget class="QTimeEdit" name="timeEdit" >
-              <property name="currentSection" >
-               <enum>QDateTimeEdit::MinuteSection</enum>
-              </property>
-              <property name="displayFormat" >
-               <string>hh:mm</string>
+             <widget class="QSpinBox" name="spinBox" >
+              <property name="maximum" >
+               <number>30</number>
               </property>
              </widget>
             </item>
            </layout>
           </item>
           <item>
-           <layout class="QHBoxLayout" name="horizontalLayout_8" >
-            <item>
-             <widget class="QLabel" name="label_8" >
-              <property name="font" >
-               <font>
-                <italic>true</italic>
-               </font>
-              </property>
-              <property name="text" >
-               <string>To disable set to 0.</string>
-              </property>
-              <property name="alignment" >
-               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-              </property>
-             </widget>
-            </item>
-           </layout>
+           <widget class="QPushButton" name="pushButton" >
+            <property name="text" >
+             <string>Start</string>
+            </property>
+           </widget>
           </item>
          </layout>
         </widget>

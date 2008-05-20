@@ -53,13 +53,14 @@ private slots:
 	void showBackgroundDialog();
 	void showStatusColorDialog();
 	void showStatusBarBgColorDialog();
+	void startAlarm();
 
 private:
 	QColor fgcolor;
 	QColor bgcolor;
 	QColor scolor;
 	QColor sbcolor;
-	QString OnOff;
+	int alarm;
 
 private:
 

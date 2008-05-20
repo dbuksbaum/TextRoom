@@ -66,6 +66,7 @@ private slots:
 	void documentWasModified();	
 	void getFileStatus();
 	void readSettings();
+	void alarmTime();
 	void loadStyleSheet(const QString &fcolor, const QString &bcolor, const QString &scolor, const QString &sbcolor);
 
 private:
@@ -76,14 +77,7 @@ private:
 	QString strippedName(const QString &fullFileName);
 	void clearFormating(const QTextBlock& block);	
 	void writeSettings();
-	void endAlarm();
 
-	QString alarmSetText;
-	QTime alarmSetTime;
-	QString hourstext;
-	QString minutestext;
-	int hours;
-	int minutes;
 	HelpDialog *helpDialog;
 	OptionsDialog *optionsDialog;
 	SearchDialog *searchDialog;
@@ -98,14 +92,11 @@ private:
 	QString editDate;
 	int wordcount;
 	QString wordcounttext;
+	int alarm;
 	int sentenceTally;
 	QFileSystemWatcher* fw;
 	bool optOpenLastFile;
 	bool isSaveCursor;
-	QTime alarmTime;
-	QString alarmText;
-	QString setAlarm;
-	QString checkAlarm;
 	int editorWidth;
 	int numChanges;
 	int prevLength;

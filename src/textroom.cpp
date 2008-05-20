@@ -691,40 +691,6 @@ void TextRoom::getFileStatus()
 	QDateTime now = QDateTime::currentDateTime();
 	QString clock = now.toString("hh:mm");
 
-	//Alarm
-	if (hours !=0 || minutes != 0)
-	{
-		QString thisHourText = QTime::currentTime().toString("H");
-		int thisHour = thisHourText.toInt();
-		QString thisMinuteText = QTime::currentTime().toString("m");
-		int thisMinute = thisMinuteText.toInt();
-		QString alarmSetHourText = alarmSetTime.toString("H");
-		int alarmSetHour = alarmSetHourText.toInt();
-		QString alarmSetMinuteText = alarmSetTime.toString("m");
-		int alarmSetMinute = alarmSetMinuteText.toInt();
-		int checkAlarmHour = alarmSetHour+hours;
-		int checkAlarmMinute = alarmSetMinute+minutes;
-		if (checkAlarmMinute > 59)
-			{
-			checkAlarmMinute = checkAlarmMinute - 60;
-			checkAlarmHour = checkAlarmHour + 1;
-			}
-		if (checkAlarmHour > 23)
-			{
-			checkAlarmHour = checkAlarmHour - 24;
-			}
-		if (checkAlarmHour == thisHour && checkAlarmMinute == thisMinute)
-			{
-			QMessageBox::warning(this, qApp->applicationName(), tr("Time is out.\n"), QMessageBox::Ok);
-			setAlarm = "0:0";
-			writeSettings();
-			}
-	}
-	else
-	{
-		setAlarm = "0:0";
-	}
-
 	const QString text( textEdit->document()->toPlainText() );
 
 	//Compute words
@@ -782,6 +748,13 @@ void TextRoom::documentWasModified()
 	
 
 	getFileStatus();
+}
+
+void TextRoom::alarmTime()
+{
+QMessageBox::warning(this, qApp->applicationName(), tr("Time is out.\n"), QMessageBox::Ok);
+alarm = 0;
+writeSettings();
 }
 
 void TextRoom::readSettings()
@@ -865,17 +838,15 @@ void TextRoom::readSettings()
 	wordcount = settings.value("WordCount", 0).toInt();
 	wordcounttext = settings.value("WordCount", 0).toString();
 	editorWidth = settings.value("EditorWidth", 800).toInt();
-	alarmText = settings.value("TimedWriting", "0:0").toString();
-	alarmTime = QTime::fromString(alarmText, "H:m");
-	alarmSetText = settings.value("AlarmSet", "0:0").toString();
-	alarmSetTime = QTime::fromString(alarmSetText, "H:m");
+	alarm = settings.value("TimedWriting", 0).toInt();
 
-
-	hourstext = alarmTime.toString("H");
-	hours = hourstext.toInt();
-	minutestext = alarmTime.toString("m");
-	minutes = minutestext.toInt();	
-
+	if (alarm > 0)
+	{
+	QTimer *checkAlarm = new QTimer(this);
+	connect(checkAlarm, SIGNAL(timeout()), this, SLOT(alarmTime()));
+	checkAlarm->start(alarm*60000);
+	}
+	
 	textEdit->setMaximumWidth(editorWidth);
 
 	indentFirstLines();	
@@ -909,7 +880,7 @@ void TextRoom::writeSettings()
 	settings.setValue("RecentFiles/LastDir", curDir);
 	settings.setValue("TextSearch/LastPhrase", lastSearch);
 	settings.setValue("Deadline", editDate);
-	settings.setValue("TimedWriting", setAlarm);
+	settings.setValue("TimedWriting", alarm);
 
 	settings.setValue("RecentFiles/OpenLastFile", optOpenLastFile);
 	if ( optOpenLastFile )
