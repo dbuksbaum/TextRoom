@@ -76,7 +76,14 @@ private:
 	QString strippedName(const QString &fullFileName);
 	void clearFormating(const QTextBlock& block);	
 	void writeSettings();
+	void endAlarm();
 
+	QString alarmSetText;
+	QTime alarmSetTime;
+	QString hourstext;
+	QString minutestext;
+	int hours;
+	int minutes;
 	HelpDialog *helpDialog;
 	OptionsDialog *optionsDialog;
 	SearchDialog *searchDialog;
@@ -95,6 +102,10 @@ private:
 	QFileSystemWatcher* fw;
 	bool optOpenLastFile;
 	bool isSaveCursor;
+	QTime alarmTime;
+	QString alarmText;
+	QString setAlarm;
+	QString checkAlarm;
 	int editorWidth;
 	int numChanges;
 	int prevLength;

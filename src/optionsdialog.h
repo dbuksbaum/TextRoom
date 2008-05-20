@@ -59,6 +59,7 @@ private:
 	QColor bgcolor;
 	QColor scolor;
 	QColor sbcolor;
+	QString OnOff;
 
 private:
 

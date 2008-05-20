@@ -54,7 +54,7 @@ OptionsDialog::OptionsDialog(QWidget *parent)
 	connect(ui.editorFontComboBox, SIGNAL( activated(int) ), this, SLOT( activateApply() ) );
 	connect(ui.statusbarFontComboBox, SIGNAL( activated(int) ), this, SLOT( activateApply() ) );
 	connect(ui.calendarWidget, SIGNAL( selectionChanged() ), this, SLOT( activateApply() ) );
-
+	connect(ui.timeEdit, SIGNAL( timeChanged(const QTime &) ), this, SLOT( activateApply() ) );
 }
 
 void OptionsDialog::activateApply()
@@ -108,6 +108,10 @@ void OptionsDialog::reaSettings()
 	QDate dateselected = date.fromString(datetext, "yyyyMMdd");
 	ui.calendarWidget->setSelectedDate(dateselected);
 	ui.editorWidthSpinBox->setValue( settings.value	("EditorWidth", 800).toInt());
+     QString timetext = settings.value("TimedWriting", "0:0").toString();
+	QTime time; 
+	QTime alarmtime = time.fromString(timetext, "H:m");
+	ui.timeEdit->setTime(alarmtime);
 	
 	QPalette palette;
 
@@ -158,7 +162,9 @@ void OptionsDialog::writSettings()
 	settings.setValue("WordCount", ui.wordCountSpinBox->value() );
 	settings.setValue("Deadline", ui.calendarWidget->selectedDate().toString("yyyyMMdd"));
 	settings.setValue("EditorWidth", ui.editorWidthSpinBox->value() );
-	
+	settings.setValue("TimedWriting", ui.timeEdit->time().toString("H:m") );
+	settings.setValue("AlarmSet", QTime::currentTime().toString("H:m") );
+
 	QFont font;
 	
 	font = ui.editorFontComboBox->currentFont();

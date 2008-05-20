@@ -26,7 +26,6 @@
 ****************************************************************************/
 
 #include <QtGui> 
-#include <QPaintDevice>
 #include "textroom.h"
 #include "optionsdialog.h"
 #include "helpdialog.h"
@@ -69,18 +68,15 @@ TextRoom::TextRoom(QWidget *parent, Qt::WFlags f)
 	
 	// Service: show cursor
 	new QShortcut ( QKeySequence(tr("Shift+F4", "Show Cursor")) , this, SLOT( sCursor() ) );
-	
-	#ifdef Q_OS_WIN32
 
-		QSettings settings(QDir::homePath()+"/Application Data/"+qApp->applicationName()+".ini", QSettings::IniFormat);
-	#else
+#ifdef Q_OS_WIN32
+	QSettings settings(QDir::homePath()+"/Application Data/"+qApp->applicationName()+".ini", QSettings::IniFormat);
+#else
 
-		QSettings settings;
-	#endif
+	QSettings settings;
+#endif	
 
-	settings.setValue("README","Please read the help file"
-					  " by pressing F1, the help key, for"
-					  " instructions on how to modify this file.");
+
 	fw = new QFileSystemWatcher(this);
 	fw->addPath( settings.fileName() );
 
@@ -115,12 +111,10 @@ TextRoom::TextRoom(QWidget *parent, Qt::WFlags f)
 	}
 
 	writeSettings();
-	
-     QTimer *timer = new QTimer(this);
-     connect(timer, SIGNAL(timeout()), this, SLOT(getFileStatus()));
-     timer->start(1000);
 
-     getFileStatus();
+	QTimer *timer = new QTimer(this);
+	connect(timer, SIGNAL(timeout()), this, SLOT(getFileStatus()));
+	timer->start(1000);
 }
 
 void TextRoom::playSound(QString &filenm)
@@ -404,6 +398,7 @@ void TextRoom::indentFirstLines()
 
 void TextRoom::getFileStatus()
 {
+	//Deadline
 	QString showdeadline;
 	QString targetdate = deadline.toString("yyyyMMdd");
 	QString targetday = deadline.toString("dd");
@@ -695,7 +690,41 @@ void TextRoom::getFileStatus()
 	QString statsLabelToolTip;
 	QDateTime now = QDateTime::currentDateTime();
 	QString clock = now.toString("hh:mm");
-	
+
+	//Alarm
+	if (hours !=0 || minutes != 0)
+	{
+		QString thisHourText = QTime::currentTime().toString("H");
+		int thisHour = thisHourText.toInt();
+		QString thisMinuteText = QTime::currentTime().toString("m");
+		int thisMinute = thisMinuteText.toInt();
+		QString alarmSetHourText = alarmSetTime.toString("H");
+		int alarmSetHour = alarmSetHourText.toInt();
+		QString alarmSetMinuteText = alarmSetTime.toString("m");
+		int alarmSetMinute = alarmSetMinuteText.toInt();
+		int checkAlarmHour = alarmSetHour+hours;
+		int checkAlarmMinute = alarmSetMinute+minutes;
+		if (checkAlarmMinute > 59)
+			{
+			checkAlarmMinute = checkAlarmMinute - 60;
+			checkAlarmHour = checkAlarmHour + 1;
+			}
+		if (checkAlarmHour > 23)
+			{
+			checkAlarmHour = checkAlarmHour - 24;
+			}
+		if (checkAlarmHour == thisHour && checkAlarmMinute == thisMinute)
+			{
+			QMessageBox::warning(this, qApp->applicationName(), tr("Time is out.\n"), QMessageBox::Ok);
+			setAlarm = "0:0";
+			writeSettings();
+			}
+	}
+	else
+	{
+		setAlarm = "0:0";
+	}
+
 	const QString text( textEdit->document()->toPlainText() );
 
 	//Compute words
@@ -716,6 +745,7 @@ void TextRoom::getFileStatus()
 	deadlineLabel->setText(showdeadline + remain + clock);
 	statsLabel->setText(tr("%1").arg(words) + target);
 }
+
 
 void TextRoom::documentWasModified()
 {
@@ -835,8 +865,17 @@ void TextRoom::readSettings()
 	wordcount = settings.value("WordCount", 0).toInt();
 	wordcounttext = settings.value("WordCount", 0).toString();
 	editorWidth = settings.value("EditorWidth", 800).toInt();
-	
-	
+	alarmText = settings.value("TimedWriting", "0:0").toString();
+	alarmTime = QTime::fromString(alarmText, "H:m");
+	alarmSetText = settings.value("AlarmSet", "0:0").toString();
+	alarmSetTime = QTime::fromString(alarmSetText, "H:m");
+
+
+	hourstext = alarmTime.toString("H");
+	hours = hourstext.toInt();
+	minutestext = alarmTime.toString("m");
+	minutes = minutestext.toInt();	
+
 	textEdit->setMaximumWidth(editorWidth);
 
 	indentFirstLines();	
@@ -870,6 +909,7 @@ void TextRoom::writeSettings()
 	settings.setValue("RecentFiles/LastDir", curDir);
 	settings.setValue("TextSearch/LastPhrase", lastSearch);
 	settings.setValue("Deadline", editDate);
+	settings.setValue("TimedWriting", setAlarm);
 
 	settings.setValue("RecentFiles/OpenLastFile", optOpenLastFile);
 	if ( optOpenLastFile )
@@ -878,6 +918,10 @@ void TextRoom::writeSettings()
 		if ( isSaveCursor )
 			settings.setValue("RecentFiles/AtPosition", cPosition);
 	}
+
+	settings.setValue("README","Please read the help file"
+					  " by pressing F1, the help key, for"
+					  " instructions on how to modify this file.");
 }
 
 void TextRoom::options()
