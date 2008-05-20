@@ -405,6 +405,7 @@ void TextRoom::indentFirstLines()
 void TextRoom::getFileStatus()
 {
 	QString showdeadline;
+	QString targetdate = deadline.toString("yyyyMMdd");
 	QString targetday = deadline.toString("dd");
 	QString targetmonth = deadline.toString("MM");
 	QString targetyear = deadline.toString("yyyy");
@@ -431,24 +432,29 @@ void TextRoom::getFileStatus()
 	if (yearsremaining < 0)
 	{
 		showdeadline = "";
+		editDate = thisyear+thismonth+daytoday;
 	}
 	else if (yearsremaining == 0 && monthsremaining <0)
 	{
 		showdeadline="";
+		editDate = thisyear+thismonth+daytoday;
 	}
 	else if (yearsremaining == 0 && monthsremaining==0)
 	{
 		if (daysremaining<=0)
 		{
 		showdeadline="";
+		editDate = thisyear+thismonth+daytoday;
 		}
 		if (daysremaining>0)
 		{
 		showdeadline = daysto + " Day(s) ";
+		editDate = targetdate;
 		}
 	}
 	else if (yearsremaining == 0 && monthsremaining > 0)
 	{
+		editDate = targetdate;
 		if (daysremaining == 0)
 		{
 			showdeadline = monthsto + " Month(s) ";
@@ -501,6 +507,7 @@ void TextRoom::getFileStatus()
 	}
 	else if (yearsremaining > 0 && monthsremaining > 0)
 	{
+		editDate = targetdate;
 		if (daysremaining == 0)
 		{
 		showdeadline= monthsto + " Month(s)  ";			
@@ -560,6 +567,7 @@ void TextRoom::getFileStatus()
 	}
 	else if (yearsremaining > 0 && monthsremaining == 0)
 	{
+		editDate = targetdate;
 		if (daysremaining == 0)
 		{
 			showdeadline = yearsto + " Year(s) ";
@@ -610,6 +618,7 @@ void TextRoom::getFileStatus()
 }
 	else if (yearsremaining > 0 && monthsremaining < 0)
 	{
+		editDate = targetdate;
 		QString yearstominusone;
 		yearstominusone.setNum(yearsremaining-1);
 		QString isyears = yearstominusone + " Year(s), ";
@@ -686,7 +695,7 @@ void TextRoom::getFileStatus()
 	QString statsLabelToolTip;
 	QDateTime now = QDateTime::currentDateTime();
 	QString clock = now.toString("hh:mm");
-
+	
 	const QString text( textEdit->document()->toPlainText() );
 
 	//Compute words
@@ -704,8 +713,8 @@ void TextRoom::getFileStatus()
 		percenttext = percenttext.setNum(percent);
 		target = " of " + wordcounttext + " words  (%" + percenttext + ")   ";
 	}
-	statsLabel->setText(tr("%1").arg(words) + target + clock);
-	deadlineLabel->setText(showdeadline + remain);
+	deadlineLabel->setText(showdeadline + remain + clock);
+	statsLabel->setText(tr("%1").arg(words) + target);
 }
 
 void TextRoom::documentWasModified()
@@ -827,6 +836,7 @@ void TextRoom::readSettings()
 	wordcounttext = settings.value("WordCount", 0).toString();
 	editorWidth = settings.value("EditorWidth", 800).toInt();
 	
+	
 	textEdit->setMaximumWidth(editorWidth);
 
 	indentFirstLines();	
@@ -859,6 +869,7 @@ void TextRoom::writeSettings()
 	settings.setValue("RecentFiles/LastFile", curFile);
 	settings.setValue("RecentFiles/LastDir", curDir);
 	settings.setValue("TextSearch/LastPhrase", lastSearch);
+	settings.setValue("Deadline", editDate);
 
 	settings.setValue("RecentFiles/OpenLastFile", optOpenLastFile);
 	if ( optOpenLastFile )

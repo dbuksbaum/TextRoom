@@ -158,7 +158,6 @@ void OptionsDialog::writSettings()
 	settings.setValue("WordCount", ui.wordCountSpinBox->value() );
 	settings.setValue("Deadline", ui.calendarWidget->selectedDate().toString("yyyyMMdd"));
 	settings.setValue("EditorWidth", ui.editorWidthSpinBox->value() );
-
 	
 	QFont font;
 	

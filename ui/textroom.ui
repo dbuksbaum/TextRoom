@@ -5,8 +5,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>640</width>
-    <height>430</height>
+    <width>701</width>
+    <height>429</height>
    </rect>
   </property>
   <property name="palette" >
@@ -24,9 +24,9 @@
      <colorrole role="Window" >
       <brush brushstyle="SolidPattern" >
        <color alpha="255" >
-        <red>0</red>
-        <green>0</green>
-        <blue>0</blue>
+        <red>243</red>
+        <green>243</green>
+        <blue>243</blue>
        </color>
       </brush>
      </colorrole>
@@ -44,9 +44,9 @@
      <colorrole role="Window" >
       <brush brushstyle="SolidPattern" >
        <color alpha="255" >
-        <red>0</red>
-        <green>0</green>
-        <blue>0</blue>
+        <red>243</red>
+        <green>243</green>
+        <blue>243</blue>
        </color>
       </brush>
      </colorrole>
@@ -55,18 +55,18 @@
      <colorrole role="Base" >
       <brush brushstyle="SolidPattern" >
        <color alpha="255" >
-        <red>0</red>
-        <green>0</green>
-        <blue>0</blue>
+        <red>243</red>
+        <green>243</green>
+        <blue>243</blue>
        </color>
       </brush>
      </colorrole>
      <colorrole role="Window" >
       <brush brushstyle="SolidPattern" >
        <color alpha="255" >
-        <red>0</red>
-        <green>0</green>
-        <blue>0</blue>
+        <red>243</red>
+        <green>243</green>
+        <blue>243</blue>
        </color>
       </brush>
      </colorrole>
@@ -84,13 +84,16 @@
   </property>
   <layout class="QVBoxLayout" >
    <property name="spacing" >
-    <number>9</number>
+    <number>0</number>
    </property>
    <property name="leftMargin" >
     <number>9</number>
    </property>
    <property name="topMargin" >
     <number>9</number>
+   </property>
+   <property name="bottomMargin" >
+    <number>3</number>
    </property>
    <item>
     <layout class="QHBoxLayout" >
@@ -295,12 +298,45 @@ p, li { white-space: pre-wrap; }
      <property name="sizeConstraint" >
       <enum>QLayout::SetDefaultConstraint</enum>
      </property>
-     <property name="leftMargin" >
-      <number>0</number>
+     <property name="margin" >
+      <number>5</number>
      </property>
-     <property name="topMargin" >
-      <number>0</number>
-     </property>
+     <item>
+      <widget class="QLabel" name="statsLabel" >
+       <property name="font" >
+        <font>
+         <family>Serif</family>
+        </font>
+       </property>
+       <property name="autoFillBackground" >
+        <bool>true</bool>
+       </property>
+       <property name="styleSheet" >
+        <string notr="true" />
+       </property>
+       <property name="locale" >
+        <locale country="UnitedStates" language="English" />
+       </property>
+       <property name="frameShape" >
+        <enum>QFrame::Panel</enum>
+       </property>
+       <property name="frameShadow" >
+        <enum>QFrame::Plain</enum>
+       </property>
+       <property name="lineWidth" >
+        <number>0</number>
+       </property>
+       <property name="text" >
+        <string/>
+       </property>
+       <property name="alignment" >
+        <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+       </property>
+       <property name="margin" >
+        <number>10</number>
+       </property>
+      </widget>
+     </item>
      <item>
       <widget class="QLabel" name="label" >
        <property name="palette" >
@@ -324,6 +360,15 @@ p, li { white-space: pre-wrap; }
             </color>
            </brush>
           </colorrole>
+          <colorrole role="Window" >
+           <brush brushstyle="SolidPattern" >
+            <color alpha="255" >
+             <red>232</red>
+             <green>232</green>
+             <blue>232</blue>
+            </color>
+           </brush>
+          </colorrole>
          </active>
          <inactive>
           <colorrole role="WindowText" >
@@ -341,6 +386,15 @@ p, li { white-space: pre-wrap; }
              <red>0</red>
              <green>0</green>
              <blue>0</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="Window" >
+           <brush brushstyle="SolidPattern" >
+            <color alpha="255" >
+             <red>232</red>
+             <green>232</green>
+             <blue>232</blue>
             </color>
            </brush>
           </colorrole>
@@ -364,41 +418,48 @@ p, li { white-space: pre-wrap; }
             </color>
            </brush>
           </colorrole>
+          <colorrole role="Window" >
+           <brush brushstyle="SolidPattern" >
+            <color alpha="255" >
+             <red>232</red>
+             <green>232</green>
+             <blue>232</blue>
+            </color>
+           </brush>
+          </colorrole>
          </disabled>
         </palette>
        </property>
        <property name="font" >
         <font>
-         <family>Bookman Old Style</family>
-         <pointsize>8</pointsize>
+         <family>Serif</family>
         </font>
        </property>
        <property name="autoFillBackground" >
-        <bool>false</bool>
+        <bool>true</bool>
+       </property>
+       <property name="styleSheet" >
+        <string notr="true" />
+       </property>
+       <property name="frameShape" >
+        <enum>QFrame::Panel</enum>
+       </property>
+       <property name="lineWidth" >
+        <number>0</number>
        </property>
        <property name="text" >
-        <string>untitled.txt</string>
+        <string>Untitled.txt</string>
        </property>
        <property name="alignment" >
-        <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+        <set>Qt::AlignBottom|Qt::AlignHCenter</set>
+       </property>
+       <property name="margin" >
+        <number>10</number>
        </property>
       </widget>
      </item>
      <item>
       <widget class="QLabel" name="deadlineLabel" >
-       <property name="locale" >
-        <locale country="UnitedStates" language="English" />
-       </property>
-       <property name="text" >
-        <string>TextLabel</string>
-       </property>
-       <property name="alignment" >
-        <set>Qt::AlignBottom|Qt::AlignHCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QLabel" name="statsLabel" >
        <property name="palette" >
         <palette>
          <active>
@@ -420,6 +481,15 @@ p, li { white-space: pre-wrap; }
             </color>
            </brush>
           </colorrole>
+          <colorrole role="Window" >
+           <brush brushstyle="SolidPattern" >
+            <color alpha="255" >
+             <red>232</red>
+             <green>232</green>
+             <blue>232</blue>
+            </color>
+           </brush>
+          </colorrole>
          </active>
          <inactive>
           <colorrole role="WindowText" >
@@ -437,6 +507,15 @@ p, li { white-space: pre-wrap; }
              <red>0</red>
              <green>0</green>
              <blue>0</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="Window" >
+           <brush brushstyle="SolidPattern" >
+            <color alpha="255" >
+             <red>232</red>
+             <green>232</green>
+             <blue>232</blue>
             </color>
            </brush>
           </colorrole>
@@ -460,12 +539,21 @@ p, li { white-space: pre-wrap; }
             </color>
            </brush>
           </colorrole>
+          <colorrole role="Window" >
+           <brush brushstyle="SolidPattern" >
+            <color alpha="255" >
+             <red>232</red>
+             <green>232</green>
+             <blue>232</blue>
+            </color>
+           </brush>
+          </colorrole>
          </disabled>
         </palette>
        </property>
        <property name="font" >
         <font>
-         <family>Bookman Old Style</family>
+         <family>Serif</family>
         </font>
        </property>
        <property name="layoutDirection" >
@@ -474,11 +562,23 @@ p, li { white-space: pre-wrap; }
        <property name="autoFillBackground" >
         <bool>true</bool>
        </property>
+       <property name="styleSheet" >
+        <string notr="true" />
+       </property>
+       <property name="frameShape" >
+        <enum>QFrame::Panel</enum>
+       </property>
+       <property name="lineWidth" >
+        <number>0</number>
+       </property>
        <property name="text" >
         <string/>
        </property>
        <property name="alignment" >
         <set>Qt::AlignBottom|Qt::AlignRight|Qt::AlignTrailing</set>
+       </property>
+       <property name="margin" >
+        <number>10</number>
        </property>
       </widget>
      </item>
@@ -486,6 +586,8 @@ p, li { white-space: pre-wrap; }
    </item>
   </layout>
  </widget>
- <resources/>
+ <resources>
+  <include location="../resource/textroom.qrc" />
+ </resources>
  <connections/>
 </ui>

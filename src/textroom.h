@@ -88,6 +88,7 @@ private:
 	QString deadlinetext;
 	QDate deadline;
 	QDate today;
+	QString editDate;
 	int wordcount;
 	QString wordcounttext;
 	int sentenceTally;

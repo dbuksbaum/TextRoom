@@ -551,13 +551,13 @@
          </rect>
         </property>
         <attribute name="title" >
-         <string>Other settings</string>
+         <string>Options</string>
         </attribute>
         <widget class="QWidget" name="layoutWidget" >
          <property name="geometry" >
           <rect>
            <x>20</x>
-           <y>50</y>
+           <y>20</y>
            <width>201</width>
            <height>251</height>
           </rect>
@@ -655,12 +655,25 @@ p, li { white-space: pre-wrap; }
           </item>
          </layout>
         </widget>
+       </widget>
+       <widget class="QWidget" name="tab_3" >
+        <property name="geometry" >
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>553</width>
+          <height>368</height>
+         </rect>
+        </property>
+        <attribute name="title" >
+         <string>Targets</string>
+        </attribute>
         <widget class="QWidget" name="verticalLayoutWidget" >
          <property name="geometry" >
           <rect>
-           <x>250</x>
-           <y>10</y>
-           <width>281</width>
+           <x>40</x>
+           <y>40</y>
+           <width>151</width>
            <height>84</height>
           </rect>
          </property>
@@ -714,8 +727,8 @@ p, li { white-space: pre-wrap; }
         <widget class="QWidget" name="verticalLayoutWidget_2" >
          <property name="geometry" >
           <rect>
-           <x>250</x>
-           <y>100</y>
+           <x>240</x>
+           <y>40</y>
            <width>281</width>
            <height>251</height>
           </rect>
