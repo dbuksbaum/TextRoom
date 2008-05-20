@@ -64,7 +64,7 @@ void OptionsDialog::activateApply()
 
 void OptionsDialog::startAlarm()
 {
-	alarm = ui.spinBox->value();
+	setAlarm = ui.spinBox->value();
 	writSettings();
 	close();
 }
@@ -115,7 +115,7 @@ void OptionsDialog::reaSettings()
 	QDate dateselected = date.fromString(datetext, "yyyyMMdd");
 	ui.calendarWidget->setSelectedDate(dateselected);
 	ui.editorWidthSpinBox->setValue( settings.value	("EditorWidth", 800).toInt());    
-	int alarm = settings.value("TimedWriting", 0 ).toInt();
+	ui.spinBox->setValue( settings.value("TimedWriting", 0 ).toInt());
 
 	QPalette palette;
 
@@ -166,7 +166,7 @@ void OptionsDialog::writSettings()
 	settings.setValue("WordCount", ui.wordCountSpinBox->value() );
 	settings.setValue("Deadline", ui.calendarWidget->selectedDate().toString("yyyyMMdd"));
 	settings.setValue("EditorWidth", ui.editorWidthSpinBox->value() );
-	settings.setValue("TimedWriting", alarm );
+	settings.setValue("TimedWriting", setAlarm );
 
 	QFont font;
 	

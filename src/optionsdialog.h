@@ -60,7 +60,7 @@ private:
 	QColor bgcolor;
 	QColor scolor;
 	QColor sbcolor;
-	int alarm;
+	int setAlarm;
 
 private:
 

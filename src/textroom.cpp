@@ -840,13 +840,14 @@ void TextRoom::readSettings()
 	editorWidth = settings.value("EditorWidth", 800).toInt();
 	alarm = settings.value("TimedWriting", 0).toInt();
 
-	if (alarm > 0)
-	{
 	QTimer *checkAlarm = new QTimer(this);
 	connect(checkAlarm, SIGNAL(timeout()), this, SLOT(alarmTime()));
+	checkAlarm->setSingleShot(true);
+	if (alarm > 0)
+	{
 	checkAlarm->start(alarm*60000);
 	}
-	
+
 	textEdit->setMaximumWidth(editorWidth);
 
 	indentFirstLines();	
