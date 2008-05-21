@@ -839,6 +839,7 @@ void TextRoom::readSettings()
 	wordcount = settings.value("WordCount", 0).toInt();
 	wordcounttext = settings.value("WordCount", 0).toString();
 	editorWidth = settings.value("EditorWidth", 800).toInt();
+	editorHeight = settings.value("EditorHeight", 800).toInt();
 	alarm = settings.value("TimedWriting", 0).toInt();
 
 	QTimer *checkAlarm = new QTimer(this);
@@ -850,6 +851,7 @@ void TextRoom::readSettings()
 	}
 
 	textEdit->setMaximumWidth(editorWidth);
+	textEdit->setMinimumHeight(editorHeight);
 
 	indentFirstLines();	
 

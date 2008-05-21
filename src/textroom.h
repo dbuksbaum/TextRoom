@@ -98,6 +98,7 @@ private:
 	bool optOpenLastFile;
 	bool isSaveCursor;
 	int editorWidth;
+	int editorHeight;
 	int numChanges;
 	int prevLength;
 	int parasold;

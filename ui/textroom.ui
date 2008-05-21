@@ -6,7 +6,7 @@
     <x>0</x>
     <y>0</y>
     <width>701</width>
-    <height>429</height>
+    <height>461</height>
    </rect>
   </property>
   <property name="palette" >
@@ -96,6 +96,19 @@
     <number>3</number>
    </property>
    <item>
+    <spacer name="verticalSpacer" >
+     <property name="orientation" >
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0" >
+      <size>
+       <width>20</width>
+       <height>0</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
     <layout class="QHBoxLayout" >
      <property name="spacing" >
       <number>0</number>
@@ -127,13 +140,13 @@
        <property name="minimumSize" >
         <size>
          <width>320</width>
-         <height>0</height>
+         <height>360</height>
         </size>
        </property>
        <property name="maximumSize" >
         <size>
          <width>1000</width>
-         <height>16777215</height>
+         <height>1000</height>
         </size>
        </property>
        <property name="sizeIncrement" >
