@@ -755,6 +755,7 @@ void TextRoom::alarmTime()
 QMessageBox::warning(this, qApp->applicationName(), tr("Time is out.\n"), QMessageBox::Ok);
 alarm = 0;
 writeSettings();
+readSettings();
 }
 
 void TextRoom::readSettings()
