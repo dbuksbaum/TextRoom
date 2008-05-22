@@ -1,3 +1,49 @@
+ver.0.2.8x - 2008-05-22
+
+    * Artwork by Donny Lim
+
+
+ver.0.2.6 - realtime - 2008-05-19
+
+    * Added Editor Width option. 
+
+
+ver.0.2.5beta4 - realtime - 2008-05-19
+
+    * Added Deadline feature.
+    * Fixed some bugs.
+    * Removed scrollbar. 
+
+
+ver.0.2.5beta1 - realtime - 2008-05-18
+
+    * Added Target Word Count feature. 
+
+
+ver.0.2.4beta5 - realtime - 2008-05-17
+
+    * Added typing sounds. 
+
+
+ver.0.2.4beta4 - realtime - 2008-05-16
+
+    * Changed clock to real time clock. (It was updating when document was modified before) 
+
+
+ver.0.2.4beta3 - realtime - 2008-05-16
+
+    * Added Statusbar Color option
+    * Changed the maximum Text View Size
+    * Changed Indent First Lines option to Toggle Indent First Lines (Ctrl-T)
+    * Fixed a minor bug 
+
+
+ver.0.2.4beta2 - realtime - 2008-05-15
+
+    * Added Live Word Count and Clock on Statusbar
+    * Added Statusbar background 
+
+
 ver.0.2.4beta1 - 2008-02-24
 
 * Added Progress slider option

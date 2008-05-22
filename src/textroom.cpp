@@ -193,10 +193,11 @@ void TextRoom::closeEvent(QCloseEvent *event)
 void TextRoom::about() 
 {
 	QMessageBox::about(this,"About TextRoom",
-				"TextRoom Editor ver. 0.2.5\n\n"
+				"TextRoom Editor ver. 0.2.8x svn\n\n"
 		"Project home page: http://code.google.com/p/textroom/\n\n"
-		"Code, help and insights (in alphabetical order) by:\n"
+		"Code, artwork, help and insights (in alphabetical order) by:\n"
 		"Adamvert (from ubuntuforums.org),\n"
+		"Donny Lim,\n"
 		"Magnus Edvardsson (a.k.a. zebulon M),\n"
 		"Omer Bahri Gordebak,\n"
 		"Peter Toushkov\n\n"

@@ -1,8 +1,12 @@
 TextRoom v0.2.4 beta
 http://code.google.com/p/textroom/
 
-(c)by Petar Toushkov 2008 <peter dot toushkov at gmail.com>
-released under terms of GNU General Public License v2
+
+(c) by Omer Bahri Gordebak 2008 <gordebak at gmail dot c om>
+released under terms of GNU General Public License v3
+
+(c) by Petar Toushkov 2008 <peter dot toushkov at gmai l dot com>
+released under terms of GNU General Public License v3
 
 Parts of this program's code are from the Phrasis project:
 
@@ -12,8 +16,9 @@ and are
 
 Copyright (C) 2006 Jacob R Rideout <jacob@jacobrideout.net>
 
-Additional help, code and insights by:
+Code, artwork, help and insights by:
 adamvert - from http://ubuntuforums.org/
+Donny Lim - <donnylucky at g mail dot com>
 Magnus Edvardsson (a.k.a. zebulon M) - from http://ubuntuforums.org/
 
 
