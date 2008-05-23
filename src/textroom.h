@@ -37,6 +37,7 @@ class QFileSystemWatcher;
 class OptionsDialog;
 class HelpDialog;
 class SearchDialog;
+//class ProjectManager;
 
 class TextRoom : public QWidget, public Ui::TextRoomMain
 {
@@ -52,6 +53,7 @@ private slots:
 	bool saveAs();
 	void about();
 	void options();
+	//void projects();
 	void help();
 	void insertDate();
 	void insertTime();
@@ -81,6 +83,7 @@ private:
 	HelpDialog *helpDialog;
 	OptionsDialog *optionsDialog;
 	SearchDialog *searchDialog;
+	ProjectManager *projectManager;
 	Ui::TextRoomMain ui;
 	QString curFile;
 	QString curDir;
