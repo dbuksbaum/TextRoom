@@ -83,8 +83,8 @@ Shift+F3 - Find previous
 
 Ctrl+D - Insert Date
 Ctrl+T - Insert Time
-F4 - Options
-F2 - Project Manager</string>
+Ctrl+U - Options
+Ctrl+P - Project Manager</string>
    </property>
    <property name="wordWrap" >
     <bool>true</bool>
