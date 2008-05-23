@@ -30,7 +30,7 @@
 #include "optionsdialog.h"
 #include "helpdialog.h"
 #include "searchdialog.h"
-#include "projectmanager.h"
+//#include "projectmanager.h"
  
 	
 TextRoom::TextRoom(QWidget *parent, Qt::WFlags f)
@@ -49,14 +49,14 @@ TextRoom::TextRoom(QWidget *parent, Qt::WFlags f)
 
 	optionsDialog = new OptionsDialog(this);
 	helpDialog = new HelpDialog(this);
-	projectManager = new ProjectManager(this); 
+	//projectManager = new ProjectManager(this); 
 
 	new QShortcut ( QKeySequence(QKeySequence::New), this, SLOT( newFile() ) );
 	new QShortcut ( QKeySequence(QKeySequence::Open), this, SLOT( open() ) );
 	new QShortcut ( QKeySequence(QKeySequence::Save), this, SLOT( save() ) );
 	new QShortcut ( QKeySequence(QKeySequence::HelpContents), this, SLOT( help() ) );
-	new QShortcut ( QKeySequence(tr("F4", "Options")), this, SLOT( options() ) );
-	new QShortcut ( QKeySequence(tr("F2", "Project Manager")), this, SLOT( projects() ) );
+	new QShortcut ( QKeySequence(tr("CtrlU", "Options")), this, SLOT( options() ) );
+	//new QShortcut ( QKeySequence(tr("CtrlP", "Project Manager")), this, SLOT( projects() ) );
 	new QShortcut ( QKeySequence(tr("Ctrl+Shift+S", "Save As")), this, SLOT( saveAs() ) );
 	new QShortcut ( QKeySequence(tr("Ctrl+D", "Insert Date")), this, SLOT( insertDate() ) );
 	new QShortcut ( QKeySequence(tr("Ctrl+T", "Insert Time")), this, SLOT( insertTime() ) );	
@@ -908,11 +908,12 @@ void TextRoom::options()
 	optionsDialog->showNormal();
 }
 
+/*
 void TextRoom::projects()
 {
 	projectManager->showNormal();
 }
-
+*/
 void TextRoom::help()
 {
 	helpDialog->showNormal();
