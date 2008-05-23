@@ -55,7 +55,7 @@ TextRoom::TextRoom(QWidget *parent, Qt::WFlags f)
 	new QShortcut ( QKeySequence(QKeySequence::Open), this, SLOT( open() ) );
 	new QShortcut ( QKeySequence(QKeySequence::Save), this, SLOT( save() ) );
 	new QShortcut ( QKeySequence(QKeySequence::HelpContents), this, SLOT( help() ) );
-	new QShortcut ( QKeySequence(tr("CtrlU", "Options")), this, SLOT( options() ) );
+	new QShortcut ( QKeySequence(tr("Ctrl+U", "Options")), this, SLOT( options() ) );
 	//new QShortcut ( QKeySequence(tr("CtrlP", "Project Manager")), this, SLOT( projects() ) );
 	new QShortcut ( QKeySequence(tr("Ctrl+Shift+S", "Save As")), this, SLOT( saveAs() ) );
 	new QShortcut ( QKeySequence(tr("Ctrl+D", "Insert Date")), this, SLOT( insertDate() ) );
