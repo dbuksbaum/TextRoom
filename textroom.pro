@@ -8,7 +8,7 @@ MOC_DIR += build
 UI_DIR += build
 RCC_DIR += build
 HEADERS += src/helpdialog.h src/optionsdialog.h src/textroom.h src/searchdialog.h
-FORMS += ui/optionsdialog.ui ui/textroom.ui
+FORMS += ui/optionsdialog.ui ui/textroom.ui ui/helpdialog.ui
 SOURCES += src/helpdialog.cpp \
  src/main.cpp \
  src/optionsdialog.cpp \
