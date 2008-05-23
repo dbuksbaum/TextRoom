@@ -756,10 +756,14 @@ void TextRoom::documentWasModified()
 
 void TextRoom::alarmTime()
 {
-alarm = 0;
-writeSettings();
-QMessageBox::warning(this, qApp->applicationName(), tr("Time is out.\n"), QMessageBox::Ok);
+	if (alarm > 0)
+	{
+		alarm = 0;
+		writeSettings();
+		QMessageBox::warning(this, qApp->applicationName(), tr("Time is out.\n"), QMessageBox::Ok);
+	}
 }
+
 
 void TextRoom::readSettings()
 {
