@@ -30,7 +30,6 @@
 #include "optionsdialog.h"
 #include "helpdialog.h"
 #include "searchdialog.h"
-#include "projectmanager.h"
  
 	
 TextRoom::TextRoom(QWidget *parent, Qt::WFlags f)
@@ -49,7 +48,6 @@ TextRoom::TextRoom(QWidget *parent, Qt::WFlags f)
 
 	optionsDialog = new OptionsDialog(this);
 	helpDialog = new HelpDialog(this);
-	projectManager = new ProjectManager(this); 
 
 	new QShortcut ( QKeySequence(QKeySequence::New), this, SLOT( newFile() ) );
 	new QShortcut ( QKeySequence(QKeySequence::Open), this, SLOT( open() ) );
