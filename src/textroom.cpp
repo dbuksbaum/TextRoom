@@ -184,7 +184,7 @@ void TextRoom::closeEvent(QCloseEvent *event)
 			c = textEdit->textCursor();
 			cPosition = c.position();
 		}
-
+		alarm = 0;
 		writeSettings();
 		event->accept();
 	}
