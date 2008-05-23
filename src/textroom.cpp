@@ -184,6 +184,7 @@ void TextRoom::closeEvent(QCloseEvent *event)
 			c = textEdit->textCursor();
 			cPosition = c.position();
 		}
+		wordcount = 0;
 		alarm = 0;
 		writeSettings();
 		event->accept();
@@ -892,6 +893,7 @@ void TextRoom::writeSettings()
 	settings.setValue("TextSearch/LastPhrase", lastSearch);
 	settings.setValue("Deadline", editDate);
 	settings.setValue("TimedWriting", alarm);
+	settings.setValue("WordCount", wordcount);
 
 	settings.setValue("RecentFiles/OpenLastFile", optOpenLastFile);
 	if ( optOpenLastFile )
