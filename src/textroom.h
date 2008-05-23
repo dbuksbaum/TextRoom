@@ -83,7 +83,7 @@ private:
 	HelpDialog *helpDialog;
 	OptionsDialog *optionsDialog;
 	SearchDialog *searchDialog;
-	ProjectManager *projectManager;
+	//ProjectManager *projectManager;
 	Ui::TextRoomMain ui;
 	QString curFile;
 	QString curDir;
