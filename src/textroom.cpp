@@ -30,6 +30,7 @@
 #include "optionsdialog.h"
 #include "helpdialog.h"
 #include "searchdialog.h"
+#include "projectmanager.h"
  
 	
 TextRoom::TextRoom(QWidget *parent, Qt::WFlags f)
@@ -42,17 +43,20 @@ TextRoom::TextRoom(QWidget *parent, Qt::WFlags f)
 	prevLength = 0;
 	parasold = 0;
 	wordcount = 0;
+	alarm = 0;
 
 	readSettings();
 
 	optionsDialog = new OptionsDialog(this);
 	helpDialog = new HelpDialog(this);
+	projectManager = new ProjectManager(this); 
 
 	new QShortcut ( QKeySequence(QKeySequence::New), this, SLOT( newFile() ) );
 	new QShortcut ( QKeySequence(QKeySequence::Open), this, SLOT( open() ) );
 	new QShortcut ( QKeySequence(QKeySequence::Save), this, SLOT( save() ) );
 	new QShortcut ( QKeySequence(QKeySequence::HelpContents), this, SLOT( help() ) );
-	new QShortcut ( QKeySequence(QKeySequence::Underline), this, SLOT( options() ) );
+	new QShortcut ( QKeySequence(tr("F4", "Options")), this, SLOT( options() ) );
+	new QShortcut ( QKeySequence(tr("F2", "Project Manager")), this, SLOT( projects() ) );
 	new QShortcut ( QKeySequence(tr("Ctrl+Shift+S", "Save As")), this, SLOT( saveAs() ) );
 	new QShortcut ( QKeySequence(tr("Ctrl+D", "Insert Date")), this, SLOT( insertDate() ) );
 	new QShortcut ( QKeySequence(tr("Ctrl+T", "Insert Time")), this, SLOT( insertTime() ) );	
@@ -752,10 +756,9 @@ void TextRoom::documentWasModified()
 
 void TextRoom::alarmTime()
 {
-QMessageBox::warning(this, qApp->applicationName(), tr("Time is out.\n"), QMessageBox::Ok);
 alarm = 0;
 writeSettings();
-readSettings();
+QMessageBox::warning(this, qApp->applicationName(), tr("Time is out.\n"), QMessageBox::Ok);
 }
 
 void TextRoom::readSettings()
@@ -839,19 +842,19 @@ void TextRoom::readSettings()
 	wordcount = settings.value("WordCount", 0).toInt();
 	wordcounttext = settings.value("WordCount", 0).toString();
 	editorWidth = settings.value("EditorWidth", 800).toInt();
-	editorHeight = settings.value("EditorHeight", 800).toInt();
+	editorHeight = settings.value("EditorHeight", 700).toInt();
 	alarm = settings.value("TimedWriting", 0).toInt();
 
+	if (alarm > 0)
+	{
 	QTimer *checkAlarm = new QTimer(this);
 	connect(checkAlarm, SIGNAL(timeout()), this, SLOT(alarmTime()));
 	checkAlarm->setSingleShot(true);
-	if (alarm > 0)
-	{
 	checkAlarm->start(alarm*60000);
 	}
-
-	textEdit->setMaximumWidth(editorWidth);
+	
 	textEdit->setMinimumHeight(editorHeight);
+	textEdit->setMaximumWidth(editorWidth);
 
 	indentFirstLines();	
 
@@ -903,6 +906,11 @@ void TextRoom::options()
 {
 	writeSettings();
 	optionsDialog->showNormal();
+}
+
+void TextRoom::projects()
+{
+	projectManager->showNormal();
 }
 
 void TextRoom::help()
