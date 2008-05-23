@@ -1,0 +1,117 @@
+<ui version="4.0" >
+ <class>HelpDialog</class>
+ <widget class="QWidget" name="HelpDialog" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>753</width>
+    <height>558</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Help</string>
+  </property>
+  <property name="autoFillBackground" >
+   <bool>true</bool>
+  </property>
+  <widget class="QLabel" name="label" >
+   <property name="geometry" >
+    <rect>
+     <x>160</x>
+     <y>90</y>
+     <width>161</width>
+     <height>381</height>
+    </rect>
+   </property>
+   <property name="font" >
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text" >
+    <string>F1 - This help screen
+F11 - Fullscreen on/off
+Escape - Quit or exit fullscreen (depends on current active window state)
+Ctrl+H - About
+Ctrl+M - Minimize TextRoom
+Ctrl+Q - Quit
+
+
+
+
+
+Ctrl+N - New
+Ctrl+O - Open
+Ctrl+S - Save
+Ctrl+Shift+S - Save as
+
+</string>
+   </property>
+   <property name="wordWrap" >
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2" >
+   <property name="geometry" >
+    <rect>
+     <x>410</x>
+     <y>10</y>
+     <width>171</width>
+     <height>521</height>
+    </rect>
+   </property>
+   <property name="font" >
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text" >
+    <string>Ctrl+X - Cut
+Ctrl+C - Copy
+Ctrl+V - Paste
+Ctrl+A - Select All
+Ctrl+Z - Undo (Ctrl+Shift+Z to Redo)
+Ctrl+I - Indent first lines
+Shift+F4 - Go back to cursor position
+Ctrl+F - Find
+F3 - Find next
+Shift+F3 - Find previous
+
+
+
+
+Ctrl+D - Insert Date
+Ctrl+T - Insert Time
+F4 - Options
+F2 - Project Manager</string>
+   </property>
+   <property name="wordWrap" >
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3" >
+   <property name="geometry" >
+    <rect>
+     <x>280</x>
+     <y>40</y>
+     <width>201</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font" >
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text" >
+    <string>Keyboard shortcuts:</string>
+   </property>
+   <property name="alignment" >
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
