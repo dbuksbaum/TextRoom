@@ -7,13 +7,22 @@ OBJECTS_DIR += build
 MOC_DIR += build
 UI_DIR += build
 RCC_DIR += build
-HEADERS += src/helpdialog.h src/optionsdialog.h src/textroom.h src/searchdialog.h
-FORMS += ui/optionsdialog.ui ui/textroom.ui ui/helpdialog.ui
+HEADERS += src/helpdialog.h \
+ src/optionsdialog.h \
+ src/textroom.h \
+ src/searchdialog.h \
+ src/projectmanager.h \
+ src/newproject.h \
+ src/newfile.h
+FORMS += ui/optionsdialog.ui ui/textroom.ui ui/helpdialog.ui ui/projectmanager.ui
 SOURCES += src/helpdialog.cpp \
  src/main.cpp \
  src/optionsdialog.cpp \
  src/textroom.cpp \
- src/searchdialog.cpp
+ src/searchdialog.cpp \
+ src/projectmanager.cpp \
+ src/newproject.cpp \
+ src/newfile.cpp
 RESOURCES += resource/textroom.qrc
 CONFIG += release
 RC_FILE = textroom.rc
@@ -25,7 +34,7 @@ INSTALLS += data \
 data.path += /usr/local/share/textroom
 data.files = resource/sounds/*
 target.path = /usr/local/bin
-documentation.path = /usr/local/share/textroom/doc
+documentation.path = /usr/local/textroom/doc
 documentation.files = docs/*
 icon.path = /usr/share/pixmaps
 icon.files = resource/images/textroom.png
