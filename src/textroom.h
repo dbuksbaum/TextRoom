@@ -37,7 +37,7 @@ class QFileSystemWatcher;
 class OptionsDialog;
 class HelpDialog;
 class SearchDialog;
-//class ProjectManager;
+class ProjectManager;
 
 class TextRoom : public QWidget, public Ui::TextRoomMain
 {
@@ -45,15 +45,18 @@ class TextRoom : public QWidget, public Ui::TextRoomMain
  
 public:
 	TextRoom(QWidget *parent = 0, Qt::WFlags f = 0 );
+	void setCurrentFile(const QString &fileName);
+	void newFile();
+
  
 private slots:
-	void newFile();
+
 	void open();
 	bool save();
 	bool saveAs();
 	void about();
 	void options();
-	//void projects();
+	void projects();
 	void help();
 	void insertDate();
 	void insertTime();
@@ -74,7 +77,6 @@ private slots:
 private:
 	bool maybeSave();
 	void loadFile(const QString &fileName);
-	void setCurrentFile(const QString &fileName);
 	bool saveFile(const QString &fileName);
 	QString strippedName(const QString &fullFileName);
 	void clearFormating(const QTextBlock& block);	
@@ -83,7 +85,7 @@ private:
 	HelpDialog *helpDialog;
 	OptionsDialog *optionsDialog;
 	SearchDialog *searchDialog;
-	//ProjectManager *projectManager;
+	ProjectManager *projectManager;
 	Ui::TextRoomMain ui;
 	QString curFile;
 	QString curDir;
@@ -117,6 +119,8 @@ private:
 protected:
 	void closeEvent(QCloseEvent *event);
 	void resizeEvent(QResizeEvent *event);	
+
+
 };
  
  
