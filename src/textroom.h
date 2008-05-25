@@ -45,10 +45,8 @@ class TextRoom : public QWidget, public Ui::TextRoomMain
  
 public:
 	TextRoom(QWidget *parent = 0, Qt::WFlags f = 0 );
-	void setCurrentFile(const QString &fileName);
-	void newFile();
+	void loadFile(const QString &fileName);
 
- 
 private slots:
 
 	void open();
@@ -57,6 +55,7 @@ private slots:
 	void about();
 	void options();
 	void projects();
+	void newFile();
 	void help();
 	void insertDate();
 	void insertTime();
@@ -76,11 +75,11 @@ private slots:
 
 private:
 	bool maybeSave();
-	void loadFile(const QString &fileName);
-	bool saveFile(const QString &fileName);
 	QString strippedName(const QString &fullFileName);
 	void clearFormating(const QTextBlock& block);	
 	void writeSettings();
+	bool saveFile(const QString &fileName);
+	void setCurrentFile(const QString &fileName);
 
 	HelpDialog *helpDialog;
 	OptionsDialog *optionsDialog;
@@ -119,7 +118,6 @@ private:
 protected:
 	void closeEvent(QCloseEvent *event);
 	void resizeEvent(QResizeEvent *event);	
-
 
 };
  

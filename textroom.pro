@@ -12,8 +12,7 @@ HEADERS += src/helpdialog.h \
  src/textroom.h \
  src/searchdialog.h \
  src/projectmanager.h \
- src/newproject.h \
- src/newfile.h
+ src/newproject.h
 FORMS += ui/optionsdialog.ui ui/textroom.ui ui/helpdialog.ui ui/projectmanager.ui
 SOURCES += src/helpdialog.cpp \
  src/main.cpp \
@@ -21,8 +20,7 @@ SOURCES += src/helpdialog.cpp \
  src/textroom.cpp \
  src/searchdialog.cpp \
  src/projectmanager.cpp \
- src/newproject.cpp \
- src/newfile.cpp
+ src/newproject.cpp
 RESOURCES += resource/textroom.qrc
 CONFIG += release
 RC_FILE = textroom.rc
