@@ -1,0 +1,13 @@
+#!/bin/bash
+
+PATH=/usr/bin:/bin
+xdg-icon-resource uninstall --context mimetypes --size 48 application/x-txr
+xdg-mime uninstall /usr/share/textroom/textroom-txr-mime.xml
+rm -f ~/config/texroom/TextRoom.conf
+sudo rm -f /usr/bin/textroom
+sudo rm -f /usr/share/textroom/keyenter.wav
+sudo rm -f /usr/share/textroom/keyany.wav
+sudo rm -f /usr/share/applications/textroom.desktop
+sudo rm -f /usr/share/textroom/textroom-txr-mime.xml
+sudo rm -f /usr/bin/textroom-uninstall
+sudo rm -r -f /usr/share/textroom

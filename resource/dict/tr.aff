@@ -1,0 +1,10005 @@
+LANG tr_TR
+SET UTF-8
+TRY İiIıŞşÇçĞğÜüÖö-qwertyuopasdfghjklzxcvbnmQWERTYUOPASDFGHJKLZXCVBNM'
+FLAG num
+
+SFX 100 N 1
+SFX 100 0 enleri .
+SFX 101 N 1
+SFX 101 0 mizden .
+SFX 102 N 1
+SFX 102 0 leştirmelerine .
+SFX 103 N 1
+SFX 103 0 enlere .
+SFX 104 N 1
+SFX 104 0 ttiğini .
+SFX 105 N 1
+SFX 105 0 leştirmelerini .
+SFX 106 N 1
+SFX 106 0 yacakları .
+SFX 107 N 1
+SFX 107 0 ttiğine .
+SFX 108 N 1
+SFX 108 0 leşmekte .
+SFX 109 N 1
+SFX 109 0 larıma .
+SFX 110 N 1
+SFX 110 0 undakilerin .
+SFX 111 N 1
+SFX 111 0 müştür .
+SFX 112 N 1
+SFX 112 0 lilerle .
+SFX 113 N 1
+SFX 113 0 lanacaktı .
+SFX 114 N 1
+SFX 114 0 larına .
+SFX 115 N 1
+SFX 115 0 amayacağından .
+SFX 116 N 1
+SFX 116 0 ışlarını .
+SFX 117 N 1
+SFX 117 0 acaklarına .
+SFX 119 N 1
+SFX 119 0 larınızla .
+SFX 118 N 1
+SFX 118 0 lattıkları .
+SFX 120 N 1
+SFX 120 0 cularından .
+SFX 122 N 1
+SFX 122 0 lanın .
+SFX 121 N 1
+SFX 121 0 tıracağı .
+SFX 124 N 1
+SFX 124 0 ebileceğini .
+SFX 123 N 1
+SFX 123 0 lanamamış .
+SFX 125 N 1
+SFX 125 0 ştığını .
+SFX 126 N 1
+SFX 126 0 ıyormuş .
+SFX 127 N 1
+SFX 127 0 ebileceğine .
+SFX 128 N 1
+SFX 128 0 lanıp .
+SFX 129 N 1
+SFX 129 0 laştırdıklarını .
+SFX 130 N 1
+SFX 130 0 ımların .
+SFX 131 N 1
+SFX 131 0 lanır .
+SFX 132 N 1
+SFX 132 0 ıştığı .
+SFX 133 N 1
+SFX 133 0 üyorlardı .
+SFX 134 N 1
+SFX 134 0 leşemedi .
+SFX 135 N 1
+SFX 135 0 esiniz .
+SFX 136 N 1
+SFX 136 0 liklerle .
+SFX 137 N 1
+SFX 137 0 laştıracağına .
+SFX 138 N 1
+SFX 138 0 lilerin .
+SFX 139 N 1
+SFX 139 0 leştiler .
+SFX 140 N 1
+SFX 140 0 mamışlar .
+SFX 141 N 1
+SFX 141 0 emeyeceğiz .
+SFX 142 N 1
+SFX 142 0 çıları .
+SFX 143 N 1
+SFX 143 0 ülmeli .
+SFX 144 N 1
+SFX 144 0 sizce .
+SFX 145 N 1
+SFX 145 0 luklarını .
+SFX 146 N 1
+SFX 146 0 liğiydi .
+SFX 147 N 1
+SFX 147 0 lendirmelerini .
+SFX 149 N 1
+SFX 149 0 ılmaları .
+SFX 148 N 1
+SFX 148 0 saydık .
+SFX 151 N 1
+SFX 151 0 e .
+SFX 150 N 1
+SFX 150 0 nabilecekleri .
+SFX 152 N 1
+SFX 152 0 nirken .
+SFX 155 N 1
+SFX 155 0 a .
+SFX 154 N 1
+SFX 154 0 çisi .
+SFX 153 N 1
+SFX 153 0 saydım .
+SFX 157 N 1
+SFX 157 0 n .
+SFX 156 N 1
+SFX 156 0 'sının .
+SFX 159 N 1
+SFX 159 0 m .
+SFX 158 N 1
+SFX 158 0 lamışlar .
+SFX 160 N 1
+SFX 160 0 i .
+SFX 162 N 1
+SFX 162 0 u .
+SFX 161 N 1
+SFX 161 0 madıklarının .
+SFX 166 N 1
+SFX 166 0 medi .
+SFX 165 N 1
+SFX 165 0 mışken .
+SFX 164 N 1
+SFX 164 0 t .
+SFX 163 N 1
+SFX 163 0 anını .
+SFX 169 N 1
+SFX 169 0 r .
+SFX 168 N 1
+SFX 168 0 temediği .
+SFX 167 N 1
+SFX 167 0 sizdi .
+SFX 170 N 1
+SFX 170 0 mede .
+SFX 171 N 1
+SFX 171 0 ilmezdi .
+SFX 172 N 1
+SFX 172 0 ndır .
+SFX 173 N 1
+SFX 173 0 ndık .
+SFX 174 N 1
+SFX 174 0 nıldığını .
+SFX 175 N 1
+SFX 175 0 ndım .
+SFX 176 N 1
+SFX 176 0 yamayanların .
+SFX 177 N 1
+SFX 177 0 ilemeyecektir .
+SFX 178 N 1
+SFX 178 0 manızda .
+SFX 179 N 1
+SFX 179 0 lamadıkları .
+SFX 180 N 1
+SFX 180 0 tanların .
+SFX 181 N 1
+SFX 181 0 laşmalı .
+SFX 184 N 1
+SFX 184 0 ılabildiği .
+SFX 183 N 1
+SFX 183 0 undayız .
+SFX 182 N 1
+SFX 182 0 tirdiklerini .
+SFX 185 N 1
+SFX 185 0 landırdığını .
+SFX 186 N 1
+SFX 186 0 nmamalı .
+SFX 187 N 1
+SFX 187 0 dandır .
+SFX 188 N 1
+SFX 188 0 leşemeyecek .
+SFX 189 N 1
+SFX 189 0 canın .
+SFX 190 N 1
+SFX 190 0 rdi .
+SFX 191 N 1
+SFX 191 0 leyebildiği .
+SFX 192 N 1
+SFX 192 0 rmış .
+SFX 193 N 1
+SFX 193 0 çiyi .
+SFX 194 N 1
+SFX 194 0 leşmesinin .
+SFX 195 N 1
+SFX 195 0 nmalıydı .
+SFX 196 N 1
+SFX 196 0 'ıyla .
+SFX 197 N 1
+SFX 197 0 ulduğundan .
+SFX 198 N 1
+SFX 198 0 mamalarının .
+SFX 199 N 1
+SFX 199 0 madıysa .
+SFX 200 N 1
+SFX 200 0 lamaktır .
+SFX 201 N 1
+SFX 201 0 landığı .
+SFX 202 N 1
+SFX 202 0 nıyoruz .
+SFX 203 N 1
+SFX 203 0 leyerek .
+SFX 204 N 1
+SFX 204 0 ındır .
+SFX 205 N 1
+SFX 205 0 ememişlerdi .
+SFX 206 N 1
+SFX 206 0 leştirmekten .
+SFX 207 N 1
+SFX 207 0 çiye .
+SFX 208 N 1
+SFX 208 0 lerindeki .
+SFX 209 N 1
+SFX 209 0 ebiliriz .
+SFX 210 N 1
+SFX 210 0 üymüş .
+SFX 211 N 1
+SFX 211 0 lısıyla .
+SFX 212 N 1
+SFX 212 0 ılanların .
+SFX 213 N 1
+SFX 213 0 yamadık .
+SFX 214 N 1
+SFX 214 0 layabileceği .
+SFX 215 N 1
+SFX 215 0 layanlar .
+SFX 216 N 1
+SFX 216 0 emeyerek .
+SFX 217 N 1
+SFX 217 0 ılığını .
+SFX 218 N 1
+SFX 218 0 yamadım .
+SFX 219 N 1
+SFX 219 0 nmemelidir .
+SFX 220 N 1
+SFX 220 0 mazlığında .
+SFX 221 N 1
+SFX 221 0 tmadığı .
+SFX 222 N 1
+SFX 222 0 leşirler .
+SFX 223 N 1
+SFX 223 0 ndirme .
+SFX 224 N 1
+SFX 224 0 mamanın .
+SFX 225 N 1
+SFX 225 0 ebilirim .
+SFX 226 N 1
+SFX 226 0 lanmasın .
+SFX 227 N 1
+SFX 227 0 larındansa .
+SFX 228 N 1
+SFX 228 0 düklerinde .
+SFX 229 N 1
+SFX 229 0 mamanız .
+SFX 230 N 1
+SFX 230 0 layana .
+SFX 231 N 1
+SFX 231 0 dirdikleri .
+SFX 232 N 1
+SFX 232 0 düklerinden .
+SFX 233 N 1
+SFX 233 0 amıyormuş .
+SFX 234 N 1
+SFX 234 0 amadığımız .
+SFX 235 N 1
+SFX 235 0 ştığına .
+SFX 236 N 1
+SFX 236 0 ışa .
+SFX 237 N 1
+SFX 237 0 dırılamayacağını .
+SFX 238 N 1
+SFX 238 0 ebilenler .
+SFX 239 N 1
+SFX 239 0 laşanlar .
+SFX 240 N 1
+SFX 240 0 cada .
+SFX 241 N 1
+SFX 241 0 ü .
+SFX 242 N 1
+SFX 242 0 çiden .
+SFX 243 N 1
+SFX 243 0 laşmış .
+SFX 244 N 1
+SFX 244 0 dayız .
+SFX 245 N 1
+SFX 245 0 laştırıyor .
+SFX 246 N 1
+SFX 246 0 'ini .
+SFX 247 N 1
+SFX 247 0 liklerin .
+SFX 248 N 1
+SFX 248 0 'ine .
+SFX 249 N 1
+SFX 249 0 sizim .
+SFX 250 N 1
+SFX 250 0 lemelidir .
+SFX 251 N 1
+SFX 251 0 sizin .
+SFX 252 N 1
+SFX 252 0 lilerde .
+SFX 253 N 1
+SFX 253 0 laşmayı .
+SFX 254 N 1
+SFX 254 0 ıyorduk .
+SFX 255 N 1
+SFX 255 0 leşebileceğine .
+SFX 256 N 1
+SFX 256 0 leşebileceğini .
+SFX 257 N 1
+SFX 257 0 amayacaklarının .
+SFX 258 N 1
+SFX 258 0 acaklarını .
+SFX 259 N 1
+SFX 259 0 ıyordur .
+SFX 260 N 1
+SFX 260 0 mamayı .
+SFX 261 N 1
+SFX 261 0 çılarını .
+SFX 262 N 1
+SFX 262 0 lamalarındaki .
+SFX 263 N 1
+SFX 263 0 ıyordum .
+SFX 264 N 1
+SFX 264 0 lığımızla .
+SFX 265 N 1
+SFX 265 0 diniz .
+SFX 266 N 1
+SFX 266 0 larınızda .
+SFX 267 N 1
+SFX 267 0 dığınızda .
+SFX 268 N 1
+SFX 268 0 dığınızı .
+SFX 269 N 1
+SFX 269 0 acakken .
+SFX 270 N 1
+SFX 270 0 üyorlar .
+SFX 271 N 1
+SFX 271 0 yamayanlar .
+SFX 272 N 1
+SFX 272 0 luklarına .
+SFX 273 N 1
+SFX 273 0 ı .
+SFX 274 N 1
+SFX 274 0 tileceğini .
+SFX 275 N 1
+SFX 275 0 emiyordu .
+SFX 276 N 1
+SFX 276 0 ımızda .
+SFX 277 N 1
+SFX 277 0 inizi .
+SFX 278 N 1
+SFX 278 0 ememekten .
+SFX 279 N 1
+SFX 279 0 liğinizi .
+SFX 280 N 1
+SFX 280 0 cikleri .
+SFX 281 N 1
+SFX 281 0 tılmış .
+SFX 282 N 1
+SFX 282 0 tabilecek .
+SFX 283 N 1
+SFX 283 0 meni .
+SFX 284 N 1
+SFX 284 0 iyormuş .
+SFX 285 N 1
+SFX 285 0 lıklarımızın .
+SFX 286 N 1
+SFX 286 0 nmesinden .
+SFX 287 N 1
+SFX 287 0 iciliğinin .
+SFX 288 N 1
+SFX 288 0 ılmazlar .
+SFX 289 N 1
+SFX 289 0 lanış .
+SFX 290 N 1
+SFX 290 0 nışı .
+SFX 291 N 1
+SFX 291 0 liğime .
+SFX 292 N 1
+SFX 292 0 iyken .
+SFX 293 N 1
+SFX 293 0 lanamayacağından .
+SFX 295 N 1
+SFX 295 0 ırlar .
+SFX 294 N 1
+SFX 294 0 mene .
+SFX 296 N 1
+SFX 296 0 leştirilmesiyle .
+SFX 297 N 1
+SFX 297 0 nıyor .
+SFX 298 N 1
+SFX 298 0 liğinize .
+SFX 299 N 1
+SFX 299 0 tamayacak .
+SFX 300 N 1
+SFX 300 0 nmıştır .
+SFX 301 N 1
+SFX 301 0 ulamadığını .
+SFX 302 N 1
+SFX 302 0 inize .
+SFX 303 N 1
+SFX 303 0 iyordur .
+SFX 304 N 1
+SFX 304 0 lıyım .
+SFX 305 N 1
+SFX 305 0 ebiliyordu .
+SFX 306 N 1
+SFX 306 0 mayınız .
+SFX 307 N 1
+SFX 307 0 iyordum .
+SFX 308 N 1
+SFX 308 0 ş .
+SFX 310 N 1
+SFX 310 0 liğimi .
+SFX 309 N 1
+SFX 309 0 iyorduk .
+SFX 312 N 1
+SFX 312 0 lanabileceğine .
+SFX 311 N 1
+SFX 311 0 memi .
+SFX 314 N 1
+SFX 314 0 lıların .
+SFX 313 N 1
+SFX 313 0 sindekiler .
+SFX 317 N 1
+SFX 317 0 meme .
+SFX 316 N 1
+SFX 316 0 lanabileceğini .
+SFX 315 N 1
+SFX 315 0 yamamış .
+SFX 318 N 1
+SFX 318 0 lıyız .
+SFX 320 N 1
+SFX 320 0 ilmemiştir .
+SFX 319 N 1
+SFX 319 0 nına .
+SFX 323 N 1
+SFX 323 0 liğine .
+SFX 322 N 1
+SFX 322 0 leşebilir .
+SFX 321 N 1
+SFX 321 0 tılamayacak .
+SFX 324 N 1
+SFX 324 0 nmenin .
+SFX 326 N 1
+SFX 326 0 liklerde .
+SFX 325 N 1
+SFX 325 0 ırız .
+SFX 327 N 1
+SFX 327 0 tiği .
+SFX 328 N 1
+SFX 328 0 undayım .
+SFX 329 N 1
+SFX 329 0 laşmasın .
+SFX 330 N 1
+SFX 330 0 lığımda .
+SFX 331 N 1
+SFX 331 0 lanabilecekleri .
+SFX 332 N 1
+SFX 332 0 meli .
+SFX 333 N 1
+SFX 333 0 liğini .
+SFX 334 N 1
+SFX 334 0 ılamayan .
+SFX 335 N 1
+SFX 335 0 amamaktan .
+SFX 337 N 1
+SFX 337 0 cıların .
+SFX 336 N 1
+SFX 336 0 nıyorsa .
+SFX 338 N 1
+SFX 338 0 tırmanın .
+SFX 339 N 1
+SFX 339 0 larımda .
+SFX 342 N 1
+SFX 342 0 mamakta .
+SFX 341 N 1
+SFX 341 0 namayacakları .
+SFX 340 N 1
+SFX 340 0 nacağım .
+SFX 343 N 1
+SFX 343 0 isin .
+SFX 346 N 1
+SFX 346 0 dığımız .
+SFX 345 N 1
+SFX 345 0 çılara .
+SFX 344 N 1
+SFX 344 0 lattı .
+SFX 348 N 1
+SFX 348 0 layarak .
+SFX 347 N 1
+SFX 347 0 lanmasıdır .
+SFX 350 N 1
+SFX 350 0 ilmişti .
+SFX 349 N 1
+SFX 349 0 ludan .
+SFX 351 N 1
+SFX 351 0 laştırmadan .
+SFX 353 N 1
+SFX 353 0 emediği .
+SFX 352 N 1
+SFX 352 0 lılıkları .
+SFX 354 N 1
+SFX 354 0 ıncaya .
+SFX 355 N 1
+SFX 355 0 ıldığında .
+SFX 357 N 1
+SFX 357 0 mese .
+SFX 356 N 1
+SFX 356 0 landım .
+SFX 358 N 1
+SFX 358 0 landık .
+SFX 359 N 1
+SFX 359 0 mesi .
+SFX 360 N 1
+SFX 360 0 melerine .
+SFX 361 N 1
+SFX 361 0 mizdir .
+SFX 362 N 1
+SFX 362 0 amazsa .
+SFX 363 N 1
+SFX 363 0 acaktı .
+SFX 364 N 1
+SFX 364 0 ırım .
+SFX 366 N 1
+SFX 366 0 cilere .
+SFX 365 N 1
+SFX 365 0 esin .
+SFX 367 N 1
+SFX 367 0 indedir .
+SFX 369 N 1
+SFX 369 0 cileri .
+SFX 368 N 1
+SFX 368 0 madıklarında .
+SFX 370 N 1
+SFX 370 0 tmadıklarını .
+SFX 371 N 1
+SFX 371 0 iliği .
+SFX 372 N 1
+SFX 372 0 laşıyordu .
+SFX 373 N 1
+SFX 373 0 lanamadığı .
+SFX 374 N 1
+SFX 374 0 amayacağımız .
+SFX 376 N 1
+SFX 376 0 ıcılığını .
+SFX 375 N 1
+SFX 375 0 lanmışlardır .
+SFX 378 N 1
+SFX 378 0 mayarak .
+SFX 377 N 1
+SFX 377 0 inedir .
+SFX 379 N 1
+SFX 379 0 laşması .
+SFX 380 N 1
+SFX 380 0 çılarının .
+SFX 381 N 1
+SFX 381 0 maktaydı .
+SFX 382 N 1
+SFX 382 0 rdı .
+SFX 384 N 1
+SFX 384 0 lılarından .
+SFX 383 N 1
+SFX 383 0 leştirilemez .
+SFX 385 N 1
+SFX 385 0 layışını .
+SFX 386 N 1
+SFX 386 0 leştirileceği .
+SFX 387 N 1
+SFX 387 0 leşmesinde .
+SFX 388 N 1
+SFX 388 0 ımızla .
+SFX 389 N 1
+SFX 389 0 riz .
+SFX 390 N 1
+SFX 390 0 eceksin .
+SFX 391 N 1
+SFX 391 0 laşmaya .
+SFX 392 N 1
+SFX 392 0 leşmekten .
+SFX 393 N 1
+SFX 393 0 çinin .
+SFX 394 N 1
+SFX 394 0 laştırmalarını .
+SFX 396 N 1
+SFX 396 0 asınız .
+SFX 395 N 1
+SFX 395 0 ildikleri .
+SFX 397 N 1
+SFX 397 0 duklarının .
+SFX 398 N 1
+SFX 398 0 melerini .
+SFX 399 N 1
+SFX 399 0 mamalılar .
+SFX 400 N 1
+SFX 400 0 müş .
+SFX 401 N 1
+SFX 401 0 ıcılığından .
+SFX 402 N 1
+SFX 402 0 rim .
+SFX 403 N 1
+SFX 403 0 ebilirse .
+SFX 405 N 1
+SFX 405 0 ınızı .
+SFX 404 N 1
+SFX 404 0 erler .
+SFX 407 N 1
+SFX 407 0 dayken .
+SFX 406 N 1
+SFX 406 0 nmaması .
+SFX 408 N 1
+SFX 408 0 asının .
+SFX 409 N 1
+SFX 409 0 yışları .
+SFX 410 N 1
+SFX 410 0 tirdiği .
+SFX 411 N 1
+SFX 411 0 ılabileceği .
+SFX 412 N 1
+SFX 412 0 cide .
+SFX 414 N 1
+SFX 414 0 abileceklerinin .
+SFX 413 N 1
+SFX 413 0 tılamadığını .
+SFX 415 N 1
+SFX 415 0 lerdeydi .
+SFX 416 N 1
+SFX 416 0 lık .
+SFX 418 N 1
+SFX 418 0 muşsun .
+SFX 417 N 1
+SFX 417 0 nsin .
+SFX 421 N 1
+SFX 421 0 masındaki .
+SFX 420 N 1
+SFX 420 0 mayanı .
+SFX 419 N 1
+SFX 419 0 tamadığını .
+SFX 422 N 1
+SFX 422 0 imdeki .
+SFX 423 N 1
+SFX 423 0 cılıkla .
+SFX 425 N 1
+SFX 425 0 lın .
+SFX 424 N 1
+SFX 424 0 laşmadığını .
+SFX 427 N 1
+SFX 427 0 lım .
+SFX 426 N 1
+SFX 426 0 lerindenmiş .
+SFX 429 N 1
+SFX 429 0 lıklarındaki .
+SFX 428 N 1
+SFX 428 0 tırdı .
+SFX 430 N 1
+SFX 430 0 emedi .
+SFX 431 N 1
+SFX 431 0 üyorum .
+SFX 432 N 1
+SFX 432 0 laştırmakta .
+SFX 434 N 1
+SFX 434 0 lide .
+SFX 433 N 1
+SFX 433 0 yamamıştır .
+SFX 435 N 1
+SFX 435 0 amayışı .
+SFX 436 N 1
+SFX 436 0 landıklarına .
+SFX 437 N 1
+SFX 437 0 leşmeler .
+SFX 438 N 1
+SFX 438 0 lıklarına .
+SFX 440 N 1
+SFX 440 0 laşamadığını .
+SFX 439 N 1
+SFX 439 0 indekine .
+SFX 441 N 1
+SFX 441 0 emeyecektir .
+SFX 442 N 1
+SFX 442 0 amayacaklardı .
+SFX 443 N 1
+SFX 443 0 ınıza .
+SFX 445 N 1
+SFX 445 0 amadan .
+SFX 444 N 1
+SFX 444 0 dırmanın .
+SFX 446 N 1
+SFX 446 0 ememek .
+SFX 447 N 1
+SFX 447 0 dırmaz .
+SFX 448 N 1
+SFX 448 0 ılmaması .
+SFX 449 N 1
+SFX 449 0 lığımla .
+SFX 450 N 1
+SFX 450 0 ünüz .
+SFX 451 N 1
+SFX 451 0 larımla .
+SFX 452 N 1
+SFX 452 0 ilecek .
+SFX 453 N 1
+SFX 453 0 nmelidir .
+SFX 454 N 1
+SFX 454 0 ilebileceği .
+SFX 458 N 1
+SFX 458 0 ünün .
+SFX 457 N 1
+SFX 457 0 yacağı .
+SFX 456 N 1
+SFX 456 0 layamayan .
+SFX 455 N 1
+SFX 455 0 cım .
+SFX 460 N 1
+SFX 460 0 cık .
+SFX 459 N 1
+SFX 459 0 imindeki .
+SFX 461 N 1
+SFX 461 0 laştırıldığına .
+SFX 463 N 1
+SFX 463 0 dığının .
+SFX 462 N 1
+SFX 462 0 caya .
+SFX 464 N 1
+SFX 464 0 mayacaklardı .
+SFX 465 N 1
+SFX 465 0 südür .
+SFX 466 N 1
+SFX 466 0 lanmıştı .
+SFX 468 N 1
+SFX 468 0 üyoruz .
+SFX 467 N 1
+SFX 467 0 muzu .
+SFX 469 N 1
+SFX 469 0 ebilirsin .
+SFX 470 N 1
+SFX 470 0 lamayacağını .
+SFX 471 N 1
+SFX 471 0 diğiniz .
+SFX 472 N 1
+SFX 472 0 lanmalı .
+SFX 474 N 1
+SFX 474 0 ıldıkları .
+SFX 473 N 1
+SFX 473 0 yebilmeleri .
+SFX 475 N 1
+SFX 475 0 dığınız .
+SFX 476 N 1
+SFX 476 0 diğinin .
+SFX 477 N 1
+SFX 477 0 landırdığı .
+SFX 478 N 1
+SFX 478 0 yemeyeceğine .
+SFX 480 N 1
+SFX 480 0 liklerini .
+SFX 479 N 1
+SFX 479 0 nıyordu .
+SFX 481 N 1
+SFX 481 0 tilecek .
+SFX 484 N 1
+SFX 484 0 yemeyeceğini .
+SFX 483 N 1
+SFX 483 0 acağında .
+SFX 482 N 1
+SFX 482 0 suzu .
+SFX 485 N 1
+SFX 485 0 irim .
+SFX 486 N 1
+SFX 486 0 sindedir .
+SFX 487 N 1
+SFX 487 0 uşuna .
+SFX 488 N 1
+SFX 488 0 rsa .
+SFX 489 N 1
+SFX 489 0 yabilmiş .
+SFX 490 N 1
+SFX 490 0 laştıklarında .
+SFX 491 N 1
+SFX 491 0 madığıdır .
+SFX 492 N 1
+SFX 492 0 sizliktir .
+SFX 493 N 1
+SFX 493 0 rse .
+SFX 494 N 1
+SFX 494 0 liklerine .
+SFX 495 N 1
+SFX 495 0 tilemeyeceğini .
+SFX 496 N 1
+SFX 496 0 iriz .
+SFX 497 N 1
+SFX 497 0 tmalarını .
+SFX 498 N 1
+SFX 498 0 laştığı .
+SFX 499 N 1
+SFX 499 0 tacağım .
+SFX 500 N 1
+SFX 500 0 ılınca .
+SFX 501 N 1
+SFX 501 0 undan .
+SFX 502 N 1
+SFX 502 0 laştırıldığını .
+SFX 503 N 1
+SFX 503 0 uşunu .
+SFX 504 N 1
+SFX 504 0 nmadıklarını .
+SFX 505 N 1
+SFX 505 0 leriyse .
+SFX 506 N 1
+SFX 506 0 amazdı .
+SFX 507 N 1
+SFX 507 0 tiklerini .
+SFX 508 N 1
+SFX 508 0 lanmasının .
+SFX 509 N 1
+SFX 509 0 yebilecekleri .
+SFX 510 N 1
+SFX 510 0 lanmaları .
+SFX 511 N 1
+SFX 511 0 dırabilecek .
+SFX 512 N 1
+SFX 512 0 dıracağı .
+SFX 513 N 1
+SFX 513 0 uyorsun .
+SFX 514 N 1
+SFX 514 0 ındaysa .
+SFX 515 N 1
+SFX 515 0 dırmak .
+SFX 516 N 1
+SFX 516 0 laşmayla .
+SFX 517 N 1
+SFX 517 0 tmeye .
+SFX 518 N 1
+SFX 518 0 lamalılar .
+SFX 519 N 1
+SFX 519 0 nmayacağının .
+SFX 520 N 1
+SFX 520 0 ştırma .
+SFX 521 N 1
+SFX 521 0 mezseniz .
+SFX 522 N 1
+SFX 522 0 yacaksın .
+SFX 523 N 1
+SFX 523 0 dırabileceği .
+SFX 524 N 1
+SFX 524 0 lanmama .
+SFX 525 N 1
+SFX 525 0 laştılar .
+SFX 526 N 1
+SFX 526 0 eceklermiş .
+SFX 527 N 1
+SFX 527 0 rcasına .
+SFX 528 N 1
+SFX 528 0 direceği .
+SFX 529 N 1
+SFX 529 0 ebildiği .
+SFX 530 N 1
+SFX 530 0 leşemeyeceği .
+SFX 531 N 1
+SFX 531 0 tiklerine .
+SFX 532 N 1
+SFX 532 0 ündeyse .
+SFX 533 N 1
+SFX 533 0 çılarına .
+SFX 534 N 1
+SFX 534 0 ılamayacağından .
+SFX 535 N 1
+SFX 535 0 lendireceklerini .
+SFX 536 N 1
+SFX 536 0 lamamıştır .
+SFX 537 N 1
+SFX 537 0 meyebileceğini .
+SFX 538 N 1
+SFX 538 0 ebileceğinden .
+SFX 539 N 1
+SFX 539 0 leşeceklerini .
+SFX 540 N 1
+SFX 540 0 yabileceğim .
+SFX 541 N 1
+SFX 541 0 meye .
+SFX 542 N 1
+SFX 542 0 meyi .
+SFX 543 N 1
+SFX 543 0 ıldığı .
+SFX 544 N 1
+SFX 544 0 lıklarını .
+SFX 545 N 1
+SFX 545 0 laşmaması .
+SFX 546 N 1
+SFX 546 0 leştirdiler .
+SFX 547 N 1
+SFX 547 0 lemeyecek .
+SFX 548 N 1
+SFX 548 0 memektedir .
+SFX 549 N 1
+SFX 549 0 yınca .
+SFX 550 N 1
+SFX 550 0 cunun .
+SFX 551 N 1
+SFX 551 0 leyememiş .
+SFX 552 N 1
+SFX 552 0 ilmeyeceğine .
+SFX 553 N 1
+SFX 553 0 ilemediği .
+SFX 554 N 1
+SFX 554 0 ilmeyeceğini .
+SFX 555 N 1
+SFX 555 0 nışında .
+SFX 556 N 1
+SFX 556 0 leşemediğinden .
+SFX 557 N 1
+SFX 557 0 suzluklarını .
+SFX 558 N 1
+SFX 558 0 lıyoruz .
+SFX 559 N 1
+SFX 559 0 ebildi .
+SFX 560 N 1
+SFX 560 0 lettiklerini .
+SFX 561 N 1
+SFX 561 0 ılacak .
+SFX 562 N 1
+SFX 562 0 lamayacağına .
+SFX 563 N 1
+SFX 563 0 leştirmiş .
+SFX 564 N 1
+SFX 564 0 sak .
+SFX 565 N 1
+SFX 565 0 emezsek .
+SFX 566 N 1
+SFX 566 0 sal .
+SFX 567 N 1
+SFX 567 0 tırdık .
+SFX 568 N 1
+SFX 568 0 amayışını .
+SFX 569 N 1
+SFX 569 0 sam .
+SFX 570 N 1
+SFX 570 0 üne .
+SFX 571 N 1
+SFX 571 0 lıyorum .
+SFX 572 N 1
+SFX 572 0 cılıkta .
+SFX 573 N 1
+SFX 573 0 ememe .
+SFX 574 N 1
+SFX 574 0 ladıktan .
+SFX 575 N 1
+SFX 575 0 sizlikten .
+SFX 576 N 1
+SFX 576 0 ludur .
+SFX 577 N 1
+SFX 577 0 emiyorum .
+SFX 578 N 1
+SFX 578 0 amadıklarında .
+SFX 579 N 1
+SFX 579 0 liğidir .
+SFX 580 N 1
+SFX 580 0 acağınız .
+SFX 581 N 1
+SFX 581 0 tildiği .
+SFX 582 N 1
+SFX 582 0 ciler .
+SFX 583 N 1
+SFX 583 0 meden .
+SFX 584 N 1
+SFX 584 0 leştirilemediğini .
+SFX 585 N 1
+SFX 585 0 üme .
+SFX 586 N 1
+SFX 586 0 ebilen .
+SFX 587 N 1
+SFX 587 0 emiyoruz .
+SFX 588 N 1
+SFX 588 0 lenenlerin .
+SFX 589 N 1
+SFX 589 0 dayım .
+SFX 590 N 1
+SFX 590 0 nün .
+SFX 591 N 1
+SFX 591 0 san .
+SFX 592 N 1
+SFX 592 0 ininden .
+SFX 593 N 1
+SFX 593 0 masında .
+SFX 594 N 1
+SFX 594 0 lerindekileri .
+SFX 595 N 1
+SFX 595 0 ılmalarından .
+SFX 596 N 1
+SFX 596 0 tmelerini .
+SFX 597 N 1
+SFX 597 0 nmelerinden .
+SFX 598 N 1
+SFX 598 0 tmelerine .
+SFX 599 N 1
+SFX 599 0 ınını .
+SFX 600 N 1
+SFX 600 0 muşlardır .
+SFX 601 N 1
+SFX 601 0 emeyeceğimizi .
+SFX 602 N 1
+SFX 602 0 lini .
+SFX 603 N 1
+SFX 603 0 sindeyken .
+SFX 604 N 1
+SFX 604 0 lilikleri .
+SFX 605 N 1
+SFX 605 0 ilemiyor .
+SFX 606 N 1
+SFX 606 0 line .
+SFX 607 N 1
+SFX 607 0 malarıdır .
+SFX 608 N 1
+SFX 608 0 laştıracağını .
+SFX 609 N 1
+SFX 609 0 diğinden .
+SFX 610 N 1
+SFX 610 0 mesinler .
+SFX 611 N 1
+SFX 611 0 latarak .
+SFX 612 N 1
+SFX 612 0 ecek .
+SFX 613 N 1
+SFX 613 0 leştiriyoruz .
+SFX 614 N 1
+SFX 614 0 ilebilir .
+SFX 615 N 1
+SFX 615 0 yabilir .
+SFX 616 N 1
+SFX 616 0 nabileceği .
+SFX 617 N 1
+SFX 617 0 tmalıdır .
+SFX 618 N 1
+SFX 618 0 ülemeyeceği .
+SFX 619 N 1
+SFX 619 0 lileriyle .
+SFX 620 N 1
+SFX 620 0 dığımızı .
+SFX 621 N 1
+SFX 621 0 maktaki .
+SFX 622 N 1
+SFX 622 0 leştirmediği .
+SFX 623 N 1
+SFX 623 0 ebilecektir .
+SFX 624 N 1
+SFX 624 0 mişizdir .
+SFX 625 N 1
+SFX 625 0 lanmadı .
+SFX 626 N 1
+SFX 626 0 ılmasın .
+SFX 627 N 1
+SFX 627 0 lanamaz .
+SFX 628 N 1
+SFX 628 0 yabildiklerini .
+SFX 629 N 1
+SFX 629 0 nmeyeceği .
+SFX 630 N 1
+SFX 630 0 arsın .
+SFX 631 N 1
+SFX 631 0 lanamadı .
+SFX 632 N 1
+SFX 632 0 lendirilmiş .
+SFX 633 N 1
+SFX 633 0 ebiliyoruz .
+SFX 634 N 1
+SFX 634 0 luluk .
+SFX 635 N 1
+SFX 635 0 lanmışlar .
+SFX 636 N 1
+SFX 636 0 lermiş .
+SFX 637 N 1
+SFX 637 0 leştiremediğini .
+SFX 638 N 1
+SFX 638 0 iyi .
+SFX 639 N 1
+SFX 639 0 ıştır .
+SFX 640 N 1
+SFX 640 0 inini .
+SFX 641 N 1
+SFX 641 0 diğinde .
+SFX 642 N 1
+SFX 642 0 nmelerinin .
+SFX 643 N 1
+SFX 643 0 ebilirdi .
+SFX 644 N 1
+SFX 644 0 inine .
+SFX 645 N 1
+SFX 645 0 layacaksınız .
+SFX 646 N 1
+SFX 646 0 nmeye .
+SFX 647 N 1
+SFX 647 0 ılığına .
+SFX 648 N 1
+SFX 648 0 acaklardı .
+SFX 649 N 1
+SFX 649 0 nmeyi .
+SFX 650 N 1
+SFX 650 0 ciliğine .
+SFX 651 N 1
+SFX 651 0 mazlar .
+SFX 652 N 1
+SFX 652 0 ttiği .
+SFX 653 N 1
+SFX 653 0 andan .
+SFX 654 N 1
+SFX 654 0 ciliğini .
+SFX 655 N 1
+SFX 655 0 calar .
+SFX 656 N 1
+SFX 656 0 ınına .
+SFX 657 N 1
+SFX 657 0 irse .
+SFX 658 N 1
+SFX 658 0 ebilir .
+SFX 659 N 1
+SFX 659 0 laşa .
+SFX 660 N 1
+SFX 660 0 ındaydı .
+SFX 661 N 1
+SFX 661 0 lamayız .
+SFX 662 N 1
+SFX 662 0 medim .
+SFX 663 N 1
+SFX 663 0 medin .
+SFX 664 N 1
+SFX 664 0 abilecekler .
+SFX 665 N 1
+SFX 665 0 ememeleri .
+SFX 666 N 1
+SFX 666 0 medir .
+SFX 667 N 1
+SFX 667 0 yemeyenler .
+SFX 668 N 1
+SFX 668 0 mamızdan .
+SFX 669 N 1
+SFX 669 0 medik .
+SFX 670 N 1
+SFX 670 0 ıkları .
+SFX 671 N 1
+SFX 671 0 lamayın .
+SFX 672 N 1
+SFX 672 0 sızlıkların .
+SFX 673 N 1
+SFX 673 0 amamalarının .
+SFX 674 N 1
+SFX 674 0 tiklerinden .
+SFX 675 N 1
+SFX 675 0 emese .
+SFX 676 N 1
+SFX 676 0 emiyorsa .
+SFX 677 N 1
+SFX 677 0 ilecektir .
+SFX 678 N 1
+SFX 678 0 lerdeyse .
+SFX 679 N 1
+SFX 679 0 yabilen .
+SFX 680 N 1
+SFX 680 0 yamıyorlar .
+SFX 681 N 1
+SFX 681 0 landıklarını .
+SFX 682 N 1
+SFX 682 0 mesini .
+SFX 683 N 1
+SFX 683 0 lıyorsa .
+SFX 684 N 1
+SFX 684 0 ulacak .
+SFX 685 N 1
+SFX 685 0 tmalarına .
+SFX 686 N 1
+SFX 686 0 ılamıyor .
+SFX 687 N 1
+SFX 687 0 mesine .
+SFX 688 N 1
+SFX 688 0 laşamadığına .
+SFX 689 N 1
+SFX 689 0 tırma .
+SFX 690 N 1
+SFX 690 0 laştırmadığını .
+SFX 691 N 1
+SFX 691 0 rsınız .
+SFX 692 N 1
+SFX 692 0 ulduğunun .
+SFX 693 N 1
+SFX 693 0 layanı .
+SFX 694 N 1
+SFX 694 0 lamışlardı .
+SFX 695 N 1
+SFX 695 0 lenmelerini .
+SFX 696 N 1
+SFX 696 0 yemedikleri .
+SFX 697 N 1
+SFX 697 0 leriyle .
+SFX 698 N 1
+SFX 698 0 lenenleri .
+SFX 699 N 1
+SFX 699 0 'undan .
+SFX 700 N 1
+SFX 700 0 larındandı .
+SFX 701 N 1
+SFX 701 0 lenmelerine .
+SFX 702 N 1
+SFX 702 0 laşmayan .
+SFX 703 N 1
+SFX 703 0 lemeyeceği .
+SFX 704 N 1
+SFX 704 0 necekleri .
+SFX 705 N 1
+SFX 705 0 cünün .
+SFX 706 N 1
+SFX 706 0 ulmuş .
+SFX 707 N 1
+SFX 707 0 ımının .
+SFX 708 N 1
+SFX 708 0 yarak .
+SFX 709 N 1
+SFX 709 0 yamazsın .
+SFX 710 N 1
+SFX 710 0 anda .
+SFX 711 N 1
+SFX 711 0 mışlardı .
+SFX 712 N 1
+SFX 712 0 abilmelidir .
+SFX 713 N 1
+SFX 713 0 lerindekilerin .
+SFX 714 N 1
+SFX 714 0 larınız .
+SFX 715 N 1
+SFX 715 0 erse .
+SFX 716 N 1
+SFX 716 0 tıcı .
+SFX 717 N 1
+SFX 717 0 nmışı .
+SFX 718 N 1
+SFX 718 0 nmıştı .
+SFX 719 N 1
+SFX 719 0 lendikleri .
+SFX 720 N 1
+SFX 720 0 laşmalarını .
+SFX 721 N 1
+SFX 721 0 tıklarından .
+SFX 722 N 1
+SFX 722 0 acaklar .
+SFX 723 N 1
+SFX 723 0 meyeni .
+SFX 724 N 1
+SFX 724 0 amayışları .
+SFX 725 N 1
+SFX 725 0 laşma .
+SFX 726 N 1
+SFX 726 0 tabileceklerini .
+SFX 727 N 1
+SFX 727 0 nırsa .
+SFX 728 N 1
+SFX 728 0 mdan .
+SFX 729 N 1
+SFX 729 0 leriyiz .
+SFX 730 N 1
+SFX 730 0 yamadığına .
+SFX 731 N 1
+SFX 731 0 larının .
+SFX 732 N 1
+SFX 732 0 lanışının .
+SFX 733 N 1
+SFX 733 0 ılmazsa .
+SFX 734 N 1
+SFX 734 0 ındadırlar .
+SFX 735 N 1
+SFX 735 0 tmeli .
+SFX 736 N 1
+SFX 736 0 çiliği .
+SFX 737 N 1
+SFX 737 0 sıyım .
+SFX 738 N 1
+SFX 738 0 lılığın .
+SFX 739 N 1
+SFX 739 0 abilsin .
+SFX 740 N 1
+SFX 740 0 latmış .
+SFX 741 N 1
+SFX 741 0 sizliğini .
+SFX 742 N 1
+SFX 742 0 layıcılığı .
+SFX 743 N 1
+SFX 743 0 sizliğine .
+SFX 744 N 1
+SFX 744 0 süyle .
+SFX 745 N 1
+SFX 745 0 lasınlar .
+SFX 746 N 1
+SFX 746 0 sıyız .
+SFX 747 N 1
+SFX 747 0 yken .
+SFX 748 N 1
+SFX 748 0 tmayacak .
+SFX 749 N 1
+SFX 749 0 siz .
+SFX 750 N 1
+SFX 750 0 leşeceğine .
+SFX 751 N 1
+SFX 751 0 mişlerdir .
+SFX 752 N 1
+SFX 752 0 lanacaklar .
+SFX 753 N 1
+SFX 753 0 ilirdi .
+SFX 754 N 1
+SFX 754 0 layalım .
+SFX 755 N 1
+SFX 755 0 leşeceğini .
+SFX 756 N 1
+SFX 756 0 ıklığın .
+SFX 757 N 1
+SFX 757 0 lılarda .
+SFX 758 N 1
+SFX 758 0 amamışlardı .
+SFX 759 N 1
+SFX 759 0 sunu .
+SFX 760 N 1
+SFX 760 0 lamaması .
+SFX 761 N 1
+SFX 761 0 dirmiş .
+SFX 762 N 1
+SFX 762 0 dırmışlar .
+SFX 763 N 1
+SFX 763 0 larsanız .
+SFX 764 N 1
+SFX 764 0 emediklerinde .
+SFX 765 N 1
+SFX 765 0 landırdı .
+SFX 766 N 1
+SFX 766 0 ış .
+SFX 767 N 1
+SFX 767 0 amayanlara .
+SFX 768 N 1
+SFX 768 0 daymış .
+SFX 769 N 1
+SFX 769 0 ebilme .
+SFX 770 N 1
+SFX 770 0 larımızdaki .
+SFX 771 N 1
+SFX 771 0 suna .
+SFX 772 N 1
+SFX 772 0 meleriyle .
+SFX 773 N 1
+SFX 773 0 leştirilemeyecek .
+SFX 774 N 1
+SFX 774 0 cığı .
+SFX 775 N 1
+SFX 775 0 lanmayı .
+SFX 776 N 1
+SFX 776 0 madaki .
+SFX 777 N 1
+SFX 777 0 ılamayacağını .
+SFX 778 N 1
+SFX 778 0 laştırılmış .
+SFX 779 N 1
+SFX 779 0 ildiklerinde .
+SFX 780 N 1
+SFX 780 0 laşmalarından .
+SFX 781 N 1
+SFX 781 0 madıkları .
+SFX 782 N 1
+SFX 782 0 sin .
+SFX 783 N 1
+SFX 783 0 mezse .
+SFX 784 N 1
+SFX 784 0 tebileceklerini .
+SFX 785 N 1
+SFX 785 0 yemeyecekleri .
+SFX 786 N 1
+SFX 786 0 yamadığımız .
+SFX 787 N 1
+SFX 787 0 amasın .
+SFX 788 N 1
+SFX 788 0 lılığına .
+SFX 789 N 1
+SFX 789 0 mışlar .
+SFX 790 N 1
+SFX 790 0 yamamaları .
+SFX 791 N 1
+SFX 791 0 lamamalı .
+SFX 792 N 1
+SFX 792 0 lığınca .
+SFX 793 N 1
+SFX 793 0 ebileceklerinden .
+SFX 794 N 1
+SFX 794 0 lanmadığı .
+SFX 795 N 1
+SFX 795 0 ken .
+SFX 796 N 1
+SFX 796 0 memesi .
+SFX 797 N 1
+SFX 797 0 ilmediğini .
+SFX 798 N 1
+SFX 798 0 eceğini .
+SFX 799 N 1
+SFX 799 0 leriydi .
+SFX 800 N 1
+SFX 800 0 ilmediğine .
+SFX 801 N 1
+SFX 801 0 cularını .
+SFX 802 N 1
+SFX 802 0 eceğine .
+SFX 803 N 1
+SFX 803 0 tırmadan .
+SFX 804 N 1
+SFX 804 0 leyemiyor .
+SFX 805 N 1
+SFX 805 0 cidir .
+SFX 806 N 1
+SFX 806 0 lenecektir .
+SFX 807 N 1
+SFX 807 0 mamışlardı .
+SFX 808 N 1
+SFX 808 0 ilemeyeceğinden .
+SFX 809 N 1
+SFX 809 0 ırken .
+SFX 810 N 1
+SFX 810 0 mden .
+SFX 811 N 1
+SFX 811 0 meyeceği .
+SFX 812 N 1
+SFX 812 0 maların .
+SFX 813 N 1
+SFX 813 0 ılamayacağına .
+SFX 814 N 1
+SFX 814 0 eceğimi .
+SFX 815 N 1
+SFX 815 0 nmalarında .
+SFX 816 N 1
+SFX 816 0 acağımızı .
+SFX 817 N 1
+SFX 817 0 emediklerinin .
+SFX 818 N 1
+SFX 818 0 lanamaması .
+SFX 819 N 1
+SFX 819 0 larımıza .
+SFX 820 N 1
+SFX 820 0 dığımda .
+SFX 821 N 1
+SFX 821 0 laşmalarına .
+SFX 822 N 1
+SFX 822 0 leştirilebilir .
+SFX 823 N 1
+SFX 823 0 cilik .
+SFX 824 N 1
+SFX 824 0 layacaklarına .
+SFX 825 N 1
+SFX 825 0 leşmediği .
+SFX 826 N 1
+SFX 826 0 tiler .
+SFX 827 N 1
+SFX 827 0 likleridir .
+SFX 828 N 1
+SFX 828 0 luktu .
+SFX 829 N 1
+SFX 829 0 uyorsunuz .
+SFX 830 N 1
+SFX 830 0 amadığının .
+SFX 831 N 1
+SFX 831 0 laştırmak .
+SFX 832 N 1
+SFX 832 0 ündeydi .
+SFX 833 N 1
+SFX 833 0 lerinizi .
+SFX 834 N 1
+SFX 834 0 edir .
+SFX 835 N 1
+SFX 835 0 lerinize .
+SFX 836 N 1
+SFX 836 0 amadığınız .
+SFX 837 N 1
+SFX 837 0 acaklarından .
+SFX 838 N 1
+SFX 838 0 dıkça .
+SFX 839 N 1
+SFX 839 0 acaklarsa .
+SFX 840 N 1
+SFX 840 0 tiğinden .
+SFX 841 N 1
+SFX 841 0 yanların .
+SFX 842 N 1
+SFX 842 0 laştırmaz .
+SFX 843 N 1
+SFX 843 0 nmamaları .
+SFX 844 N 1
+SFX 844 0 nmayacak .
+SFX 845 N 1
+SFX 845 0 ulunca .
+SFX 846 N 1
+SFX 846 0 dalar .
+SFX 847 N 1
+SFX 847 0 sen .
+SFX 848 N 1
+SFX 848 0 sem .
+SFX 849 N 1
+SFX 849 0 ılabilir .
+SFX 850 N 1
+SFX 850 0 lenebilir .
+SFX 851 N 1
+SFX 851 0 ılacağına .
+SFX 852 N 1
+SFX 852 0 sel .
+SFX 853 N 1
+SFX 853 0 liymiş .
+SFX 854 N 1
+SFX 854 0 emezsin .
+SFX 855 N 1
+SFX 855 0 sek .
+SFX 856 N 1
+SFX 856 0 'daki .
+SFX 857 N 1
+SFX 857 0 nini .
+SFX 858 N 1
+SFX 858 0 anların .
+SFX 859 N 1
+SFX 859 0 nine .
+SFX 860 N 1
+SFX 860 0 ememesi .
+SFX 861 N 1
+SFX 861 0 madıkça .
+SFX 862 N 1
+SFX 862 0 lememiş .
+SFX 863 N 1
+SFX 863 0 emeyişinden .
+SFX 864 N 1
+SFX 864 0 tamadı .
+SFX 865 N 1
+SFX 865 0 sanız .
+SFX 866 N 1
+SFX 866 0 madığının .
+SFX 867 N 1
+SFX 867 0 leşenler .
+SFX 868 N 1
+SFX 868 0 imleri .
+SFX 869 N 1
+SFX 869 0 eriz .
+SFX 870 N 1
+SFX 870 0 nmışlardı .
+SFX 871 N 1
+SFX 871 0 irken .
+SFX 872 N 1
+SFX 872 0 memişiz .
+SFX 873 N 1
+SFX 873 0 madığınız .
+SFX 874 N 1
+SFX 874 0 uyorlardı .
+SFX 875 N 1
+SFX 875 0 lamalarıyla .
+SFX 876 N 1
+SFX 876 0 erim .
+SFX 877 N 1
+SFX 877 0 ilemeyeceğini .
+SFX 878 N 1
+SFX 878 0 ilemeyeceğine .
+SFX 880 N 1
+SFX 880 0 lanması .
+SFX 879 N 1
+SFX 879 0 mdir .
+SFX 881 N 1
+SFX 881 0 memişim .
+SFX 882 N 1
+SFX 882 0 nmazlar .
+SFX 883 N 1
+SFX 883 0 ılmazdı .
+SFX 885 N 1
+SFX 885 0 lamış .
+SFX 884 N 1
+SFX 884 0 yenler .
+SFX 886 N 1
+SFX 886 0 leştiriliyor .
+SFX 887 N 1
+SFX 887 0 necek .
+SFX 888 N 1
+SFX 888 0 'a .
+SFX 889 N 1
+SFX 889 0 lerinini .
+SFX 890 N 1
+SFX 890 0 amayanları .
+SFX 892 N 1
+SFX 892 0 'e .
+SFX 891 N 1
+SFX 891 0 lamışım .
+SFX 893 N 1
+SFX 893 0 lamışız .
+SFX 895 N 1
+SFX 895 0 tamadığına .
+SFX 894 N 1
+SFX 894 0 cayı .
+SFX 896 N 1
+SFX 896 0 miyorsa .
+SFX 897 N 1
+SFX 897 0 lanmaya .
+SFX 898 N 1
+SFX 898 0 dikçe .
+SFX 902 N 1
+SFX 902 0 ınında .
+SFX 901 N 1
+SFX 901 0 dıracak .
+SFX 900 N 1
+SFX 900 0 laşamayan .
+SFX 899 N 1
+SFX 899 0 ışların .
+SFX 904 N 1
+SFX 904 0 layamayacağı .
+SFX 903 N 1
+SFX 903 0 laştıracaklarını .
+SFX 906 N 1
+SFX 906 0 lıktaki .
+SFX 905 N 1
+SFX 905 0 ileceğinden .
+SFX 907 N 1
+SFX 907 0 nememiş .
+SFX 908 N 1
+SFX 908 0 mezin .
+SFX 909 N 1
+SFX 909 0 laşmasından .
+SFX 910 N 1
+SFX 910 0 meleriydi .
+SFX 911 N 1
+SFX 911 0 dirdik .
+SFX 912 N 1
+SFX 912 0 lığında .
+SFX 914 N 1
+SFX 914 0 yeceğine .
+SFX 913 N 1
+SFX 913 0 leyeceğinden .
+SFX 915 N 1
+SFX 915 0 dirmeleri .
+SFX 918 N 1
+SFX 918 0 yeceğini .
+SFX 917 N 1
+SFX 917 0 uyorlar .
+SFX 916 N 1
+SFX 916 0 mekteki .
+SFX 919 N 1
+SFX 919 0 mıyorsunuz .
+SFX 920 N 1
+SFX 920 0 amazsın .
+SFX 921 N 1
+SFX 921 0 'u .
+SFX 923 N 1
+SFX 923 0 meyerek .
+SFX 922 N 1
+SFX 922 0 ulamayacağının .
+SFX 924 N 1
+SFX 924 0 ılmasını .
+SFX 926 N 1
+SFX 926 0 'i .
+SFX 925 N 1
+SFX 925 0 maları .
+SFX 927 N 1
+SFX 927 0 leşeceğinden .
+SFX 928 N 1
+SFX 928 0 meyenleri .
+SFX 929 N 1
+SFX 929 0 leştirilemeyeceği .
+SFX 930 N 1
+SFX 930 0 ebilmek .
+SFX 931 N 1
+SFX 931 0 imlerin .
+SFX 932 N 1
+SFX 932 0 landırma .
+SFX 933 N 1
+SFX 933 0 laşmadığı .
+SFX 935 N 1
+SFX 935 0 'daydı .
+SFX 934 N 1
+SFX 934 0 meyenlere .
+SFX 936 N 1
+SFX 936 0 yemeyeceği .
+SFX 937 N 1
+SFX 937 0 'sinden .
+SFX 938 N 1
+SFX 938 0 miyorum .
+SFX 939 N 1
+SFX 939 0 liğimden .
+SFX 941 N 1
+SFX 941 0 yanlardan .
+SFX 940 N 1
+SFX 940 0 lanabiliyor .
+SFX 942 N 1
+SFX 942 0 ulduğunda .
+SFX 943 N 1
+SFX 943 0 namayan .
+SFX 944 N 1
+SFX 944 0 nacaklarına .
+SFX 945 N 1
+SFX 945 0 acağımıza .
+SFX 947 N 1
+SFX 947 0 ınsa .
+SFX 946 N 1
+SFX 946 0 irdi .
+SFX 948 N 1
+SFX 948 0 ilmesinden .
+SFX 949 N 1
+SFX 949 0 lamaz .
+SFX 950 N 1
+SFX 950 0 ılmamıştır .
+SFX 952 N 1
+SFX 952 0 erek .
+SFX 951 N 1
+SFX 951 0 laşamıyor .
+SFX 953 N 1
+SFX 953 0 ılmasına .
+SFX 954 N 1
+SFX 954 0 laşan .
+SFX 955 N 1
+SFX 955 0 memeli .
+SFX 956 N 1
+SFX 956 0 miyoruz .
+SFX 959 N 1
+SFX 959 0 lamak .
+SFX 958 N 1
+SFX 958 0 ıklarına .
+SFX 957 N 1
+SFX 957 0 ileceklerini .
+SFX 961 N 1
+SFX 961 0 cılık .
+SFX 960 N 1
+SFX 960 0 indeyse .
+SFX 962 N 1
+SFX 962 0 lamam .
+SFX 963 N 1
+SFX 963 0 lular .
+SFX 964 N 1
+SFX 964 0 'taki .
+SFX 966 N 1
+SFX 966 0 ılacağını .
+SFX 965 N 1
+SFX 965 0 cısına .
+SFX 968 N 1
+SFX 968 0 laştırılacak .
+SFX 967 N 1
+SFX 967 0 ılmalarının .
+SFX 969 N 1
+SFX 969 0 nmaları .
+SFX 970 N 1
+SFX 970 0 dığından .
+SFX 971 N 1
+SFX 971 0 'ı .
+SFX 972 N 1
+SFX 972 0 yanları .
+SFX 973 N 1
+SFX 973 0 ılışı .
+SFX 974 N 1
+SFX 974 0 liydim .
+SFX 975 N 1
+SFX 975 0 ladıklarında .
+SFX 976 N 1
+SFX 976 0 amamıştır .
+SFX 977 N 1
+SFX 977 0 leştirmez .
+SFX 978 N 1
+SFX 978 0 amamıştım .
+SFX 980 N 1
+SFX 980 0 amamıştık .
+SFX 979 N 1
+SFX 979 0 nızla .
+SFX 981 N 1
+SFX 981 0 mazlıkları .
+SFX 982 N 1
+SFX 982 0 layabildiklerini .
+SFX 983 N 1
+SFX 983 0 tığına .
+SFX 984 N 1
+SFX 984 0 sindekilerin .
+SFX 985 N 1
+SFX 985 0 siymiş .
+SFX 986 N 1
+SFX 986 0 lamalıyız .
+SFX 988 N 1
+SFX 988 0 'ü .
+SFX 987 N 1
+SFX 987 0 narak .
+SFX 989 N 1
+SFX 989 0 yamaması .
+SFX 991 N 1
+SFX 991 0 casına .
+SFX 990 N 1
+SFX 990 0 andır .
+SFX 992 N 1
+SFX 992 0 lenişi .
+SFX 993 N 1
+SFX 993 0 lamalıyım .
+SFX 995 N 1
+SFX 995 0 nmiştir .
+SFX 994 N 1
+SFX 994 0 imlerine .
+SFX 997 N 1
+SFX 997 0 dirmek .
+SFX 996 N 1
+SFX 996 0 ılmadı .
+SFX 998 N 1
+SFX 998 0 imlerini .
+SFX 999 N 1
+SFX 999 0 leştirmek .
+SFX 1000 N 1
+SFX 1000 0 cularına .
+SFX 1001 N 1
+SFX 1001 0 emeyeceği .
+SFX 1002 N 1
+SFX 1002 0 dırmaya .
+SFX 1004 N 1
+SFX 1004 0 ındakilere .
+SFX 1003 N 1
+SFX 1003 0 mdaki .
+SFX 1005 N 1
+SFX 1005 0 ulmaz .
+SFX 1006 N 1
+SFX 1006 0 ılamadığını .
+SFX 1007 N 1
+SFX 1007 0 mın .
+SFX 1008 N 1
+SFX 1008 0 leyebileceği .
+SFX 1009 N 1
+SFX 1009 0 lemesini .
+SFX 1010 N 1
+SFX 1010 0 mezdi .
+SFX 1012 N 1
+SFX 1012 0 leştireceğine .
+SFX 1011 N 1
+SFX 1011 0 ındaydılar .
+SFX 1013 N 1
+SFX 1013 0 lukla .
+SFX 1014 N 1
+SFX 1014 0 tilmeli .
+SFX 1016 N 1
+SFX 1016 0 leştireceğini .
+SFX 1015 N 1
+SFX 1015 0 ındakileri .
+SFX 1017 N 1
+SFX 1017 0 ştırdığını .
+SFX 1018 N 1
+SFX 1018 0 laşmada .
+SFX 1019 N 1
+SFX 1019 0 ıklıklarını .
+SFX 1020 N 1
+SFX 1020 0 mız .
+SFX 1021 N 1
+SFX 1021 0 lemesiyle .
+SFX 1022 N 1
+SFX 1022 0 laştıkları .
+SFX 1023 N 1
+SFX 1023 0 imizdi .
+SFX 1025 N 1
+SFX 1025 0 çıların .
+SFX 1024 N 1
+SFX 1024 0 tiklerinin .
+SFX 1027 N 1
+SFX 1027 0 nmişler .
+SFX 1026 N 1
+SFX 1026 0 ılamadı .
+SFX 1028 N 1
+SFX 1028 0 dır .
+SFX 1029 N 1
+SFX 1029 0 emiyor .
+SFX 1030 N 1
+SFX 1030 0 ılmamalıdır .
+SFX 1032 N 1
+SFX 1032 0 dın .
+SFX 1031 N 1
+SFX 1031 0 lığımıza .
+SFX 1034 N 1
+SFX 1034 0 dım .
+SFX 1033 N 1
+SFX 1033 0 maması .
+SFX 1035 N 1
+SFX 1035 0 imizde .
+SFX 1036 N 1
+SFX 1036 0 dırlar .
+SFX 1037 N 1
+SFX 1037 0 leştirdik .
+SFX 1038 N 1
+SFX 1038 0 lıklarıdır .
+SFX 1039 N 1
+SFX 1039 0 tiğine .
+SFX 1040 N 1
+SFX 1040 0 lemesine .
+SFX 1043 N 1
+SFX 1043 0 acakları .
+SFX 1042 N 1
+SFX 1042 0 nmışlar .
+SFX 1041 N 1
+SFX 1041 0 mişimdir .
+SFX 1044 N 1
+SFX 1044 0 tiğini .
+SFX 1047 N 1
+SFX 1047 0 lanmayacağı .
+SFX 1046 N 1
+SFX 1046 0 lideki .
+SFX 1045 N 1
+SFX 1045 0 meyeceksin .
+SFX 1048 N 1
+SFX 1048 0 undaki .
+SFX 1049 N 1
+SFX 1049 0 ışında .
+SFX 1052 N 1
+SFX 1052 0 ını .
+SFX 1051 N 1
+SFX 1051 0 mediğinden .
+SFX 1050 N 1
+SFX 1050 0 abilmenin .
+SFX 1053 N 1
+SFX 1053 0 meyebilir .
+SFX 1054 N 1
+SFX 1054 0 lemeniz .
+SFX 1055 N 1
+SFX 1055 0 ebileceğinin .
+SFX 1057 N 1
+SFX 1057 0 inizin .
+SFX 1056 N 1
+SFX 1056 0 dekilere .
+SFX 1058 N 1
+SFX 1058 0 lemenin .
+SFX 1060 N 1
+SFX 1060 0 ebileceğiniz .
+SFX 1059 N 1
+SFX 1059 0 ınınki .
+SFX 1062 N 1
+SFX 1062 0 dekileri .
+SFX 1061 N 1
+SFX 1061 0 mayacaksınız .
+SFX 1063 N 1
+SFX 1063 0 lanmasından .
+SFX 1064 N 1
+SFX 1064 0 lanmaların .
+SFX 1065 N 1
+SFX 1065 0 dık .
+SFX 1066 N 1
+SFX 1066 0 lediği .
+SFX 1067 N 1
+SFX 1067 0 lısını .
+SFX 1069 N 1
+SFX 1069 0 mamaya .
+SFX 1068 N 1
+SFX 1068 0 ilemeyişi .
+SFX 1070 N 1
+SFX 1070 0 landırmaları .
+SFX 1071 N 1
+SFX 1071 0 lanamayacaklarını .
+SFX 1072 N 1
+SFX 1072 0 yemeyecek .
+SFX 1073 N 1
+SFX 1073 0 ımı .
+SFX 1074 N 1
+SFX 1074 0 tmalılar .
+SFX 1075 N 1
+SFX 1075 0 memişti .
+SFX 1076 N 1
+SFX 1076 0 nacaklarını .
+SFX 1077 N 1
+SFX 1077 0 lanıyorlar .
+SFX 1078 N 1
+SFX 1078 0 liğindeki .
+SFX 1080 N 1
+SFX 1080 0 dırmış .
+SFX 1079 N 1
+SFX 1079 0 lemiyor .
+SFX 1081 N 1
+SFX 1081 0 erdi .
+SFX 1083 N 1
+SFX 1083 0 malara .
+SFX 1082 N 1
+SFX 1082 0 leyemedi .
+SFX 1085 N 1
+SFX 1085 0 masalar .
+SFX 1084 N 1
+SFX 1084 0 enlerine .
+SFX 1086 N 1
+SFX 1086 0 nmıyor .
+SFX 1087 N 1
+SFX 1087 0 ebildik .
+SFX 1088 N 1
+SFX 1088 0 enlerini .
+SFX 1090 N 1
+SFX 1090 0 işinin .
+SFX 1089 N 1
+SFX 1089 0 mesek .
+SFX 1092 N 1
+SFX 1092 0 nmalarını .
+SFX 1091 N 1
+SFX 1091 0 cilikte .
+SFX 1093 N 1
+SFX 1093 0 lanıyor .
+SFX 1094 N 1
+SFX 1094 0 lenebildiği .
+SFX 1095 N 1
+SFX 1095 0 salar .
+SFX 1096 N 1
+SFX 1096 0 dığımızda .
+SFX 1097 N 1
+SFX 1097 0 abiliriz .
+SFX 1098 N 1
+SFX 1098 0 tanın .
+SFX 1099 N 1
+SFX 1099 0 dırdığından .
+SFX 1100 N 1
+SFX 1100 0 ıcılığına .
+SFX 1101 N 1
+SFX 1101 0 nmeleri .
+SFX 1102 N 1
+SFX 1102 0 seniz .
+SFX 1103 N 1
+SFX 1103 0 ımlarında .
+SFX 1104 N 1
+SFX 1104 0 ımlarından .
+SFX 1105 N 1
+SFX 1105 0 leştirmesini .
+SFX 1106 N 1
+SFX 1106 0 abilirim .
+SFX 1107 N 1
+SFX 1107 0 indeyiz .
+SFX 1109 N 1
+SFX 1109 0 yanlara .
+SFX 1108 N 1
+SFX 1108 0 yebildiklerini .
+SFX 1110 N 1
+SFX 1110 0 laştırdığından .
+SFX 1111 N 1
+SFX 1111 0 lısına .
+SFX 1113 N 1
+SFX 1113 0 ttığının .
+SFX 1112 N 1
+SFX 1112 0 ülmüş .
+SFX 1114 N 1
+SFX 1114 0 yemediğini .
+SFX 1115 N 1
+SFX 1115 0 yemediğine .
+SFX 1117 N 1
+SFX 1117 0 lüğünüz .
+SFX 1116 N 1
+SFX 1116 0 yecekti .
+SFX 1118 N 1
+SFX 1118 0 tığını .
+SFX 1119 N 1
+SFX 1119 0 ttığınız .
+SFX 1120 N 1
+SFX 1120 0 uşundan .
+SFX 1121 N 1
+SFX 1121 0 cılarında .
+SFX 1123 N 1
+SFX 1123 0 emedikleri .
+SFX 1122 N 1
+SFX 1122 0 miyorsunuz .
+SFX 1124 N 1
+SFX 1124 0 lüğünün .
+SFX 1125 N 1
+SFX 1125 0 lamasıdır .
+SFX 1126 N 1
+SFX 1126 0 ilemediğinin .
+SFX 1127 N 1
+SFX 1127 0 mayabileceği .
+SFX 1128 N 1
+SFX 1128 0 larındaysa .
+SFX 1129 N 1
+SFX 1129 0 yacağından .
+SFX 1131 N 1
+SFX 1131 0 ılmalı .
+SFX 1130 N 1
+SFX 1130 0 leşmesin .
+SFX 1134 N 1
+SFX 1134 0 acaksa .
+SFX 1133 N 1
+SFX 1133 0 ilmezse .
+SFX 1132 N 1
+SFX 1132 0 ıcılar .
+SFX 1136 N 1
+SFX 1136 0 sun .
+SFX 1135 N 1
+SFX 1135 0 amamaktadır .
+SFX 1138 N 1
+SFX 1138 0 mıştır .
+SFX 1137 N 1
+SFX 1137 0 ıklarını .
+SFX 1140 N 1
+SFX 1140 0 indeyim .
+SFX 1139 N 1
+SFX 1139 0 madığımız .
+SFX 1142 N 1
+SFX 1142 0 ıklar .
+SFX 1141 N 1
+SFX 1141 0 ılmıştı .
+SFX 1143 N 1
+SFX 1143 0 duklarını .
+SFX 1144 N 1
+SFX 1144 0 laştırılmalı .
+SFX 1145 N 1
+SFX 1145 0 mıştık .
+SFX 1146 N 1
+SFX 1146 0 suz .
+SFX 1147 N 1
+SFX 1147 0 mıştım .
+SFX 1148 N 1
+SFX 1148 0 mıştın .
+SFX 1150 N 1
+SFX 1150 0 amamak .
+SFX 1149 N 1
+SFX 1149 0 nızda .
+SFX 1152 N 1
+SFX 1152 0 diklerinden .
+SFX 1151 N 1
+SFX 1151 0 ılsın .
+SFX 1153 N 1
+SFX 1153 0 umdur .
+SFX 1155 N 1
+SFX 1155 0 lamaların .
+SFX 1154 N 1
+SFX 1154 0 ıklıklarına .
+SFX 1156 N 1
+SFX 1156 0 'sıyla .
+SFX 1158 N 1
+SFX 1158 0 laştı .
+SFX 1157 N 1
+SFX 1157 0 sizleştiği .
+SFX 1161 N 1
+SFX 1161 0 tık .
+SFX 1160 N 1
+SFX 1160 0 inizde .
+SFX 1159 N 1
+SFX 1159 0 latan .
+SFX 1163 N 1
+SFX 1163 0 lığımızı .
+SFX 1162 N 1
+SFX 1162 0 tım .
+SFX 1167 N 1
+SFX 1167 0 tın .
+SFX 1166 N 1
+SFX 1166 0 mesidir .
+SFX 1165 N 1
+SFX 1165 0 yabileceğine .
+SFX 1164 N 1
+SFX 1164 0 dırmalı .
+SFX 1168 N 1
+SFX 1168 0 tıp .
+SFX 1169 N 1
+SFX 1169 0 diğimiz .
+SFX 1171 N 1
+SFX 1171 0 tır .
+SFX 1170 N 1
+SFX 1170 0 yabileceğini .
+SFX 1172 N 1
+SFX 1172 0 'nün .
+SFX 1174 N 1
+SFX 1174 0 yalım .
+SFX 1173 N 1
+SFX 1173 0 nabilir .
+SFX 1175 N 1
+SFX 1175 0 ünden .
+SFX 1176 N 1
+SFX 1176 0 lukta .
+SFX 1177 N 1
+SFX 1177 0 lanışından .
+SFX 1178 N 1
+SFX 1178 0 leşmeleri .
+SFX 1179 N 1
+SFX 1179 0 'dayken .
+SFX 1180 N 1
+SFX 1180 0 larını .
+SFX 1181 N 1
+SFX 1181 0 daydık .
+SFX 1182 N 1
+SFX 1182 0 dirmediği .
+SFX 1184 N 1
+SFX 1184 0 mektir .
+SFX 1183 N 1
+SFX 1183 0 daydım .
+SFX 1185 N 1
+SFX 1185 0 ılmaya .
+SFX 1186 N 1
+SFX 1186 0 cüler .
+SFX 1187 N 1
+SFX 1187 0 eceklerin .
+SFX 1188 N 1
+SFX 1188 0 layabilirsiniz .
+SFX 1190 N 1
+SFX 1190 0 mamalı .
+SFX 1189 N 1
+SFX 1189 0 nmışa .
+SFX 1191 N 1
+SFX 1191 0 ciden .
+SFX 1192 N 1
+SFX 1192 0 yamayacaklar .
+SFX 1193 N 1
+SFX 1193 0 malarının .
+SFX 1194 N 1
+SFX 1194 0 direceklerini .
+SFX 1195 N 1
+SFX 1195 0 amayan .
+SFX 1196 N 1
+SFX 1196 0 cilerle .
+SFX 1197 N 1
+SFX 1197 0 mışlarsa .
+SFX 1198 N 1
+SFX 1198 0 larımı .
+SFX 1200 N 1
+SFX 1200 0 imizle .
+SFX 1199 N 1
+SFX 1199 0 layamayız .
+SFX 1203 N 1
+SFX 1203 0 sunun .
+SFX 1202 N 1
+SFX 1202 0 üşü .
+SFX 1201 N 1
+SFX 1201 0 ndırma .
+SFX 1205 N 1
+SFX 1205 0 laşmama .
+SFX 1204 N 1
+SFX 1204 0 ılmışlardır .
+SFX 1206 N 1
+SFX 1206 0 mamaktan .
+SFX 1207 N 1
+SFX 1207 0 leşmesidir .
+SFX 1208 N 1
+SFX 1208 0 landıran .
+SFX 1209 N 1
+SFX 1209 0 anla .
+SFX 1210 N 1
+SFX 1210 0 lerimizle .
+SFX 1211 N 1
+SFX 1211 0 duğu .
+SFX 1213 N 1
+SFX 1213 0 tan .
+SFX 1212 N 1
+SFX 1212 0 ıcı .
+SFX 1214 N 1
+SFX 1214 0 sunuz .
+SFX 1216 N 1
+SFX 1216 0 ın .
+SFX 1215 N 1
+SFX 1215 0 ıla .
+SFX 1218 N 1
+SFX 1218 0 ım .
+SFX 1217 N 1
+SFX 1217 0 leşirse .
+SFX 1219 N 1
+SFX 1219 0 ıp .
+SFX 1221 N 1
+SFX 1221 0 ılamadığına .
+SFX 1220 N 1
+SFX 1220 0 müşüz .
+SFX 1222 N 1
+SFX 1222 0 lerimizin .
+SFX 1223 N 1
+SFX 1223 0 ık .
+SFX 1224 N 1
+SFX 1224 0 ınınsa .
+SFX 1225 N 1
+SFX 1225 0 medikçe .
+SFX 1226 N 1
+SFX 1226 0 müşüm .
+SFX 1227 N 1
+SFX 1227 0 leştiriyorlar .
+SFX 1228 N 1
+SFX 1228 0 lanacakları .
+SFX 1229 N 1
+SFX 1229 0 laşabileceği .
+SFX 1230 N 1
+SFX 1230 0 mazmış .
+SFX 1231 N 1
+SFX 1231 0 nmamıştı .
+SFX 1232 N 1
+SFX 1232 0 leştirmişti .
+SFX 1233 N 1
+SFX 1233 0 tıcılığı .
+SFX 1235 N 1
+SFX 1235 0 indeydi .
+SFX 1234 N 1
+SFX 1234 0 ebileceği .
+SFX 1236 N 1
+SFX 1236 0 lığa .
+SFX 1237 N 1
+SFX 1237 0 cilerden .
+SFX 1238 N 1
+SFX 1238 0 lenince .
+SFX 1239 N 1
+SFX 1239 0 cadan .
+SFX 1240 N 1
+SFX 1240 0 laştırdığı .
+SFX 1242 N 1
+SFX 1242 0 mayalım .
+SFX 1241 N 1
+SFX 1241 0 ilmemelidir .
+SFX 1243 N 1
+SFX 1243 0 laştırırken .
+SFX 1245 N 1
+SFX 1245 0 leştirildiği .
+SFX 1244 N 1
+SFX 1244 0 ız .
+SFX 1246 N 1
+SFX 1246 0 lenebildiğini .
+SFX 1247 N 1
+SFX 1247 0 iliyor .
+SFX 1249 N 1
+SFX 1249 0 ır .
+SFX 1248 N 1
+SFX 1248 0 suzluğun .
+SFX 1250 N 1
+SFX 1250 0 lenmezse .
+SFX 1253 N 1
+SFX 1253 0 mekten .
+SFX 1252 N 1
+SFX 1252 0 latma .
+SFX 1251 N 1
+SFX 1251 0 layamamanın .
+SFX 1254 N 1
+SFX 1254 0 iminden .
+SFX 1255 N 1
+SFX 1255 0 abileceğin .
+SFX 1256 N 1
+SFX 1256 0 abileceğim .
+SFX 1257 N 1
+SFX 1257 0 ına .
+SFX 1260 N 1
+SFX 1260 0 amayanların .
+SFX 1259 N 1
+SFX 1259 0 sizlikleri .
+SFX 1258 N 1
+SFX 1258 0 duklarına .
+SFX 1261 N 1
+SFX 1261 0 lettiğini .
+SFX 1262 N 1
+SFX 1262 0 terek .
+SFX 1263 N 1
+SFX 1263 0 latıldığı .
+SFX 1264 N 1
+SFX 1264 0 diğimizi .
+SFX 1265 N 1
+SFX 1265 0 ündekilerin .
+SFX 1266 N 1
+SFX 1266 0 dirildiğini .
+SFX 1268 N 1
+SFX 1268 0 imizin .
+SFX 1267 N 1
+SFX 1267 0 lamayacağım .
+SFX 1270 N 1
+SFX 1270 0 leştiremediği .
+SFX 1269 N 1
+SFX 1269 0 yışlarını .
+SFX 1272 N 1
+SFX 1272 0 lamalıdır .
+SFX 1271 N 1
+SFX 1271 0 nabileceğinden .
+SFX 1273 N 1
+SFX 1273 0 şmeye .
+SFX 1274 N 1
+SFX 1274 0 abilmeniz .
+SFX 1275 N 1
+SFX 1275 0 ıma .
+SFX 1276 N 1
+SFX 1276 0 lenemediğini .
+SFX 1278 N 1
+SFX 1278 0 ımdan .
+SFX 1277 N 1
+SFX 1277 0 yenlerin .
+SFX 1279 N 1
+SFX 1279 0 nizi .
+SFX 1280 N 1
+SFX 1280 0 ıyorlar .
+SFX 1281 N 1
+SFX 1281 0 ciliğe .
+SFX 1282 N 1
+SFX 1282 0 eceklerdi .
+SFX 1283 N 1
+SFX 1283 0 lığı .
+SFX 1286 N 1
+SFX 1286 0 ciliği .
+SFX 1285 N 1
+SFX 1285 0 lüklerin .
+SFX 1284 N 1
+SFX 1284 0 miyordu .
+SFX 1287 N 1
+SFX 1287 0 nize .
+SFX 1288 N 1
+SFX 1288 0 landırdığına .
+SFX 1289 N 1
+SFX 1289 0 emeyeceğim .
+SFX 1290 N 1
+SFX 1290 0 larımızı .
+SFX 1291 N 1
+SFX 1291 0 'nınki .
+SFX 1292 N 1
+SFX 1292 0 yıcılığından .
+SFX 1295 N 1
+SFX 1295 0 larındaydı .
+SFX 1294 N 1
+SFX 1294 0 landıklarında .
+SFX 1293 N 1
+SFX 1293 0 nmesine .
+SFX 1297 N 1
+SFX 1297 0 yamamıştı .
+SFX 1296 N 1
+SFX 1296 0 ulmasın .
+SFX 1300 N 1
+SFX 1300 0 yamadığını .
+SFX 1299 N 1
+SFX 1299 0 leyebilecek .
+SFX 1298 N 1
+SFX 1298 0 nmesini .
+SFX 1301 N 1
+SFX 1301 0 nmalarına .
+SFX 1303 N 1
+SFX 1303 0 yabildikleri .
+SFX 1302 N 1
+SFX 1302 0 nından .
+SFX 1304 N 1
+SFX 1304 0 çuları .
+SFX 1305 N 1
+SFX 1305 0 ndaki .
+SFX 1306 N 1
+SFX 1306 0 enlerinden .
+SFX 1307 N 1
+SFX 1307 0 tiklerinde .
+SFX 1309 N 1
+SFX 1309 0 cilerin .
+SFX 1308 N 1
+SFX 1308 0 sıymış .
+SFX 1311 N 1
+SFX 1311 0 lanmalıdır .
+SFX 1310 N 1
+SFX 1310 0 imizdeki .
+SFX 1313 N 1
+SFX 1313 0 laşıyoruz .
+SFX 1312 N 1
+SFX 1312 0 lenmeyeceğini .
+SFX 1315 N 1
+SFX 1315 0 laşsa .
+SFX 1314 N 1
+SFX 1314 0 meci .
+SFX 1316 N 1
+SFX 1316 0 leştirebileceğini .
+SFX 1318 N 1
+SFX 1318 0 inizle .
+SFX 1317 N 1
+SFX 1317 0 ılması .
+SFX 1319 N 1
+SFX 1319 0 meyecekti .
+SFX 1321 N 1
+SFX 1321 0 dırmadan .
+SFX 1320 N 1
+SFX 1320 0 ıldıktan .
+SFX 1324 N 1
+SFX 1324 0 mış .
+SFX 1323 N 1
+SFX 1323 0 abilirdi .
+SFX 1322 N 1
+SFX 1322 0 lardaydı .
+SFX 1325 N 1
+SFX 1325 0 lıktaydı .
+SFX 1326 N 1
+SFX 1326 0 ışı .
+SFX 1327 N 1
+SFX 1327 0 laştırılması .
+SFX 1328 N 1
+SFX 1328 0 laştırılmaya .
+SFX 1330 N 1
+SFX 1330 0 laştıracağı .
+SFX 1329 N 1
+SFX 1329 0 lamasıyla .
+SFX 1331 N 1
+SFX 1331 0 lanmayan .
+SFX 1333 N 1
+SFX 1333 0 lamalarında .
+SFX 1332 N 1
+SFX 1332 0 lenmenin .
+SFX 1334 N 1
+SFX 1334 0 nemediğini .
+SFX 1335 N 1
+SFX 1335 0 ememesinden .
+SFX 1336 N 1
+SFX 1336 0 landırıldığına .
+SFX 1337 N 1
+SFX 1337 0 'ını .
+SFX 1338 N 1
+SFX 1338 0 iminin .
+SFX 1341 N 1
+SFX 1341 0 cılığına .
+SFX 1340 N 1
+SFX 1340 0 nebileceğini .
+SFX 1339 N 1
+SFX 1339 0 çılığın .
+SFX 1342 N 1
+SFX 1342 0 yacaklarına .
+SFX 1344 N 1
+SFX 1344 0 nebileceğine .
+SFX 1343 N 1
+SFX 1343 0 cıklar .
+SFX 1345 N 1
+SFX 1345 0 cılığa .
+SFX 1346 N 1
+SFX 1346 0 sudur .
+SFX 1347 N 1
+SFX 1347 0 lığınız .
+SFX 1348 N 1
+SFX 1348 0 şa .
+SFX 1349 N 1
+SFX 1349 0 abilse .
+SFX 1350 N 1
+SFX 1350 0 mıyorlar .
+SFX 1351 N 1
+SFX 1351 0 'ninki .
+SFX 1352 N 1
+SFX 1352 0 ilenleri .
+SFX 1353 N 1
+SFX 1353 0 malısın .
+SFX 1354 N 1
+SFX 1354 0 luklarında .
+SFX 1355 N 1
+SFX 1355 0 unuza .
+SFX 1356 N 1
+SFX 1356 0 lemez .
+SFX 1357 N 1
+SFX 1357 0 yecektir .
+SFX 1358 N 1
+SFX 1358 0 selliğin .
+SFX 1359 N 1
+SFX 1359 0 unuzu .
+SFX 1360 N 1
+SFX 1360 0 yemedik .
+SFX 1361 N 1
+SFX 1361 0 niyor .
+SFX 1366 N 1
+SFX 1366 0 lılarının .
+SFX 1365 N 1
+SFX 1365 0 üyor .
+SFX 1364 N 1
+SFX 1364 0 lemem .
+SFX 1363 N 1
+SFX 1363 0 lendirdikleri .
+SFX 1362 N 1
+SFX 1362 0 namazdı .
+SFX 1367 N 1
+SFX 1367 0 lemek .
+SFX 1368 N 1
+SFX 1368 0 malarından .
+SFX 1369 N 1
+SFX 1369 0 tacağına .
+SFX 1371 N 1
+SFX 1371 0 laşmasına .
+SFX 1370 N 1
+SFX 1370 0 indesiniz .
+SFX 1372 N 1
+SFX 1372 0 ılacağı .
+SFX 1374 N 1
+SFX 1374 0 lanmamış .
+SFX 1373 N 1
+SFX 1373 0 ttığına .
+SFX 1375 N 1
+SFX 1375 0 ilmeyeceği .
+SFX 1376 N 1
+SFX 1376 0 cüleri .
+SFX 1378 N 1
+SFX 1378 0 abilmeleri .
+SFX 1377 N 1
+SFX 1377 0 mekti .
+SFX 1379 N 1
+SFX 1379 0 meyecekleri .
+SFX 1380 N 1
+SFX 1380 0 duğunu .
+SFX 1381 N 1
+SFX 1381 0 layışı .
+SFX 1382 N 1
+SFX 1382 0 tılınca .
+SFX 1383 N 1
+SFX 1383 0 leyebileceklerini .
+SFX 1384 N 1
+SFX 1384 0 larsınız .
+SFX 1385 N 1
+SFX 1385 0 leyelim .
+SFX 1386 N 1
+SFX 1386 0 mekte .
+SFX 1388 N 1
+SFX 1388 0 leştiriyor .
+SFX 1387 N 1
+SFX 1387 0 leştikleri .
+SFX 1389 N 1
+SFX 1389 0 ndirdiği .
+SFX 1390 N 1
+SFX 1390 0 laştırıyoruz .
+SFX 1391 N 1
+SFX 1391 0 teki .
+SFX 1392 N 1
+SFX 1392 0 şmak .
+SFX 1393 N 1
+SFX 1393 0 dirmeli .
+SFX 1395 N 1
+SFX 1395 0 lerimizdir .
+SFX 1394 N 1
+SFX 1394 0 dirmeden .
+SFX 1396 N 1
+SFX 1396 0 tığınız .
+SFX 1397 N 1
+SFX 1397 0 layın .
+SFX 1398 N 1
+SFX 1398 0 layıp .
+SFX 1399 N 1
+SFX 1399 0 ırmış .
+SFX 1400 N 1
+SFX 1400 0 ştırdığı .
+SFX 1401 N 1
+SFX 1401 0 diğindeyse .
+SFX 1402 N 1
+SFX 1402 0 layış .
+SFX 1403 N 1
+SFX 1403 0 yamamanın .
+SFX 1405 N 1
+SFX 1405 0 leyemediği .
+SFX 1404 N 1
+SFX 1404 0 yebilir .
+SFX 1409 N 1
+SFX 1409 0 yacağınız .
+SFX 1408 N 1
+SFX 1408 0 dirdiklerini .
+SFX 1407 N 1
+SFX 1407 0 mamalısınız .
+SFX 1406 N 1
+SFX 1406 0 layamazsınız .
+SFX 1411 N 1
+SFX 1411 0 yacağının .
+SFX 1410 N 1
+SFX 1410 0 laştıracağından .
+SFX 1412 N 1
+SFX 1412 0 ersin .
+SFX 1413 N 1
+SFX 1413 0 dırma .
+SFX 1415 N 1
+SFX 1415 0 ıyız .
+SFX 1414 N 1
+SFX 1414 0 liliğinden .
+SFX 1416 N 1
+SFX 1416 0 meseydi .
+SFX 1417 N 1
+SFX 1417 0 lığındandır .
+SFX 1418 N 1
+SFX 1418 0 amayacaklarından .
+SFX 1419 N 1
+SFX 1419 0 yemeyen .
+SFX 1420 N 1
+SFX 1420 0 indense .
+SFX 1421 N 1
+SFX 1421 0 duğuna .
+SFX 1422 N 1
+SFX 1422 0 laşmalar .
+SFX 1423 N 1
+SFX 1423 0 ılacakları .
+SFX 1425 N 1
+SFX 1425 0 tıracaklarını .
+SFX 1424 N 1
+SFX 1424 0 mekse .
+SFX 1427 N 1
+SFX 1427 0 ıyım .
+SFX 1426 N 1
+SFX 1426 0 nmasıyla .
+SFX 1428 N 1
+SFX 1428 0 lüklerinden .
+SFX 1429 N 1
+SFX 1429 0 laştık .
+SFX 1430 N 1
+SFX 1430 0 ildi .
+SFX 1431 N 1
+SFX 1431 0 laştım .
+SFX 1432 N 1
+SFX 1432 0 lenirse .
+SFX 1433 N 1
+SFX 1433 0 mızın .
+SFX 1434 N 1
+SFX 1434 0 lerinden .
+SFX 1435 N 1
+SFX 1435 0 iyorlar .
+SFX 1437 N 1
+SFX 1437 0 lamakla .
+SFX 1436 N 1
+SFX 1436 0 amayarak .
+SFX 1438 N 1
+SFX 1438 0 latmışlar .
+SFX 1440 N 1
+SFX 1440 0 sizlerin .
+SFX 1439 N 1
+SFX 1439 0 ılmayı .
+SFX 1441 N 1
+SFX 1441 0 tırlar .
+SFX 1443 N 1
+SFX 1443 0 cıdan .
+SFX 1442 N 1
+SFX 1442 0 anlarında .
+SFX 1444 N 1
+SFX 1444 0 lerimizde .
+SFX 1446 N 1
+SFX 1446 0 ilmesin .
+SFX 1445 N 1
+SFX 1445 0 dirilmiş .
+SFX 1447 N 1
+SFX 1447 0 ememiştir .
+SFX 1448 N 1
+SFX 1448 0 madıktan .
+SFX 1449 N 1
+SFX 1449 0 layabileceğinden .
+SFX 1450 N 1
+SFX 1450 0 lığıdır .
+SFX 1451 N 1
+SFX 1451 0 üyle .
+SFX 1452 N 1
+SFX 1452 0 ışmış .
+SFX 1453 N 1
+SFX 1453 0 landırıldığı .
+SFX 1454 N 1
+SFX 1454 0 ttığından .
+SFX 1457 N 1
+SFX 1457 0 tıklarına .
+SFX 1456 N 1
+SFX 1456 0 ırsınız .
+SFX 1455 N 1
+SFX 1455 0 şan .
+SFX 1458 N 1
+SFX 1458 0 işler .
+SFX 1459 N 1
+SFX 1459 0 lemiştir .
+SFX 1460 N 1
+SFX 1460 0 laşmamış .
+SFX 1462 N 1
+SFX 1462 0 layamadığını .
+SFX 1461 N 1
+SFX 1461 0 yamayacaktır .
+SFX 1463 N 1
+SFX 1463 0 lenmesin .
+SFX 1464 N 1
+SFX 1464 0 cuları .
+SFX 1465 N 1
+SFX 1465 0 nmadık .
+SFX 1466 N 1
+SFX 1466 0 nana .
+SFX 1467 N 1
+SFX 1467 0 mışımdır .
+SFX 1468 N 1
+SFX 1468 0 eceklerinden .
+SFX 1469 N 1
+SFX 1469 0 lerimizden .
+SFX 1471 N 1
+SFX 1471 0 abilirsiniz .
+SFX 1470 N 1
+SFX 1470 0 amayacağımızı .
+SFX 1472 N 1
+SFX 1472 0 lemediğinden .
+SFX 1473 N 1
+SFX 1473 0 'ına .
+SFX 1474 N 1
+SFX 1474 0 leştirilmesinde .
+SFX 1475 N 1
+SFX 1475 0 mediğine .
+SFX 1476 N 1
+SFX 1476 0 elim .
+SFX 1477 N 1
+SFX 1477 0 cıdır .
+SFX 1478 N 1
+SFX 1478 0 lemişler .
+SFX 1479 N 1
+SFX 1479 0 sızlığına .
+SFX 1480 N 1
+SFX 1480 0 ulduklarını .
+SFX 1481 N 1
+SFX 1481 0 dıklarıyla .
+SFX 1482 N 1
+SFX 1482 0 lükler .
+SFX 1483 N 1
+SFX 1483 0 ememesine .
+SFX 1484 N 1
+SFX 1484 0 ıyı .
+SFX 1485 N 1
+SFX 1485 0 sındadır .
+SFX 1486 N 1
+SFX 1486 0 mediğimi .
+SFX 1487 N 1
+SFX 1487 0 üydü .
+SFX 1488 N 1
+SFX 1488 0 emediğim .
+SFX 1489 N 1
+SFX 1489 0 ılamamıştır .
+SFX 1490 N 1
+SFX 1490 0 emediğin .
+SFX 1494 N 1
+SFX 1494 0 lanan .
+SFX 1493 N 1
+SFX 1493 0 cilikten .
+SFX 1492 N 1
+SFX 1492 0 landırılacak .
+SFX 1491 N 1
+SFX 1491 0 laştırılmak .
+SFX 1495 N 1
+SFX 1495 0 neceklerini .
+SFX 1496 N 1
+SFX 1496 0 ememişler .
+SFX 1497 N 1
+SFX 1497 0 irler .
+SFX 1498 N 1
+SFX 1498 0 ıcılığın .
+SFX 1499 N 1
+SFX 1499 0 lanacağı .
+SFX 1500 N 1
+SFX 1500 0 işinde .
+SFX 1501 N 1
+SFX 1501 0 nanı .
+SFX 1502 N 1
+SFX 1502 0 mezliğini .
+SFX 1503 N 1
+SFX 1503 0 mezliğine .
+SFX 1505 N 1
+SFX 1505 0 yanlar .
+SFX 1504 N 1
+SFX 1504 0 ebilmesi .
+SFX 1507 N 1
+SFX 1507 0 anlara .
+SFX 1506 N 1
+SFX 1506 0 lüğe .
+SFX 1508 N 1
+SFX 1508 0 sinin .
+SFX 1509 N 1
+SFX 1509 0 tmek .
+SFX 1511 N 1
+SFX 1511 0 mekle .
+SFX 1510 N 1
+SFX 1510 0 ilen .
+SFX 1512 N 1
+SFX 1512 0 çiler .
+SFX 1513 N 1
+SFX 1513 0 lükten .
+SFX 1515 N 1
+SFX 1515 0 nmişlerdi .
+SFX 1514 N 1
+SFX 1514 0 tılamadığından .
+SFX 1517 N 1
+SFX 1517 0 lamazlar .
+SFX 1516 N 1
+SFX 1516 0 yemeyiz .
+SFX 1518 N 1
+SFX 1518 0 mışızdır .
+SFX 1519 N 1
+SFX 1519 0 cağız .
+SFX 1520 N 1
+SFX 1520 0 neceğinin .
+SFX 1521 N 1
+SFX 1521 0 ulmaları .
+SFX 1523 N 1
+SFX 1523 0 iler .
+SFX 1522 N 1
+SFX 1522 0 amamalı .
+SFX 1524 N 1
+SFX 1524 0 cilikle .
+SFX 1526 N 1
+SFX 1526 0 abilirse .
+SFX 1525 N 1
+SFX 1525 0 lendirilmelidir .
+SFX 1528 N 1
+SFX 1528 0 leşemediğini .
+SFX 1527 N 1
+SFX 1527 0 suzluğunu .
+SFX 1529 N 1
+SFX 1529 0 temediğini .
+SFX 1530 N 1
+SFX 1530 0 dirler .
+SFX 1531 N 1
+SFX 1531 0 mamasından .
+SFX 1532 N 1
+SFX 1532 0 landırdıklarını .
+SFX 1533 N 1
+SFX 1533 0 laşmak .
+SFX 1535 N 1
+SFX 1535 0 mayacaklardır .
+SFX 1534 N 1
+SFX 1534 0 laşmam .
+SFX 1536 N 1
+SFX 1536 0 lının .
+SFX 1537 N 1
+SFX 1537 0 leşecektir .
+SFX 1540 N 1
+SFX 1540 0 cılığı .
+SFX 1539 N 1
+SFX 1539 0 tmez .
+SFX 1538 N 1
+SFX 1538 0 dırdı .
+SFX 1542 N 1
+SFX 1542 0 suzluğuna .
+SFX 1541 N 1
+SFX 1541 0 sizleşme .
+SFX 1544 N 1
+SFX 1544 0 seydi .
+SFX 1543 N 1
+SFX 1543 0 liğimizden .
+SFX 1545 N 1
+SFX 1545 0 emeyenleri .
+SFX 1547 N 1
+SFX 1547 0 layamayacağını .
+SFX 1546 N 1
+SFX 1546 0 laşmasının .
+SFX 1548 N 1
+SFX 1548 0 laşmaz .
+SFX 1549 N 1
+SFX 1549 0 laşamayacağını .
+SFX 1550 N 1
+SFX 1550 0 amamışlardır .
+SFX 1551 N 1
+SFX 1551 0 yabileceklerini .
+SFX 1552 N 1
+SFX 1552 0 lamadıklarını .
+SFX 1554 N 1
+SFX 1554 0 lıyorlar .
+SFX 1553 N 1
+SFX 1553 0 teceği .
+SFX 1555 N 1
+SFX 1555 0 layamayacağına .
+SFX 1556 N 1
+SFX 1556 0 sınızdır .
+SFX 1558 N 1
+SFX 1558 0 ciliğinde .
+SFX 1557 N 1
+SFX 1557 0 selliğini .
+SFX 1560 N 1
+SFX 1560 0 acakmış .
+SFX 1559 N 1
+SFX 1559 0 since .
+SFX 1562 N 1
+SFX 1562 0 'ındaki .
+SFX 1561 N 1
+SFX 1561 0 ındakilerden .
+SFX 1563 N 1
+SFX 1563 0 selliğine .
+SFX 1565 N 1
+SFX 1565 0 yamadıkları .
+SFX 1564 N 1
+SFX 1564 0 yiciliği .
+SFX 1566 N 1
+SFX 1566 0 laşacaktır .
+SFX 1567 N 1
+SFX 1567 0 leyemedikleri .
+SFX 1568 N 1
+SFX 1568 0 cılarının .
+SFX 1569 N 1
+SFX 1569 0 tanlar .
+SFX 1570 N 1
+SFX 1570 0 lulara .
+SFX 1571 N 1
+SFX 1571 0 ilmelidir .
+SFX 1573 N 1
+SFX 1573 0 leştirilmesinin .
+SFX 1572 N 1
+SFX 1572 0 tmaktan .
+SFX 1574 N 1
+SFX 1574 0 landıkça .
+SFX 1575 N 1
+SFX 1575 0 layamadığına .
+SFX 1577 N 1
+SFX 1577 0 nmeden .
+SFX 1576 N 1
+SFX 1576 0 şamayacağını .
+SFX 1578 N 1
+SFX 1578 0 malıydı .
+SFX 1579 N 1
+SFX 1579 0 lanıyordu .
+SFX 1580 N 1
+SFX 1580 0 nmelerine .
+SFX 1581 N 1
+SFX 1581 0 nmelerini .
+SFX 1582 N 1
+SFX 1582 0 lüğü .
+SFX 1583 N 1
+SFX 1583 0 amadıkları .
+SFX 1584 N 1
+SFX 1584 0 ilmek .
+SFX 1585 N 1
+SFX 1585 0 ilmez .
+SFX 1586 N 1
+SFX 1586 0 laştırarak .
+SFX 1587 N 1
+SFX 1587 0 amaması .
+SFX 1589 N 1
+SFX 1589 0 anları .
+SFX 1588 N 1
+SFX 1588 0 ilme .
+SFX 1590 N 1
+SFX 1590 0 'mış .
+SFX 1591 N 1
+SFX 1591 0 lamakta .
+SFX 1592 N 1
+SFX 1592 0 ttikleri .
+SFX 1594 N 1
+SFX 1594 0 tıklarını .
+SFX 1593 N 1
+SFX 1593 0 işin .
+SFX 1595 N 1
+SFX 1595 0 işim .
+SFX 1596 N 1
+SFX 1596 0 cılardan .
+SFX 1598 N 1
+SFX 1598 0 cılığında .
+SFX 1597 N 1
+SFX 1597 0 ilik .
+SFX 1599 N 1
+SFX 1599 0 ilip .
+SFX 1601 N 1
+SFX 1601 0 'ının .
+SFX 1600 N 1
+SFX 1600 0 ilin .
+SFX 1602 N 1
+SFX 1602 0 ilir .
+SFX 1603 N 1
+SFX 1603 0 lenecekler .
+SFX 1604 N 1
+SFX 1604 0 culuğun .
+SFX 1605 N 1
+SFX 1605 0 sızlığını .
+SFX 1608 N 1
+SFX 1608 0 çilik .
+SFX 1607 N 1
+SFX 1607 0 nmeler .
+SFX 1606 N 1
+SFX 1606 0 amazdık .
+SFX 1609 N 1
+SFX 1609 0 amazdım .
+SFX 1610 N 1
+SFX 1610 0 ıcının .
+SFX 1611 N 1
+SFX 1611 0 tılamayacağı .
+SFX 1613 N 1
+SFX 1613 0 mesin .
+SFX 1612 N 1
+SFX 1612 0 tmaz .
+SFX 1614 N 1
+SFX 1614 0 lamanız .
+SFX 1616 N 1
+SFX 1616 0 leşiyoruz .
+SFX 1615 N 1
+SFX 1615 0 memelisiniz .
+SFX 1617 N 1
+SFX 1617 0 lamasından .
+SFX 1618 N 1
+SFX 1618 0 'sında .
+SFX 1619 N 1
+SFX 1619 0 mdeki .
+SFX 1620 N 1
+SFX 1620 0 lamanın .
+SFX 1622 N 1
+SFX 1622 0 sinde .
+SFX 1621 N 1
+SFX 1621 0 namaması .
+SFX 1623 N 1
+SFX 1623 0 lanırdı .
+SFX 1625 N 1
+SFX 1625 0 daydı .
+SFX 1624 N 1
+SFX 1624 0 tmak .
+SFX 1626 N 1
+SFX 1626 0 lerimizdeki .
+SFX 1627 N 1
+SFX 1627 0 ilememiştir .
+SFX 1629 N 1
+SFX 1629 0 tmam .
+SFX 1628 N 1
+SFX 1628 0 diğimizde .
+SFX 1630 N 1
+SFX 1630 0 lenebilecek .
+SFX 1632 N 1
+SFX 1632 0 lardan .
+SFX 1631 N 1
+SFX 1631 0 sunda .
+SFX 1634 N 1
+SFX 1634 0 amayanlar .
+SFX 1633 N 1
+SFX 1633 0 neceğinden .
+SFX 1635 N 1
+SFX 1635 0 suzlar .
+SFX 1636 N 1
+SFX 1636 0 lenmemiş .
+SFX 1637 N 1
+SFX 1637 0 iliş .
+SFX 1638 N 1
+SFX 1638 0 meyenin .
+SFX 1639 N 1
+SFX 1639 0 ladığının .
+SFX 1640 N 1
+SFX 1640 0 laşmakta .
+SFX 1641 N 1
+SFX 1641 0 tamaz .
+SFX 1642 N 1
+SFX 1642 0 amayacağını .
+SFX 1643 N 1
+SFX 1643 0 imize .
+SFX 1644 N 1
+SFX 1644 0 iciliğin .
+SFX 1645 N 1
+SFX 1645 0 letme .
+SFX 1646 N 1
+SFX 1646 0 luğudur .
+SFX 1647 N 1
+SFX 1647 0 lerinizin .
+SFX 1648 N 1
+SFX 1648 0 imizi .
+SFX 1649 N 1
+SFX 1649 0 lanmalıydı .
+SFX 1650 N 1
+SFX 1650 0 mamıza .
+SFX 1651 N 1
+SFX 1651 0 namadı .
+SFX 1652 N 1
+SFX 1652 0 yabildiği .
+SFX 1653 N 1
+SFX 1653 0 amazken .
+SFX 1654 N 1
+SFX 1654 0 eceğiniz .
+SFX 1655 N 1
+SFX 1655 0 lamamız .
+SFX 1656 N 1
+SFX 1656 0 eceğinin .
+SFX 1657 N 1
+SFX 1657 0 dırdıklarını .
+SFX 1658 N 1
+SFX 1658 0 ebilmiştir .
+SFX 1659 N 1
+SFX 1659 0 layacaktır .
+SFX 1660 N 1
+SFX 1660 0 lanamıyor .
+SFX 1661 N 1
+SFX 1661 0 tıyordu .
+SFX 1662 N 1
+SFX 1662 0 lardadır .
+SFX 1663 N 1
+SFX 1663 0 meyecektir .
+SFX 1664 N 1
+SFX 1664 0 laşmanız .
+SFX 1665 N 1
+SFX 1665 0 laşamayacağı .
+SFX 1666 N 1
+SFX 1666 0 liğiniz .
+SFX 1667 N 1
+SFX 1667 0 tuğuna .
+SFX 1668 N 1
+SFX 1668 0 'ye .
+SFX 1669 N 1
+SFX 1669 0 yebileceğini .
+SFX 1670 N 1
+SFX 1670 0 malıdırlar .
+SFX 1671 N 1
+SFX 1671 0 anlar .
+SFX 1672 N 1
+SFX 1672 0 yebileceğine .
+SFX 1673 N 1
+SFX 1673 0 şma .
+SFX 1674 N 1
+SFX 1674 0 'den .
+SFX 1675 N 1
+SFX 1675 0 meyeceğiz .
+SFX 1676 N 1
+SFX 1676 0 'ya .
+SFX 1677 N 1
+SFX 1677 0 ladığınız .
+SFX 1678 N 1
+SFX 1678 0 lülerin .
+SFX 1679 N 1
+SFX 1679 0 laşmanın .
+SFX 1680 N 1
+SFX 1680 0 şme .
+SFX 1681 N 1
+SFX 1681 0 lendirilecek .
+SFX 1682 N 1
+SFX 1682 0 tuğunu .
+SFX 1683 N 1
+SFX 1683 0 liğinin .
+SFX 1684 N 1
+SFX 1684 0 meyeceğim .
+SFX 1685 N 1
+SFX 1685 0 layacağından .
+SFX 1686 N 1
+SFX 1686 0 latmaya .
+SFX 1687 N 1
+SFX 1687 0 ılacaktır .
+SFX 1688 N 1
+SFX 1688 0 ciliğin .
+SFX 1689 N 1
+SFX 1689 0 memelerinin .
+SFX 1690 N 1
+SFX 1690 0 laştırıcı .
+SFX 1691 N 1
+SFX 1691 0 nmesinde .
+SFX 1692 N 1
+SFX 1692 0 mamasıyla .
+SFX 1693 N 1
+SFX 1693 0 lıklarımız .
+SFX 1694 N 1
+SFX 1694 0 tırdıkları .
+SFX 1695 N 1
+SFX 1695 0 nemediği .
+SFX 1696 N 1
+SFX 1696 0 'un .
+SFX 1697 N 1
+SFX 1697 0 mamazlık .
+SFX 1698 N 1
+SFX 1698 0 leyemeyeceği .
+SFX 1699 N 1
+SFX 1699 0 leyebilecekleri .
+SFX 1700 N 1
+SFX 1700 0 emez .
+SFX 1701 N 1
+SFX 1701 0 'tan .
+SFX 1702 N 1
+SFX 1702 0 nmektedir .
+SFX 1703 N 1
+SFX 1703 0 emem .
+SFX 1704 N 1
+SFX 1704 0 lilerden .
+SFX 1705 N 1
+SFX 1705 0 memekte .
+SFX 1706 N 1
+SFX 1706 0 leneceklerini .
+SFX 1707 N 1
+SFX 1707 0 ştirdiği .
+SFX 1708 N 1
+SFX 1708 0 sızların .
+SFX 1709 N 1
+SFX 1709 0 lerinizle .
+SFX 1710 N 1
+SFX 1710 0 yse .
+SFX 1711 N 1
+SFX 1711 0 ırsa .
+SFX 1712 N 1
+SFX 1712 0 emeyecek .
+SFX 1713 N 1
+SFX 1713 0 diğidir .
+SFX 1714 N 1
+SFX 1714 0 ysa .
+SFX 1715 N 1
+SFX 1715 0 tekilerin .
+SFX 1716 N 1
+SFX 1716 0 nizde .
+SFX 1717 N 1
+SFX 1717 0 ulmuştur .
+SFX 1718 N 1
+SFX 1718 0 rdir .
+SFX 1719 N 1
+SFX 1719 0 düklerini .
+SFX 1720 N 1
+SFX 1720 0 leştiremediklerini .
+SFX 1721 N 1
+SFX 1721 0 tılmadığını .
+SFX 1722 N 1
+SFX 1722 0 lamasına .
+SFX 1723 N 1
+SFX 1723 0 nabilecek .
+SFX 1724 N 1
+SFX 1724 0 düklerine .
+SFX 1725 N 1
+SFX 1725 0 ılmayacağı .
+SFX 1726 N 1
+SFX 1726 0 ıyorum .
+SFX 1727 N 1
+SFX 1727 0 mıyor .
+SFX 1728 N 1
+SFX 1728 0 ılmasıdır .
+SFX 1729 N 1
+SFX 1729 0 mezlerdi .
+SFX 1730 N 1
+SFX 1730 0 ıymış .
+SFX 1731 N 1
+SFX 1731 0 ıyoruz .
+SFX 1732 N 1
+SFX 1732 0 masını .
+SFX 1733 N 1
+SFX 1733 0 emediğinden .
+SFX 1734 N 1
+SFX 1734 0 lamadığından .
+SFX 1735 N 1
+SFX 1735 0 imlerinden .
+SFX 1736 N 1
+SFX 1736 0 lediğinden .
+SFX 1737 N 1
+SFX 1737 0 ttiklerini .
+SFX 1738 N 1
+SFX 1738 0 rler .
+SFX 1739 N 1
+SFX 1739 0 dırdığı .
+SFX 1740 N 1
+SFX 1740 0 ildik .
+SFX 1741 N 1
+SFX 1741 0 laştırılmıştır .
+SFX 1742 N 1
+SFX 1742 0 yıcılığına .
+SFX 1743 N 1
+SFX 1743 0 maktansa .
+SFX 1744 N 1
+SFX 1744 0 'dan .
+SFX 1745 N 1
+SFX 1745 0 lamamaları .
+SFX 1746 N 1
+SFX 1746 0 amamışlar .
+SFX 1747 N 1
+SFX 1747 0 emiyorsunuz .
+SFX 1748 N 1
+SFX 1748 0 yiş .
+SFX 1749 N 1
+SFX 1749 0 dakilere .
+SFX 1750 N 1
+SFX 1750 0 ilmediğinden .
+SFX 1751 N 1
+SFX 1751 0 ilse .
+SFX 1752 N 1
+SFX 1752 0 nacakları .
+SFX 1753 N 1
+SFX 1753 0 dedir .
+SFX 1754 N 1
+SFX 1754 0 daysa .
+SFX 1755 N 1
+SFX 1755 0 malıydık .
+SFX 1756 N 1
+SFX 1756 0 ebilsin .
+SFX 1757 N 1
+SFX 1757 0 dakileri .
+SFX 1758 N 1
+SFX 1758 0 ılanın .
+SFX 1759 N 1
+SFX 1759 0 ıdırlar .
+SFX 1760 N 1
+SFX 1760 0 temeyeceği .
+SFX 1761 N 1
+SFX 1761 0 lenebileceğini .
+SFX 1762 N 1
+SFX 1762 0 ulamadığı .
+SFX 1763 N 1
+SFX 1763 0 tirler .
+SFX 1764 N 1
+SFX 1764 0 leşmelerin .
+SFX 1765 N 1
+SFX 1765 0 ebileceğimiz .
+SFX 1766 N 1
+SFX 1766 0 lenebileceğine .
+SFX 1767 N 1
+SFX 1767 0 'sı .
+SFX 1768 N 1
+SFX 1768 0 abildi .
+SFX 1769 N 1
+SFX 1769 0 larıysa .
+SFX 1770 N 1
+SFX 1770 0 liğinle .
+SFX 1771 N 1
+SFX 1771 0 nişi .
+SFX 1772 N 1
+SFX 1772 0 lenmiş .
+SFX 1773 N 1
+SFX 1773 0 şmaları .
+SFX 1774 N 1
+SFX 1774 0 sizler .
+SFX 1775 N 1
+SFX 1775 0 emiyordum .
+SFX 1776 N 1
+SFX 1776 0 ılık .
+SFX 1777 N 1
+SFX 1777 0 laştıklarını .
+SFX 1778 N 1
+SFX 1778 0 ılın .
+SFX 1779 N 1
+SFX 1779 0 ilmekte .
+SFX 1780 N 1
+SFX 1780 0 ılıp .
+SFX 1781 N 1
+SFX 1781 0 ılır .
+SFX 1782 N 1
+SFX 1782 0 layamayacağım .
+SFX 1783 N 1
+SFX 1783 0 'ten .
+SFX 1784 N 1
+SFX 1784 0 mamızı .
+SFX 1785 N 1
+SFX 1785 0 abilen .
+SFX 1786 N 1
+SFX 1786 0 asın .
+SFX 1787 N 1
+SFX 1787 0 lenemeyeceğine .
+SFX 1788 N 1
+SFX 1788 0 'tı .
+SFX 1789 N 1
+SFX 1789 0 lemiş .
+SFX 1790 N 1
+SFX 1790 0 lerindedir .
+SFX 1791 N 1
+SFX 1791 0 lenemeyeceğini .
+SFX 1792 N 1
+SFX 1792 0 ilmiş .
+SFX 1793 N 1
+SFX 1793 0 nizin .
+SFX 1794 N 1
+SFX 1794 0 dikleri .
+SFX 1795 N 1
+SFX 1795 0 laşmaktadır .
+SFX 1796 N 1
+SFX 1796 0 ılamaz .
+SFX 1797 N 1
+SFX 1797 0 lığın .
+SFX 1798 N 1
+SFX 1798 0 tmıştır .
+SFX 1799 N 1
+SFX 1799 0 lığım .
+SFX 1800 N 1
+SFX 1800 0 lanmaktadır .
+SFX 1801 N 1
+SFX 1801 0 yışı .
+SFX 1802 N 1
+SFX 1802 0 laştırılma .
+SFX 1803 N 1
+SFX 1803 0 nemeyeceğinin .
+SFX 1804 N 1
+SFX 1804 0 icinin .
+SFX 1805 N 1
+SFX 1805 0 nmediğini .
+SFX 1806 N 1
+SFX 1806 0 laştırılmalıdır .
+SFX 1807 N 1
+SFX 1807 0 ladığından .
+SFX 1808 N 1
+SFX 1808 0 lemediklerini .
+SFX 1809 N 1
+SFX 1809 0 emeyeceğinden .
+SFX 1810 N 1
+SFX 1810 0 liğindeydi .
+SFX 1811 N 1
+SFX 1811 0 lılığını .
+SFX 1812 N 1
+SFX 1812 0 mazlığının .
+SFX 1813 N 1
+SFX 1813 0 dirilmeli .
+SFX 1814 N 1
+SFX 1814 0 lersiniz .
+SFX 1815 N 1
+SFX 1815 0 tanları .
+SFX 1816 N 1
+SFX 1816 0 lamamış .
+SFX 1817 N 1
+SFX 1817 0 suzluk .
+SFX 1818 N 1
+SFX 1818 0 lendirdiğini .
+SFX 1819 N 1
+SFX 1819 0 nmediğine .
+SFX 1820 N 1
+SFX 1820 0 dığın .
+SFX 1821 N 1
+SFX 1821 0 lendirdiğine .
+SFX 1822 N 1
+SFX 1822 0 dığım .
+SFX 1823 N 1
+SFX 1823 0 nmeyeceğini .
+SFX 1824 N 1
+SFX 1824 0 laştıracaktır .
+SFX 1825 N 1
+SFX 1825 0 nmadığının .
+SFX 1826 N 1
+SFX 1826 0 layacaklarını .
+SFX 1827 N 1
+SFX 1827 0 amadığı .
+SFX 1828 N 1
+SFX 1828 0 amayacağına .
+SFX 1829 N 1
+SFX 1829 0 nmeyeceğine .
+SFX 1830 N 1
+SFX 1830 0 ılacağının .
+SFX 1831 N 1
+SFX 1831 0 eceğinde .
+SFX 1832 N 1
+SFX 1832 0 mektedir .
+SFX 1833 N 1
+SFX 1833 0 'sinin .
+SFX 1834 N 1
+SFX 1834 0 sizliğinden .
+SFX 1835 N 1
+SFX 1835 0 abilirlerdi .
+SFX 1836 N 1
+SFX 1836 0 nizle .
+SFX 1837 N 1
+SFX 1837 0 inceye .
+SFX 1838 N 1
+SFX 1838 0 mayasın .
+SFX 1839 N 1
+SFX 1839 0 yayım .
+SFX 1840 N 1
+SFX 1840 0 lanmadığını .
+SFX 1841 N 1
+SFX 1841 0 ilirse .
+SFX 1842 N 1
+SFX 1842 0 lısından .
+SFX 1843 N 1
+SFX 1843 0 ıyorsa .
+SFX 1844 N 1
+SFX 1844 0 mazsak .
+SFX 1845 N 1
+SFX 1845 0 ırdı .
+SFX 1846 N 1
+SFX 1846 0 ndığı .
+SFX 1847 N 1
+SFX 1847 0 masanız .
+SFX 1848 N 1
+SFX 1848 0 sizlik .
+SFX 1849 N 1
+SFX 1849 0 ilmeyecek .
+SFX 1850 N 1
+SFX 1850 0 nmaktan .
+SFX 1851 N 1
+SFX 1851 0 abilir .
+SFX 1852 N 1
+SFX 1852 0 manızdır .
+SFX 1853 N 1
+SFX 1853 0 mazsam .
+SFX 1854 N 1
+SFX 1854 0 mazsan .
+SFX 1855 N 1
+SFX 1855 0 lamasını .
+SFX 1856 N 1
+SFX 1856 0 mamıştık .
+SFX 1857 N 1
+SFX 1857 0 lamalar .
+SFX 1858 N 1
+SFX 1858 0 leşebileceği .
+SFX 1859 N 1
+SFX 1859 0 abilmesi .
+SFX 1860 N 1
+SFX 1860 0 mamıştır .
+SFX 1861 N 1
+SFX 1861 0 mamıştım .
+SFX 1862 N 1
+SFX 1862 0 muşlardı .
+SFX 1863 N 1
+SFX 1863 0 ileceğine .
+SFX 1864 N 1
+SFX 1864 0 ıcılarının .
+SFX 1865 N 1
+SFX 1865 0 layıcı .
+SFX 1866 N 1
+SFX 1866 0 ileceğini .
+SFX 1867 N 1
+SFX 1867 0 leşiyorlar .
+SFX 1868 N 1
+SFX 1868 0 'ta .
+SFX 1869 N 1
+SFX 1869 0 tınız .
+SFX 1870 N 1
+SFX 1870 0 muşlar .
+SFX 1871 N 1
+SFX 1871 0 nıldığında .
+SFX 1872 N 1
+SFX 1872 0 'ti .
+SFX 1873 N 1
+SFX 1873 0 imine .
+SFX 1874 N 1
+SFX 1874 0 lıklarından .
+SFX 1875 N 1
+SFX 1875 0 abilmeli .
+SFX 1876 N 1
+SFX 1876 0 nabileceklerini .
+SFX 1877 N 1
+SFX 1877 0 'te .
+SFX 1878 N 1
+SFX 1878 0 layacaklardı .
+SFX 1879 N 1
+SFX 1879 0 ladığında .
+SFX 1880 N 1
+SFX 1880 0 laştıklarına .
+SFX 1881 N 1
+SFX 1881 0 yamadığınız .
+SFX 1882 N 1
+SFX 1882 0 mekteler .
+SFX 1883 N 1
+SFX 1883 0 lanmadığına .
+SFX 1884 N 1
+SFX 1884 0 laştıramadığı .
+SFX 1885 N 1
+SFX 1885 0 sini .
+SFX 1886 N 1
+SFX 1886 0 lendirmiştir .
+SFX 1887 N 1
+SFX 1887 0 yamadığının .
+SFX 1888 N 1
+SFX 1888 0 cinin .
+SFX 1889 N 1
+SFX 1889 0 temeyeceğini .
+SFX 1890 N 1
+SFX 1890 0 mizle .
+SFX 1891 N 1
+SFX 1891 0 culara .
+SFX 1892 N 1
+SFX 1892 0 memeyi .
+SFX 1893 N 1
+SFX 1893 0 ileceğinin .
+SFX 1894 N 1
+SFX 1894 0 sine .
+SFX 1895 N 1
+SFX 1895 0 ulamaz .
+SFX 1896 N 1
+SFX 1896 0 cülerin .
+SFX 1897 N 1
+SFX 1897 0 mediniz .
+SFX 1898 N 1
+SFX 1898 0 tireceğine .
+SFX 1899 N 1
+SFX 1899 0 liğinde .
+SFX 1900 N 1
+SFX 1900 0 landırıldığını .
+SFX 1901 N 1
+SFX 1901 0 memeye .
+SFX 1902 N 1
+SFX 1902 0 ledim .
+SFX 1903 N 1
+SFX 1903 0 nırdı .
+SFX 1904 N 1
+SFX 1904 0 ledik .
+SFX 1905 N 1
+SFX 1905 0 üyse .
+SFX 1906 N 1
+SFX 1906 0 abilme .
+SFX 1907 N 1
+SFX 1907 0 leşiyordu .
+SFX 1908 N 1
+SFX 1908 0 lığının .
+SFX 1909 N 1
+SFX 1909 0 tiğim .
+SFX 1910 N 1
+SFX 1910 0 tiğin .
+SFX 1911 N 1
+SFX 1911 0 laştırıldı .
+SFX 1912 N 1
+SFX 1912 0 masına .
+SFX 1913 N 1
+SFX 1913 0 nmalarının .
+SFX 1914 N 1
+SFX 1914 0 lığımızın .
+SFX 1915 N 1
+SFX 1915 0 mizin .
+SFX 1916 N 1
+SFX 1916 0 amayacaklardır .
+SFX 1917 N 1
+SFX 1917 0 liğince .
+SFX 1918 N 1
+SFX 1918 0 imini .
+SFX 1919 N 1
+SFX 1919 0 tabilir .
+SFX 1920 N 1
+SFX 1920 0 nmesinin .
+SFX 1921 N 1
+SFX 1921 0 sızlığının .
+SFX 1922 N 1
+SFX 1922 0 ttıkları .
+SFX 1923 N 1
+SFX 1923 0 lığımdan .
+SFX 1924 N 1
+SFX 1924 0 amayacağımı .
+SFX 1925 N 1
+SFX 1925 0 'sa .
+SFX 1926 N 1
+SFX 1926 0 sın .
+SFX 1927 N 1
+SFX 1927 0 'se .
+SFX 1928 N 1
+SFX 1928 0 tmiş .
+SFX 1929 N 1
+SFX 1929 0 sız .
+SFX 1930 N 1
+SFX 1930 0 'si .
+SFX 1931 N 1
+SFX 1931 0 namayacağından .
+SFX 1932 N 1
+SFX 1932 0 yıcı .
+SFX 1933 N 1
+SFX 1933 0 laşarak .
+SFX 1934 N 1
+SFX 1934 0 mediği .
+SFX 1935 N 1
+SFX 1935 0 sizliği .
+SFX 1936 N 1
+SFX 1936 0 dük .
+SFX 1937 N 1
+SFX 1937 0 lamalarla .
+SFX 1938 N 1
+SFX 1938 0 düm .
+SFX 1939 N 1
+SFX 1939 0 çilerden .
+SFX 1940 N 1
+SFX 1940 0 lanıyoruz .
+SFX 1941 N 1
+SFX 1941 0 ebileceklerinin .
+SFX 1942 N 1
+SFX 1942 0 lıda .
+SFX 1943 N 1
+SFX 1943 0 direceğini .
+SFX 1944 N 1
+SFX 1944 0 mazlık .
+SFX 1945 N 1
+SFX 1945 0 dür .
+SFX 1946 N 1
+SFX 1946 0 yamıyordu .
+SFX 1947 N 1
+SFX 1947 0 sizliğe .
+SFX 1948 N 1
+SFX 1948 0 direceğine .
+SFX 1949 N 1
+SFX 1949 0 yacağımız .
+SFX 1950 N 1
+SFX 1950 0 lemeliler .
+SFX 1951 N 1
+SFX 1951 0 tmayacağını .
+SFX 1952 N 1
+SFX 1952 0 leyeceğim .
+SFX 1953 N 1
+SFX 1953 0 dığıydı .
+SFX 1954 N 1
+SFX 1954 0 dırılmış .
+SFX 1955 N 1
+SFX 1955 0 nmakta .
+SFX 1956 N 1
+SFX 1956 0 nsın .
+SFX 1957 N 1
+SFX 1957 0 mayacağına .
+SFX 1958 N 1
+SFX 1958 0 aydı .
+SFX 1959 N 1
+SFX 1959 0 cılar .
+SFX 1960 N 1
+SFX 1960 0 leşemeyeceğini .
+SFX 1961 N 1
+SFX 1961 0 latmak .
+SFX 1962 N 1
+SFX 1962 0 ememiş .
+SFX 1963 N 1
+SFX 1963 0 ydi .
+SFX 1964 N 1
+SFX 1964 0 maydı .
+SFX 1965 N 1
+SFX 1965 0 mayınca .
+SFX 1966 N 1
+SFX 1966 0 cü .
+SFX 1967 N 1
+SFX 1967 0 ebilmektedir .
+SFX 1968 N 1
+SFX 1968 0 duklarından .
+SFX 1969 N 1
+SFX 1969 0 liyse .
+SFX 1970 N 1
+SFX 1970 0 nirse .
+SFX 1971 N 1
+SFX 1971 0 leşirken .
+SFX 1972 N 1
+SFX 1972 0 du .
+SFX 1973 N 1
+SFX 1973 0 ışına .
+SFX 1974 N 1
+SFX 1974 0 mamamız .
+SFX 1975 N 1
+SFX 1975 0 nenleri .
+SFX 1976 N 1
+SFX 1976 0 mızda .
+SFX 1977 N 1
+SFX 1977 0 yamıyor .
+SFX 1978 N 1
+SFX 1978 0 lenin .
+SFX 1979 N 1
+SFX 1979 0 tiğiniz .
+SFX 1980 N 1
+SFX 1980 0 yabilecekleri .
+SFX 1981 N 1
+SFX 1981 0 tiniz .
+SFX 1982 N 1
+SFX 1982 0 lenir .
+SFX 1983 N 1
+SFX 1983 0 ilmeleri .
+SFX 1984 N 1
+SFX 1984 0 siyken .
+SFX 1985 N 1
+SFX 1985 0 lenip .
+SFX 1986 N 1
+SFX 1986 0 de .
+SFX 1987 N 1
+SFX 1987 0 nemez .
+SFX 1988 N 1
+SFX 1988 0 masının .
+SFX 1989 N 1
+SFX 1989 0 uşunda .
+SFX 1990 N 1
+SFX 1990 0 di .
+SFX 1991 N 1
+SFX 1991 0 tılması .
+SFX 1992 N 1
+SFX 1992 0 laştıracak .
+SFX 1993 N 1
+SFX 1993 0 lüğüyle .
+SFX 1994 N 1
+SFX 1994 0 amadığını .
+SFX 1995 N 1
+SFX 1995 0 lanamayacağını .
+SFX 1996 N 1
+SFX 1996 0 ydu .
+SFX 1997 N 1
+SFX 1997 0 laştırmalar .
+SFX 1998 N 1
+SFX 1998 0 lığımın .
+SFX 1999 N 1
+SFX 1999 0 amayacaksınız .
+SFX 2000 N 1
+SFX 2000 0 lenmeleri .
+SFX 2001 N 1
+SFX 2001 0 landırmalı .
+SFX 2002 N 1
+SFX 2002 0 lılığından .
+SFX 2003 N 1
+SFX 2003 0 lenmişlerdi .
+SFX 2004 N 1
+SFX 2004 0 abilmelerine .
+SFX 2005 N 1
+SFX 2005 0 ünüzü .
+SFX 2006 N 1
+SFX 2006 0 abilmelerini .
+SFX 2007 N 1
+SFX 2007 0 lük .
+SFX 2008 N 1
+SFX 2008 0 lığımız .
+SFX 2009 N 1
+SFX 2009 0 unundan .
+SFX 2010 N 1
+SFX 2010 0 amadığımı .
+SFX 2011 N 1
+SFX 2011 0 yen .
+SFX 2012 N 1
+SFX 2012 0 lamadığı .
+SFX 2013 N 1
+SFX 2013 0 cılığın .
+SFX 2014 N 1
+SFX 2014 0 dığıyla .
+SFX 2015 N 1
+SFX 2015 0 yişi .
+SFX 2016 N 1
+SFX 2016 0 en .
+SFX 2017 N 1
+SFX 2017 0 tiğinin .
+SFX 2018 N 1
+SFX 2018 0 lanmayacak .
+SFX 2019 N 1
+SFX 2019 0 er .
+SFX 2020 N 1
+SFX 2020 0 layacağını .
+SFX 2021 N 1
+SFX 2021 0 leme .
+SFX 2022 N 1
+SFX 2022 0 lenmişti .
+SFX 2023 N 1
+SFX 2023 0 'sinde .
+SFX 2024 N 1
+SFX 2024 0 lanamayacağına .
+SFX 2025 N 1
+SFX 2025 0 ca .
+SFX 2026 N 1
+SFX 2026 0 çıya .
+SFX 2027 N 1
+SFX 2027 0 çuların .
+SFX 2028 N 1
+SFX 2028 0 laştırılan .
+SFX 2029 N 1
+SFX 2029 0 yemediklerini .
+SFX 2030 N 1
+SFX 2030 0 anının .
+SFX 2031 N 1
+SFX 2031 0 ıcılığının .
+SFX 2032 N 1
+SFX 2032 0 mayanların .
+SFX 2033 N 1
+SFX 2033 0 mazdım .
+SFX 2034 N 1
+SFX 2034 0 mazdın .
+SFX 2035 N 1
+SFX 2035 0 ilmişlerdir .
+SFX 2036 N 1
+SFX 2036 0 yici .
+SFX 2037 N 1
+SFX 2037 0 mazdık .
+SFX 2038 N 1
+SFX 2038 0 nmaktadır .
+SFX 2039 N 1
+SFX 2039 0 da .
+SFX 2040 N 1
+SFX 2040 0 lene .
+SFX 2041 N 1
+SFX 2041 0 layacağına .
+SFX 2042 N 1
+SFX 2042 0 emeyeceğini .
+SFX 2043 N 1
+SFX 2043 0 yememişler .
+SFX 2044 N 1
+SFX 2044 0 mayabileceğini .
+SFX 2045 N 1
+SFX 2045 0 ana .
+SFX 2046 N 1
+SFX 2046 0 cu .
+SFX 2047 N 1
+SFX 2047 0 liyor .
+SFX 2048 N 1
+SFX 2048 0 cısının .
+SFX 2049 N 1
+SFX 2049 0 tıldığına .
+SFX 2050 N 1
+SFX 2050 0 sızları .
+SFX 2051 N 1
+SFX 2051 0 ılmasıyla .
+SFX 2052 N 1
+SFX 2052 0 emeyeceğine .
+SFX 2053 N 1
+SFX 2053 0 ci .
+SFX 2054 N 1
+SFX 2054 0 landıktan .
+SFX 2055 N 1
+SFX 2055 0 ce .
+SFX 2056 N 1
+SFX 2056 0 ilmesiyle .
+SFX 2057 N 1
+SFX 2057 0 liyle .
+SFX 2058 N 1
+SFX 2058 0 yamadığından .
+SFX 2059 N 1
+SFX 2059 0 lenen .
+SFX 2060 N 1
+SFX 2060 0 layabilmek .
+SFX 2061 N 1
+SFX 2061 0 lanabilecek .
+SFX 2062 N 1
+SFX 2062 0 mizde .
+SFX 2063 N 1
+SFX 2063 0 lerince .
+SFX 2064 N 1
+SFX 2064 0 çılarla .
+SFX 2065 N 1
+SFX 2065 0 ıvermiş .
+SFX 2066 N 1
+SFX 2066 0 mayla .
+SFX 2067 N 1
+SFX 2067 0 ilemedi .
+SFX 2068 N 1
+SFX 2068 0 ama .
+SFX 2069 N 1
+SFX 2069 0 ulmalıdır .
+SFX 2070 N 1
+SFX 2070 0 tırmış .
+SFX 2071 N 1
+SFX 2071 0 laştırılmasıyla .
+SFX 2072 N 1
+SFX 2072 0 leştirilmelidir .
+SFX 2073 N 1
+SFX 2073 0 yamayacakları .
+SFX 2074 N 1
+SFX 2074 0 ici .
+SFX 2075 N 1
+SFX 2075 0 emezseniz .
+SFX 2076 N 1
+SFX 2076 0 mayacağından .
+SFX 2077 N 1
+SFX 2077 0 leştiklerine .
+SFX 2078 N 1
+SFX 2078 0 mezlerse .
+SFX 2079 N 1
+SFX 2079 0 'nın .
+SFX 2080 N 1
+SFX 2080 0 lerinde .
+SFX 2081 N 1
+SFX 2081 0 meyeceklerinin .
+SFX 2082 N 1
+SFX 2082 0 diği .
+SFX 2083 N 1
+SFX 2083 0 leştiklerini .
+SFX 2084 N 1
+SFX 2084 0 ştırdıklarını .
+SFX 2085 N 1
+SFX 2085 0 ilememesi .
+SFX 2086 N 1
+SFX 2086 0 mayacağını .
+SFX 2087 N 1
+SFX 2087 0 lendi .
+SFX 2088 N 1
+SFX 2088 0 üyordu .
+SFX 2089 N 1
+SFX 2089 0 lıca .
+SFX 2090 N 1
+SFX 2090 0 dirildiği .
+SFX 2091 N 1
+SFX 2091 0 cilerinden .
+SFX 2092 N 1
+SFX 2092 0 ar .
+SFX 2093 N 1
+SFX 2093 0 lendirileceği .
+SFX 2094 N 1
+SFX 2094 0 yabilmek .
+SFX 2095 N 1
+SFX 2095 0 ıldıklarında .
+SFX 2096 N 1
+SFX 2096 0 emeyebilir .
+SFX 2097 N 1
+SFX 2097 0 luklarındaki .
+SFX 2098 N 1
+SFX 2098 0 lerindekiler .
+SFX 2099 N 1
+SFX 2099 0 lemekte .
+SFX 2100 N 1
+SFX 2100 0 tür .
+SFX 2101 N 1
+SFX 2101 0 an .
+SFX 2102 N 1
+SFX 2102 0 yan .
+SFX 2103 N 1
+SFX 2103 0 iyorlarsa .
+SFX 2104 N 1
+SFX 2104 0 çısı .
+SFX 2105 N 1
+SFX 2105 0 yamayacak .
+SFX 2106 N 1
+SFX 2106 0 ilebildiğini .
+SFX 2107 N 1
+SFX 2107 0 nu .
+SFX 2108 N 1
+SFX 2108 0 leşmesini .
+SFX 2109 N 1
+SFX 2109 0 lananların .
+SFX 2110 N 1
+SFX 2110 0 mıyorlardı .
+SFX 2111 N 1
+SFX 2111 0 liyiz .
+SFX 2112 N 1
+SFX 2112 0 leşmesine .
+SFX 2113 N 1
+SFX 2113 0 memelerini .
+SFX 2114 N 1
+SFX 2114 0 enlerinin .
+SFX 2115 N 1
+SFX 2115 0 ydı .
+SFX 2116 N 1
+SFX 2116 0 iyorsun .
+SFX 2117 N 1
+SFX 2117 0 nmasında .
+SFX 2118 N 1
+SFX 2118 0 memelerine .
+SFX 2119 N 1
+SFX 2119 0 liyim .
+SFX 2120 N 1
+SFX 2120 0 ndıklarını .
+SFX 2121 N 1
+SFX 2121 0 larındayım .
+SFX 2122 N 1
+SFX 2122 0 memekle .
+SFX 2123 N 1
+SFX 2123 0 yamayız .
+SFX 2124 N 1
+SFX 2124 0 larıymış .
+SFX 2125 N 1
+SFX 2125 0 ebilmelerine .
+SFX 2126 N 1
+SFX 2126 0 namadığı .
+SFX 2127 N 1
+SFX 2127 0 imlerinde .
+SFX 2128 N 1
+SFX 2128 0 mayan .
+SFX 2129 N 1
+SFX 2129 0 acağına .
+SFX 2130 N 1
+SFX 2130 0 ndılar .
+SFX 2131 N 1
+SFX 2131 0 ladınız .
+SFX 2132 N 1
+SFX 2132 0 laşmalarında .
+SFX 2133 N 1
+SFX 2133 0 layanların .
+SFX 2134 N 1
+SFX 2134 0 lanıldığı .
+SFX 2135 N 1
+SFX 2135 0 idir .
+SFX 2136 N 1
+SFX 2136 0 lere .
+SFX 2137 N 1
+SFX 2137 0 lanmazsa .
+SFX 2138 N 1
+SFX 2138 0 yamazlar .
+SFX 2139 N 1
+SFX 2139 0 cileriyle .
+SFX 2140 N 1
+SFX 2140 0 melerle .
+SFX 2141 N 1
+SFX 2141 0 muştur .
+SFX 2142 N 1
+SFX 2142 0 nmayacağından .
+SFX 2143 N 1
+SFX 2143 0 malarda .
+SFX 2144 N 1
+SFX 2144 0 enlerin .
+SFX 2145 N 1
+SFX 2145 0 işe .
+SFX 2146 N 1
+SFX 2146 0 yla .
+SFX 2147 N 1
+SFX 2147 0 laşmışlardı .
+SFX 2148 N 1
+SFX 2148 0 diyse .
+SFX 2149 N 1
+SFX 2149 0 işi .
+SFX 2150 N 1
+SFX 2150 0 yle .
+SFX 2151 N 1
+SFX 2151 0 luklarının .
+SFX 2152 N 1
+SFX 2152 0 leri .
+SFX 2153 N 1
+SFX 2153 0 ısın .
+SFX 2154 N 1
+SFX 2154 0 diğin .
+SFX 2155 N 1
+SFX 2155 0 iydim .
+SFX 2156 N 1
+SFX 2156 0 diğim .
+SFX 2157 N 1
+SFX 2157 0 lattıklarını .
+SFX 2158 N 1
+SFX 2158 0 acağıma .
+SFX 2159 N 1
+SFX 2159 0 üldüğüne .
+SFX 2160 N 1
+SFX 2160 0 mayacağı .
+SFX 2161 N 1
+SFX 2161 0 nıyorlar .
+SFX 2162 N 1
+SFX 2162 0 ıldığından .
+SFX 2163 N 1
+SFX 2163 0 deler .
+SFX 2164 N 1
+SFX 2164 0 mişiz .
+SFX 2165 N 1
+SFX 2165 0 lu .
+SFX 2166 N 1
+SFX 2166 0 leştireceklerini .
+SFX 2167 N 1
+SFX 2167 0 yamadıklarına .
+SFX 2168 N 1
+SFX 2168 0 culuğu .
+SFX 2169 N 1
+SFX 2169 0 lardandır .
+SFX 2170 N 1
+SFX 2170 0 emeyeceklerine .
+SFX 2171 N 1
+SFX 2171 0 mişin .
+SFX 2172 N 1
+SFX 2172 0 rlar .
+SFX 2173 N 1
+SFX 2173 0 ma .
+SFX 2174 N 1
+SFX 2174 0 yabilirsiniz .
+SFX 2175 N 1
+SFX 2175 0 lerinizden .
+SFX 2176 N 1
+SFX 2176 0 me .
+SFX 2177 N 1
+SFX 2177 0 lendireceğini .
+SFX 2178 N 1
+SFX 2178 0 mişim .
+SFX 2179 N 1
+SFX 2179 0 tığında .
+SFX 2180 N 1
+SFX 2180 0 mi .
+SFX 2181 N 1
+SFX 2181 0 emeyeceklerini .
+SFX 2182 N 1
+SFX 2182 0 lendireceğine .
+SFX 2183 N 1
+SFX 2183 0 abileceğimizi .
+SFX 2184 N 1
+SFX 2184 0 leşmeyle .
+SFX 2185 N 1
+SFX 2185 0 lılardan .
+SFX 2186 N 1
+SFX 2186 0 liyken .
+SFX 2187 N 1
+SFX 2187 0 ebiliyor .
+SFX 2188 N 1
+SFX 2188 0 lanmadık .
+SFX 2189 N 1
+SFX 2189 0 mu .
+SFX 2190 N 1
+SFX 2190 0 likleri .
+SFX 2191 N 1
+SFX 2191 0 dığıdır .
+SFX 2192 N 1
+SFX 2192 0 ebilmelerini .
+SFX 2193 N 1
+SFX 2193 0 ındaymış .
+SFX 2194 N 1
+SFX 2194 0 tılmalı .
+SFX 2195 N 1
+SFX 2195 0 tırken .
+SFX 2196 N 1
+SFX 2196 0 liklere .
+SFX 2197 N 1
+SFX 2197 0 na .
+SFX 2198 N 1
+SFX 2198 0 acaksak .
+SFX 2199 N 1
+SFX 2199 0 ne .
+SFX 2200 N 1
+SFX 2200 0 ni .
+SFX 2201 N 1
+SFX 2201 0 deki .
+SFX 2202 N 1
+SFX 2202 0 tmediği .
+SFX 2203 N 1
+SFX 2203 0 yacaklardır .
+SFX 2204 N 1
+SFX 2204 0 yıcılığı .
+SFX 2205 N 1
+SFX 2205 0 larıyla .
+SFX 2206 N 1
+SFX 2206 0 dı .
+SFX 2207 N 1
+SFX 2207 0 tiğinde .
+SFX 2208 N 1
+SFX 2208 0 ılamayacak .
+SFX 2209 N 1
+SFX 2209 0 leştirilmesinden .
+SFX 2210 N 1
+SFX 2210 0 tuklarını .
+SFX 2211 N 1
+SFX 2211 0 nemeyeceğini .
+SFX 2212 N 1
+SFX 2212 0 ime .
+SFX 2213 N 1
+SFX 2213 0 lukları .
+SFX 2214 N 1
+SFX 2214 0 nmalar .
+SFX 2215 N 1
+SFX 2215 0 lanmasında .
+SFX 2216 N 1
+SFX 2216 0 nmamış .
+SFX 2217 N 1
+SFX 2217 0 imi .
+SFX 2218 N 1
+SFX 2218 0 liğinden .
+SFX 2219 N 1
+SFX 2219 0 yamadıklarını .
+SFX 2220 N 1
+SFX 2220 0 lemişlerdir .
+SFX 2221 N 1
+SFX 2221 0 leştirilmeleri .
+SFX 2222 N 1
+SFX 2222 0 tacaklarını .
+SFX 2223 N 1
+SFX 2223 0 amayacağının .
+SFX 2224 N 1
+SFX 2224 0 emiyorlardı .
+SFX 2225 N 1
+SFX 2225 0 ılığı .
+SFX 2226 N 1
+SFX 2226 0 mayışından .
+SFX 2227 N 1
+SFX 2227 0 amayacağınız .
+SFX 2228 N 1
+SFX 2228 0 tılmaya .
+SFX 2229 N 1
+SFX 2229 0 meksizin .
+SFX 2230 N 1
+SFX 2230 0 nebilir .
+SFX 2231 N 1
+SFX 2231 0 mıyorsun .
+SFX 2232 N 1
+SFX 2232 0 laşmadır .
+SFX 2233 N 1
+SFX 2233 0 larıydı .
+SFX 2234 N 1
+SFX 2234 0 lenemeyen .
+SFX 2235 N 1
+SFX 2235 0 cının .
+SFX 2236 N 1
+SFX 2236 0 ine .
+SFX 2237 N 1
+SFX 2237 0 diklerini .
+SFX 2238 N 1
+SFX 2238 0 maksızın .
+SFX 2239 N 1
+SFX 2239 0 ini .
+SFX 2240 N 1
+SFX 2240 0 li .
+SFX 2241 N 1
+SFX 2241 0 ledikleri .
+SFX 2242 N 1
+SFX 2242 0 le .
+SFX 2243 N 1
+SFX 2243 0 nemeyeceğine .
+SFX 2244 N 1
+SFX 2244 0 leriymiş .
+SFX 2245 N 1
+SFX 2245 0 diklerine .
+SFX 2246 N 1
+SFX 2246 0 imlerinin .
+SFX 2247 N 1
+SFX 2247 0 ulduğu .
+SFX 2248 N 1
+SFX 2248 0 la .
+SFX 2249 N 1
+SFX 2249 0 leşmeyen .
+SFX 2250 N 1
+SFX 2250 0 acağını .
+SFX 2251 N 1
+SFX 2251 0 leştiği .
+SFX 2252 N 1
+SFX 2252 0 lamazken .
+SFX 2253 N 1
+SFX 2253 0 ındasın .
+SFX 2254 N 1
+SFX 2254 0 laşabilecek .
+SFX 2255 N 1
+SFX 2255 0 larınca .
+SFX 2256 N 1
+SFX 2256 0 lese .
+SFX 2257 N 1
+SFX 2257 0 yin .
+SFX 2258 N 1
+SFX 2258 0 laşınca .
+SFX 2259 N 1
+SFX 2259 0 yim .
+SFX 2260 N 1
+SFX 2260 0 dü .
+SFX 2261 N 1
+SFX 2261 0 ebilmenin .
+SFX 2262 N 1
+SFX 2262 0 dıktan .
+SFX 2263 N 1
+SFX 2263 0 leştirilecek .
+SFX 2264 N 1
+SFX 2264 0 mamışken .
+SFX 2265 N 1
+SFX 2265 0 laşmaları .
+SFX 2266 N 1
+SFX 2266 0 lememeleri .
+SFX 2267 N 1
+SFX 2267 0 amayabileceğini .
+SFX 2268 N 1
+SFX 2268 0 laştırdığına .
+SFX 2269 N 1
+SFX 2269 0 lığındaki .
+SFX 2270 N 1
+SFX 2270 0 ladığı .
+SFX 2271 N 1
+SFX 2271 0 üldüğünü .
+SFX 2272 N 1
+SFX 2272 0 yabilmeli .
+SFX 2273 N 1
+SFX 2273 0 ir .
+SFX 2274 N 1
+SFX 2274 0 larında .
+SFX 2275 N 1
+SFX 2275 0 acağımı .
+SFX 2276 N 1
+SFX 2276 0 tmasın .
+SFX 2277 N 1
+SFX 2277 0 iyorlardı .
+SFX 2278 N 1
+SFX 2278 0 enlerinde .
+SFX 2279 N 1
+SFX 2279 0 yiz .
+SFX 2280 N 1
+SFX 2280 0 cı .
+SFX 2281 N 1
+SFX 2281 0 lananları .
+SFX 2282 N 1
+SFX 2282 0 liydi .
+SFX 2283 N 1
+SFX 2283 0 malıdır .
+SFX 2284 N 1
+SFX 2284 0 ik .
+SFX 2285 N 1
+SFX 2285 0 usun .
+SFX 2286 N 1
+SFX 2286 0 luklarından .
+SFX 2287 N 1
+SFX 2287 0 landıklarından .
+SFX 2288 N 1
+SFX 2288 0 erken .
+SFX 2289 N 1
+SFX 2289 0 yip .
+SFX 2290 N 1
+SFX 2290 0 im .
+SFX 2291 N 1
+SFX 2291 0 in .
+SFX 2292 N 1
+SFX 2292 0 ile .
+SFX 2293 N 1
+SFX 2293 0 ip .
+SFX 2294 N 1
+SFX 2294 0 tmışlardı .
+SFX 2295 N 1
+SFX 2295 0 üldüğü .
+SFX 2296 N 1
+SFX 2296 0 larındayız .
+SFX 2297 N 1
+SFX 2297 0 memesinden .
+SFX 2298 N 1
+SFX 2298 0 iz .
+SFX 2299 N 1
+SFX 2299 0 leştirebilecek .
+SFX 2300 N 1
+SFX 2300 0 dıracaktır .
+SFX 2301 N 1
+SFX 2301 0 melerin .
+SFX 2302 N 1
+SFX 2302 0 lemekle .
+SFX 2303 N 1
+SFX 2303 0 yıcılığını .
+SFX 2304 N 1
+SFX 2304 0 mazken .
+SFX 2305 N 1
+SFX 2305 0 sizliğinin .
+SFX 2306 N 1
+SFX 2306 0 leşeceğinin .
+SFX 2307 N 1
+SFX 2307 0 ladılar .
+SFX 2308 N 1
+SFX 2308 0 luğunu .
+SFX 2309 N 1
+SFX 2309 0 yabilmesi .
+SFX 2310 N 1
+SFX 2310 0 iyorsunuz .
+SFX 2311 N 1
+SFX 2311 0 tenler .
+SFX 2312 N 1
+SFX 2312 0 ndıklarına .
+SFX 2313 N 1
+SFX 2313 0 leyişi .
+SFX 2314 N 1
+SFX 2314 0 lesin .
+SFX 2315 N 1
+SFX 2315 0 amayacaklar .
+SFX 2316 N 1
+SFX 2316 0 ındayken .
+SFX 2317 N 1
+SFX 2317 0 lanacağına .
+SFX 2318 N 1
+SFX 2318 0 cılarda .
+SFX 2319 N 1
+SFX 2319 0 ırsanız .
+SFX 2320 N 1
+SFX 2320 0 sü .
+SFX 2321 N 1
+SFX 2321 0 şmiş .
+SFX 2322 N 1
+SFX 2322 0 lenmediği .
+SFX 2323 N 1
+SFX 2323 0 yamıyorum .
+SFX 2324 N 1
+SFX 2324 0 laşacağını .
+SFX 2325 N 1
+SFX 2325 0 tılmalıdır .
+SFX 2326 N 1
+SFX 2326 0 ebildikleri .
+SFX 2327 N 1
+SFX 2327 0 ladıklarının .
+SFX 2328 N 1
+SFX 2328 0 lıyorsun .
+SFX 2329 N 1
+SFX 2329 0 ındaki .
+SFX 2330 N 1
+SFX 2330 0 amadığından .
+SFX 2331 N 1
+SFX 2331 0 landırmak .
+SFX 2332 N 1
+SFX 2332 0 meyeceklerdir .
+SFX 2333 N 1
+SFX 2333 0 lanmalarından .
+SFX 2334 N 1
+SFX 2334 0 laştırıldığında .
+SFX 2335 N 1
+SFX 2335 0 çunun .
+SFX 2336 N 1
+SFX 2336 0 nıza .
+SFX 2337 N 1
+SFX 2337 0 amayacaklarına .
+SFX 2338 N 1
+SFX 2338 0 rken .
+SFX 2339 N 1
+SFX 2339 0 lıları .
+SFX 2340 N 1
+SFX 2340 0 mızdan .
+SFX 2341 N 1
+SFX 2341 0 lamayanlar .
+SFX 2342 N 1
+SFX 2342 0 laştırmalıyız .
+SFX 2343 N 1
+SFX 2343 0 tılacak .
+SFX 2344 N 1
+SFX 2344 0 meler .
+SFX 2345 N 1
+SFX 2345 0 leye .
+SFX 2346 N 1
+SFX 2346 0 ndırdığı .
+SFX 2347 N 1
+SFX 2347 0 ılmadığına .
+SFX 2348 N 1
+SFX 2348 0 lanma .
+SFX 2349 N 1
+SFX 2349 0 laşmıyor .
+SFX 2350 N 1
+SFX 2350 0 ılamayacağının .
+SFX 2351 N 1
+SFX 2351 0 yamıyoruz .
+SFX 2352 N 1
+SFX 2352 0 emeyecekler .
+SFX 2353 N 1
+SFX 2353 0 melik .
+SFX 2354 N 1
+SFX 2354 0 tırmaları .
+SFX 2355 N 1
+SFX 2355 0 ümüz .
+SFX 2356 N 1
+SFX 2356 0 lamadık .
+SFX 2357 N 1
+SFX 2357 0 leyebilir .
+SFX 2358 N 1
+SFX 2358 0 lamadım .
+SFX 2359 N 1
+SFX 2359 0 leyemedik .
+SFX 2360 N 1
+SFX 2360 0 ümün .
+SFX 2361 N 1
+SFX 2361 0 ememelerine .
+SFX 2362 N 1
+SFX 2362 0 uz .
+SFX 2363 N 1
+SFX 2363 0 medikleri .
+SFX 2364 N 1
+SFX 2364 0 yebildiğini .
+SFX 2365 N 1
+SFX 2365 0 lıklarının .
+SFX 2366 N 1
+SFX 2366 0 layabiliriz .
+SFX 2367 N 1
+SFX 2367 0 ılmalarında .
+SFX 2368 N 1
+SFX 2368 0 dıkları .
+SFX 2369 N 1
+SFX 2369 0 lıklarınız .
+SFX 2370 N 1
+SFX 2370 0 ciliğinin .
+SFX 2371 N 1
+SFX 2371 0 lamadığını .
+SFX 2372 N 1
+SFX 2372 0 yana .
+SFX 2373 N 1
+SFX 2373 0 emiyorsanız .
+SFX 2374 N 1
+SFX 2374 0 düğüne .
+SFX 2375 N 1
+SFX 2375 0 irsiniz .
+SFX 2376 N 1
+SFX 2376 0 mayasınız .
+SFX 2377 N 1
+SFX 2377 0 melerde .
+SFX 2378 N 1
+SFX 2378 0 malarla .
+SFX 2379 N 1
+SFX 2379 0 amazsam .
+SFX 2380 N 1
+SFX 2380 0 indedirler .
+SFX 2381 N 1
+SFX 2381 0 amazsak .
+SFX 2382 N 1
+SFX 2382 0 dıran .
+SFX 2383 N 1
+SFX 2383 0 ası .
+SFX 2384 N 1
+SFX 2384 0 leştirmeliyiz .
+SFX 2385 N 1
+SFX 2385 0 um .
+SFX 2386 N 1
+SFX 2386 0 un .
+SFX 2387 N 1
+SFX 2387 0 up .
+SFX 2388 N 1
+SFX 2388 0 lenişine .
+SFX 2389 N 1
+SFX 2389 0 tırılmış .
+SFX 2390 N 1
+SFX 2390 0 masız .
+SFX 2391 N 1
+SFX 2391 0 tu .
+SFX 2392 N 1
+SFX 2392 0 landı .
+SFX 2393 N 1
+SFX 2393 0 nı .
+SFX 2394 N 1
+SFX 2394 0 ısınız .
+SFX 2395 N 1
+SFX 2395 0 liklerinden .
+SFX 2396 N 1
+SFX 2396 0 lanmışlardı .
+SFX 2397 N 1
+SFX 2397 0 laştırılmasına .
+SFX 2398 N 1
+SFX 2398 0 lenişini .
+SFX 2399 N 1
+SFX 2399 0 nmadığını .
+SFX 2400 N 1
+SFX 2400 0 nmadı .
+SFX 2401 N 1
+SFX 2401 0 ıyor .
+SFX 2402 N 1
+SFX 2402 0 mıyordum .
+SFX 2403 N 1
+SFX 2403 0 madığımı .
+SFX 2404 N 1
+SFX 2404 0 ıcılıkları .
+SFX 2405 N 1
+SFX 2405 0 amazlar .
+SFX 2406 N 1
+SFX 2406 0 nını .
+SFX 2407 N 1
+SFX 2407 0 luları .
+SFX 2408 N 1
+SFX 2408 0 nmemiş .
+SFX 2409 N 1
+SFX 2409 0 te .
+SFX 2410 N 1
+SFX 2410 0 laştırılabileceğini .
+SFX 2411 N 1
+SFX 2411 0 ılmayacak .
+SFX 2412 N 1
+SFX 2412 0 ıysa .
+SFX 2413 N 1
+SFX 2413 0 mediğini .
+SFX 2414 N 1
+SFX 2414 0 ti .
+SFX 2415 N 1
+SFX 2415 0 dıramayacağını .
+SFX 2416 N 1
+SFX 2416 0 indendi .
+SFX 2417 N 1
+SFX 2417 0 sünün .
+SFX 2418 N 1
+SFX 2418 0 leştirilerek .
+SFX 2419 N 1
+SFX 2419 0 ta .
+SFX 2420 N 1
+SFX 2420 0 mamakla .
+SFX 2421 N 1
+SFX 2421 0 su .
+SFX 2422 N 1
+SFX 2422 0 üdür .
+SFX 2423 N 1
+SFX 2423 0 lerdendir .
+SFX 2424 N 1
+SFX 2424 0 ilerek .
+SFX 2425 N 1
+SFX 2425 0 lanırsa .
+SFX 2426 N 1
+SFX 2426 0 mı .
+SFX 2427 N 1
+SFX 2427 0 nmışım .
+SFX 2428 N 1
+SFX 2428 0 liğimiz .
+SFX 2429 N 1
+SFX 2429 0 ileni .
+SFX 2430 N 1
+SFX 2430 0 sünüz .
+SFX 2431 N 1
+SFX 2431 0 layışında .
+SFX 2432 N 1
+SFX 2432 0 sizliğinde .
+SFX 2433 N 1
+SFX 2433 0 ılamazdı .
+SFX 2434 N 1
+SFX 2434 0 laştırılmasını .
+SFX 2435 N 1
+SFX 2435 0 laştırmaktan .
+SFX 2436 N 1
+SFX 2436 0 leştiremeyeceğini .
+SFX 2437 N 1
+SFX 2437 0 nmama .
+SFX 2438 N 1
+SFX 2438 0 se .
+SFX 2439 N 1
+SFX 2439 0 ununu .
+SFX 2440 N 1
+SFX 2440 0 enlerle .
+SFX 2441 N 1
+SFX 2441 0 si .
+SFX 2442 N 1
+SFX 2442 0 layacaktı .
+SFX 2443 N 1
+SFX 2443 0 ikleri .
+SFX 2444 N 1
+SFX 2444 0 ebilmeli .
+SFX 2445 N 1
+SFX 2445 0 ılmayacağının .
+SFX 2446 N 1
+SFX 2446 0 sa .
+SFX 2447 N 1
+SFX 2447 0 teyim .
+SFX 2448 N 1
+SFX 2448 0 miyor .
+SFX 2449 N 1
+SFX 2449 0 lense .
+SFX 2450 N 1
+SFX 2450 0 liğimin .
+SFX 2451 N 1
+SFX 2451 0 lı .
+SFX 2452 N 1
+SFX 2452 0 yıcıları .
+SFX 2453 N 1
+SFX 2453 0 ememelerini .
+SFX 2454 N 1
+SFX 2454 0 layanlara .
+SFX 2455 N 1
+SFX 2455 0 abildiğine .
+SFX 2456 N 1
+SFX 2456 0 mamasını .
+SFX 2457 N 1
+SFX 2457 0 abildiğini .
+SFX 2458 N 1
+SFX 2458 0 siniz .
+SFX 2459 N 1
+SFX 2459 0 ununa .
+SFX 2460 N 1
+SFX 2460 0 landırılmalı .
+SFX 2461 N 1
+SFX 2461 0 leştikten .
+SFX 2462 N 1
+SFX 2462 0 nebileceği .
+SFX 2463 N 1
+SFX 2463 0 larınla .
+SFX 2464 N 1
+SFX 2464 0 amayacaklarını .
+SFX 2465 N 1
+SFX 2465 0 lemeler .
+SFX 2466 N 1
+SFX 2466 0 lıktı .
+SFX 2467 N 1
+SFX 2467 0 malarında .
+SFX 2468 N 1
+SFX 2468 0 tayım .
+SFX 2469 N 1
+SFX 2469 0 laştırdığını .
+SFX 2470 N 1
+SFX 2470 0 laşmaların .
+SFX 2471 N 1
+SFX 2471 0 melisin .
+SFX 2472 N 1
+SFX 2472 0 nememiştir .
+SFX 2473 N 1
+SFX 2473 0 culuğundan .
+SFX 2474 N 1
+SFX 2474 0 lerinse .
+SFX 2475 N 1
+SFX 2475 0 ındadır .
+SFX 2476 N 1
+SFX 2476 0 madığını .
+SFX 2477 N 1
+SFX 2477 0 dirmiştir .
+SFX 2478 N 1
+SFX 2478 0 luğumu .
+SFX 2479 N 1
+SFX 2479 0 iymiş .
+SFX 2480 N 1
+SFX 2480 0 arız .
+SFX 2481 N 1
+SFX 2481 0 luklara .
+SFX 2482 N 1
+SFX 2482 0 eler .
+SFX 2483 N 1
+SFX 2483 0 namadıkları .
+SFX 2484 N 1
+SFX 2484 0 iş .
+SFX 2485 N 1
+SFX 2485 0 liğimle .
+SFX 2486 N 1
+SFX 2486 0 lanamadıklarını .
+SFX 2487 N 1
+SFX 2487 0 lü .
+SFX 2488 N 1
+SFX 2488 0 iciliğinden .
+SFX 2489 N 1
+SFX 2489 0 lılara .
+SFX 2490 N 1
+SFX 2490 0 ılmayan .
+SFX 2491 N 1
+SFX 2491 0 mamışlardır .
+SFX 2492 N 1
+SFX 2492 0 düğünü .
+SFX 2493 N 1
+SFX 2493 0 luğuna .
+SFX 2494 N 1
+SFX 2494 0 landırmalarını .
+SFX 2495 N 1
+SFX 2495 0 arım .
+SFX 2496 N 1
+SFX 2496 0 dığındaysa .
+SFX 2497 N 1
+SFX 2497 0 cılarla .
+SFX 2498 N 1
+SFX 2498 0 iyorsanız .
+SFX 2499 N 1
+SFX 2499 0 lenmeden .
+SFX 2500 N 1
+SFX 2500 0 abilecekleri .
+SFX 2501 N 1
+SFX 2501 0 lıdan .
+SFX 2502 N 1
+SFX 2502 0 tacağını .
+SFX 2503 N 1
+SFX 2503 0 lamışlardır .
+SFX 2504 N 1
+SFX 2504 0 ttığını .
+SFX 2505 N 1
+SFX 2505 0 laşamayacak .
+SFX 2506 N 1
+SFX 2506 0 imlerindeki .
+SFX 2507 N 1
+SFX 2507 0 laşmasında .
+SFX 2508 N 1
+SFX 2508 0 tmişler .
+SFX 2509 N 1
+SFX 2509 0 landırmaya .
+SFX 2510 N 1
+SFX 2510 0 madığı .
+SFX 2511 N 1
+SFX 2511 0 leşemeyen .
+SFX 2512 N 1
+SFX 2512 0 laştığında .
+SFX 2513 N 1
+SFX 2513 0 lüğüne .
+SFX 2514 N 1
+SFX 2514 0 alı .
+SFX 2515 N 1
+SFX 2515 0 nmakla .
+SFX 2516 N 1
+SFX 2516 0 madığına .
+SFX 2517 N 1
+SFX 2517 0 ulabileceğini .
+SFX 2518 N 1
+SFX 2518 0 indendir .
+SFX 2519 N 1
+SFX 2519 0 yabileceğiniz .
+SFX 2520 N 1
+SFX 2520 0 lamayacaktır .
+SFX 2521 N 1
+SFX 2521 0 meyenler .
+SFX 2522 N 1
+SFX 2522 0 leyeceklerine .
+SFX 2523 N 1
+SFX 2523 0 amamasından .
+SFX 2524 N 1
+SFX 2524 0 yı .
+SFX 2525 N 1
+SFX 2525 0 leyeceklerini .
+SFX 2526 N 1
+SFX 2526 0 amadığına .
+SFX 2527 N 1
+SFX 2527 0 nişini .
+SFX 2528 N 1
+SFX 2528 0 'dayız .
+SFX 2529 N 1
+SFX 2529 0 nabildiği .
+SFX 2530 N 1
+SFX 2530 0 indeki .
+SFX 2531 N 1
+SFX 2531 0 ttıklarında .
+SFX 2532 N 1
+SFX 2532 0 laşacağına .
+SFX 2533 N 1
+SFX 2533 0 yü .
+SFX 2534 N 1
+SFX 2534 0 teydi .
+SFX 2535 N 1
+SFX 2535 0 'una .
+SFX 2536 N 1
+SFX 2536 0 lanacağını .
+SFX 2537 N 1
+SFX 2537 0 leşeceği .
+SFX 2538 N 1
+SFX 2538 0 ilmesini .
+SFX 2539 N 1
+SFX 2539 0 'unu .
+SFX 2540 N 1
+SFX 2540 0 laştırdıkları .
+SFX 2541 N 1
+SFX 2541 0 tıldığını .
+SFX 2542 N 1
+SFX 2542 0 cisi .
+SFX 2543 N 1
+SFX 2543 0 lanacak .
+SFX 2544 N 1
+SFX 2544 0 ılışının .
+SFX 2545 N 1
+SFX 2545 0 ilmesine .
+SFX 2546 N 1
+SFX 2546 0 tirmiş .
+SFX 2547 N 1
+SFX 2547 0 nmadığına .
+SFX 2548 N 1
+SFX 2548 0 lenirdi .
+SFX 2549 N 1
+SFX 2549 0 lenmeler .
+SFX 2550 N 1
+SFX 2550 0 lerimizi .
+SFX 2551 N 1
+SFX 2551 0 laştırmanın .
+SFX 2552 N 1
+SFX 2552 0 layanın .
+SFX 2553 N 1
+SFX 2553 0 lansa .
+SFX 2554 N 1
+SFX 2554 0 leştirdikleri .
+SFX 2555 N 1
+SFX 2555 0 nızı .
+SFX 2556 N 1
+SFX 2556 0 mızla .
+SFX 2557 N 1
+SFX 2557 0 laşmasını .
+SFX 2558 N 1
+SFX 2558 0 laşacak .
+SFX 2559 N 1
+SFX 2559 0 uş .
+SFX 2560 N 1
+SFX 2560 0 leniş .
+SFX 2561 N 1
+SFX 2561 0 lerimize .
+SFX 2562 N 1
+SFX 2562 0 yerek .
+SFX 2563 N 1
+SFX 2563 0 dadır .
+SFX 2564 N 1
+SFX 2564 0 ememenin .
+SFX 2565 N 1
+SFX 2565 0 lılar .
+SFX 2566 N 1
+SFX 2566 0 yemedi .
+SFX 2567 N 1
+SFX 2567 0 mayacaktı .
+SFX 2568 N 1
+SFX 2568 0 lamadığına .
+SFX 2569 N 1
+SFX 2569 0 nişine .
+SFX 2570 N 1
+SFX 2570 0 ılmadığını .
+SFX 2571 N 1
+SFX 2571 0 yanı .
+SFX 2572 N 1
+SFX 2572 0 çıyı .
+SFX 2573 N 1
+SFX 2573 0 landırılması .
+SFX 2574 N 1
+SFX 2574 0 maktayım .
+SFX 2575 N 1
+SFX 2575 0 ışının .
+SFX 2576 N 1
+SFX 2576 0 leştiremedikleri .
+SFX 2577 N 1
+SFX 2577 0 maktayız .
+SFX 2578 N 1
+SFX 2578 0 dirmeye .
+SFX 2579 N 1
+SFX 2579 0 cılığını .
+SFX 2580 N 1
+SFX 2580 0 ışını .
+SFX 2581 N 1
+SFX 2581 0 lamıyor .
+SFX 2582 N 1
+SFX 2582 0 emediklerinden .
+SFX 2583 N 1
+SFX 2583 0 tebileceği .
+SFX 2584 N 1
+SFX 2584 0 larımızdan .
+SFX 2585 N 1
+SFX 2585 0 nebildiğini .
+SFX 2586 N 1
+SFX 2586 0 ulduğunu .
+SFX 2587 N 1
+SFX 2587 0 leyenlerin .
+SFX 2588 N 1
+SFX 2588 0 ciyi .
+SFX 2589 N 1
+SFX 2589 0 ladıkları .
+SFX 2590 N 1
+SFX 2590 0 meyecekler .
+SFX 2591 N 1
+SFX 2591 0 masın .
+SFX 2592 N 1
+SFX 2592 0 ıydı .
+SFX 2593 N 1
+SFX 2593 0 ciye .
+SFX 2594 N 1
+SFX 2594 0 liği .
+SFX 2595 N 1
+SFX 2595 0 laştıkça .
+SFX 2596 N 1
+SFX 2596 0 uymuş .
+SFX 2597 N 1
+SFX 2597 0 liğe .
+SFX 2598 N 1
+SFX 2598 0 ulduğuna .
+SFX 2599 N 1
+SFX 2599 0 meyeyim .
+SFX 2600 N 1
+SFX 2600 0 ışımı .
+SFX 2601 N 1
+SFX 2601 0 nızdan .
+SFX 2602 N 1
+SFX 2602 0 nmediğinden .
+SFX 2603 N 1
+SFX 2603 0 abileceklerdir .
+SFX 2604 N 1
+SFX 2604 0 leriniz .
+SFX 2605 N 1
+SFX 2605 0 lüğünü .
+SFX 2606 N 1
+SFX 2606 0 eceklerdir .
+SFX 2607 N 1
+SFX 2607 0 lerinin .
+SFX 2608 N 1
+SFX 2608 0 tmeliyiz .
+SFX 2609 N 1
+SFX 2609 0 leşmesinden .
+SFX 2610 N 1
+SFX 2610 0 dıysa .
+SFX 2611 N 1
+SFX 2611 0 lerinki .
+SFX 2612 N 1
+SFX 2612 0 enini .
+SFX 2613 N 1
+SFX 2613 0 liğimde .
+SFX 2614 N 1
+SFX 2614 0 yabileceğinin .
+SFX 2615 N 1
+SFX 2615 0 enine .
+SFX 2616 N 1
+SFX 2616 0 lamasında .
+SFX 2617 N 1
+SFX 2617 0 'sından .
+SFX 2618 N 1
+SFX 2618 0 amayacağı .
+SFX 2619 N 1
+SFX 2619 0 tı .
+SFX 2620 N 1
+SFX 2620 0 nmamasını .
+SFX 2621 N 1
+SFX 2621 0 dırıyor .
+SFX 2622 N 1
+SFX 2622 0 layanları .
+SFX 2623 N 1
+SFX 2623 0 lenme .
+SFX 2624 N 1
+SFX 2624 0 nenler .
+SFX 2625 N 1
+SFX 2625 0 ye .
+SFX 2626 N 1
+SFX 2626 0 yeceklerine .
+SFX 2627 N 1
+SFX 2627 0 rım .
+SFX 2628 N 1
+SFX 2628 0 tü .
+SFX 2629 N 1
+SFX 2629 0 ya .
+SFX 2630 N 1
+SFX 2630 0 lerinle .
+SFX 2631 N 1
+SFX 2631 0 yeceklerini .
+SFX 2632 N 1
+SFX 2632 0 ilemeyeceğinin .
+SFX 2633 N 1
+SFX 2633 0 anı .
+SFX 2634 N 1
+SFX 2634 0 abileceği .
+SFX 2635 N 1
+SFX 2635 0 nizden .
+SFX 2636 N 1
+SFX 2636 0 larındakine .
+SFX 2637 N 1
+SFX 2637 0 rız .
+SFX 2638 N 1
+SFX 2638 0 sı .
+SFX 2639 N 1
+SFX 2639 0 memişlerdir .
+SFX 2640 N 1
+SFX 2640 0 yu .
+SFX 2641 N 1
+SFX 2641 0 ıyla .
+SFX 2642 N 1
+SFX 2642 0 ışlarına .
+SFX 2643 N 1
+SFX 2643 0 larınsa .
+SFX 2644 N 1
+SFX 2644 0 ememesinin .
+SFX 2645 N 1
+SFX 2645 0 çılarından .
+SFX 2646 N 1
+SFX 2646 0 yi .
+SFX 2647 N 1
+SFX 2647 0 lıksa .
+SFX 2648 N 1
+SFX 2648 0 emeyeceğiniz .
+SFX 2649 N 1
+SFX 2649 0 cıya .
+SFX 2650 N 1
+SFX 2650 0 memeleri .
+SFX 2651 N 1
+SFX 2651 0 tmazlar .
+SFX 2652 N 1
+SFX 2652 0 emezler .
+SFX 2653 N 1
+SFX 2653 0 udur .
+SFX 2654 N 1
+SFX 2654 0 lemeleriyle .
+SFX 2655 N 1
+SFX 2655 0 ülemeyeceğini .
+SFX 2656 N 1
+SFX 2656 0 tılmadığı .
+SFX 2657 N 1
+SFX 2657 0 lanışında .
+SFX 2658 N 1
+SFX 2658 0 luluğu .
+SFX 2659 N 1
+SFX 2659 0 mişe .
+SFX 2660 N 1
+SFX 2660 0 leyecek .
+SFX 2661 N 1
+SFX 2661 0 lıklı .
+SFX 2662 N 1
+SFX 2662 0 mişi .
+SFX 2663 N 1
+SFX 2663 0 lanmakta .
+SFX 2664 N 1
+SFX 2664 0 likten .
+SFX 2665 N 1
+SFX 2665 0 undakiler .
+SFX 2666 N 1
+SFX 2666 0 ulmadığı .
+SFX 2667 N 1
+SFX 2667 0 tmayı .
+SFX 2668 N 1
+SFX 2668 0 ilebilecek .
+SFX 2669 N 1
+SFX 2669 0 lıkta .
+SFX 2670 N 1
+SFX 2670 0 memiştim .
+SFX 2671 N 1
+SFX 2671 0 ndiğinin .
+SFX 2672 N 1
+SFX 2672 0 ülemeyeceğine .
+SFX 2673 N 1
+SFX 2673 0 memiştir .
+SFX 2674 N 1
+SFX 2674 0 mediklerini .
+SFX 2675 N 1
+SFX 2675 0 leştirmişler .
+SFX 2676 N 1
+SFX 2676 0 layamamış .
+SFX 2677 N 1
+SFX 2677 0 emeyeceğinin .
+SFX 2678 N 1
+SFX 2678 0 ındaydık .
+SFX 2679 N 1
+SFX 2679 0 leşmediğini .
+SFX 2680 N 1
+SFX 2680 0 yemediğinden .
+SFX 2681 N 1
+SFX 2681 0 mediklerine .
+SFX 2682 N 1
+SFX 2682 0 emeyebileceğini .
+SFX 2683 N 1
+SFX 2683 0 amadıklarını .
+SFX 2684 N 1
+SFX 2684 0 ındaydım .
+SFX 2685 N 1
+SFX 2685 0 rdık .
+SFX 2686 N 1
+SFX 2686 0 imler .
+SFX 2687 N 1
+SFX 2687 0 rdım .
+SFX 2688 N 1
+SFX 2688 0 nen .
+SFX 2689 N 1
+SFX 2689 0 yebileceğinden .
+SFX 2690 N 1
+SFX 2690 0 ılmış .
+SFX 2691 N 1
+SFX 2691 0 mada .
+SFX 2692 N 1
+SFX 2692 0 yenlere .
+SFX 2693 N 1
+SFX 2693 0 ymiş .
+SFX 2694 N 1
+SFX 2694 0 yamazdı .
+SFX 2695 N 1
+SFX 2695 0 yenleri .
+SFX 2696 N 1
+SFX 2696 0 laştırılacağına .
+SFX 2697 N 1
+SFX 2697 0 lanmasını .
+SFX 2698 N 1
+SFX 2698 0 ılacaklar .
+SFX 2699 N 1
+SFX 2699 0 mesinin .
+SFX 2700 N 1
+SFX 2700 0 amayışının .
+SFX 2701 N 1
+SFX 2701 0 rdır .
+SFX 2702 N 1
+SFX 2702 0 işindeki .
+SFX 2703 N 1
+SFX 2703 0 lendiğine .
+SFX 2704 N 1
+SFX 2704 0 amıyor .
+SFX 2705 N 1
+SFX 2705 0 lendiğini .
+SFX 2706 N 1
+SFX 2706 0 luklar .
+SFX 2707 N 1
+SFX 2707 0 layamayacaklarını .
+SFX 2708 N 1
+SFX 2708 0 ledi .
+SFX 2709 N 1
+SFX 2709 0 lendirecek .
+SFX 2710 N 1
+SFX 2710 0 memesinin .
+SFX 2711 N 1
+SFX 2711 0 meyelim .
+SFX 2712 N 1
+SFX 2712 0 tırdığına .
+SFX 2713 N 1
+SFX 2713 0 tıldığından .
+SFX 2714 N 1
+SFX 2714 0 ıştı .
+SFX 2715 N 1
+SFX 2715 0 luğundan .
+SFX 2716 N 1
+SFX 2716 0 'ınki .
+SFX 2717 N 1
+SFX 2717 0 imdir .
+SFX 2718 N 1
+SFX 2718 0 umuzla .
+SFX 2719 N 1
+SFX 2719 0 laştığını .
+SFX 2720 N 1
+SFX 2720 0 amıyordu .
+SFX 2721 N 1
+SFX 2721 0 cısı .
+SFX 2722 N 1
+SFX 2722 0 ılmaz .
+SFX 2723 N 1
+SFX 2723 0 lanırlar .
+SFX 2724 N 1
+SFX 2724 0 lanmaktan .
+SFX 2725 N 1
+SFX 2725 0 ndıkça .
+SFX 2726 N 1
+SFX 2726 0 ıydım .
+SFX 2727 N 1
+SFX 2727 0 ştıklarını .
+SFX 2728 N 1
+SFX 2728 0 sızca .
+SFX 2729 N 1
+SFX 2729 0 nce .
+SFX 2730 N 1
+SFX 2730 0 ulacağını .
+SFX 2731 N 1
+SFX 2731 0 mişlerin .
+SFX 2732 N 1
+SFX 2732 0 nca .
+SFX 2733 N 1
+SFX 2733 0 macı .
+SFX 2734 N 1
+SFX 2734 0 lerindeyse .
+SFX 2735 N 1
+SFX 2735 0 iminde .
+SFX 2736 N 1
+SFX 2736 0 ümüzü .
+SFX 2737 N 1
+SFX 2737 0 dırıldığını .
+SFX 2738 N 1
+SFX 2738 0 larınınki .
+SFX 2739 N 1
+SFX 2739 0 lanmadıkları .
+SFX 2740 N 1
+SFX 2740 0 memizin .
+SFX 2741 N 1
+SFX 2741 0 sınız .
+SFX 2742 N 1
+SFX 2742 0 ndi .
+SFX 2743 N 1
+SFX 2743 0 tırdığını .
+SFX 2744 N 1
+SFX 2744 0 nmesiyle .
+SFX 2745 N 1
+SFX 2745 0 nde .
+SFX 2746 N 1
+SFX 2746 0 lenmediğini .
+SFX 2747 N 1
+SFX 2747 0 madı .
+SFX 2748 N 1
+SFX 2748 0 ılmak .
+SFX 2749 N 1
+SFX 2749 0 nda .
+SFX 2750 N 1
+SFX 2750 0 lenmediğine .
+SFX 2751 N 1
+SFX 2751 0 lığımızdan .
+SFX 2752 N 1
+SFX 2752 0 lamayı .
+SFX 2753 N 1
+SFX 2753 0 sının .
+SFX 2754 N 1
+SFX 2754 0 lenmekte .
+SFX 2755 N 1
+SFX 2755 0 amadıklarına .
+SFX 2756 N 1
+SFX 2756 0 mazlığı .
+SFX 2757 N 1
+SFX 2757 0 nan .
+SFX 2758 N 1
+SFX 2758 0 tmiştir .
+SFX 2759 N 1
+SFX 2759 0 memiş .
+SFX 2760 N 1
+SFX 2760 0 ladığına .
+SFX 2761 N 1
+SFX 2761 0 luda .
+SFX 2762 N 1
+SFX 2762 0 diren .
+SFX 2763 N 1
+SFX 2763 0 abilirler .
+SFX 2764 N 1
+SFX 2764 0 lenmesi .
+SFX 2765 N 1
+SFX 2765 0 lendirilmiştir .
+SFX 2766 N 1
+SFX 2766 0 namayacaklarını .
+SFX 2767 N 1
+SFX 2767 0 tmaya .
+SFX 2768 N 1
+SFX 2768 0 layacaklardır .
+SFX 2769 N 1
+SFX 2769 0 tüğünü .
+SFX 2770 N 1
+SFX 2770 0 yeceğinden .
+SFX 2771 N 1
+SFX 2771 0 ilecekleri .
+SFX 2772 N 1
+SFX 2772 0 larımızda .
+SFX 2773 N 1
+SFX 2773 0 tması .
+SFX 2774 N 1
+SFX 2774 0 sını .
+SFX 2775 N 1
+SFX 2775 0 abileceğimiz .
+SFX 2776 N 1
+SFX 2776 0 ımına .
+SFX 2777 N 1
+SFX 2777 0 'yla .
+SFX 2778 N 1
+SFX 2778 0 imden .
+SFX 2779 N 1
+SFX 2779 0 lanmamalıdır .
+SFX 2780 N 1
+SFX 2780 0 leştiğinden .
+SFX 2781 N 1
+SFX 2781 0 laşacağının .
+SFX 2782 N 1
+SFX 2782 0 dirdi .
+SFX 2783 N 1
+SFX 2783 0 mazlarsa .
+SFX 2784 N 1
+SFX 2784 0 leşebilecek .
+SFX 2785 N 1
+SFX 2785 0 'yle .
+SFX 2786 N 1
+SFX 2786 0 madılar .
+SFX 2787 N 1
+SFX 2787 0 layamadığı .
+SFX 2788 N 1
+SFX 2788 0 ümüze .
+SFX 2789 N 1
+SFX 2789 0 lamamalarını .
+SFX 2790 N 1
+SFX 2790 0 eceklerine .
+SFX 2791 N 1
+SFX 2791 0 ştiği .
+SFX 2792 N 1
+SFX 2792 0 lemezler .
+SFX 2793 N 1
+SFX 2793 0 eceklerini .
+SFX 2794 N 1
+SFX 2794 0 lüğünden .
+SFX 2795 N 1
+SFX 2795 0 tebileceğini .
+SFX 2796 N 1
+SFX 2796 0 umuzdan .
+SFX 2797 N 1
+SFX 2797 0 namamış .
+SFX 2798 N 1
+SFX 2798 0 abileceklerine .
+SFX 2799 N 1
+SFX 2799 0 ilsin .
+SFX 2800 N 1
+SFX 2800 0 ülünce .
+SFX 2801 N 1
+SFX 2801 0 ikliği .
+SFX 2802 N 1
+SFX 2802 0 tadır .
+SFX 2803 N 1
+SFX 2803 0 ışlar .
+SFX 2804 N 1
+SFX 2804 0 abileceklerini .
+SFX 2805 N 1
+SFX 2805 0 luktaki .
+SFX 2806 N 1
+SFX 2806 0 leşmelerinin .
+SFX 2807 N 1
+SFX 2807 0 ndığının .
+SFX 2808 N 1
+SFX 2808 0 nabildiğini .
+SFX 2809 N 1
+SFX 2809 0 ılmadığında .
+SFX 2810 N 1
+SFX 2810 0 nabildiğine .
+SFX 2811 N 1
+SFX 2811 0 cıyı .
+SFX 2812 N 1
+SFX 2812 0 ıyken .
+SFX 2813 N 1
+SFX 2813 0 mamalısın .
+SFX 2814 N 1
+SFX 2814 0 liğimize .
+SFX 2815 N 1
+SFX 2815 0 liğimizi .
+SFX 2816 N 1
+SFX 2816 0 indeyken .
+SFX 2817 N 1
+SFX 2817 0 liler .
+SFX 2818 N 1
+SFX 2818 0 direcek .
+SFX 2819 N 1
+SFX 2819 0 laştığına .
+SFX 2820 N 1
+SFX 2820 0 leyince .
+SFX 2821 N 1
+SFX 2821 0 ındasınız .
+SFX 2822 N 1
+SFX 2822 0 abiliyorsa .
+SFX 2823 N 1
+SFX 2823 0 mayayım .
+SFX 2824 N 1
+SFX 2824 0 laştırılarak .
+SFX 2825 N 1
+SFX 2825 0 lıkla .
+SFX 2826 N 1
+SFX 2826 0 tiğimiz .
+SFX 2827 N 1
+SFX 2827 0 sızı .
+SFX 2828 N 1
+SFX 2828 0 leyici .
+SFX 2829 N 1
+SFX 2829 0 dular .
+SFX 2830 N 1
+SFX 2830 0 ttılar .
+SFX 2831 N 1
+SFX 2831 0 cılığının .
+SFX 2832 N 1
+SFX 2832 0 nmanız .
+SFX 2833 N 1
+SFX 2833 0 ıklıkları .
+SFX 2834 N 1
+SFX 2834 0 lerse .
+SFX 2835 N 1
+SFX 2835 0 lamaya .
+SFX 2836 N 1
+SFX 2836 0 iyorsak .
+SFX 2837 N 1
+SFX 2837 0 ildiklerini .
+SFX 2838 N 1
+SFX 2838 0 lüğün .
+SFX 2839 N 1
+SFX 2839 0 lüğüm .
+SFX 2840 N 1
+SFX 2840 0 ıldıklarına .
+SFX 2841 N 1
+SFX 2841 0 nmanın .
+SFX 2842 N 1
+SFX 2842 0 şmış .
+SFX 2843 N 1
+SFX 2843 0 lanamayacak .
+SFX 2844 N 1
+SFX 2844 0 yabilirler .
+SFX 2845 N 1
+SFX 2845 0 yacaktı .
+SFX 2846 N 1
+SFX 2846 0 ndiğinde .
+SFX 2847 N 1
+SFX 2847 0 umuzda .
+SFX 2848 N 1
+SFX 2848 0 leşmiş .
+SFX 2849 N 1
+SFX 2849 0 abiliyoruz .
+SFX 2850 N 1
+SFX 2850 0 ınız .
+SFX 2851 N 1
+SFX 2851 0 tmıştı .
+SFX 2852 N 1
+SFX 2852 0 lanamayacağı .
+SFX 2853 N 1
+SFX 2853 0 laması .
+SFX 2854 N 1
+SFX 2854 0 ledikten .
+SFX 2855 N 1
+SFX 2855 0 leştirememiş .
+SFX 2856 N 1
+SFX 2856 0 abiliyorum .
+SFX 2857 N 1
+SFX 2857 0 laştırılacağını .
+SFX 2858 N 1
+SFX 2858 0 layan .
+SFX 2859 N 1
+SFX 2859 0 lemeden .
+SFX 2860 N 1
+SFX 2860 0 muş .
+SFX 2861 N 1
+SFX 2861 0 ıverdi .
+SFX 2862 N 1
+SFX 2862 0 mışsınız .
+SFX 2863 N 1
+SFX 2863 0 lerimi .
+SFX 2864 N 1
+SFX 2864 0 msı .
+SFX 2865 N 1
+SFX 2865 0 leşmesiyle .
+SFX 2866 N 1
+SFX 2866 0 layamayacak .
+SFX 2867 N 1
+SFX 2867 0 lerime .
+SFX 2868 N 1
+SFX 2868 0 acaktır .
+SFX 2869 N 1
+SFX 2869 0 acaktım .
+SFX 2870 N 1
+SFX 2870 0 yış .
+SFX 2871 N 1
+SFX 2871 0 layamayacakları .
+SFX 2872 N 1
+SFX 2872 0 ıldıklarını .
+SFX 2873 N 1
+SFX 2873 0 malarıyla .
+SFX 2874 N 1
+SFX 2874 0 sızdı .
+SFX 2875 N 1
+SFX 2875 0 yabiliriz .
+SFX 2876 N 1
+SFX 2876 0 acaktık .
+SFX 2877 N 1
+SFX 2877 0 ının .
+SFX 2878 N 1
+SFX 2878 0 mazdı .
+SFX 2879 N 1
+SFX 2879 0 yabilirim .
+SFX 2880 N 1
+SFX 2880 0 suydu .
+SFX 2881 N 1
+SFX 2881 0 ninde .
+SFX 2882 N 1
+SFX 2882 0 neceği .
+SFX 2883 N 1
+SFX 2883 0 layınca .
+SFX 2884 N 1
+SFX 2884 0 abilmektedir .
+SFX 2885 N 1
+SFX 2885 0 lanmalar .
+SFX 2886 N 1
+SFX 2886 0 lerini .
+SFX 2887 N 1
+SFX 2887 0 lediklerinde .
+SFX 2888 N 1
+SFX 2888 0 larınınsa .
+SFX 2889 N 1
+SFX 2889 0 leştirdiği .
+SFX 2890 N 1
+SFX 2890 0 lerine .
+SFX 2891 N 1
+SFX 2891 0 ıyorlardı .
+SFX 2892 N 1
+SFX 2892 0 mazın .
+SFX 2893 N 1
+SFX 2893 0 tmışlar .
+SFX 2894 N 1
+SFX 2894 0 ılmaktadır .
+SFX 2895 N 1
+SFX 2895 0 amıyorlardı .
+SFX 2896 N 1
+SFX 2896 0 neceğini .
+SFX 2897 N 1
+SFX 2897 0 maca .
+SFX 2898 N 1
+SFX 2898 0 ınızdan .
+SFX 2899 N 1
+SFX 2899 0 neceğine .
+SFX 2900 N 1
+SFX 2900 0 lilik .
+SFX 2901 N 1
+SFX 2901 0 ulma .
+SFX 2902 N 1
+SFX 2902 0 lenecek .
+SFX 2903 N 1
+SFX 2903 0 inse .
+SFX 2904 N 1
+SFX 2904 0 liktir .
+SFX 2905 N 1
+SFX 2905 0 dığına .
+SFX 2906 N 1
+SFX 2906 0 dırıldığına .
+SFX 2907 N 1
+SFX 2907 0 ememelerinden .
+SFX 2908 N 1
+SFX 2908 0 sün .
+SFX 2909 N 1
+SFX 2909 0 layamadıklarını .
+SFX 2910 N 1
+SFX 2910 0 abilenler .
+SFX 2911 N 1
+SFX 2911 0 madığından .
+SFX 2912 N 1
+SFX 2912 0 ınızın .
+SFX 2913 N 1
+SFX 2913 0 lanmadan .
+SFX 2914 N 1
+SFX 2914 0 nmadığından .
+SFX 2915 N 1
+SFX 2915 0 leştirmiştir .
+SFX 2916 N 1
+SFX 2916 0 yamayacağı .
+SFX 2917 N 1
+SFX 2917 0 acağız .
+SFX 2918 N 1
+SFX 2918 0 malarıydı .
+SFX 2919 N 1
+SFX 2919 0 ırsın .
+SFX 2920 N 1
+SFX 2920 0 landırılmış .
+SFX 2921 N 1
+SFX 2921 0 süz .
+SFX 2922 N 1
+SFX 2922 0 mazsın .
+SFX 2923 N 1
+SFX 2923 0 dıklarından .
+SFX 2924 N 1
+SFX 2924 0 tiyor .
+SFX 2925 N 1
+SFX 2925 0 lisinin .
+SFX 2926 N 1
+SFX 2926 0 acağın .
+SFX 2927 N 1
+SFX 2927 0 ılamaması .
+SFX 2928 N 1
+SFX 2928 0 acağım .
+SFX 2929 N 1
+SFX 2929 0 mesinde .
+SFX 2930 N 1
+SFX 2930 0 lenmeli .
+SFX 2931 N 1
+SFX 2931 0 lisiniz .
+SFX 2932 N 1
+SFX 2932 0 dınız .
+SFX 2933 N 1
+SFX 2933 0 mazlardı .
+SFX 2934 N 1
+SFX 2934 0 ilemediğine .
+SFX 2935 N 1
+SFX 2935 0 larımızla .
+SFX 2936 N 1
+SFX 2936 0 leşmelerinde .
+SFX 2937 N 1
+SFX 2937 0 ilemediğini .
+SFX 2938 N 1
+SFX 2938 0 melerinden .
+SFX 2939 N 1
+SFX 2939 0 lanmamalı .
+SFX 2940 N 1
+SFX 2940 0 mişlerdi .
+SFX 2941 N 1
+SFX 2941 0 macılığı .
+SFX 2942 N 1
+SFX 2942 0 yamadığı .
+SFX 2943 N 1
+SFX 2943 0 latacaklarını .
+SFX 2944 N 1
+SFX 2944 0 laştığımız .
+SFX 2945 N 1
+SFX 2945 0 nince .
+SFX 2946 N 1
+SFX 2946 0 şmalar .
+SFX 2947 N 1
+SFX 2947 0 sızlığın .
+SFX 2948 N 1
+SFX 2948 0 lerle .
+SFX 2949 N 1
+SFX 2949 0 lerimin .
+SFX 2950 N 1
+SFX 2950 0 laşamadıklarını .
+SFX 2951 N 1
+SFX 2951 0 lamayacaklarını .
+SFX 2952 N 1
+SFX 2952 0 ttiğinde .
+SFX 2953 N 1
+SFX 2953 0 lerimiz .
+SFX 2954 N 1
+SFX 2954 0 lısı .
+SFX 2955 N 1
+SFX 2955 0 lenmeyecek .
+SFX 2956 N 1
+SFX 2956 0 lamalardan .
+SFX 2957 N 1
+SFX 2957 0 sindeki .
+SFX 2958 N 1
+SFX 2958 0 lanışı .
+SFX 2959 N 1
+SFX 2959 0 liyorlar .
+SFX 2960 N 1
+SFX 2960 0 mişsiniz .
+SFX 2961 N 1
+SFX 2961 0 tmadıkları .
+SFX 2962 N 1
+SFX 2962 0 mayabilir .
+SFX 2963 N 1
+SFX 2963 0 lenmemeli .
+SFX 2964 N 1
+SFX 2964 0 tacakları .
+SFX 2965 N 1
+SFX 2965 0 laşıyor .
+SFX 2966 N 1
+SFX 2966 0 mızdır .
+SFX 2967 N 1
+SFX 2967 0 leşmek .
+SFX 2968 N 1
+SFX 2968 0 tmamaları .
+SFX 2969 N 1
+SFX 2969 0 sundaki .
+SFX 2970 N 1
+SFX 2970 0 muşum .
+SFX 2971 N 1
+SFX 2971 0 laştığından .
+SFX 2972 N 1
+SFX 2972 0 lıya .
+SFX 2973 N 1
+SFX 2973 0 larındadır .
+SFX 2974 N 1
+SFX 2974 0 çılığı .
+SFX 2975 N 1
+SFX 2975 0 cılıktan .
+SFX 2976 N 1
+SFX 2976 0 yebildiği .
+SFX 2977 N 1
+SFX 2977 0 muşuz .
+SFX 2978 N 1
+SFX 2978 0 leşmez .
+SFX 2979 N 1
+SFX 2979 0 ilmelerine .
+SFX 2980 N 1
+SFX 2980 0 leşmiştir .
+SFX 2981 N 1
+SFX 2981 0 layabilen .
+SFX 2982 N 1
+SFX 2982 0 ilmelerini .
+SFX 2983 N 1
+SFX 2983 0 layamaz .
+SFX 2984 N 1
+SFX 2984 0 lamalı .
+SFX 2985 N 1
+SFX 2985 0 memişlerdi .
+SFX 2986 N 1
+SFX 2986 0 ildiği .
+SFX 2987 N 1
+SFX 2987 0 emediğinde .
+SFX 2988 N 1
+SFX 2988 0 ıklarından .
+SFX 2989 N 1
+SFX 2989 0 lamıştı .
+SFX 2990 N 1
+SFX 2990 0 luğunun .
+SFX 2991 N 1
+SFX 2991 0 ümüzün .
+SFX 2992 N 1
+SFX 2992 0 tuğu .
+SFX 2993 N 1
+SFX 2993 0 lenmiştir .
+SFX 2994 N 1
+SFX 2994 0 luğunuz .
+SFX 2995 N 1
+SFX 2995 0 leriz .
+SFX 2996 N 1
+SFX 2996 0 ndiklerine .
+SFX 2997 N 1
+SFX 2997 0 laşırlar .
+SFX 2998 N 1
+SFX 2998 0 nabileceğinin .
+SFX 2999 N 1
+SFX 2999 0 meyeceklerini .
+SFX 3000 N 1
+SFX 3000 0 mışların .
+SFX 3001 N 1
+SFX 3001 0 mayışını .
+SFX 3002 N 1
+SFX 3002 0 nuz .
+SFX 3003 N 1
+SFX 3003 0 dirdiği .
+SFX 3004 N 1
+SFX 3004 0 liydiler .
+SFX 3005 N 1
+SFX 3005 0 iyordu .
+SFX 3006 N 1
+SFX 3006 0 manı .
+SFX 3007 N 1
+SFX 3007 0 lenemeyeceği .
+SFX 3008 N 1
+SFX 3008 0 lendireceği .
+SFX 3009 N 1
+SFX 3009 0 lılıklarını .
+SFX 3010 N 1
+SFX 3010 0 undadır .
+SFX 3011 N 1
+SFX 3011 0 yamaz .
+SFX 3012 N 1
+SFX 3012 0 lamadan .
+SFX 3013 N 1
+SFX 3013 0 nun .
+SFX 3014 N 1
+SFX 3014 0 celer .
+SFX 3015 N 1
+SFX 3015 0 sıysa .
+SFX 3016 N 1
+SFX 3016 0 ılan .
+SFX 3017 N 1
+SFX 3017 0 cısından .
+SFX 3018 N 1
+SFX 3018 0 madınız .
+SFX 3019 N 1
+SFX 3019 0 ılar .
+SFX 3020 N 1
+SFX 3020 0 mesindeki .
+SFX 3021 N 1
+SFX 3021 0 yamam .
+SFX 3022 N 1
+SFX 3022 0 ladıkça .
+SFX 3023 N 1
+SFX 3023 0 tmama .
+SFX 3024 N 1
+SFX 3024 0 meyeceklerine .
+SFX 3025 N 1
+SFX 3025 0 likleriyle .
+SFX 3026 N 1
+SFX 3026 0 tildiğine .
+SFX 3027 N 1
+SFX 3027 0 çiliğin .
+SFX 3028 N 1
+SFX 3028 0 tirildiği .
+SFX 3029 N 1
+SFX 3029 0 suyla .
+SFX 3030 N 1
+SFX 3030 0 lendik .
+SFX 3031 N 1
+SFX 3031 0 lendim .
+SFX 3032 N 1
+SFX 3032 0 tmış .
+SFX 3033 N 1
+SFX 3033 0 ılırsa .
+SFX 3034 N 1
+SFX 3034 0 sinler .
+SFX 3035 N 1
+SFX 3035 0 mayacaklarının .
+SFX 3036 N 1
+SFX 3036 0 cıydı .
+SFX 3037 N 1
+SFX 3037 0 lanmaması .
+SFX 3038 N 1
+SFX 3038 0 iciler .
+SFX 3039 N 1
+SFX 3039 0 liklerimizi .
+SFX 3040 N 1
+SFX 3040 0 ılıyordu .
+SFX 3041 N 1
+SFX 3041 0 mazsa .
+SFX 3042 N 1
+SFX 3042 0 mezken .
+SFX 3043 N 1
+SFX 3043 0 ıcıların .
+SFX 3044 N 1
+SFX 3044 0 ndiklerini .
+SFX 3045 N 1
+SFX 3045 0 mememiz .
+SFX 3046 N 1
+SFX 3046 0 mamaları .
+SFX 3047 N 1
+SFX 3047 0 larmış .
+SFX 3048 N 1
+SFX 3048 0 dırıldığı .
+SFX 3049 N 1
+SFX 3049 0 lanabildiği .
+SFX 3050 N 1
+SFX 3050 0 iniz .
+SFX 3051 N 1
+SFX 3051 0 lenmeyeceği .
+SFX 3052 N 1
+SFX 3052 0 inin .
+SFX 3053 N 1
+SFX 3053 0 lardık .
+SFX 3054 N 1
+SFX 3054 0 lardım .
+SFX 3055 N 1
+SFX 3055 0 lığınıza .
+SFX 3056 N 1
+SFX 3056 0 nse .
+SFX 3057 N 1
+SFX 3057 0 sızdır .
+SFX 3058 N 1
+SFX 3058 0 namadıklarını .
+SFX 3059 N 1
+SFX 3059 0 lenmişler .
+SFX 3060 N 1
+SFX 3060 0 layabilir .
+SFX 3061 N 1
+SFX 3061 0 lardır .
+SFX 3062 N 1
+SFX 3062 0 ması .
+SFX 3063 N 1
+SFX 3063 0 cıyla .
+SFX 3064 N 1
+SFX 3064 0 dırılacağını .
+SFX 3065 N 1
+SFX 3065 0 nsa .
+SFX 3066 N 1
+SFX 3066 0 yabilirdi .
+SFX 3067 N 1
+SFX 3067 0 sünde .
+SFX 3068 N 1
+SFX 3068 0 lerindeydi .
+SFX 3069 N 1
+SFX 3069 0 uşun .
+SFX 3070 N 1
+SFX 3070 0 maktadır .
+SFX 3071 N 1
+SFX 3071 0 ülemeyecek .
+SFX 3072 N 1
+SFX 3072 0 lenmemesi .
+SFX 3073 N 1
+SFX 3073 0 sızlıkları .
+SFX 3074 N 1
+SFX 3074 0 ilmemiş .
+SFX 3075 N 1
+SFX 3075 0 ılmadıklarını .
+SFX 3076 N 1
+SFX 3076 0 leştirilmesini .
+SFX 3077 N 1
+SFX 3077 0 ninki .
+SFX 3078 N 1
+SFX 3078 0 tirecek .
+SFX 3079 N 1
+SFX 3079 0 mize .
+SFX 3080 N 1
+SFX 3080 0 lerimde .
+SFX 3081 N 1
+SFX 3081 0 mizi .
+SFX 3082 N 1
+SFX 3082 0 yacağını .
+SFX 3083 N 1
+SFX 3083 0 muştu .
+SFX 3084 N 1
+SFX 3084 0 ilemeyeceği .
+SFX 3085 N 1
+SFX 3085 0 malarını .
+SFX 3086 N 1
+SFX 3086 0 madır .
+SFX 3087 N 1
+SFX 3087 0 lansın .
+SFX 3088 N 1
+SFX 3088 0 lamama .
+SFX 3089 N 1
+SFX 3089 0 inle .
+SFX 3090 N 1
+SFX 3090 0 ılmışlardı .
+SFX 3091 N 1
+SFX 3091 0 lasın .
+SFX 3092 N 1
+SFX 3092 0 iciliğine .
+SFX 3093 N 1
+SFX 3093 0 ıyorlarsa .
+SFX 3094 N 1
+SFX 3094 0 abilecek .
+SFX 3095 N 1
+SFX 3095 0 namadığından .
+SFX 3096 N 1
+SFX 3096 0 leyecekleri .
+SFX 3097 N 1
+SFX 3097 0 lıymış .
+SFX 3098 N 1
+SFX 3098 0 maya .
+SFX 3099 N 1
+SFX 3099 0 emediğinin .
+SFX 3100 N 1
+SFX 3100 0 maktır .
+SFX 3101 N 1
+SFX 3101 0 likle .
+SFX 3102 N 1
+SFX 3102 0 leştirilmesine .
+SFX 3103 N 1
+SFX 3103 0 tacak .
+SFX 3104 N 1
+SFX 3104 0 emediğiniz .
+SFX 3105 N 1
+SFX 3105 0 niş .
+SFX 3106 N 1
+SFX 3106 0 ımsın .
+SFX 3107 N 1
+SFX 3107 0 lemesin .
+SFX 3108 N 1
+SFX 3108 0 nmalı .
+SFX 3109 N 1
+SFX 3109 0 madık .
+SFX 3110 N 1
+SFX 3110 0 tildiğini .
+SFX 3111 N 1
+SFX 3111 0 iciliğini .
+SFX 3112 N 1
+SFX 3112 0 lıyı .
+SFX 3113 N 1
+SFX 3113 0 memeliyiz .
+SFX 3114 N 1
+SFX 3114 0 madım .
+SFX 3115 N 1
+SFX 3115 0 madın .
+SFX 3116 N 1
+SFX 3116 0 leşemediği .
+SFX 3117 N 1
+SFX 3117 0 inki .
+SFX 3118 N 1
+SFX 3118 0 leştirilmiştir .
+SFX 3119 N 1
+SFX 3119 0 leneceğini .
+SFX 3120 N 1
+SFX 3120 0 ılabileceğinden .
+SFX 3121 N 1
+SFX 3121 0 leneceğine .
+SFX 3122 N 1
+SFX 3122 0 meyeceğinin .
+SFX 3123 N 1
+SFX 3123 0 lerindeyken .
+SFX 3124 N 1
+SFX 3124 0 likse .
+SFX 3125 N 1
+SFX 3125 0 lanacaktır .
+SFX 3126 N 1
+SFX 3126 0 leştirmeleri .
+SFX 3127 N 1
+SFX 3127 0 ladığımı .
+SFX 3128 N 1
+SFX 3128 0 'ydı .
+SFX 3129 N 1
+SFX 3129 0 likte .
+SFX 3130 N 1
+SFX 3130 0 menizi .
+SFX 3131 N 1
+SFX 3131 0 lerdi .
+SFX 3132 N 1
+SFX 3132 0 uyoruz .
+SFX 3133 N 1
+SFX 3133 0 leneceği .
+SFX 3134 N 1
+SFX 3134 0 lerde .
+SFX 3135 N 1
+SFX 3135 0 eli .
+SFX 3136 N 1
+SFX 3136 0 ılmayacaktır .
+SFX 3137 N 1
+SFX 3137 0 laşmalarının .
+SFX 3138 N 1
+SFX 3138 0 tacaktır .
+SFX 3139 N 1
+SFX 3139 0 ilebileceğini .
+SFX 3140 N 1
+SFX 3140 0 müşler .
+SFX 3141 N 1
+SFX 3141 0 lıyormuş .
+SFX 3142 N 1
+SFX 3142 0 indeydiler .
+SFX 3143 N 1
+SFX 3143 0 mana .
+SFX 3144 N 1
+SFX 3144 0 ilebileceğine .
+SFX 3145 N 1
+SFX 3145 0 çılık .
+SFX 3146 N 1
+SFX 3146 0 direcektir .
+SFX 3147 N 1
+SFX 3147 0 larındaydım .
+SFX 3148 N 1
+SFX 3148 0 leniyor .
+SFX 3149 N 1
+SFX 3149 0 ulmamış .
+SFX 3150 N 1
+SFX 3150 0 yamadığında .
+SFX 3151 N 1
+SFX 3151 0 uyorum .
+SFX 3152 N 1
+SFX 3152 0 leşmektedir .
+SFX 3153 N 1
+SFX 3153 0 ışlarında .
+SFX 3154 N 1
+SFX 3154 0 lamadı .
+SFX 3155 N 1
+SFX 3155 0 larken .
+SFX 3156 N 1
+SFX 3156 0 eceksiniz .
+SFX 3157 N 1
+SFX 3157 0 leşmişler .
+SFX 3158 N 1
+SFX 3158 0 işiyle .
+SFX 3159 N 1
+SFX 3159 0 eme .
+SFX 3160 N 1
+SFX 3160 0 ladığını .
+SFX 3161 N 1
+SFX 3161 0 lanmasıyla .
+SFX 3162 N 1
+SFX 3162 0 lamayacak .
+SFX 3163 N 1
+SFX 3163 0 mama .
+SFX 3164 N 1
+SFX 3164 0 leştirilmemiş .
+SFX 3165 N 1
+SFX 3165 0 dırmadığı .
+SFX 3166 N 1
+SFX 3166 0 laştırmalı .
+SFX 3167 N 1
+SFX 3167 0 ıldı .
+SFX 3168 N 1
+SFX 3168 0 diremediğini .
+SFX 3169 N 1
+SFX 3169 0 abiliyordu .
+SFX 3170 N 1
+SFX 3170 0 macılar .
+SFX 3171 N 1
+SFX 3171 0 tamadığından .
+SFX 3172 N 1
+SFX 3172 0 lenmeye .
+SFX 3173 N 1
+SFX 3173 0 ene .
+SFX 3174 N 1
+SFX 3174 0 lenmeyi .
+SFX 3177 N 1
+SFX 3177 0 ındakiler .
+SFX 3176 N 1
+SFX 3176 0 çilerinden .
+SFX 3175 N 1
+SFX 3175 0 yışının .
+SFX 3178 N 1
+SFX 3178 0 lediğimiz .
+SFX 3180 N 1
+SFX 3180 0 nme .
+SFX 3179 N 1
+SFX 3179 0 layamadık .
+SFX 3181 N 1
+SFX 3181 0 sızlığı .
+SFX 3182 N 1
+SFX 3182 0 uyorsa .
+SFX 3184 N 1
+SFX 3184 0 nma .
+SFX 3183 N 1
+SFX 3183 0 lanacaklarını .
+SFX 3185 N 1
+SFX 3185 0 eni .
+SFX 3186 N 1
+SFX 3186 0 lılık .
+SFX 3187 N 1
+SFX 3187 0 menize .
+SFX 3188 N 1
+SFX 3188 0 yamadıklarından .
+SFX 3190 N 1
+SFX 3190 0 lemelerine .
+SFX 3189 N 1
+SFX 3189 0 mamalıydı .
+SFX 3191 N 1
+SFX 3191 0 amayacak .
+SFX 3192 N 1
+SFX 3192 0 lemelerini .
+SFX 3193 N 1
+SFX 3193 0 amazsanız .
+SFX 3195 N 1
+SFX 3195 0 emeyip .
+SFX 3194 N 1
+SFX 3194 0 amayacaktı .
+SFX 3198 N 1
+SFX 3198 0 lerce .
+SFX 3197 N 1
+SFX 3197 0 emeyiz .
+SFX 3196 N 1
+SFX 3196 0 lananın .
+SFX 3199 N 1
+SFX 3199 0 lüklerini .
+SFX 3203 N 1
+SFX 3203 0 memek .
+SFX 3202 N 1
+SFX 3202 0 nmayı .
+SFX 3201 N 1
+SFX 3201 0 lanabilir .
+SFX 3200 N 1
+SFX 3200 0 yamayınca .
+SFX 3204 N 1
+SFX 3204 0 lüklerine .
+SFX 3205 N 1
+SFX 3205 0 ilemediğinden .
+SFX 3206 N 1
+SFX 3206 0 nmadığında .
+SFX 3208 N 1
+SFX 3208 0 masa .
+SFX 3207 N 1
+SFX 3207 0 lerindeyiz .
+SFX 3209 N 1
+SFX 3209 0 nması .
+SFX 3211 N 1
+SFX 3211 0 nla .
+SFX 3210 N 1
+SFX 3210 0 mışsınızdır .
+SFX 3212 N 1
+SFX 3212 0 lemelerin .
+SFX 3214 N 1
+SFX 3214 0 memiz .
+SFX 3213 N 1
+SFX 3213 0 nle .
+SFX 3215 N 1
+SFX 3215 0 çilerinin .
+SFX 3216 N 1
+SFX 3216 0 leştirmenin .
+SFX 3218 N 1
+SFX 3218 0 tığı .
+SFX 3217 N 1
+SFX 3217 0 sındayız .
+SFX 3219 N 1
+SFX 3219 0 mamı .
+SFX 3220 N 1
+SFX 3220 0 mışlardır .
+SFX 3222 N 1
+SFX 3222 0 yeceğim .
+SFX 3221 N 1
+SFX 3221 0 ılırdı .
+SFX 3224 N 1
+SFX 3224 0 lıklarımızı .
+SFX 3223 N 1
+SFX 3223 0 lidirler .
+SFX 3225 N 1
+SFX 3225 0 nmaya .
+SFX 3226 N 1
+SFX 3226 0 mezsiniz .
+SFX 3227 N 1
+SFX 3227 0 sizleri .
+SFX 3228 N 1
+SFX 3228 0 umuzun .
+SFX 3229 N 1
+SFX 3229 0 leşerek .
+SFX 3230 N 1
+SFX 3230 0 çiliğinin .
+SFX 3231 N 1
+SFX 3231 0 yeceğiz .
+SFX 3232 N 1
+SFX 3232 0 sına .
+SFX 3235 N 1
+SFX 3235 0 lerin .
+SFX 3234 N 1
+SFX 3234 0 yacaklar .
+SFX 3233 N 1
+SFX 3233 0 tmalı .
+SFX 3236 N 1
+SFX 3236 0 lerim .
+SFX 3238 N 1
+SFX 3238 0 mayacaktır .
+SFX 3237 N 1
+SFX 3237 0 leştirdiğinden .
+SFX 3240 N 1
+SFX 3240 0 anlarından .
+SFX 3239 N 1
+SFX 3239 0 ttik .
+SFX 3241 N 1
+SFX 3241 0 malı .
+SFX 3242 N 1
+SFX 3242 0 dirdiğine .
+SFX 3243 N 1
+SFX 3243 0 masıdır .
+SFX 3244 N 1
+SFX 3244 0 nacaktır .
+SFX 3246 N 1
+SFX 3246 0 dirdiğini .
+SFX 3245 N 1
+SFX 3245 0 mezdim .
+SFX 3249 N 1
+SFX 3249 0 mezdik .
+SFX 3248 N 1
+SFX 3248 0 icileri .
+SFX 3247 N 1
+SFX 3247 0 indi .
+SFX 3250 N 1
+SFX 3250 0 enlerden .
+SFX 3253 N 1
+SFX 3253 0 inde .
+SFX 3252 N 1
+SFX 3252 0 likteki .
+SFX 3251 N 1
+SFX 3251 0 ninse .
+SFX 3255 N 1
+SFX 3255 0 lıdır .
+SFX 3254 N 1
+SFX 3254 0 leyecekler .
+SFX 3256 N 1
+SFX 3256 0 lenemediği .
+SFX 3258 N 1
+SFX 3258 0 sinden .
+SFX 3257 N 1
+SFX 3257 0 mişti .
+SFX 3259 N 1
+SFX 3259 0 lerimle .
+SFX 3260 N 1
+SFX 3260 0 ilişine .
+SFX 3261 N 1
+SFX 3261 0 layamam .
+SFX 3263 N 1
+SFX 3263 0 'ydi .
+SFX 3262 N 1
+SFX 3262 0 ulmadığını .
+SFX 3264 N 1
+SFX 3264 0 ndı .
+SFX 3265 N 1
+SFX 3265 0 amayabilir .
+SFX 3266 N 1
+SFX 3266 0 liklerden .
+SFX 3267 N 1
+SFX 3267 0 ilişini .
+SFX 3269 N 1
+SFX 3269 0 ndıklarında .
+SFX 3268 N 1
+SFX 3268 0 laşacaklar .
+SFX 3270 N 1
+SFX 3270 0 mişse .
+SFX 3271 N 1
+SFX 3271 0 leştirenler .
+SFX 3272 N 1
+SFX 3272 0 ndıklarından .
+SFX 3273 N 1
+SFX 3273 0 likti .
+SFX 3274 N 1
+SFX 3274 0 ince .
+SFX 3275 N 1
+SFX 3275 0 lamada .
+SFX 3277 N 1
+SFX 3277 0 niz .
+SFX 3276 N 1
+SFX 3276 0 ılabildiğine .
+SFX 3278 N 1
+SFX 3278 0 memişler .
+SFX 3281 N 1
+SFX 3281 0 larınında .
+SFX 3280 N 1
+SFX 3280 0 mamalarından .
+SFX 3279 N 1
+SFX 3279 0 memin .
+SFX 3282 N 1
+SFX 3282 0 emeyen .
+SFX 3283 N 1
+SFX 3283 0 nir .
+SFX 3284 N 1
+SFX 3284 0 mayanlar .
+SFX 3285 N 1
+SFX 3285 0 nip .
+SFX 3288 N 1
+SFX 3288 0 lendirmeye .
+SFX 3287 N 1
+SFX 3287 0 yeni .
+SFX 3286 N 1
+SFX 3286 0 nim .
+SFX 3290 N 1
+SFX 3290 0 nin .
+SFX 3289 N 1
+SFX 3289 0 ılabildiğini .
+SFX 3293 N 1
+SFX 3293 0 malarına .
+SFX 3292 N 1
+SFX 3292 0 luların .
+SFX 3291 N 1
+SFX 3291 0 dirme .
+SFX 3294 N 1
+SFX 3294 0 lığınızı .
+SFX 3295 N 1
+SFX 3295 0 mamışımdır .
+SFX 3297 N 1
+SFX 3297 0 luğunda .
+SFX 3296 N 1
+SFX 3296 0 ildiğine .
+SFX 3298 N 1
+SFX 3298 0 ılmadığının .
+SFX 3299 N 1
+SFX 3299 0 dıracağını .
+SFX 3300 N 1
+SFX 3300 0 ildiğini .
+SFX 3301 N 1
+SFX 3301 0 iyorum .
+SFX 3302 N 1
+SFX 3302 0 indekinden .
+SFX 3306 N 1
+SFX 3306 0 likler .
+SFX 3305 N 1
+SFX 3305 0 lanmalarına .
+SFX 3304 N 1
+SFX 3304 0 ilmeye .
+SFX 3303 N 1
+SFX 3303 0 lıklarım .
+SFX 3309 N 1
+SFX 3309 0 lıkların .
+SFX 3308 N 1
+SFX 3308 0 ciğim .
+SFX 3307 N 1
+SFX 3307 0 lananlar .
+SFX 3310 N 1
+SFX 3310 0 sıdır .
+SFX 3311 N 1
+SFX 3311 0 lendirmeleri .
+SFX 3312 N 1
+SFX 3312 0 ildiğinin .
+SFX 3314 N 1
+SFX 3314 0 nınsa .
+SFX 3313 N 1
+SFX 3313 0 ilmiyor .
+SFX 3315 N 1
+SFX 3315 0 lendirilmeli .
+SFX 3316 N 1
+SFX 3316 0 iyoruz .
+SFX 3318 N 1
+SFX 3318 0 lemişlerdi .
+SFX 3317 N 1
+SFX 3317 0 ivermiş .
+SFX 3319 N 1
+SFX 3319 0 leneceğinden .
+SFX 3321 N 1
+SFX 3321 0 düğünde .
+SFX 3320 N 1
+SFX 3320 0 lanmamıştır .
+SFX 3322 N 1
+SFX 3322 0 ilmediğinin .
+SFX 3323 N 1
+SFX 3323 0 lüklere .
+SFX 3324 N 1
+SFX 3324 0 larıyız .
+SFX 3325 N 1
+SFX 3325 0 ştirme .
+SFX 3326 N 1
+SFX 3326 0 landığına .
+SFX 3327 N 1
+SFX 3327 0 lükleri .
+SFX 3328 N 1
+SFX 3328 0 ulacağı .
+SFX 3329 N 1
+SFX 3329 0 amamanın .
+SFX 3330 N 1
+SFX 3330 0 lıklardan .
+SFX 3332 N 1
+SFX 3332 0 cuyu .
+SFX 3331 N 1
+SFX 3331 0 çilerle .
+SFX 3333 N 1
+SFX 3333 0 emediler .
+SFX 3334 N 1
+SFX 3334 0 nıldığı .
+SFX 3335 N 1
+SFX 3335 0 suzlukları .
+SFX 3339 N 1
+SFX 3339 0 landığından .
+SFX 3338 N 1
+SFX 3338 0 mayacaklar .
+SFX 3337 N 1
+SFX 3337 0 ılışında .
+SFX 3336 N 1
+SFX 3336 0 nmekte .
+SFX 3341 N 1
+SFX 3341 0 leştiğini .
+SFX 3340 N 1
+SFX 3340 0 iyorsa .
+SFX 3342 N 1
+SFX 3342 0 sızlığa .
+SFX 3343 N 1
+SFX 3343 0 mamışsınız .
+SFX 3345 N 1
+SFX 3345 0 arak .
+SFX 3344 N 1
+SFX 3344 0 ındalar .
+SFX 3346 N 1
+SFX 3346 0 sizliklerini .
+SFX 3347 N 1
+SFX 3347 0 leyemeyeceğini .
+SFX 3348 N 1
+SFX 3348 0 namayacağı .
+SFX 3349 N 1
+SFX 3349 0 sizliklerine .
+SFX 3352 N 1
+SFX 3352 0 liliğini .
+SFX 3351 N 1
+SFX 3351 0 laştırması .
+SFX 3350 N 1
+SFX 3350 0 madığımızı .
+SFX 3353 N 1
+SFX 3353 0 sana .
+SFX 3355 N 1
+SFX 3355 0 leştirecek .
+SFX 3354 N 1
+SFX 3354 0 liliğine .
+SFX 3356 N 1
+SFX 3356 0 layacağı .
+SFX 3357 N 1
+SFX 3357 0 tabileceğine .
+SFX 3358 N 1
+SFX 3358 0 tabileceğini .
+SFX 3359 N 1
+SFX 3359 0 miyorlar .
+SFX 3362 N 1
+SFX 3362 0 lendirme .
+SFX 3361 N 1
+SFX 3361 0 yamayacağına .
+SFX 3360 N 1
+SFX 3360 0 yişini .
+SFX 3363 N 1
+SFX 3363 0 yişine .
+SFX 3364 N 1
+SFX 3364 0 leştiğine .
+SFX 3365 N 1
+SFX 3365 0 laştırmaya .
+SFX 3366 N 1
+SFX 3366 0 laştıktan .
+SFX 3367 N 1
+SFX 3367 0 ımları .
+SFX 3368 N 1
+SFX 3368 0 mazlığına .
+SFX 3369 N 1
+SFX 3369 0 meliler .
+SFX 3371 N 1
+SFX 3371 0 nmemesi .
+SFX 3370 N 1
+SFX 3370 0 tecektir .
+SFX 3373 N 1
+SFX 3373 0 nmadan .
+SFX 3372 N 1
+SFX 3372 0 leyemez .
+SFX 3375 N 1
+SFX 3375 0 latacak .
+SFX 3374 N 1
+SFX 3374 0 ığına .
+SFX 3376 N 1
+SFX 3376 0 lıklar .
+SFX 3378 N 1
+SFX 3378 0 mamıştı .
+SFX 3377 N 1
+SFX 3377 0 'unda .
+SFX 3379 N 1
+SFX 3379 0 lanmanız .
+SFX 3380 N 1
+SFX 3380 0 amamakta .
+SFX 3381 N 1
+SFX 3381 0 lendiren .
+SFX 3383 N 1
+SFX 3383 0 larındandır .
+SFX 3382 N 1
+SFX 3382 0 ımlarına .
+SFX 3384 N 1
+SFX 3384 0 lıklarında .
+SFX 3385 N 1
+SFX 3385 0 lanamadığını .
+SFX 3386 N 1
+SFX 3386 0 ttık .
+SFX 3387 N 1
+SFX 3387 0 ttım .
+SFX 3388 N 1
+SFX 3388 0 leştirdiğinde .
+SFX 3389 N 1
+SFX 3389 0 layabiliyor .
+SFX 3390 N 1
+SFX 3390 0 lerinizde .
+SFX 3391 N 1
+SFX 3391 0 meliyiz .
+SFX 3393 N 1
+SFX 3393 0 ndığını .
+SFX 3392 N 1
+SFX 3392 0 laştırmayı .
+SFX 3394 N 1
+SFX 3394 0 lamaktan .
+SFX 3395 N 1
+SFX 3395 0 ılmasının .
+SFX 3396 N 1
+SFX 3396 0 yamayacağını .
+SFX 3397 N 1
+SFX 3397 0 dıramadığı .
+SFX 3400 N 1
+SFX 3400 0 nabileceğine .
+SFX 3399 N 1
+SFX 3399 0 umun .
+SFX 3398 N 1
+SFX 3398 0 yacaksınız .
+SFX 3401 N 1
+SFX 3401 0 yabiliyor .
+SFX 3402 N 1
+SFX 3402 0 malısınız .
+SFX 3404 N 1
+SFX 3404 0 müşlerdir .
+SFX 3403 N 1
+SFX 3403 0 lenemediğinden .
+SFX 3405 N 1
+SFX 3405 0 tıldığı .
+SFX 3406 N 1
+SFX 3406 0 çılığını .
+SFX 3407 N 1
+SFX 3407 0 liliğinde .
+SFX 3409 N 1
+SFX 3409 0 umuz .
+SFX 3408 N 1
+SFX 3408 0 nabileceğini .
+SFX 3410 N 1
+SFX 3410 0 meliyim .
+SFX 3411 N 1
+SFX 3411 0 meliydik .
+SFX 3412 N 1
+SFX 3412 0 ildiğinde .
+SFX 3415 N 1
+SFX 3415 0 lukların .
+SFX 3414 N 1
+SFX 3414 0 mayanlara .
+SFX 3413 N 1
+SFX 3413 0 meliydim .
+SFX 3416 N 1
+SFX 3416 0 iği .
+SFX 3417 N 1
+SFX 3417 0 ndıktan .
+SFX 3418 N 1
+SFX 3418 0 mamalıyız .
+SFX 3419 N 1
+SFX 3419 0 landığının .
+SFX 3420 N 1
+SFX 3420 0 dıklarında .
+SFX 3421 N 1
+SFX 3421 0 landıracağını .
+SFX 3422 N 1
+SFX 3422 0 amayacağız .
+SFX 3423 N 1
+SFX 3423 0 şacak .
+SFX 3426 N 1
+SFX 3426 0 amayacağım .
+SFX 3425 N 1
+SFX 3425 0 mazlığın .
+SFX 3424 N 1
+SFX 3424 0 cesine .
+SFX 3427 N 1
+SFX 3427 0 amayacağın .
+SFX 3428 N 1
+SFX 3428 0 ulamayacağına .
+SFX 3429 N 1
+SFX 3429 0 sindeyim .
+SFX 3430 N 1
+SFX 3430 0 abileceğinin .
+SFX 3431 N 1
+SFX 3431 0 lendirilmesi .
+SFX 3432 N 1
+SFX 3432 0 tebilecek .
+SFX 3435 N 1
+SFX 3435 0 lanmalarını .
+SFX 3434 N 1
+SFX 3434 0 lanmanın .
+SFX 3433 N 1
+SFX 3433 0 mediler .
+SFX 3437 N 1
+SFX 3437 0 nışını .
+SFX 3436 N 1
+SFX 3436 0 sizdir .
+SFX 3439 N 1
+SFX 3439 0 malıydım .
+SFX 3438 N 1
+SFX 3438 0 lükleriyle .
+SFX 3441 N 1
+SFX 3441 0 lanamayan .
+SFX 3440 N 1
+SFX 3440 0 landılar .
+SFX 3443 N 1
+SFX 3443 0 abileceğiniz .
+SFX 3442 N 1
+SFX 3442 0 sindeyiz .
+SFX 3444 N 1
+SFX 3444 0 liliğinin .
+SFX 3445 N 1
+SFX 3445 0 ememektedir .
+SFX 3447 N 1
+SFX 3447 0 lamayacağı .
+SFX 3446 N 1
+SFX 3446 0 laşsın .
+SFX 3448 N 1
+SFX 3448 0 ımızdır .
+SFX 3449 N 1
+SFX 3449 0 leştirmesi .
+SFX 3450 N 1
+SFX 3450 0 cığım .
+SFX 3452 N 1
+SFX 3452 0 üldüğünde .
+SFX 3451 N 1
+SFX 3451 0 cığın .
+SFX 3453 N 1
+SFX 3453 0 çılar .
+SFX 3454 N 1
+SFX 3454 0 rsın .
+SFX 3455 N 1
+SFX 3455 0 lenmelerin .
+SFX 3456 N 1
+SFX 3456 0 luya .
+SFX 3457 N 1
+SFX 3457 0 ımın .
+SFX 3458 N 1
+SFX 3458 0 lükte .
+SFX 3459 N 1
+SFX 3459 0 lendirmeler .
+SFX 3461 N 1
+SFX 3461 0 leştirici .
+SFX 3460 N 1
+SFX 3460 0 tılma .
+SFX 3462 N 1
+SFX 3462 0 luyu .
+SFX 3463 N 1
+SFX 3463 0 ırsak .
+SFX 3464 N 1
+SFX 3464 0 ırsan .
+SFX 3465 N 1
+SFX 3465 0 'nin .
+SFX 3467 N 1
+SFX 3467 0 'deki .
+SFX 3466 N 1
+SFX 3466 0 nınki .
+SFX 3469 N 1
+SFX 3469 0 ıdır .
+SFX 3468 N 1
+SFX 3468 0 laştırılamayacağını .
+SFX 3470 N 1
+SFX 3470 0 leşince .
+SFX 3471 N 1
+SFX 3471 0 melidir .
+SFX 3472 N 1
+SFX 3472 0 uyordu .
+SFX 3473 N 1
+SFX 3473 0 tmesin .
+SFX 3475 N 1
+SFX 3475 0 emediğimiz .
+SFX 3474 N 1
+SFX 3474 0 ılmazlığı .
+SFX 3476 N 1
+SFX 3476 0 ıveriyor .
+SFX 3477 N 1
+SFX 3477 0 lendirdi .
+SFX 3478 N 1
+SFX 3478 0 amıyorsun .
+SFX 3479 N 1
+SFX 3479 0 emiyorsun .
+SFX 3480 N 1
+SFX 3480 0 çılığına .
+SFX 3481 N 1
+SFX 3481 0 sindeydi .
+SFX 3482 N 1
+SFX 3482 0 laştırılacağı .
+SFX 3483 N 1
+SFX 3483 0 iydi .
+SFX 3484 N 1
+SFX 3484 0 tikten .
+SFX 3486 N 1
+SFX 3486 0 lanarak .
+SFX 3485 N 1
+SFX 3485 0 'sine .
+SFX 3488 N 1
+SFX 3488 0 ımızı .
+SFX 3487 N 1
+SFX 3487 0 tıkları .
+SFX 3489 N 1
+SFX 3489 0 abileceğinden .
+SFX 3490 N 1
+SFX 3490 0 lamasının .
+SFX 3491 N 1
+SFX 3491 0 indeydik .
+SFX 3494 N 1
+SFX 3494 0 ımız .
+SFX 3493 N 1
+SFX 3493 0 yamayan .
+SFX 3492 N 1
+SFX 3492 0 'sini .
+SFX 3495 N 1
+SFX 3495 0 işleri .
+SFX 3497 N 1
+SFX 3497 0 landığını .
+SFX 3496 N 1
+SFX 3496 0 indeydim .
+SFX 3498 N 1
+SFX 3498 0 nmemeli .
+SFX 3499 N 1
+SFX 3499 0 nmesin .
+SFX 3502 N 1
+SFX 3502 0 yacağına .
+SFX 3501 N 1
+SFX 3501 0 ardı .
+SFX 3500 N 1
+SFX 3500 0 cusu .
+SFX 3503 N 1
+SFX 3503 0 nacağının .
+SFX 3504 N 1
+SFX 3504 0 nemeyecek .
+SFX 3505 N 1
+SFX 3505 0 çıdan .
+SFX 3507 N 1
+SFX 3507 0 ılabileceğine .
+SFX 3506 N 1
+SFX 3506 0 eceğimizi .
+SFX 3508 N 1
+SFX 3508 0 dakilerin .
+SFX 3509 N 1
+SFX 3509 0 acaksın .
+SFX 3511 N 1
+SFX 3511 0 ılabileceğini .
+SFX 3510 N 1
+SFX 3510 0 lanmalarının .
+SFX 3512 N 1
+SFX 3512 0 cular .
+SFX 3513 N 1
+SFX 3513 0 'teki .
+SFX 3514 N 1
+SFX 3514 0 nanların .
+SFX 3515 N 1
+SFX 3515 0 emeyeceğimiz .
+SFX 3516 N 1
+SFX 3516 0 mayacağım .
+SFX 3517 N 1
+SFX 3517 0 tamayacağına .
+SFX 3518 N 1
+SFX 3518 0 ilince .
+SFX 3519 N 1
+SFX 3519 0 lenmektedir .
+SFX 3523 N 1
+SFX 3523 0 lenmek .
+SFX 3522 N 1
+SFX 3522 0 mayacağız .
+SFX 3521 N 1
+SFX 3521 0 duğundan .
+SFX 3520 N 1
+SFX 3520 0 landırmış .
+SFX 3524 N 1
+SFX 3524 0 umla .
+SFX 3526 N 1
+SFX 3526 0 lendirdiği .
+SFX 3525 N 1
+SFX 3525 0 ıklığında .
+SFX 3528 N 1
+SFX 3528 0 laşamadığı .
+SFX 3527 N 1
+SFX 3527 0 tirmeye .
+SFX 3531 N 1
+SFX 3531 0 umuzu .
+SFX 3530 N 1
+SFX 3530 0 sızlığında .
+SFX 3529 N 1
+SFX 3529 0 dırdığında .
+SFX 3532 N 1
+SFX 3532 0 lenmez .
+SFX 3533 N 1
+SFX 3533 0 lilerinde .
+SFX 3534 N 1
+SFX 3534 0 leyemediğini .
+SFX 3535 N 1
+SFX 3535 0 leştirmeye .
+SFX 3536 N 1
+SFX 3536 0 umuza .
+SFX 3538 N 1
+SFX 3538 0 leştirmeyi .
+SFX 3537 N 1
+SFX 3537 0 lığıysa .
+SFX 3539 N 1
+SFX 3539 0 süne .
+SFX 3540 N 1
+SFX 3540 0 ebileceğim .
+SFX 3542 N 1
+SFX 3542 0 imsi .
+SFX 3541 N 1
+SFX 3541 0 lıydım .
+SFX 3544 N 1
+SFX 3544 0 iciliği .
+SFX 3543 N 1
+SFX 3543 0 tığımız .
+SFX 3545 N 1
+SFX 3545 0 lüğünde .
+SFX 3546 N 1
+SFX 3546 0 yebilecek .
+SFX 3547 N 1
+SFX 3547 0 tıldı .
+SFX 3548 N 1
+SFX 3548 0 lanamadığına .
+SFX 3550 N 1
+SFX 3550 0 ıcılığında .
+SFX 3549 N 1
+SFX 3549 0 lemeyeceğine .
+SFX 3551 N 1
+SFX 3551 0 indeler .
+SFX 3552 N 1
+SFX 3552 0 ımlarını .
+SFX 3553 N 1
+SFX 3553 0 lediklerini .
+SFX 3554 N 1
+SFX 3554 0 lemeyeceğini .
+SFX 3555 N 1
+SFX 3555 0 nında .
+SFX 3557 N 1
+SFX 3557 0 lediklerine .
+SFX 3556 N 1
+SFX 3556 0 yeceğinin .
+SFX 3558 N 1
+SFX 3558 0 lıklardır .
+SFX 3559 N 1
+SFX 3559 0 cuya .
+SFX 3560 N 1
+SFX 3560 0 larındayken .
+SFX 3561 N 1
+SFX 3561 0 ülemediği .
+SFX 3563 N 1
+SFX 3563 0 abildikleri .
+SFX 3562 N 1
+SFX 3562 0 tmayacağı .
+SFX 3564 N 1
+SFX 3564 0 ememişlerdir .
+SFX 3565 N 1
+SFX 3565 0 mektense .
+SFX 3566 N 1
+SFX 3566 0 üşünü .
+SFX 3567 N 1
+SFX 3567 0 laştığınız .
+SFX 3568 N 1
+SFX 3568 0 mamızda .
+SFX 3570 N 1
+SFX 3570 0 laştığının .
+SFX 3569 N 1
+SFX 3569 0 mazlıklarını .
+SFX 3571 N 1
+SFX 3571 0 ilmişler .
+SFX 3572 N 1
+SFX 3572 0 malık .
+SFX 3575 N 1
+SFX 3575 0 amıyoruz .
+SFX 3574 N 1
+SFX 3574 0 leşmelerine .
+SFX 3573 N 1
+SFX 3573 0 mezsin .
+SFX 3576 N 1
+SFX 3576 0 leşmelerini .
+SFX 3577 N 1
+SFX 3577 0 dikten .
+SFX 3578 N 1
+SFX 3578 0 yicileri .
+SFX 3580 N 1
+SFX 3580 0 adır .
+SFX 3579 N 1
+SFX 3579 0 üleceğine .
+SFX 3581 N 1
+SFX 3581 0 'inden .
+SFX 3582 N 1
+SFX 3582 0 larlar .
+SFX 3583 N 1
+SFX 3583 0 leyebileceğine .
+SFX 3584 N 1
+SFX 3584 0 üleceğini .
+SFX 3588 N 1
+SFX 3588 0 emeyenler .
+SFX 3587 N 1
+SFX 3587 0 ladığımız .
+SFX 3586 N 1
+SFX 3586 0 ilişinde .
+SFX 3585 N 1
+SFX 3585 0 abildiğinde .
+SFX 3589 N 1
+SFX 3589 0 amıyorum .
+SFX 3592 N 1
+SFX 3592 0 manıza .
+SFX 3591 N 1
+SFX 3591 0 leyebileceğini .
+SFX 3590 N 1
+SFX 3590 0 tmeler .
+SFX 3593 N 1
+SFX 3593 0 leştirmeli .
+SFX 3594 N 1
+SFX 3594 0 ülemediğini .
+SFX 3595 N 1
+SFX 3595 0 larız .
+SFX 3596 N 1
+SFX 3596 0 ınından .
+SFX 3597 N 1
+SFX 3597 0 selerdi .
+SFX 3599 N 1
+SFX 3599 0 lamalarına .
+SFX 3598 N 1
+SFX 3598 0 nebildiği .
+SFX 3600 N 1
+SFX 3600 0 ındakinden .
+SFX 3601 N 1
+SFX 3601 0 tığın .
+SFX 3603 N 1
+SFX 3603 0 ışlarının .
+SFX 3602 N 1
+SFX 3602 0 tığım .
+SFX 3604 N 1
+SFX 3604 0 ilirken .
+SFX 3605 N 1
+SFX 3605 0 'de .
+SFX 3606 N 1
+SFX 3606 0 larımdan .
+SFX 3607 N 1
+SFX 3607 0 'di .
+SFX 3608 N 1
+SFX 3608 0 tırdıklarını .
+SFX 3610 N 1
+SFX 3610 0 maktan .
+SFX 3609 N 1
+SFX 3609 0 dıracaklarını .
+SFX 3612 N 1
+SFX 3612 0 'da .
+SFX 3611 N 1
+SFX 3611 0 suzun .
+SFX 3613 N 1
+SFX 3613 0 tığının .
+SFX 3614 N 1
+SFX 3614 0 yışında .
+SFX 3616 N 1
+SFX 3616 0 ebilecek .
+SFX 3615 N 1
+SFX 3615 0 'unun .
+SFX 3617 N 1
+SFX 3617 0 leşebildiğini .
+SFX 3618 N 1
+SFX 3618 0 ımındaki .
+SFX 3619 N 1
+SFX 3619 0 arsa .
+SFX 3620 N 1
+SFX 3620 0 laştıran .
+SFX 3621 N 1
+SFX 3621 0 lendiğinin .
+SFX 3622 N 1
+SFX 3622 0 tırıldığına .
+SFX 3623 N 1
+SFX 3623 0 amıyorsa .
+SFX 3624 N 1
+SFX 3624 0 ininse .
+SFX 3625 N 1
+SFX 3625 0 luğumuz .
+SFX 3626 N 1
+SFX 3626 0 rlardı .
+SFX 3627 N 1
+SFX 3627 0 mıyormuş .
+SFX 3628 N 1
+SFX 3628 0 ların .
+SFX 3629 N 1
+SFX 3629 0 larım .
+SFX 3630 N 1
+SFX 3630 0 imle .
+SFX 3631 N 1
+SFX 3631 0 ımıza .
+SFX 3632 N 1
+SFX 3632 0 nmasından .
+SFX 3633 N 1
+SFX 3633 0 lisin .
+SFX 3634 N 1
+SFX 3634 0 layayım .
+SFX 3635 N 1
+SFX 3635 0 lısınız .
+SFX 3636 N 1
+SFX 3636 0 ışıyla .
+SFX 3637 N 1
+SFX 3637 0 iyle .
+SFX 3639 N 1
+SFX 3639 0 ılış .
+SFX 3638 N 1
+SFX 3638 0 müştü .
+SFX 3640 N 1
+SFX 3640 0 lısının .
+SFX 3641 N 1
+SFX 3641 0 abileceklerinden .
+SFX 3642 N 1
+SFX 3642 0 tmeden .
+SFX 3645 N 1
+SFX 3645 0 nırken .
+SFX 3644 N 1
+SFX 3644 0 tılan .
+SFX 3643 N 1
+SFX 3643 0 lemedikleri .
+SFX 3649 N 1
+SFX 3649 0 iyim .
+SFX 3648 N 1
+SFX 3648 0 lamalarından .
+SFX 3647 N 1
+SFX 3647 0 mezsen .
+SFX 3646 N 1
+SFX 3646 0 cülüğü .
+SFX 3650 N 1
+SFX 3650 0 mezsem .
+SFX 3651 N 1
+SFX 3651 0 yince .
+SFX 3652 N 1
+SFX 3652 0 anlarının .
+SFX 3654 N 1
+SFX 3654 0 liğim .
+SFX 3653 N 1
+SFX 3653 0 mezsek .
+SFX 3656 N 1
+SFX 3656 0 liğin .
+SFX 3655 N 1
+SFX 3655 0 leştirileceğini .
+SFX 3658 N 1
+SFX 3658 0 ındandır .
+SFX 3657 N 1
+SFX 3657 0 nmayacaktır .
+SFX 3659 N 1
+SFX 3659 0 leştirileceğine .
+SFX 3662 N 1
+SFX 3662 0 yacaklarını .
+SFX 3661 N 1
+SFX 3661 0 dığımı .
+SFX 3660 N 1
+SFX 3660 0 suzluğu .
+SFX 3663 N 1
+SFX 3663 0 lamamıştı .
+SFX 3664 N 1
+SFX 3664 0 meleridir .
+SFX 3665 N 1
+SFX 3665 0 imiz .
+SFX 3666 N 1
+SFX 3666 0 yememiş .
+SFX 3669 N 1
+SFX 3669 0 abildiklerini .
+SFX 3668 N 1
+SFX 3668 0 amamıştı .
+SFX 3667 N 1
+SFX 3667 0 ımızdaki .
+SFX 3671 N 1
+SFX 3671 0 amamalarını .
+SFX 3670 N 1
+SFX 3670 0 sizi .
+SFX 3672 N 1
+SFX 3672 0 imizdir .
+SFX 3673 N 1
+SFX 3673 0 abildiklerine .
+SFX 3674 N 1
+SFX 3674 0 umda .
+SFX 3675 N 1
+SFX 3675 0 tıktan .
+SFX 3676 N 1
+SFX 3676 0 lemişti .
+SFX 3677 N 1
+SFX 3677 0 nacağı .
+SFX 3678 N 1
+SFX 3678 0 iyiz .
+SFX 3680 N 1
+SFX 3680 0 inden .
+SFX 3679 N 1
+SFX 3679 0 alım .
+SFX 3681 N 1
+SFX 3681 0 imin .
+SFX 3682 N 1
+SFX 3682 0 tileceği .
+SFX 3684 N 1
+SFX 3684 0 laştırılıyor .
+SFX 3683 N 1
+SFX 3683 0 mamışsın .
+SFX 3685 N 1
+SFX 3685 0 abildiğinin .
+SFX 3687 N 1
+SFX 3687 0 layabildiğini .
+SFX 3686 N 1
+SFX 3686 0 sünden .
+SFX 3689 N 1
+SFX 3689 0 nmiş .
+SFX 3688 N 1
+SFX 3688 0 ışından .
+SFX 3690 N 1
+SFX 3690 0 sızlıkla .
+SFX 3692 N 1
+SFX 3692 0 malıyım .
+SFX 3691 N 1
+SFX 3691 0 ılıyor .
+SFX 3693 N 1
+SFX 3693 0 leyemeyeceklerini .
+SFX 3695 N 1
+SFX 3695 0 lusu .
+SFX 3694 N 1
+SFX 3694 0 yız .
+SFX 3696 N 1
+SFX 3696 0 layamıyor .
+SFX 3698 N 1
+SFX 3698 0 ılamayacağı .
+SFX 3697 N 1
+SFX 3697 0 acaklardır .
+SFX 3699 N 1
+SFX 3699 0 tıramadığı .
+SFX 3700 N 1
+SFX 3700 0 mediğim .
+SFX 3701 N 1
+SFX 3701 0 mediğin .
+SFX 3702 N 1
+SFX 3702 0 ilmeli .
+SFX 3703 N 1
+SFX 3703 0 tmasını .
+SFX 3704 N 1
+SFX 3704 0 taydı .
+SFX 3705 N 1
+SFX 3705 0 yım .
+SFX 3706 N 1
+SFX 3706 0 yın .
+SFX 3707 N 1
+SFX 3707 0 yıp .
+SFX 3708 N 1
+SFX 3708 0 lılarında .
+SFX 3709 N 1
+SFX 3709 0 tılabileceğini .
+SFX 3711 N 1
+SFX 3711 0 amamaları .
+SFX 3710 N 1
+SFX 3710 0 luyor .
+SFX 3712 N 1
+SFX 3712 0 ttığında .
+SFX 3714 N 1
+SFX 3714 0 dığını .
+SFX 3713 N 1
+SFX 3713 0 cularının .
+SFX 3715 N 1
+SFX 3715 0 deymiş .
+SFX 3716 N 1
+SFX 3716 0 lilerinin .
+SFX 3717 N 1
+SFX 3717 0 tılar .
+SFX 3718 N 1
+SFX 3718 0 malıyız .
+SFX 3720 N 1
+SFX 3720 0 dıracağına .
+SFX 3719 N 1
+SFX 3719 0 ebileceklerdir .
+SFX 3723 N 1
+SFX 3723 0 leridir .
+SFX 3722 N 1
+SFX 3722 0 masından .
+SFX 3721 N 1
+SFX 3721 0 masaydım .
+SFX 3724 N 1
+SFX 3724 0 nebilecek .
+SFX 3725 N 1
+SFX 3725 0 landıkları .
+SFX 3726 N 1
+SFX 3726 0 masaydık .
+SFX 3728 N 1
+SFX 3728 0 lerdeki .
+SFX 3727 N 1
+SFX 3727 0 iklerini .
+SFX 3729 N 1
+SFX 3729 0 yecek .
+SFX 3732 N 1
+SFX 3732 0 lanınca .
+SFX 3731 N 1
+SFX 3731 0 ılacaklarını .
+SFX 3730 N 1
+SFX 3730 0 tırıldığını .
+SFX 3733 N 1
+SFX 3733 0 rsanız .
+SFX 3734 N 1
+SFX 3734 0 uculuğunu .
+SFX 3736 N 1
+SFX 3736 0 'la .
+SFX 3735 N 1
+SFX 3735 0 leştirmede .
+SFX 3738 N 1
+SFX 3738 0 lanmasına .
+SFX 3737 N 1
+SFX 3737 0 memizi .
+SFX 3739 N 1
+SFX 3739 0 memize .
+SFX 3741 N 1
+SFX 3741 0 uculuğuna .
+SFX 3740 N 1
+SFX 3740 0 indir .
+SFX 3743 N 1
+SFX 3743 0 lendiğinde .
+SFX 3742 N 1
+SFX 3742 0 meliydi .
+SFX 3745 N 1
+SFX 3745 0 ıyordu .
+SFX 3744 N 1
+SFX 3744 0 sindeyse .
+SFX 3746 N 1
+SFX 3746 0 lerimden .
+SFX 3747 N 1
+SFX 3747 0 'le .
+SFX 3748 N 1
+SFX 3748 0 enle .
+SFX 3750 N 1
+SFX 3750 0 lersek .
+SFX 3749 N 1
+SFX 3749 0 leşemedikleri .
+SFX 3751 N 1
+SFX 3751 0 tmaları .
+SFX 3752 N 1
+SFX 3752 0 ilmesinde .
+SFX 3755 N 1
+SFX 3755 0 meyeceğinden .
+SFX 3754 N 1
+SFX 3754 0 saydı .
+SFX 3753 N 1
+SFX 3753 0 memenin .
+SFX 3756 N 1
+SFX 3756 0 laştırmıştır .
+SFX 3757 N 1
+SFX 3757 0 ılmadan .
+SFX 3758 N 1
+SFX 3758 0 nmayacağı .
+SFX 3761 N 1
+SFX 3761 0 imizden .
+SFX 3760 N 1
+SFX 3760 0 manızı .
+SFX 3759 N 1
+SFX 3759 0 lüler .
+SFX 3765 N 1
+SFX 3765 0 acağından .
+SFX 3764 N 1
+SFX 3764 0 yecekler .
+SFX 3763 N 1
+SFX 3763 0 acağınızı .
+SFX 3762 N 1
+SFX 3762 0 laştırmasına .
+SFX 3766 N 1
+SFX 3766 0 yemezsiniz .
+SFX 3767 N 1
+SFX 3767 0 lığından .
+SFX 3768 N 1
+SFX 3768 0 memeniz .
+SFX 3769 N 1
+SFX 3769 0 mıştı .
+SFX 3771 N 1
+SFX 3771 0 lamalarını .
+SFX 3770 N 1
+SFX 3770 0 mazlığını .
+SFX 3774 N 1
+SFX 3774 0 enin .
+SFX 3773 N 1
+SFX 3773 0 imdi .
+SFX 3772 N 1
+SFX 3772 0 sızlıklarından .
+SFX 3775 N 1
+SFX 3775 0 'in .
+SFX 3776 N 1
+SFX 3776 0 'im .
+SFX 3778 N 1
+SFX 3778 0 şmanın .
+SFX 3777 N 1
+SFX 3777 0 lamamak .
+SFX 3779 N 1
+SFX 3779 0 iyse .
+SFX 3780 N 1
+SFX 3780 0 imde .
+SFX 3783 N 1
+SFX 3783 0 madıklarını .
+SFX 3782 N 1
+SFX 3782 0 lediğinin .
+SFX 3781 N 1
+SFX 3781 0 acağa .
+SFX 3785 N 1
+SFX 3785 0 dıklarını .
+SFX 3784 N 1
+SFX 3784 0 yıcılar .
+SFX 3786 N 1
+SFX 3786 0 lediğiniz .
+SFX 3787 N 1
+SFX 3787 0 lenemez .
+SFX 3788 N 1
+SFX 3788 0 ndiği .
+SFX 3789 N 1
+SFX 3789 0 ilişinin .
+SFX 3790 N 1
+SFX 3790 0 ılamamış .
+SFX 3792 N 1
+SFX 3792 0 'ında .
+SFX 3791 N 1
+SFX 3791 0 layacakları .
+SFX 3794 N 1
+SFX 3794 0 larsan .
+SFX 3793 N 1
+SFX 3793 0 nmezse .
+SFX 3797 N 1
+SFX 3797 0 tıklarında .
+SFX 3796 N 1
+SFX 3796 0 dirmenin .
+SFX 3795 N 1
+SFX 3795 0 larsam .
+SFX 3798 N 1
+SFX 3798 0 şmaya .
+SFX 3800 N 1
+SFX 3800 0 ilmeden .
+SFX 3799 N 1
+SFX 3799 0 larsak .
+SFX 3801 N 1
+SFX 3801 0 tıyorlar .
+SFX 3802 N 1
+SFX 3802 0 sidir .
+SFX 3803 N 1
+SFX 3803 0 acak .
+SFX 3805 N 1
+SFX 3805 0 masam .
+SFX 3804 N 1
+SFX 3804 0 tıracağını .
+SFX 3806 N 1
+SFX 3806 0 laşamamış .
+SFX 3809 N 1
+SFX 3809 0 masak .
+SFX 3808 N 1
+SFX 3808 0 ılmalıydı .
+SFX 3807 N 1
+SFX 3807 0 nabilecektir .
+SFX 3810 N 1
+SFX 3810 0 menin .
+SFX 3811 N 1
+SFX 3811 0 işini .
+SFX 3814 N 1
+SFX 3814 0 işine .
+SFX 3813 N 1
+SFX 3813 0 emeyişi .
+SFX 3812 N 1
+SFX 3812 0 leştikçe .
+SFX 3815 N 1
+SFX 3815 0 emiyorlar .
+SFX 3816 N 1
+SFX 3816 0 'dı .
+SFX 3817 N 1
+SFX 3817 0 laşmadan .
+SFX 3818 N 1
+SFX 3818 0 ündedir .
+SFX 3819 N 1
+SFX 3819 0 abilirsin .
+SFX 3821 N 1
+SFX 3821 0 diğine .
+SFX 3820 N 1
+SFX 3820 0 çılardan .
+SFX 3823 N 1
+SFX 3823 0 meniz .
+SFX 3822 N 1
+SFX 3822 0 ulamayacağını .
+SFX 3824 N 1
+SFX 3824 0 emezdim .
+SFX 3825 N 1
+SFX 3825 0 tmasına .
+SFX 3828 N 1
+SFX 3828 0 yabilecek .
+SFX 3827 N 1
+SFX 3827 0 lamalara .
+SFX 3826 N 1
+SFX 3826 0 emezdik .
+SFX 3829 N 1
+SFX 3829 0 'nun .
+SFX 3830 N 1
+SFX 3830 0 larımızdır .
+SFX 3832 N 1
+SFX 3832 0 dıklarına .
+SFX 3831 N 1
+SFX 3831 0 leyemediklerini .
+SFX 3833 N 1
+SFX 3833 0 diğini .
+SFX 3834 N 1
+SFX 3834 0 lıdaki .
+SFX 3836 N 1
+SFX 3836 0 yebileceklerini .
+SFX 3835 N 1
+SFX 3835 0 ıcılık .
+SFX 3837 N 1
+SFX 3837 0 lılığı .
+SFX 3838 N 1
+SFX 3838 0 tırıldığı .
+SFX 3839 N 1
+SFX 3839 0 nışına .
+SFX 3840 N 1
+SFX 3840 0 ştığı .
+SFX 3841 N 1
+SFX 3841 0 ıyordunuz .
+SFX 3842 N 1
+SFX 3842 0 mamışsa .
+SFX 3843 N 1
+SFX 3843 0 emeyeceklerinin .
+SFX 3844 N 1
+SFX 3844 0 lilerinden .
+SFX 3846 N 1
+SFX 3846 0 laşamadıkları .
+SFX 3845 N 1
+SFX 3845 0 landırılacağını .
+SFX 3848 N 1
+SFX 3848 0 eceğimiz .
+SFX 3847 N 1
+SFX 3847 0 üldüğünden .
+SFX 3849 N 1
+SFX 3849 0 liliklerini .
+SFX 3850 N 1
+SFX 3850 0 diğimi .
+SFX 3851 N 1
+SFX 3851 0 liliğin .
+SFX 3852 N 1
+SFX 3852 0 liğinizden .
+SFX 3853 N 1
+SFX 3853 0 madıklarına .
+SFX 3854 N 1
+SFX 3854 0 lamıştır .
+SFX 3855 N 1
+SFX 3855 0 ersiniz .
+SFX 3856 N 1
+SFX 3856 0 luydu .
+SFX 3858 N 1
+SFX 3858 0 layacağız .
+SFX 3857 N 1
+SFX 3857 0 lamıştım .
+SFX 3860 N 1
+SFX 3860 0 landığında .
+SFX 3859 N 1
+SFX 3859 0 layacağım .
+SFX 3861 N 1
+SFX 3861 0 laşmalıdır .
+SFX 3863 N 1
+SFX 3863 0 mışsa .
+SFX 3862 N 1
+SFX 3862 0 ığını .
+SFX 3864 N 1
+SFX 3864 0 mayanları .
+SFX 3865 N 1
+SFX 3865 0 ndığına .
+SFX 3866 N 1
+SFX 3866 0 ilmenin .
+SFX 3867 N 1
+SFX 3867 0 mayacaksın .
+SFX 3869 N 1
+SFX 3869 0 sızlar .
+SFX 3868 N 1
+SFX 3868 0 leyeceğine .
+SFX 3870 N 1
+SFX 3870 0 lendiriyor .
+SFX 3871 N 1
+SFX 3871 0 leyeceğini .
+SFX 3872 N 1
+SFX 3872 0 iyor .
+SFX 3874 N 1
+SFX 3874 0 dığı .
+SFX 3873 N 1
+SFX 3873 0 ıklarında .
+SFX 3875 N 1
+SFX 3875 0 yamayacağının .
+SFX 3876 N 1
+SFX 3876 0 ımını .
+SFX 3878 N 1
+SFX 3878 0 çilerin .
+SFX 3877 N 1
+SFX 3877 0 lıyorlardı .
+SFX 3879 N 1
+SFX 3879 0 yamayacağınız .
+SFX 3881 N 1
+SFX 3881 0 lanacağından .
+SFX 3880 N 1
+SFX 3880 0 ilenler .
+SFX 3882 N 1
+SFX 3882 0 ilmesi .
+SFX 3883 N 1
+SFX 3883 0 lediğinde .
+SFX 3884 N 1
+SFX 3884 0 ılırken .
+SFX 3885 N 1
+SFX 3885 0 ebildiğine .
+SFX 3886 N 1
+SFX 3886 0 yacaklarından .
+SFX 3887 N 1
+SFX 3887 0 lıyken .
+SFX 3888 N 1
+SFX 3888 0 amamalarından .
+SFX 3889 N 1
+SFX 3889 0 lerdendi .
+SFX 3890 N 1
+SFX 3890 0 emezsiniz .
+SFX 3891 N 1
+SFX 3891 0 acaklarmış .
+SFX 3893 N 1
+SFX 3893 0 ebildiğini .
+SFX 3892 N 1
+SFX 3892 0 ilmesinin .
+SFX 3894 N 1
+SFX 3894 0 şmalarına .
+SFX 3897 N 1
+SFX 3897 0 leştirerek .
+SFX 3896 N 1
+SFX 3896 0 düğünden .
+SFX 3895 N 1
+SFX 3895 0 namayacaktır .
+SFX 3899 N 1
+SFX 3899 0 mayacağının .
+SFX 3898 N 1
+SFX 3898 0 nmam .
+SFX 3900 N 1
+SFX 3900 0 nmak .
+SFX 3901 N 1
+SFX 3901 0 layabilmeleri .
+SFX 3902 N 1
+SFX 3902 0 inizdir .
+SFX 3905 N 1
+SFX 3905 0 cuların .
+SFX 3904 N 1
+SFX 3904 0 lemelerinin .
+SFX 3903 N 1
+SFX 3903 0 lenmesinin .
+SFX 3906 N 1
+SFX 3906 0 amadınız .
+SFX 3908 N 1
+SFX 3908 0 nacağını .
+SFX 3907 N 1
+SFX 3907 0 amayacaksın .
+SFX 3911 N 1
+SFX 3911 0 meyecek .
+SFX 3910 N 1
+SFX 3910 0 lanmamaları .
+SFX 3909 N 1
+SFX 3909 0 leşin .
+SFX 3914 N 1
+SFX 3914 0 nmaz .
+SFX 3913 N 1
+SFX 3913 0 şamadıklarını .
+SFX 3912 N 1
+SFX 3912 0 yamadan .
+SFX 3915 N 1
+SFX 3915 0 leşir .
+SFX 3916 N 1
+SFX 3916 0 liyorum .
+SFX 3919 N 1
+SFX 3919 0 leşip .
+SFX 3918 N 1
+SFX 3918 0 abilmiştir .
+SFX 3917 N 1
+SFX 3917 0 arken .
+SFX 3920 N 1
+SFX 3920 0 lilerini .
+SFX 3921 N 1
+SFX 3921 0 ndan .
+SFX 3922 N 1
+SFX 3922 0 ladıklarına .
+SFX 3923 N 1
+SFX 3923 0 larıdır .
+SFX 3924 N 1
+SFX 3924 0 lardı .
+SFX 3925 N 1
+SFX 3925 0 tamayacaklarını .
+SFX 3927 N 1
+SFX 3927 0 lilerine .
+SFX 3926 N 1
+SFX 3926 0 tırdığında .
+SFX 3928 N 1
+SFX 3928 0 liyoruz .
+SFX 3930 N 1
+SFX 3930 0 ıyorsunuz .
+SFX 3929 N 1
+SFX 3929 0 yecekleri .
+SFX 3931 N 1
+SFX 3931 0 teceklerini .
+SFX 3932 N 1
+SFX 3932 0 yelim .
+SFX 3933 N 1
+SFX 3933 0 ılamadığı .
+SFX 3934 N 1
+SFX 3934 0 lendirdiklerini .
+SFX 3935 N 1
+SFX 3935 0 mayacağınız .
+SFX 3936 N 1
+SFX 3936 0 leneceğinin .
+SFX 3937 N 1
+SFX 3937 0 ıklığından .
+SFX 3938 N 1
+SFX 3938 0 ydiler .
+SFX 3939 N 1
+SFX 3939 0 ıcıları .
+SFX 3941 N 1
+SFX 3941 0 liğiyle .
+SFX 3940 N 1
+SFX 3940 0 lüleri .
+SFX 3942 N 1
+SFX 3942 0 ılmalarına .
+SFX 3944 N 1
+SFX 3944 0 ılmayacağını .
+SFX 3943 N 1
+SFX 3943 0 nmamalıdır .
+SFX 3945 N 1
+SFX 3945 0 nmayacağına .
+SFX 3946 N 1
+SFX 3946 0 leşememiş .
+SFX 3947 N 1
+SFX 3947 0 emeyenlerin .
+SFX 3948 N 1
+SFX 3948 0 larındakilerin .
+SFX 3951 N 1
+SFX 3951 0 larla .
+SFX 3950 N 1
+SFX 3950 0 acağımız .
+SFX 3949 N 1
+SFX 3949 0 laşmaktan .
+SFX 3952 N 1
+SFX 3952 0 ilişi .
+SFX 3953 N 1
+SFX 3953 0 laştırmışlar .
+SFX 3956 N 1
+SFX 3956 0 mişsin .
+SFX 3955 N 1
+SFX 3955 0 leyeceği .
+SFX 3954 N 1
+SFX 3954 0 ilememiş .
+SFX 3957 N 1
+SFX 3957 0 lanışını .
+SFX 3958 N 1
+SFX 3958 0 leştirilmeye .
+SFX 3959 N 1
+SFX 3959 0 nacak .
+SFX 3961 N 1
+SFX 3961 0 necektir .
+SFX 3960 N 1
+SFX 3960 0 'iyle .
+SFX 3962 N 1
+SFX 3962 0 latıldığını .
+SFX 3963 N 1
+SFX 3963 0 yışına .
+SFX 3964 N 1
+SFX 3964 0 cıyım .
+SFX 3965 N 1
+SFX 3965 0 cılarıyla .
+SFX 3966 N 1
+SFX 3966 0 malardır .
+SFX 3967 N 1
+SFX 3967 0 ıldığına .
+SFX 3968 N 1
+SFX 3968 0 lıyor .
+SFX 3970 N 1
+SFX 3970 0 indeymiş .
+SFX 3969 N 1
+SFX 3969 0 ilemezdi .
+SFX 3971 N 1
+SFX 3971 0 yemiyor .
+SFX 3972 N 1
+SFX 3972 0 mayanın .
+SFX 3973 N 1
+SFX 3973 0 nmayacağını .
+SFX 3974 N 1
+SFX 3974 0 lıyla .
+SFX 3975 N 1
+SFX 3975 0 nmek .
+SFX 3976 N 1
+SFX 3976 0 leştirilmesi .
+SFX 3977 N 1
+SFX 3977 0 leşen .
+SFX 3978 N 1
+SFX 3978 0 nden .
+SFX 3979 N 1
+SFX 3979 0 mesinden .
+SFX 3981 N 1
+SFX 3981 0 ımlarının .
+SFX 3980 N 1
+SFX 3980 0 dırdık .
+SFX 3982 N 1
+SFX 3982 0 inizden .
+SFX 3983 N 1
+SFX 3983 0 ciydi .
+SFX 3984 N 1
+SFX 3984 0 nmez .
+SFX 3988 N 1
+SFX 3988 0 ışın .
+SFX 3987 N 1
+SFX 3987 0 mamasının .
+SFX 3986 N 1
+SFX 3986 0 lemelerinde .
+SFX 3985 N 1
+SFX 3985 0 lenmesinde .
+SFX 3990 N 1
+SFX 3990 0 leştirmeden .
+SFX 3989 N 1
+SFX 3989 0 ışım .
+SFX 3991 N 1
+SFX 3991 0 diler .
+SFX 3992 N 1
+SFX 3992 0 emediklerine .
+SFX 3993 N 1
+SFX 3993 0 ıldığını .
+SFX 3994 N 1
+SFX 3994 0 işinden .
+SFX 3995 N 1
+SFX 3995 0 emediklerini .
+SFX 3996 N 1
+SFX 3996 0 lamaları .
+SFX 3997 N 1
+SFX 3997 0 dan .
+SFX 3998 N 1
+SFX 3998 0 dırdığını .
+SFX 3999 N 1
+SFX 3999 0 nmediği .
+SFX 4000 N 1
+SFX 4000 0 sallığını .
+SFX 4001 N 1
+SFX 4001 0 malılar .
+SFX 4002 N 1
+SFX 4002 0 macıları .
+SFX 4003 N 1
+SFX 4003 0 namıyor .
+SFX 4004 N 1
+SFX 4004 0 nmış .
+SFX 4005 N 1
+SFX 4005 0 lemeyeceklerini .
+SFX 4006 N 1
+SFX 4006 0 necekler .
+SFX 4007 N 1
+SFX 4007 0 tıyor .
+SFX 4008 N 1
+SFX 4008 0 lamayan .
+SFX 4010 N 1
+SFX 4010 0 mazsınız .
+SFX 4009 N 1
+SFX 4009 0 leşemez .
+SFX 4012 N 1
+SFX 4012 0 lan .
+SFX 4011 N 1
+SFX 4011 0 layabileceğini .
+SFX 4013 N 1
+SFX 4013 0 undaydı .
+SFX 4016 N 1
+SFX 4016 0 lar .
+SFX 4015 N 1
+SFX 4015 0 layabileceğine .
+SFX 4014 N 1
+SFX 4014 0 leştirecekleri .
+SFX 4017 N 1
+SFX 4017 0 cılarından .
+SFX 4018 N 1
+SFX 4018 0 lıydı .
+SFX 4019 N 1
+SFX 4019 0 ışındaki .
+SFX 4020 N 1
+SFX 4020 0 acağı .
+SFX 4021 N 1
+SFX 4021 0 inizdeki .
+SFX 4022 N 1
+SFX 4022 0 ebileceklerini .
+SFX 4024 N 1
+SFX 4024 0 taki .
+SFX 4023 N 1
+SFX 4023 0 lamamışlar .
+SFX 4025 N 1
+SFX 4025 0 acaksınız .
+SFX 4027 N 1
+SFX 4027 0 culuk .
+SFX 4026 N 1
+SFX 4026 0 dırabileceğini .
+SFX 4028 N 1
+SFX 4028 0 ebileceklerine .
+SFX 4029 N 1
+SFX 4029 0 nmazdı .
+SFX 4030 N 1
+SFX 4030 0 deyken .
+SFX 4031 N 1
+SFX 4031 0 liden .
+SFX 4033 N 1
+SFX 4033 0 mayacakları .
+SFX 4032 N 1
+SFX 4032 0 ndik .
+SFX 4034 N 1
+SFX 4034 0 amıyorduk .
+SFX 4035 N 1
+SFX 4035 0 amıyordum .
+SFX 4038 N 1
+SFX 4038 0 mamışım .
+SFX 4037 N 1
+SFX 4037 0 ndir .
+SFX 4036 N 1
+SFX 4036 0 cudan .
+SFX 4039 N 1
+SFX 4039 0 leşmişti .
+SFX 4040 N 1
+SFX 4040 0 lendirildiğini .
+SFX 4041 N 1
+SFX 4041 0 yamazsınız .
+SFX 4044 N 1
+SFX 4044 0 laştırma .
+SFX 4043 N 1
+SFX 4043 0 mezmiş .
+SFX 4042 N 1
+SFX 4042 0 landıracaklarını .
+SFX 4045 N 1
+SFX 4045 0 lendirildiğine .
+SFX 4046 N 1
+SFX 4046 0 liklerinin .
+SFX 4047 N 1
+SFX 4047 0 liğindedir .
+SFX 4048 N 1
+SFX 4048 0 laşanların .
+SFX 4049 N 1
+SFX 4049 0 mamışız .
+SFX 4050 N 1
+SFX 4050 0 ndeki .
+SFX 4051 N 1
+SFX 4051 0 teceğim .
+SFX 4053 N 1
+SFX 4053 0 yamamışlar .
+SFX 4052 N 1
+SFX 4052 0 muşsunuz .
+SFX 4055 N 1
+SFX 4055 0 larca .
+SFX 4054 N 1
+SFX 4054 0 namayacağına .
+SFX 4056 N 1
+SFX 4056 0 ciyim .
+SFX 4057 N 1
+SFX 4057 0 ılmakta .
+SFX 4058 N 1
+SFX 4058 0 ılmalarını .
+SFX 4060 N 1
+SFX 4060 0 tıldığında .
+SFX 4059 N 1
+SFX 4059 0 mışsanız .
+SFX 4062 N 1
+SFX 4062 0 ıldığının .
+SFX 4061 N 1
+SFX 4061 0 uyordum .
+SFX 4063 N 1
+SFX 4063 0 leyenleri .
+SFX 4064 N 1
+SFX 4064 0 malardan .
+SFX 4065 N 1
+SFX 4065 0 uyum .
+SFX 4066 N 1
+SFX 4066 0 meyiniz .
+SFX 4069 N 1
+SFX 4069 0 namaz .
+SFX 4068 N 1
+SFX 4068 0 tüklerini .
+SFX 4067 N 1
+SFX 4067 0 uyorduk .
+SFX 4070 N 1
+SFX 4070 0 dıklarının .
+SFX 4071 N 1
+SFX 4071 0 ladıklarını .
+SFX 4072 N 1
+SFX 4072 0 larda .
+SFX 4073 N 1
+SFX 4073 0 nacaktı .
+SFX 4074 N 1
+SFX 4074 0 uyuz .
+SFX 4075 N 1
+SFX 4075 0 leşmeyi .
+SFX 4078 N 1
+SFX 4078 0 leşmeye .
+SFX 4077 N 1
+SFX 4077 0 ılamadığının .
+SFX 4076 N 1
+SFX 4076 0 tamadık .
+SFX 4082 N 1
+SFX 4082 0 memelidir .
+SFX 4081 N 1
+SFX 4081 0 yışını .
+SFX 4080 N 1
+SFX 4080 0 dakiler .
+SFX 4079 N 1
+SFX 4079 0 ilmedi .
+SFX 4084 N 1
+SFX 4084 0 lamalarının .
+SFX 4083 N 1
+SFX 4083 0 laştırdı .
+SFX 4085 N 1
+SFX 4085 0 çilerine .
+SFX 4086 N 1
+SFX 4086 0 çular .
+SFX 4087 N 1
+SFX 4087 0 çilerini .
+SFX 4088 N 1
+SFX 4088 0 ımında .
+SFX 4089 N 1
+SFX 4089 0 lenenler .
+SFX 4090 N 1
+SFX 4090 0 leştirdiklerini .
+SFX 4091 N 1
+SFX 4091 0 cisinin .
+SFX 4092 N 1
+SFX 4092 0 leşti .
+SFX 4093 N 1
+SFX 4093 0 leştirecektir .
+SFX 4095 N 1
+SFX 4095 0 cikler .
+SFX 4094 N 1
+SFX 4094 0 duklarında .
+SFX 4096 N 1
+SFX 4096 0 lanamamıştır .
+SFX 4097 N 1
+SFX 4097 0 salardı .
+SFX 4099 N 1
+SFX 4099 0 dukları .
+SFX 4098 N 1
+SFX 4098 0 ımsı .
+SFX 4100 N 1
+SFX 4100 0 şmalarını .
+SFX 4101 N 1
+SFX 4101 0 ndiğinden .
+SFX 4102 N 1
+SFX 4102 0 ininde .
+SFX 4103 N 1
+SFX 4103 0 mediklerinde .
+SFX 4105 N 1
+SFX 4105 0 ılmayacağına .
+SFX 4104 N 1
+SFX 4104 0 uşlarını .
+SFX 4106 N 1
+SFX 4106 0 teceğini .
+SFX 4107 N 1
+SFX 4107 0 amamalarına .
+SFX 4108 N 1
+SFX 4108 0 liğiyse .
+SFX 4109 N 1
+SFX 4109 0 teceğine .
+SFX 4110 N 1
+SFX 4110 0 ininki .
+SFX 4111 N 1
+SFX 4111 0 liğindendir .
+SFX 4112 N 1
+SFX 4112 0 nemeyeceği .
+SFX 4113 N 1
+SFX 4113 0 layabileceklerini .
+SFX 4115 N 1
+SFX 4115 0 lidir .
+SFX 4114 N 1
+SFX 4114 0 sızlıktan .
+SFX 4117 N 1
+SFX 4117 0 nmamıştır .
+SFX 4116 N 1
+SFX 4116 0 leştirecekler .
+SFX 4118 N 1
+SFX 4118 0 ilebileceğinin .
+SFX 4119 N 1
+SFX 4119 0 dırdığına .
+SFX 4122 N 1
+SFX 4122 0 lanmam .
+SFX 4121 N 1
+SFX 4121 0 emeyeceklerinden .
+SFX 4120 N 1
+SFX 4120 0 şacağına .
+SFX 4124 N 1
+SFX 4124 0 larınızın .
+SFX 4123 N 1
+SFX 4123 0 lendiğinden .
+SFX 4126 N 1
+SFX 4126 0 lanmaz .
+SFX 4125 N 1
+SFX 4125 0 ciyle .
+SFX 4127 N 1
+SFX 4127 0 larımın .
+SFX 4128 N 1
+SFX 4128 0 uyormuş .
+SFX 4129 N 1
+SFX 4129 0 yebiliyor .
+SFX 4130 N 1
+SFX 4130 0 lanmadıklarını .
+SFX 4131 N 1
+SFX 4131 0 linin .
+SFX 4134 N 1
+SFX 4134 0 lanmak .
+SFX 4133 N 1
+SFX 4133 0 mışsın .
+SFX 4132 N 1
+SFX 4132 0 luğundaki .
+SFX 4137 N 1
+SFX 4137 0 larımız .
+SFX 4136 N 1
+SFX 4136 0 iyorlarmış .
+SFX 4135 N 1
+SFX 4135 0 ştiğini .
+SFX 4139 N 1
+SFX 4139 0 memeliler .
+SFX 4138 N 1
+SFX 4138 0 nmazken .
+SFX 4140 N 1
+SFX 4140 0 nmalıdır .
+SFX 4141 N 1
+SFX 4141 0 leşme .
+SFX 4142 N 1
+SFX 4142 0 unun .
+SFX 4143 N 1
+SFX 4143 0 sında .
+SFX 4144 N 1
+SFX 4144 0 lamasın .
+SFX 4145 N 1
+SFX 4145 0 unuz .
+SFX 4146 N 1
+SFX 4146 0 tmalarından .
+SFX 4147 N 1
+SFX 4147 0 mediklerinin .
+SFX 4148 N 1
+SFX 4148 0 cılığından .
+SFX 4149 N 1
+SFX 4149 0 lıklarda .
+SFX 4150 N 1
+SFX 4150 0 yemediği .
+SFX 4151 N 1
+SFX 4151 0 undaysa .
+SFX 4152 N 1
+SFX 4152 0 mizdeki .
+SFX 4153 N 1
+SFX 4153 0 leşmenin .
+SFX 4154 N 1
+SFX 4154 0 namayacağını .
+SFX 4155 N 1
+SFX 4155 0 manızın .
+SFX 4156 N 1
+SFX 4156 0 lıktır .
+SFX 4157 N 1
+SFX 4157 0 lemediği .
+SFX 4158 N 1
+SFX 4158 0 ttığı .
+SFX 4159 N 1
+SFX 4159 0 unsa .
+SFX 4161 N 1
+SFX 4161 0 nmadığı .
+SFX 4160 N 1
+SFX 4160 0 sınlar .
+SFX 4162 N 1
+SFX 4162 0 ndıkları .
+SFX 4164 N 1
+SFX 4164 0 nacağından .
+SFX 4163 N 1
+SFX 4163 0 cilerde .
+SFX 4165 N 1
+SFX 4165 0 laştırmıştı .
+SFX 4166 N 1
+SFX 4166 0 tamadıkları .
+SFX 4167 N 1
+SFX 4167 0 emeyince .
+SFX 4169 N 1
+SFX 4169 0 landırmanın .
+SFX 4168 N 1
+SFX 4168 0 leşsin .
+SFX 4172 N 1
+SFX 4172 0 mayışı .
+SFX 4171 N 1
+SFX 4171 0 ımından .
+SFX 4170 N 1
+SFX 4170 0 dırmıştır .
+SFX 4173 N 1
+SFX 4173 0 laşmışlar .
+SFX 4174 N 1
+SFX 4174 0 ındayım .
+SFX 4175 N 1
+SFX 4175 0 lenmelidir .
+SFX 4176 N 1
+SFX 4176 0 leştik .
+SFX 4177 N 1
+SFX 4177 0 lerininki .
+SFX 4179 N 1
+SFX 4179 0 nmasının .
+SFX 4178 N 1
+SFX 4178 0 acakların .
+SFX 4180 N 1
+SFX 4180 0 luklardan .
+SFX 4182 N 1
+SFX 4182 0 deyim .
+SFX 4181 N 1
+SFX 4181 0 mişliği .
+SFX 4184 N 1
+SFX 4184 0 mamın .
+SFX 4183 N 1
+SFX 4183 0 ştıracaklarını .
+SFX 4185 N 1
+SFX 4185 0 tecek .
+SFX 4186 N 1
+SFX 4186 0 yabilecektir .
+SFX 4187 N 1
+SFX 4187 0 sındaydı .
+SFX 4188 N 1
+SFX 4188 0 indesin .
+SFX 4189 N 1
+SFX 4189 0 lemeyen .
+SFX 4190 N 1
+SFX 4190 0 çının .
+SFX 4191 N 1
+SFX 4191 0 tmalar .
+SFX 4192 N 1
+SFX 4192 0 leşmesi .
+SFX 4194 N 1
+SFX 4194 0 sundan .
+SFX 4193 N 1
+SFX 4193 0 ılmadığı .
+SFX 4195 N 1
+SFX 4195 0 lediler .
+SFX 4196 N 1
+SFX 4196 0 lerindendir .
+SFX 4197 N 1
+SFX 4197 0 indekiler .
+SFX 4198 N 1
+SFX 4198 0 tamayacağını .
+SFX 4199 N 1
+SFX 4199 0 lendirmiş .
+SFX 4200 N 1
+SFX 4200 0 meleri .
+SFX 4201 N 1
+SFX 4201 0 larınızdan .
+SFX 4203 N 1
+SFX 4203 0 amadığında .
+SFX 4202 N 1
+SFX 4202 0 amamışım .
+SFX 4204 N 1
+SFX 4204 0 ilmektedir .
+SFX 4206 N 1
+SFX 4206 0 lığıyla .
+SFX 4205 N 1
+SFX 4205 0 yabildiğine .
+SFX 4207 N 1
+SFX 4207 0 amamışız .
+SFX 4208 N 1
+SFX 4208 0 ımızın .
+SFX 4210 N 1
+SFX 4210 0 yabildiğini .
+SFX 4209 N 1
+SFX 4209 0 melere .
+SFX 4211 N 1
+SFX 4211 0 abilecektir .
+SFX 4213 N 1
+SFX 4213 0 lığını .
+SFX 4212 N 1
+SFX 4212 0 ınaysa .
+SFX 4214 N 1
+SFX 4214 0 diğinizi .
+SFX 4215 N 1
+SFX 4215 0 lığıydı .
+SFX 4217 N 1
+SFX 4217 0 tılacağını .
+SFX 4216 N 1
+SFX 4216 0 yebildikleri .
+SFX 4218 N 1
+SFX 4218 0 laştırılır .
+SFX 4219 N 1
+SFX 4219 0 ebilmeleri .
+SFX 4220 N 1
+SFX 4220 0 laştırılıp .
+SFX 4221 N 1
+SFX 4221 0 laşmayacak .
+SFX 4223 N 1
+SFX 4223 0 ınca .
+SFX 4222 N 1
+SFX 4222 0 eydi .
+SFX 4224 N 1
+SFX 4224 0 landırdıkları .
+SFX 4228 N 1
+SFX 4228 0 yacağız .
+SFX 4227 N 1
+SFX 4227 0 dırdıkları .
+SFX 4226 N 1
+SFX 4226 0 üyüm .
+SFX 4225 N 1
+SFX 4225 0 landırmadan .
+SFX 4230 N 1
+SFX 4230 0 emeyecekleri .
+SFX 4229 N 1
+SFX 4229 0 namamıştır .
+SFX 4231 N 1
+SFX 4231 0 ımlar .
+SFX 4232 N 1
+SFX 4232 0 lığımı .
+SFX 4233 N 1
+SFX 4233 0 lamayla .
+SFX 4234 N 1
+SFX 4234 0 ımdaki .
+SFX 4235 N 1
+SFX 4235 0 ından .
+SFX 4236 N 1
+SFX 4236 0 leş .
+SFX 4237 N 1
+SFX 4237 0 lenememiş .
+SFX 4239 N 1
+SFX 4239 0 yacağım .
+SFX 4238 N 1
+SFX 4238 0 mıştınız .
+SFX 4240 N 1
+SFX 4240 0 mediğinde .
+SFX 4241 N 1
+SFX 4241 0 ılmıyor .
+SFX 4243 N 1
+SFX 4243 0 ilmiştir .
+SFX 4242 N 1
+SFX 4242 0 layamadığından .
+SFX 4245 N 1
+SFX 4245 0 ındayız .
+SFX 4244 N 1
+SFX 4244 0 yeceklerdir .
+SFX 4246 N 1
+SFX 4246 0 amıyorlar .
+SFX 4247 N 1
+SFX 4247 0 deyiz .
+SFX 4248 N 1
+SFX 4248 0 enler .
+SFX 4249 N 1
+SFX 4249 0 lılarla .
+SFX 4250 N 1
+SFX 4250 0 leştirilemeyeceğini .
+SFX 4251 N 1
+SFX 4251 0 dırmalarına .
+SFX 4253 N 1
+SFX 4253 0 ılanlar .
+SFX 4252 N 1
+SFX 4252 0 isiniz .
+SFX 4254 N 1
+SFX 4254 0 luğum .
+SFX 4255 N 1
+SFX 4255 0 luğun .
+SFX 4256 N 1
+SFX 4256 0 dendir .
+SFX 4257 N 1
+SFX 4257 0 umdan .
+SFX 4258 N 1
+SFX 4258 0 lardaki .
+SFX 4259 N 1
+SFX 4259 0 ırlarsa .
+SFX 4260 N 1
+SFX 4260 0 laşacaklarını .
+SFX 4261 N 1
+SFX 4261 0 tmediğini .
+SFX 4262 N 1
+SFX 4262 0 larından .
+SFX 4263 N 1
+SFX 4263 0 nmişti .
+SFX 4264 N 1
+SFX 4264 0 lenerek .
+SFX 4265 N 1
+SFX 4265 0 cilerine .
+SFX 4266 N 1
+SFX 4266 0 ılmalıdır .
+SFX 4267 N 1
+SFX 4267 0 lemekten .
+SFX 4268 N 1
+SFX 4268 0 nmalarından .
+SFX 4269 N 1
+SFX 4269 0 ndikten .
+SFX 4270 N 1
+SFX 4270 0 layacak .
+SFX 4271 N 1
+SFX 4271 0 mıza .
+SFX 4272 N 1
+SFX 4272 0 cılarına .
+SFX 4273 N 1
+SFX 4273 0 cilerini .
+SFX 4277 N 1
+SFX 4277 0 ında .
+SFX 4276 N 1
+SFX 4276 0 eyim .
+SFX 4275 N 1
+SFX 4275 0 unla .
+SFX 4274 N 1
+SFX 4274 0 tılıyor .
+SFX 4278 N 1
+SFX 4278 0 emeyeceklerdir .
+SFX 4280 N 1
+SFX 4280 0 leşmeli .
+SFX 4279 N 1
+SFX 4279 0 ınadır .
+SFX 4281 N 1
+SFX 4281 0 mişsinizdir .
+SFX 4282 N 1
+SFX 4282 0 ıklığının .
+SFX 4283 N 1
+SFX 4283 0 lılarına .
+SFX 4285 N 1
+SFX 4285 0 leştirilmiş .
+SFX 4284 N 1
+SFX 4284 0 mediğiniz .
+SFX 4286 N 1
+SFX 4286 0 lendiklerine .
+SFX 4288 N 1
+SFX 4288 0 ünde .
+SFX 4287 N 1
+SFX 4287 0 lendiklerini .
+SFX 4289 N 1
+SFX 4289 0 laşmasıdır .
+SFX 4291 N 1
+SFX 4291 0 ciliğinden .
+SFX 4290 N 1
+SFX 4290 0 meyince .
+SFX 4292 N 1
+SFX 4292 0 tmamış .
+SFX 4293 N 1
+SFX 4293 0 layamadı .
+SFX 4294 N 1
+SFX 4294 0 nınca .
+SFX 4295 N 1
+SFX 4295 0 masınlar .
+SFX 4296 N 1
+SFX 4296 0 tenleri .
+SFX 4297 N 1
+SFX 4297 0 tilmiş .
+SFX 4298 N 1
+SFX 4298 0 mediğinin .
+SFX 4300 N 1
+SFX 4300 0 lükle .
+SFX 4299 N 1
+SFX 4299 0 lanmalarında .
+SFX 4301 N 1
+SFX 4301 0 cenin .
+SFX 4303 N 1
+SFX 4303 0 leyin .
+SFX 4302 N 1
+SFX 4302 0 nmadıkları .
+SFX 4304 N 1
+SFX 4304 0 leştirirken .
+SFX 4306 N 1
+SFX 4306 0 yamayacaklarını .
+SFX 4305 N 1
+SFX 4305 0 leyip .
+SFX 4308 N 1
+SFX 4308 0 mamız .
+SFX 4307 N 1
+SFX 4307 0 ünce .
+SFX 4309 N 1
+SFX 4309 0 amıyorsanız .
+SFX 4310 N 1
+SFX 4310 0 emesin .
+SFX 4311 N 1
+SFX 4311 0 nanları .
+SFX 4312 N 1
+SFX 4312 0 dırılmalı .
+SFX 4313 N 1
+SFX 4313 0 enden .
+SFX 4314 N 1
+SFX 4314 0 lendirildiği .
+SFX 4315 N 1
+SFX 4315 0 leşmelerinden .
+SFX 4316 N 1
+SFX 4316 0 lamayacağının .
+SFX 4317 N 1
+SFX 4317 0 yamayacağım .
+SFX 4318 N 1
+SFX 4318 0 umu .
+SFX 4320 N 1
+SFX 4320 0 lığına .
+SFX 4319 N 1
+SFX 4319 0 nırlar .
+SFX 4321 N 1
+SFX 4321 0 ıyorsun .
+SFX 4323 N 1
+SFX 4323 0 dırmaları .
+SFX 4322 N 1
+SFX 4322 0 sındaysa .
+SFX 4324 N 1
+SFX 4324 0 leştirmeler .
+SFX 4325 N 1
+SFX 4325 0 ılmıştır .
+SFX 4326 N 1
+SFX 4326 0 lemesinden .
+SFX 4327 N 1
+SFX 4327 0 uma .
+SFX 4328 N 1
+SFX 4328 0 mamış .
+SFX 4329 N 1
+SFX 4329 0 leştirilebileceğini .
+SFX 4330 N 1
+SFX 4330 0 abildim .
+SFX 4333 N 1
+SFX 4333 0 lisinden .
+SFX 4332 N 1
+SFX 4332 0 memesine .
+SFX 4331 N 1
+SFX 4331 0 sinizdir .
+SFX 4335 N 1
+SFX 4335 0 nacağına .
+SFX 4334 N 1
+SFX 4334 0 abildik .
+SFX 4336 N 1
+SFX 4336 0 lanmayacağına .
+SFX 4337 N 1
+SFX 4337 0 luğuydu .
+SFX 4338 N 1
+SFX 4338 0 'ün .
+SFX 4339 N 1
+SFX 4339 0 lığıma .
+SFX 4340 N 1
+SFX 4340 0 unu .
+SFX 4342 N 1
+SFX 4342 0 sındaki .
+SFX 4341 N 1
+SFX 4341 0 tılmıştır .
+SFX 4343 N 1
+SFX 4343 0 emediğine .
+SFX 4344 N 1
+SFX 4344 0 lerseniz .
+SFX 4345 N 1
+SFX 4345 0 emediğini .
+SFX 4346 N 1
+SFX 4346 0 ilemez .
+SFX 4347 N 1
+SFX 4347 0 lığındaydı .
+SFX 4348 N 1
+SFX 4348 0 una .
+SFX 4349 N 1
+SFX 4349 0 cıkları .
+SFX 4350 N 1
+SFX 4350 0 dirmelerini .
+SFX 4352 N 1
+SFX 4352 0 dığında .
+SFX 4351 N 1
+SFX 4351 0 lerininde .
+SFX 4353 N 1
+SFX 4353 0 leştirilmek .
+SFX 4354 N 1
+SFX 4354 0 anlardan .
+SFX 4355 N 1
+SFX 4355 0 ınki .
+SFX 4356 N 1
+SFX 4356 0 ılamayışı .
+SFX 4357 N 1
+SFX 4357 0 lediğine .
+SFX 4360 N 1
+SFX 4360 0 larımızın .
+SFX 4359 N 1
+SFX 4359 0 lanacağının .
+SFX 4358 N 1
+SFX 4358 0 sızım .
+SFX 4361 N 1
+SFX 4361 0 sızın .
+SFX 4362 N 1
+SFX 4362 0 ındı .
+SFX 4364 N 1
+SFX 4364 0 cılarını .
+SFX 4363 N 1
+SFX 4363 0 yabilmeleri .
+SFX 4365 N 1
+SFX 4365 0 yemez .
+SFX 4367 N 1
+SFX 4367 0 amamış .
+SFX 4366 N 1
+SFX 4366 0 lanamadığından .
+SFX 4369 N 1
+SFX 4369 0 meyişi .
+SFX 4368 N 1
+SFX 4368 0 arlar .
+SFX 4371 N 1
+SFX 4371 0 ler .
+SFX 4370 N 1
+SFX 4370 0 memesini .
+SFX 4372 N 1
+SFX 4372 0 len .
+SFX 4373 N 1
+SFX 4373 0 melerden .
+SFX 4374 N 1
+SFX 4374 0 ciği .
+SFX 4377 N 1
+SFX 4377 0 layacaklar .
+SFX 4376 N 1
+SFX 4376 0 nemiyor .
+SFX 4375 N 1
+SFX 4375 0 layışından .
+SFX 4378 N 1
+SFX 4378 0 leyen .
+SFX 4379 N 1
+SFX 4379 0 lediklerinden .
+SFX 4380 N 1
+SFX 4380 0 mızı .
+SFX 4381 N 1
+SFX 4381 0 layabildiği .
+SFX 4382 N 1
+SFX 4382 0 lediğini .
+SFX 4383 N 1
+SFX 4383 0 ılışını .
+SFX 4385 N 1
+SFX 4385 0 lanamayacağının .
+SFX 4384 N 1
+SFX 4384 0 ıkların .
+SFX 4386 N 1
+SFX 4386 0 abiliyorsunuz .
+SFX 4388 N 1
+SFX 4388 0 amadılar .
+SFX 4387 N 1
+SFX 4387 0 nmemiştir .
+SFX 4390 N 1
+SFX 4390 0 ıldık .
+SFX 4389 N 1
+SFX 4389 0 ılışına .
+SFX 4392 N 1
+SFX 4392 0 lemelerinden .
+SFX 4391 N 1
+SFX 4391 0 ılmalar .
+SFX 4393 N 1
+SFX 4393 0 alar .
+SFX 4394 N 1
+SFX 4394 0 ırlardı .
+SFX 4395 N 1
+SFX 4395 0 lılarını .
+SFX 4397 N 1
+SFX 4397 0 laşır .
+SFX 4396 N 1
+SFX 4396 0 ırdım .
+SFX 4399 N 1
+SFX 4399 0 laşıp .
+SFX 4398 N 1
+SFX 4398 0 ırdık .
+SFX 4400 N 1
+SFX 4400 0 abilmeliyiz .
+SFX 4402 N 1
+SFX 4402 0 ümü .
+SFX 4401 N 1
+SFX 4401 0 laşacağından .
+SFX 4403 N 1
+SFX 4403 0 mamam .
+SFX 4404 N 1
+SFX 4404 0 dirilmelidir .
+SFX 4406 N 1
+SFX 4406 0 lanmış .
+SFX 4405 N 1
+SFX 4405 0 lemeleri .
+SFX 4407 N 1
+SFX 4407 0 amadıklarının .
+SFX 4408 N 1
+SFX 4408 0 mamak .
+SFX 4409 N 1
+SFX 4409 0 lerindendi .
+SFX 4411 N 1
+SFX 4411 0 luğu .
+SFX 4410 N 1
+SFX 4410 0 tabileceği .
+SFX 4415 N 1
+SFX 4415 0 ınla .
+SFX 4414 N 1
+SFX 4414 0 lemediğini .
+SFX 4413 N 1
+SFX 4413 0 lendirmek .
+SFX 4412 N 1
+SFX 4412 0 leştirebileceği .
+SFX 4416 N 1
+SFX 4416 0 lemediğine .
+SFX 4417 N 1
+SFX 4417 0 lerken .
+SFX 4418 N 1
+SFX 4418 0 mamalıdırlar .
+SFX 4419 N 1
+SFX 4419 0 luğa .
+SFX 4420 N 1
+SFX 4420 0 ecekler .
+SFX 4421 N 1
+SFX 4421 0 unda .
+SFX 4422 N 1
+SFX 4422 0 lamaktadır .
+SFX 4423 N 1
+SFX 4423 0 laşıyorlar .
+SFX 4424 N 1
+SFX 4424 0 deydi .
+SFX 4425 N 1
+SFX 4425 0 nabilmiş .
+SFX 4426 N 1
+SFX 4426 0 tığından .
+SFX 4427 N 1
+SFX 4427 0 abilmişler .
+SFX 4429 N 1
+SFX 4429 0 madan .
+SFX 4428 N 1
+SFX 4428 0 leridirler .
+SFX 4431 N 1
+SFX 4431 0 nmazsa .
+SFX 4430 N 1
+SFX 4430 0 tmalarının .
+SFX 4432 N 1
+SFX 4432 0 cik .
+SFX 4435 N 1
+SFX 4435 0 unca .
+SFX 4434 N 1
+SFX 4434 0 ebilmiş .
+SFX 4433 N 1
+SFX 4433 0 cim .
+SFX 4436 N 1
+SFX 4436 0 laşabilir .
+SFX 4437 N 1
+SFX 4437 0 lığındadır .
+SFX 4438 N 1
+SFX 4438 0 dırmalarını .
+SFX 4439 N 1
+SFX 4439 0 leşmede .
+SFX 4440 N 1
+SFX 4440 0 acağının .
+SFX 4441 N 1
+SFX 4441 0 cin .
+SFX 4442 N 1
+SFX 4442 0 ındakine .
+SFX 4443 N 1
+SFX 4443 0 mızdaki .
+SFX 4444 N 1
+SFX 4444 0 mışlığı .
+SFX 4446 N 1
+SFX 4446 0 mayacak .
+SFX 4445 N 1
+SFX 4445 0 yabileceği .
+SFX 4448 N 1
+SFX 4448 0 lin .
+SFX 4447 N 1
+SFX 4447 0 lemesinin .
+SFX 4449 N 1
+SFX 4449 0 lim .
+SFX 4450 N 1
+SFX 4450 0 ünü .
+SFX 4451 N 1
+SFX 4451 0 namayacağının .
+SFX 4452 N 1
+SFX 4452 0 amayacakları .
+SFX 4453 N 1
+SFX 4453 0 ındakinin .
+SFX 4454 N 1
+SFX 4454 0 abileceğini .
+SFX 4455 N 1
+SFX 4455 0 lik .
+SFX 4456 N 1
+SFX 4456 0 abileceğine .
+SFX 4457 N 1
+SFX 4457 0 laş .
+SFX 4458 N 1
+SFX 4458 0 tacağından .
+SFX 4459 N 1
+SFX 4459 0 larınızı .
+SFX 4460 N 1
+SFX 4460 0 tirme .
+SFX 4461 N 1
+SFX 4461 0 namadığına .
+SFX 4462 N 1
+SFX 4462 0 tırmaya .
+SFX 4463 N 1
+SFX 4463 0 nemeyen .
+SFX 4464 N 1
+SFX 4464 0 ndiğini .
+SFX 4465 N 1
+SFX 4465 0 amayacaktır .
+SFX 4466 N 1
+SFX 4466 0 mışın .
+SFX 4468 N 1
+SFX 4468 0 ebilecekler .
+SFX 4467 N 1
+SFX 4467 0 ladığım .
+SFX 4470 N 1
+SFX 4470 0 lenemeyecek .
+SFX 4469 N 1
+SFX 4469 0 ladığın .
+SFX 4471 N 1
+SFX 4471 0 ndiğine .
+SFX 4472 N 1
+SFX 4472 0 mışım .
+SFX 4473 N 1
+SFX 4473 0 'ından .
+SFX 4476 N 1
+SFX 4476 0 lıklarıyla .
+SFX 4475 N 1
+SFX 4475 0 liye .
+SFX 4474 N 1
+SFX 4474 0 lünün .
+SFX 4477 N 1
+SFX 4477 0 temediklerini .
+SFX 4479 N 1
+SFX 4479 0 liyi .
+SFX 4478 N 1
+SFX 4478 0 ilmediği .
+SFX 4480 N 1
+SFX 4480 0 lemesi .
+SFX 4482 N 1
+SFX 4482 0 sizliğin .
+SFX 4481 N 1
+SFX 4481 0 mektedirler .
+SFX 4484 N 1
+SFX 4484 0 mışız .
+SFX 4483 N 1
+SFX 4483 0 deydik .
+SFX 4485 N 1
+SFX 4485 0 liklerindeki .
+SFX 4486 N 1
+SFX 4486 0 tmadığına .
+SFX 4488 N 1
+SFX 4488 0 leştiremedik .
+SFX 4487 N 1
+SFX 4487 0 lisidir .
+SFX 4489 N 1
+SFX 4489 0 deydim .
+SFX 4491 N 1
+SFX 4491 0 diklerinde .
+SFX 4490 N 1
+SFX 4490 0 tılamayacağını .
+SFX 4492 N 1
+SFX 4492 0 laya .
+SFX 4494 N 1
+SFX 4494 0 'inde .
+SFX 4493 N 1
+SFX 4493 0 ilmeyen .
+SFX 4495 N 1
+SFX 4495 0 ndikleri .
+SFX 4497 N 1
+SFX 4497 0 ları .
+SFX 4496 N 1
+SFX 4496 0 ildikten .
+SFX 4499 N 1
+SFX 4499 0 tikleri .
+SFX 4498 N 1
+SFX 4498 0 şamadığı .
+SFX 4500 N 1
+SFX 4500 0 anlarına .
+SFX 4501 N 1
+SFX 4501 0 acağıdır .
+SFX 4502 N 1
+SFX 4502 0 ılmadığından .
+SFX 4503 N 1
+SFX 4503 0 tacağının .
+SFX 4504 N 1
+SFX 4504 0 niyordu .
+SFX 4505 N 1
+SFX 4505 0 mesiyle .
+SFX 4506 N 1
+SFX 4506 0 mak .
+SFX 4507 N 1
+SFX 4507 0 iğini .
+SFX 4508 N 1
+SFX 4508 0 lenmediğinden .
+SFX 4509 N 1
+SFX 4509 0 larındaki .
+SFX 4511 N 1
+SFX 4511 0 leştirme .
+SFX 4510 N 1
+SFX 4510 0 ığı .
+SFX 4512 N 1
+SFX 4512 0 leşecek .
+SFX 4514 N 1
+SFX 4514 0 lisine .
+SFX 4513 N 1
+SFX 4513 0 lendikten .
+SFX 4515 N 1
+SFX 4515 0 leşebildiği .
+SFX 4517 N 1
+SFX 4517 0 mam .
+SFX 4516 N 1
+SFX 4516 0 lıklara .
+SFX 4518 N 1
+SFX 4518 0 man .
+SFX 4523 N 1
+SFX 4523 0 mamalarına .
+SFX 4522 N 1
+SFX 4522 0 tıracak .
+SFX 4521 N 1
+SFX 4521 0 ılmasından .
+SFX 4520 N 1
+SFX 4520 0 lisini .
+SFX 4519 N 1
+SFX 4519 0 ilmemesi .
+SFX 4524 N 1
+SFX 4524 0 maz .
+SFX 4525 N 1
+SFX 4525 0 amamasına .
+SFX 4526 N 1
+SFX 4526 0 lüklerinin .
+SFX 4527 N 1
+SFX 4527 0 lanabileceği .
+SFX 4528 N 1
+SFX 4528 0 ılma .
+SFX 4529 N 1
+SFX 4529 0 lanmayacağını .
+SFX 4530 N 1
+SFX 4530 0 idirler .
+SFX 4531 N 1
+SFX 4531 0 mışa .
+SFX 4532 N 1
+SFX 4532 0 diğinizde .
+SFX 4533 N 1
+SFX 4533 0 lıyorsunuz .
+SFX 4534 N 1
+SFX 4534 0 emezse .
+SFX 4535 N 1
+SFX 4535 0 luğuyla .
+SFX 4536 N 1
+SFX 4536 0 leşemedik .
+SFX 4537 N 1
+SFX 4537 0 lıkları .
+SFX 4540 N 1
+SFX 4540 0 mamalarını .
+SFX 4539 N 1
+SFX 4539 0 layamadıkları .
+SFX 4538 N 1
+SFX 4538 0 mıyorsa .
+SFX 4541 N 1
+SFX 4541 0 lunun .
+SFX 4542 N 1
+SFX 4542 0 leşiyor .
+SFX 4543 N 1
+SFX 4543 0 lendirmeli .
+SFX 4544 N 1
+SFX 4544 0 'inin .
+SFX 4546 N 1
+SFX 4546 0 işlerini .
+SFX 4545 N 1
+SFX 4545 0 diremediklerini .
+SFX 4547 N 1
+SFX 4547 0 emeyişine .
+SFX 4549 N 1
+SFX 4549 0 nış .
+SFX 4548 N 1
+SFX 4548 0 emezken .
+SFX 4550 N 1
+SFX 4550 0 ilenlerin .
+SFX 4552 N 1
+SFX 4552 0 nacaklar .
+SFX 4551 N 1
+SFX 4551 0 lemeliyiz .
+SFX 4553 N 1
+SFX 4553 0 mda .
+SFX 4554 N 1
+SFX 4554 0 ilemeyen .
+SFX 4555 N 1
+SFX 4555 0 mde .
+SFX 4556 N 1
+SFX 4556 0 ılabileceğinin .
+SFX 4557 N 1
+SFX 4557 0 ılsa .
+SFX 4558 N 1
+SFX 4558 0 ımızdan .
+SFX 4559 N 1
+SFX 4559 0 iliyordu .
+SFX 4560 N 1
+SFX 4560 0 dırılacak .
+SFX 4561 N 1
+SFX 4561 0 nabilmesi .
+SFX 4562 N 1
+SFX 4562 0 memişsin .
+SFX 4563 N 1
+SFX 4563 0 lıktan .
+SFX 4564 N 1
+SFX 4564 0 mamaktadır .
+SFX 4565 N 1
+SFX 4565 0 amıyorsunuz .
+SFX 4567 N 1
+SFX 4567 0 leştirir .
+SFX 4566 N 1
+SFX 4566 0 mdi .
+SFX 4568 N 1
+SFX 4568 0 layıcıları .
+SFX 4569 N 1
+SFX 4569 0 yeceği .
+SFX 4572 N 1
+SFX 4572 0 leştirip .
+SFX 4571 N 1
+SFX 4571 0 mişken .
+SFX 4570 N 1
+SFX 4570 0 tirdiğini .
+SFX 4573 N 1
+SFX 4573 0 ememişti .
+SFX 4575 N 1
+SFX 4575 0 çı .
+SFX 4574 N 1
+SFX 4574 0 meseler .
+SFX 4576 N 1
+SFX 4576 0 ışlarından .
+SFX 4577 N 1
+SFX 4577 0 cilerinin .
+SFX 4578 N 1
+SFX 4578 0 laştıranlar .
+SFX 4580 N 1
+SFX 4580 0 ununda .
+SFX 4579 N 1
+SFX 4579 0 medeki .
+SFX 4581 N 1
+SFX 4581 0 tılamadığı .
+SFX 4583 N 1
+SFX 4583 0 lemeli .
+SFX 4582 N 1
+SFX 4582 0 arsınız .
+SFX 4584 N 1
+SFX 4584 0 lüklerinde .
+SFX 4585 N 1
+SFX 4585 0 nmeli .
+SFX 4586 N 1
+SFX 4586 0 mıyorum .
+SFX 4588 N 1
+SFX 4588 0 eceğiz .
+SFX 4587 N 1
+SFX 4587 0 leştirilme .
+SFX 4589 N 1
+SFX 4589 0 'inki .
+SFX 4590 N 1
+SFX 4590 0 diğiyle .
+SFX 4593 N 1
+SFX 4593 0 mem .
+SFX 4592 N 1
+SFX 4592 0 tamadığı .
+SFX 4591 N 1
+SFX 4591 0 abilirdim .
+SFX 4596 N 1
+SFX 4596 0 mezliği .
+SFX 4595 N 1
+SFX 4595 0 ılanları .
+SFX 4594 N 1
+SFX 4594 0 abilirdik .
+SFX 4599 N 1
+SFX 4599 0 men .
+SFX 4598 N 1
+SFX 4598 0 dekiler .
+SFX 4597 N 1
+SFX 4597 0 sızlıklarını .
+SFX 4601 N 1
+SFX 4601 0 leşmemiş .
+SFX 4600 N 1
+SFX 4600 0 anlarla .
+SFX 4602 N 1
+SFX 4602 0 mıyoruz .
+SFX 4603 N 1
+SFX 4603 0 mek .
+SFX 4604 N 1
+SFX 4604 0 miştik .
+SFX 4605 N 1
+SFX 4605 0 mayacaklarını .
+SFX 4608 N 1
+SFX 4608 0 ecektir .
+SFX 4607 N 1
+SFX 4607 0 amayınca .
+SFX 4606 N 1
+SFX 4606 0 laşmalıyız .
+SFX 4611 N 1
+SFX 4611 0 namayacak .
+SFX 4610 N 1
+SFX 4610 0 eceğim .
+SFX 4609 N 1
+SFX 4609 0 ecekmiş .
+SFX 4612 N 1
+SFX 4612 0 eceğin .
+SFX 4614 N 1
+SFX 4614 0 miştim .
+SFX 4613 N 1
+SFX 4613 0 lattığı .
+SFX 4615 N 1
+SFX 4615 0 ecektik .
+SFX 4617 N 1
+SFX 4617 0 miştir .
+SFX 4616 N 1
+SFX 4616 0 lememe .
+SFX 4618 N 1
+SFX 4618 0 mez .
+SFX 4619 N 1
+SFX 4619 0 ıyorsak .
+SFX 4620 N 1
+SFX 4620 0 ecektim .
+SFX 4622 N 1
+SFX 4622 0 ebilirsiniz .
+SFX 4621 N 1
+SFX 4621 0 meyebileceği .
+SFX 4623 N 1
+SFX 4623 0 'sına .
+SFX 4624 N 1
+SFX 4624 0 tacağı .
+SFX 4625 N 1
+SFX 4625 0 işlerine .
+SFX 4626 N 1
+SFX 4626 0 laştırdık .
+SFX 4627 N 1
+SFX 4627 0 larınıza .
+SFX 4628 N 1
+SFX 4628 0 malarındaki .
+SFX 4629 N 1
+SFX 4629 0 ıklığı .
+SFX 4631 N 1
+SFX 4631 0 lamalısınız .
+SFX 4630 N 1
+SFX 4630 0 tamamış .
+SFX 4632 N 1
+SFX 4632 0 memelerinden .
+SFX 4634 N 1
+SFX 4634 0 ttı .
+SFX 4633 N 1
+SFX 4633 0 amamasını .
+SFX 4636 N 1
+SFX 4636 0 duğunuz .
+SFX 4635 N 1
+SFX 4635 0 mayışının .
+SFX 4637 N 1
+SFX 4637 0 lerininse .
+SFX 4638 N 1
+SFX 4638 0 duğunun .
+SFX 4641 N 1
+SFX 4641 0 ımdır .
+SFX 4640 N 1
+SFX 4640 0 laştırmış .
+SFX 4639 N 1
+SFX 4639 0 ildiğinden .
+SFX 4642 N 1
+SFX 4642 0 eceklerinin .
+SFX 4644 N 1
+SFX 4644 0 nmesi .
+SFX 4643 N 1
+SFX 4643 0 tmadığını .
+SFX 4645 N 1
+SFX 4645 0 luk .
+SFX 4647 N 1
+SFX 4647 0 mazı .
+SFX 4646 N 1
+SFX 4646 0 ineyse .
+SFX 4648 N 1
+SFX 4648 0 laşmasıyla .
+SFX 4649 N 1
+SFX 4649 0 ilmelerinin .
+SFX 4651 N 1
+SFX 4651 0 leştiren .
+SFX 4650 N 1
+SFX 4650 0 deyse .
+SFX 4652 N 1
+SFX 4652 0 laştırılmasının .
+SFX 4654 N 1
+SFX 4654 0 indekilerin .
+SFX 4653 N 1
+SFX 4653 0 anlarını .
+SFX 4655 N 1
+SFX 4655 0 lerden .
+SFX 4656 N 1
+SFX 4656 0 mamasıdır .
+SFX 4657 N 1
+SFX 4657 0 yemeyeceklerini .
+SFX 4658 N 1
+SFX 4658 0 diremediği .
+SFX 4659 N 1
+SFX 4659 0 mışı .
+SFX 4660 N 1
+SFX 4660 0 sızlıklarına .
+SFX 4661 N 1
+SFX 4661 0 amadı .
+SFX 4663 N 1
+SFX 4663 0 mışlığın .
+SFX 4662 N 1
+SFX 4662 0 lıkmış .
+SFX 4665 N 1
+SFX 4665 0 ılabiliyor .
+SFX 4664 N 1
+SFX 4664 0 nmeyen .
+SFX 4666 N 1
+SFX 4666 0 ememelerinin .
+SFX 4668 N 1
+SFX 4668 0 madığım .
+SFX 4667 N 1
+SFX 4667 0 laştırılamayacağı .
+SFX 4670 N 1
+SFX 4670 0 lemeye .
+SFX 4669 N 1
+SFX 4669 0 madığın .
+SFX 4671 N 1
+SFX 4671 0 dırılmaya .
+SFX 4672 N 1
+SFX 4672 0 undayken .
+SFX 4673 N 1
+SFX 4673 0 mesiydi .
+SFX 4674 N 1
+SFX 4674 0 çilere .
+SFX 4675 N 1
+SFX 4675 0 çileri .
+SFX 4676 N 1
+SFX 4676 0 lendirileceğini .
+SFX 4677 N 1
+SFX 4677 0 ilebildiği .
+SFX 4679 N 1
+SFX 4679 0 leştireceği .
+SFX 4678 N 1
+SFX 4678 0 tılacağı .
+SFX 4680 N 1
+SFX 4680 0 layacağınız .
+SFX 4681 N 1
+SFX 4681 0 ılabilecek .
+SFX 4682 N 1
+SFX 4682 0 maksa .
+SFX 4684 N 1
+SFX 4684 0 leştirmekte .
+SFX 4683 N 1
+SFX 4683 0 ılışından .
+SFX 4686 N 1
+SFX 4686 0 seler .
+SFX 4685 N 1
+SFX 4685 0 yamadılar .
+SFX 4687 N 1
+SFX 4687 0 ayım .
+SFX 4688 N 1
+SFX 4688 0 ındandı .
+SFX 4690 N 1
+SFX 4690 0 lamadığının .
+SFX 4689 N 1
+SFX 4689 0 yamadığım .
+SFX 4691 N 1
+SFX 4691 0 layacağının .
+SFX 4692 N 1
+SFX 4692 0 abilmelerinin .
+SFX 4693 N 1
+SFX 4693 0 leşmedir .
+SFX 4695 N 1
+SFX 4695 0 dur .
+SFX 4694 N 1
+SFX 4694 0 amazlardı .
+SFX 4697 N 1
+SFX 4697 0 lara .
+SFX 4696 N 1
+SFX 4696 0 cilerinde .
+SFX 4699 N 1
+SFX 4699 0 lemeyi .
+SFX 4698 N 1
+SFX 4698 0 lattığını .
+SFX 4700 N 1
+SFX 4700 0 leştirdi .
+SFX 4701 N 1
+SFX 4701 0 melerinde .
+SFX 4702 N 1
+SFX 4702 0 tmayacaklarını .
+SFX 4703 N 1
+SFX 4703 0 abildiğinden .
+SFX 4704 N 1
+SFX 4704 0 yacaklardı .
+SFX 4706 N 1
+SFX 4706 0 nmayan .
+SFX 4705 N 1
+SFX 4705 0 lendirmenin .
+SFX 4708 N 1
+SFX 4708 0 mamalıdır .
+SFX 4707 N 1
+SFX 4707 0 sizliklerinin .
+SFX 4709 N 1
+SFX 4709 0 luktan .
+SFX 4710 N 1
+SFX 4710 0 uculuğu .
+SFX 4711 N 1
+SFX 4711 0 lasa .
+SFX 4712 N 1
+SFX 4712 0 çu .
+SFX 4713 N 1
+SFX 4713 0 mazlığından .
+SFX 4715 N 1
+SFX 4715 0 eceğinden .
+SFX 4714 N 1
+SFX 4714 0 ceye .
+SFX 4718 N 1
+SFX 4718 0 melerindeki .
+SFX 4717 N 1
+SFX 4717 0 leyecektir .
+SFX 4716 N 1
+SFX 4716 0 abiliyorlar .
+SFX 4719 N 1
+SFX 4719 0 madığında .
+SFX 4721 N 1
+SFX 4721 0 sıydı .
+SFX 4720 N 1
+SFX 4720 0 indekilerle .
+SFX 4722 N 1
+SFX 4722 0 landıracak .
+SFX 4723 N 1
+SFX 4723 0 anından .
+SFX 4725 N 1
+SFX 4725 0 çi .
+SFX 4724 N 1
+SFX 4724 0 lenmesiyle .
+SFX 4726 N 1
+SFX 4726 0 ulamayacağı .
+SFX 4727 N 1
+SFX 4727 0 çe .
+SFX 4731 N 1
+SFX 4731 0 ça .
+SFX 4730 N 1
+SFX 4730 0 liliği .
+SFX 4729 N 1
+SFX 4729 0 ileceği .
+SFX 4728 N 1
+SFX 4728 0 liklerimiz .
+SFX 4733 N 1
+SFX 4733 0 tur .
+SFX 4732 N 1
+SFX 4732 0 ıcılığı .
+SFX 4734 N 1
+SFX 4734 0 lerdir .
+SFX 4735 N 1
+SFX 4735 0 ıyorlarmış .
+SFX 4738 N 1
+SFX 4738 0 mayız .
+SFX 4737 N 1
+SFX 4737 0 yabileceğinden .
+SFX 4736 N 1
+SFX 4736 0 layabilecekleri .
+SFX 4739 N 1
+SFX 4739 0 mediklerinden .
+SFX 4740 N 1
+SFX 4740 0 lerdik .
+SFX 4743 N 1
+SFX 4743 0 indekileri .
+SFX 4742 N 1
+SFX 4742 0 mayıp .
+SFX 4741 N 1
+SFX 4741 0 takilerin .
+SFX 4744 N 1
+SFX 4744 0 makla .
+SFX 4745 N 1
+SFX 4745 0 meyenlerin .
+SFX 4747 N 1
+SFX 4747 0 lanırken .
+SFX 4746 N 1
+SFX 4746 0 indekilere .
+SFX 4748 N 1
+SFX 4748 0 mayın .
+SFX 4749 N 1
+SFX 4749 0 muşa .
+SFX 4751 N 1
+SFX 4751 0 masaydı .
+SFX 4750 N 1
+SFX 4750 0 anlarda .
+SFX 4752 N 1
+SFX 4752 0 leşemiyor .
+SFX 4753 N 1
+SFX 4753 0 ulmalı .
+SFX 4755 N 1
+SFX 4755 0 diklerinin .
+SFX 4754 N 1
+SFX 4754 0 lenmesinden .
+SFX 4756 N 1
+SFX 4756 0 sından .
+SFX 4757 N 1
+SFX 4757 0 'ım .
+SFX 4759 N 1
+SFX 4759 0 'ın .
+SFX 4758 N 1
+SFX 4758 0 sızlığından .
+SFX 4760 N 1
+SFX 4760 0 ecekti .
+SFX 4761 N 1
+SFX 4761 0 tamadıklarını .
+SFX 4762 N 1
+SFX 4762 0 leştirildiğini .
+SFX 4763 N 1
+SFX 4763 0 luklarıyla .
+SFX 4764 N 1
+SFX 4764 0 leştirildiğine .
+SFX 4765 N 1
+SFX 4765 0 leşmeden .
+SFX 4767 N 1
+SFX 4767 0 sıyla .
+SFX 4766 N 1
+SFX 4766 0 lisi .
+SFX 4768 N 1
+SFX 4768 0 ıklarının .
+SFX 4769 N 1
+SFX 4769 0 nız .
+SFX 4770 N 1
+SFX 4770 0 laşamaz .
+SFX 4772 N 1
+SFX 4772 0 laştırmaları .
+SFX 4771 N 1
+SFX 4771 0 yamayacaklarına .
+SFX 4773 N 1
+SFX 4773 0 nıp .
+SFX 4774 N 1
+SFX 4774 0 nır .
+SFX 4776 N 1
+SFX 4776 0 maktadırlar .
+SFX 4775 N 1
+SFX 4775 0 ecekse .
+SFX 4777 N 1
+SFX 4777 0 nın .
+SFX 4779 N 1
+SFX 4779 0 siyse .
+SFX 4778 N 1
+SFX 4778 0 nım .
+SFX 4780 N 1
+SFX 4780 0 ılmanın .
+SFX 4783 N 1
+SFX 4783 0 mayı .
+SFX 4782 N 1
+SFX 4782 0 nızın .
+SFX 4781 N 1
+SFX 4781 0 ulabileceği .
+SFX 4784 N 1
+SFX 4784 0 mayışına .
+SFX 4786 N 1
+SFX 4786 0 lıklardaki .
+SFX 4785 N 1
+SFX 4785 0 lattık .
+SFX 4788 N 1
+SFX 4788 0 yamadı .
+SFX 4787 N 1
+SFX 4787 0 amasa .
+SFX 4789 N 1
+SFX 4789 0 nerek .
+SFX 4790 N 1
+SFX 4790 0 ebildiğinden .
+SFX 4791 N 1
+SFX 4791 0 laşabileceğine .
+SFX 4792 N 1
+SFX 4792 0 mamızın .
+SFX 4793 N 1
+SFX 4793 0 laşabileceğini .
+SFX 4794 N 1
+SFX 4794 0 nışının .
+SFX 4795 N 1
+SFX 4795 0 nmışlardır .
+SFX 4796 N 1
+SFX 4796 0 abiliyor .
+SFX 4798 N 1
+SFX 4798 0 manın .
+SFX 4797 N 1
+SFX 4797 0 tedir .
+SFX 4802 N 1
+SFX 4802 0 melerinin .
+SFX 4801 N 1
+SFX 4801 0 dekilerin .
+SFX 4800 N 1
+SFX 4800 0 nmasını .
+SFX 4799 N 1
+SFX 4799 0 tarak .
+SFX 4803 N 1
+SFX 4803 0 meyin .
+SFX 4804 N 1
+SFX 4804 0 üş .
+SFX 4805 N 1
+SFX 4805 0 mezlik .
+SFX 4807 N 1
+SFX 4807 0 siyle .
+SFX 4806 N 1
+SFX 4806 0 luğumuzu .
+SFX 4808 N 1
+SFX 4808 0 düğünün .
+SFX 4809 N 1
+SFX 4809 0 amadın .
+SFX 4811 N 1
+SFX 4811 0 amadım .
+SFX 4810 N 1
+SFX 4810 0 meyip .
+SFX 4813 N 1
+SFX 4813 0 amadık .
+SFX 4812 N 1
+SFX 4812 0 tmadan .
+SFX 4814 N 1
+SFX 4814 0 ılmamalı .
+SFX 4815 N 1
+SFX 4815 0 meyiz .
+SFX 4816 N 1
+SFX 4816 0 laştırır .
+SFX 4817 N 1
+SFX 4817 0 ndığında .
+SFX 4818 N 1
+SFX 4818 0 leştirdiğine .
+SFX 4820 N 1
+SFX 4820 0 laştırıp .
+SFX 4819 N 1
+SFX 4819 0 seydim .
+SFX 4821 N 1
+SFX 4821 0 amazlarsa .
+SFX 4822 N 1
+SFX 4822 0 nanın .
+SFX 4823 N 1
+SFX 4823 0 laşırsa .
+SFX 4824 N 1
+SFX 4824 0 emeden .
+SFX 4825 N 1
+SFX 4825 0 seydik .
+SFX 4826 N 1
+SFX 4826 0 yamayacağından .
+SFX 4827 N 1
+SFX 4827 0 anlardır .
+SFX 4828 N 1
+SFX 4828 0 dırdığının .
+SFX 4829 N 1
+SFX 4829 0 leştirmekle .
+SFX 4831 N 1
+SFX 4831 0 lanabildiğini .
+SFX 4830 N 1
+SFX 4830 0 lettiği .
+SFX 4832 N 1
+SFX 4832 0 ebiliyorlar .
+SFX 4833 N 1
+SFX 4833 0 ındansa .
+SFX 4836 N 1
+SFX 4836 0 nmasın .
+SFX 4835 N 1
+SFX 4835 0 ymış .
+SFX 4834 N 1
+SFX 4834 0 lanabildiğine .
+SFX 4837 N 1
+SFX 4837 0 ılamadığından .
+SFX 4838 N 1
+SFX 4838 0 dükleri .
+SFX 4840 N 1
+SFX 4840 0 maktı .
+SFX 4839 N 1
+SFX 4839 0 ıklık .
+SFX 4841 N 1
+SFX 4841 0 amamasının .
+SFX 4842 N 1
+SFX 4842 0 nanlar .
+SFX 4843 N 1
+SFX 4843 0 nenlerin .
+SFX 4844 N 1
+SFX 4844 0 miş .
+SFX 4845 N 1
+SFX 4845 0 lensin .
+SFX 4847 N 1
+SFX 4847 0 cıda .
+SFX 4846 N 1
+SFX 4846 0 tti .
+SFX 4849 N 1
+SFX 4849 0 melisiniz .
+SFX 4848 N 1
+SFX 4848 0 yışından .
+SFX 4850 N 1
+SFX 4850 0 ılarak .
+SFX 4851 N 1
+SFX 4851 0 uyla .
+SFX 4852 N 1
+SFX 4852 0 manız .
+SFX 4853 N 1
+SFX 4853 0 leşmelidir .
+SFX 4854 N 1
+SFX 4854 0 liyordu .
+SFX 4855 N 1
+SFX 4855 0 ınızda .
+SFX 4857 N 1
+SFX 4857 0 liğimizin .
+SFX 4856 N 1
+SFX 4856 0 amadığın .
+SFX 4858 N 1
+SFX 4858 0 amadığım .
+SFX 4860 N 1
+SFX 4860 0 liklerinde .
+SFX 4859 N 1
+SFX 4859 0 ıydılar .
+SFX 4861 N 1
+SFX 4861 0 tme .
+SFX 4862 N 1
+SFX 4862 0 masıydı .
+SFX 4864 N 1
+SFX 4864 0 makta .
+SFX 4863 N 1
+SFX 4863 0 tma .
+SFX 4865 N 1
+SFX 4865 0 uysa .
+SFX 4867 N 1
+SFX 4867 0 ındakilerin .
+SFX 4866 N 1
+SFX 4866 0 lıyordu .
+SFX 4868 N 1
+SFX 4868 0 culuğunu .
+SFX 4869 N 1
+SFX 4869 0 ştığından .
+SFX 4870 N 1
+SFX 4870 0 tmenin .
+SFX 4871 N 1
+SFX 4871 0 cılara .
+SFX 4872 N 1
+SFX 4872 0 lenmesini .
+SFX 4873 N 1
+SFX 4873 0 yacak .
+SFX 4874 N 1
+SFX 4874 0 lenmesine .
+SFX 4875 N 1
+SFX 4875 0 culuğuna .
+SFX 4876 N 1
+SFX 4876 0 ılacağından .
+SFX 4877 N 1
+SFX 4877 0 mazsanız .
+SFX 4880 N 1
+SFX 4880 0 ilemeyecek .
+SFX 4879 N 1
+SFX 4879 0 leniyordu .
+SFX 4878 N 1
+SFX 4878 0 ıcılarına .
+SFX 4881 N 1
+SFX 4881 0 ılmamış .
+SFX 4884 N 1
+SFX 4884 0 emezdi .
+SFX 4883 N 1
+SFX 4883 0 nabiliyor .
+SFX 4882 N 1
+SFX 4882 0 lanmadığından .
+SFX 4885 N 1
+SFX 4885 0 lıklarla .
+SFX 4887 N 1
+SFX 4887 0 mekteydi .
+SFX 4886 N 1
+SFX 4886 0 ladın .
+SFX 4889 N 1
+SFX 4889 0 tıklarının .
+SFX 4888 N 1
+SFX 4888 0 çiliğine .
+SFX 4890 N 1
+SFX 4890 0 abilmek .
+SFX 4892 N 1
+SFX 4892 0 ladım .
+SFX 4891 N 1
+SFX 4891 0 tırılacak .
+SFX 4896 N 1
+SFX 4896 0 ladık .
+SFX 4895 N 1
+SFX 4895 0 meyen .
+SFX 4894 N 1
+SFX 4894 0 ladı .
+SFX 4893 N 1
+SFX 4893 0 çiliğini .
+SFX 4897 N 1
+SFX 4897 0 anın .
+SFX 4898 N 1
+SFX 4898 0 masıyla .
+SFX 4900 N 1
+SFX 4900 0 msi .
+SFX 4899 N 1
+SFX 4899 0 ulmayacağını .
+SFX 4902 N 1
+SFX 4902 0 ımda .
+SFX 4901 N 1
+SFX 4901 0 dun .
+SFX 4903 N 1
+SFX 4903 0 dum .
+SFX 4904 N 1
+SFX 4904 0 ılmışlar .
+SFX 4905 N 1
+SFX 4905 0 duk .
+SFX 4908 N 1
+SFX 4908 0 lamazsa .
+SFX 4907 N 1
+SFX 4907 0 ulmaya .
+SFX 4906 N 1
+SFX 4906 0 rsan .
+SFX 4909 N 1
+SFX 4909 0 şacağını .
+SFX 4910 N 1
+SFX 4910 0 rsak .
+SFX 4911 N 1
+SFX 4911 0 layamıyoruz .
+SFX 4912 N 1
+SFX 4912 0 lanmıyor .
+SFX 4913 N 1
+SFX 4913 0 lendiği .
+SFX 4914 N 1
+SFX 4914 0 meyeceğini .
+SFX 4915 N 1
+SFX 4915 0 leyemeyecek .
+SFX 4916 N 1
+SFX 4916 0 amayabileceği .
+SFX 4917 N 1
+SFX 4917 0 mediğimiz .
+SFX 4918 N 1
+SFX 4918 0 laşmıştır .
+SFX 4920 N 1
+SFX 4920 0 lana .
+SFX 4919 N 1
+SFX 4919 0 anına .
+SFX 4922 N 1
+SFX 4922 0 muyor .
+SFX 4921 N 1
+SFX 4921 0 meydi .
+SFX 4923 N 1
+SFX 4923 0 amama .
+SFX 4924 N 1
+SFX 4924 0 meyeceğine .
+SFX 4926 N 1
+SFX 4926 0 ıklığını .
+SFX 4925 N 1
+SFX 4925 0 ındakilerle .
+SFX 4927 N 1
+SFX 4927 0 liğimizde .
+SFX 4928 N 1
+SFX 4928 0 lenirken .
+SFX 4930 N 1
+SFX 4930 0 emedik .
+SFX 4929 N 1
+SFX 4929 0 tmalarında .
+SFX 4931 N 1
+SFX 4931 0 emedim .
+SFX 4932 N 1
+SFX 4932 0 ebilirler .
+SFX 4933 N 1
+SFX 4933 0 lıdırlar .
+SFX 4934 N 1
+SFX 4934 0 siyiz .
+SFX 4935 N 1
+SFX 4935 0 tacaklar .
+SFX 4936 N 1
+SFX 4936 0 leştiğinde .
+SFX 4937 N 1
+SFX 4937 0 lama .
+SFX 4938 N 1
+SFX 4938 0 unuzun .
+SFX 4942 N 1
+SFX 4942 0 mıyordu .
+SFX 4941 N 1
+SFX 4941 0 tırdığı .
+SFX 4940 N 1
+SFX 4940 0 ulamayacak .
+SFX 4939 N 1
+SFX 4939 0 tırmalarını .
+SFX 4943 N 1
+SFX 4943 0 acaklarının .
+SFX 4944 N 1
+SFX 4944 0 siyim .
+SFX 4945 N 1
+SFX 4945 0 dirmediğini .
+SFX 4946 N 1
+SFX 4946 0 tmamalı .
+SFX 4947 N 1
+SFX 4947 0 dılar .
+SFX 4948 N 1
+SFX 4948 0 ttıklarını .
+SFX 4949 N 1
+SFX 4949 0 larsın .
+SFX 4950 N 1
+SFX 4950 0 uyor .
+SFX 4952 N 1
+SFX 4952 0 yacaktır .
+SFX 4951 N 1
+SFX 4951 0 muz .
+SFX 4953 N 1
+SFX 4953 0 mdır .
+SFX 4954 N 1
+SFX 4954 0 ılmadık .
+SFX 4955 N 1
+SFX 4955 0 tamayacağı .
+SFX 4956 N 1
+SFX 4956 0 siydi .
+SFX 4957 N 1
+SFX 4957 0 tik .
+SFX 4958 N 1
+SFX 4958 0 layabilecek .
+SFX 4960 N 1
+SFX 4960 0 ündeki .
+SFX 4959 N 1
+SFX 4959 0 amam .
+SFX 4961 N 1
+SFX 4961 0 tir .
+SFX 4962 N 1
+SFX 4962 0 duğunda .
+SFX 4964 N 1
+SFX 4964 0 namadığını .
+SFX 4963 N 1
+SFX 4963 0 tin .
+SFX 4965 N 1
+SFX 4965 0 tim .
+SFX 4966 N 1
+SFX 4966 0 tip .
+SFX 4967 N 1
+SFX 4967 0 laşmıştı .
+SFX 4968 N 1
+SFX 4968 0 malar .
+SFX 4969 N 1
+SFX 4969 0 leyenler .
+SFX 4970 N 1
+SFX 4970 0 lanmıştır .
+SFX 4971 N 1
+SFX 4971 0 lerler .
+SFX 4972 N 1
+SFX 4972 0 lenmelerinin .
+SFX 4973 N 1
+SFX 4973 0 lısın .
+SFX 4976 N 1
+SFX 4976 0 lileri .
+SFX 4975 N 1
+SFX 4975 0 ün .
+SFX 4974 N 1
+SFX 4974 0 lenebileceği .
+SFX 4978 N 1
+SFX 4978 0 üm .
+SFX 4977 N 1
+SFX 4977 0 tmalıyız .
+SFX 4979 N 1
+SFX 4979 0 lilere .
+SFX 4980 N 1
+SFX 4980 0 dama .
+SFX 4982 N 1
+SFX 4982 0 larındakiler .
+SFX 4981 N 1
+SFX 4981 0 tirdi .
+SFX 4983 N 1
+SFX 4983 0 mamaktır .
+SFX 4984 N 1
+SFX 4984 0 üz .
+SFX 4986 N 1
+SFX 4986 0 laşacağı .
+SFX 4985 N 1
+SFX 4985 0 ladıklarından .
+SFX 4988 N 1
+SFX 4988 0 luktur .
+SFX 4987 N 1
+SFX 4987 0 müşlerdi .
+SFX 4990 N 1
+SFX 4990 0 tmeleri .
+SFX 4989 N 1
+SFX 4989 0 cede .
+SFX 4991 N 1
+SFX 4991 0 mişlerse .
+SFX 4992 N 1
+SFX 4992 0 amaz .
+SFX 4993 N 1
+SFX 4993 0 mişler .
+SFX 4994 N 1
+SFX 4994 0 ebildiklerini .
+SFX 4995 N 1
+SFX 4995 0 üleceği .
+SFX 4996 N 1
+SFX 4996 0 melidirler .
+SFX 4997 N 1
+SFX 4997 0 leştirildiğinde .
+SFX 4998 N 1
+SFX 4998 0 nmasına .
+SFX 4999 N 1
+SFX 4999 0 lılığının .
+SFX 5000 N 1
+SFX 5000 0 abilmiş .
+SFX 5003 N 1
+SFX 5003 0 ılanı .
+SFX 5002 N 1
+SFX 5002 0 ılmasında .
+SFX 5001 N 1
+SFX 5001 0 mamdan .
+SFX 5004 N 1
+SFX 5004 0 uydu .
+SFX 5005 N 1
+SFX 5005 0 maktalar .
+SFX 5006 N 1
+SFX 5006 0 sızlık .
+SFX 5007 N 1
+SFX 5007 0 ilenin .
+SFX 5008 N 1
+SFX 5008 0 lanabileceklerini .
+SFX 5009 N 1
+SFX 5009 0 madıklarından .
+SFX 5010 N 1
+SFX 5010 0 larsa .
+SFX 5011 N 1
+SFX 5011 0 den .
+SFX 5012 N 1
+SFX 5012 0 leştirilip .
+SFX 5013 N 1
+SFX 5013 0 abildiği .
+SFX 5014 N 1
+SFX 5014 0 leştirilir .
+SFX 5018 N 1
+SFX 5018 0 min .
+SFX 5017 N 1
+SFX 5017 0 ebilecekleri .
+SFX 5016 N 1
+SFX 5016 0 lerdedir .
+SFX 5015 N 1
+SFX 5015 0 mekteyiz .
+SFX 5019 N 1
+SFX 5019 0 cıları .
+SFX 5020 N 1
+SFX 5020 0 lanmadığının .
+SFX 5021 N 1
+SFX 5021 0 nemediğinden .
+SFX 5022 N 1
+SFX 5022 0 daki .
+SFX 5023 N 1
+SFX 5023 0 miz .
+SFX 5024 N 1
+SFX 5024 0 sizlikle .
+SFX 5025 N 1
+SFX 5025 0 ecekleri .
+SFX 5026 N 1
+SFX 5026 0 ten .
+SFX 5027 N 1
+SFX 5027 0 ydim .
+SFX 5029 N 1
+SFX 5029 0 ndığından .
+SFX 5028 N 1
+SFX 5028 0 sizliklerinden .
+SFX 5033 N 1
+SFX 5033 0 amadıklarından .
+SFX 5032 N 1
+SFX 5032 0 leştirilmeli .
+SFX 5031 N 1
+SFX 5031 0 leştirildi .
+SFX 5030 N 1
+SFX 5030 0 ebilmelidir .
+SFX 5034 N 1
+SFX 5034 0 lüğündeki .
+SFX 5037 N 1
+SFX 5037 0 leştiğinin .
+SFX 5036 N 1
+SFX 5036 0 ıklığına .
+SFX 5035 N 1
+SFX 5035 0 masıysa .
+SFX 5038 N 1
+SFX 5038 0 mle .
+SFX 5039 N 1
+SFX 5039 0 ımlarındaki .
+SFX 5040 N 1
+SFX 5040 0 nılacak .
+SFX 5041 N 1
+SFX 5041 0 ınızla .
+SFX 5044 N 1
+SFX 5044 0 mla .
+SFX 5043 N 1
+SFX 5043 0 lıysa .
+SFX 5042 N 1
+SFX 5042 0 ilmemeli .
+SFX 5045 N 1
+SFX 5045 0 ememişim .
+SFX 5046 N 1
+SFX 5046 0 mayacaklarına .
+SFX 5047 N 1
+SFX 5047 0 sizliklerin .
+SFX 5048 N 1
+SFX 5048 0 mezler .
+SFX 5049 N 1
+SFX 5049 0 ımla .
+SFX 5050 N 1
+SFX 5050 0 lamazdı .
+SFX 5051 N 1
+SFX 5051 0 lığınızın .
+SFX 5052 N 1
+SFX 5052 0 larınını .
+SFX 5053 N 1
+SFX 5053 0 amaya .
+SFX 5055 N 1
+SFX 5055 0 amazsınız .
+SFX 5054 N 1
+SFX 5054 0 tmanız .
+SFX 5056 N 1
+SFX 5056 0 ttıklarına .
+SFX 5057 N 1
+SFX 5057 0 ülecek .
+SFX 5059 N 1
+SFX 5059 0 nmeyecek .
+SFX 5058 N 1
+SFX 5058 0 ttıklarından .
+SFX 5060 N 1
+SFX 5060 0 laştırıldığı .
+SFX 5061 N 1
+SFX 5061 0 lüsü .
+SFX 5064 N 1
+SFX 5064 0 tmanın .
+SFX 5063 N 1
+SFX 5063 0 ulacağına .
+SFX 5062 N 1
+SFX 5062 0 ememişiz .
+SFX 5065 N 1
+SFX 5065 0 yebileceği .
+SFX 5066 N 1
+SFX 5066 0 yenin .
+SFX 5067 N 1
+SFX 5067 0 yanın .
+SFX 5068 N 1
+SFX 5068 0 ıyorsanız .
+SFX 5070 N 1
+SFX 5070 0 laşırken .
+SFX 5069 N 1
+SFX 5069 0 liğimizle .
+SFX 5071 N 1
+SFX 5071 0 düğü .
+SFX 5072 N 1
+SFX 5072 0 yamama .
+SFX 5073 N 1
+SFX 5073 0 dim .
+SFX 5074 N 1
+SFX 5074 0 din .
+SFX 5075 N 1
+SFX 5075 0 uşu .
+SFX 5077 N 1
+SFX 5077 0 dir .
+SFX 5076 N 1
+SFX 5076 0 ımdı .
+SFX 5078 N 1
+SFX 5078 0 leştirilen .
+SFX 5079 N 1
+SFX 5079 0 leştirilmediği .
+SFX 5080 N 1
+SFX 5080 0 selliği .
+SFX 5082 N 1
+SFX 5082 0 leştirdiğini .
+SFX 5081 N 1
+SFX 5081 0 ıcılarını .
+SFX 5083 N 1
+SFX 5083 0 dik .
+SFX 5084 N 1
+SFX 5084 0 meyle .
+SFX 5085 N 1
+SFX 5085 0 luklarla .
+SFX 5086 N 1
+SFX 5086 0 'siyle .
+SFX 5088 N 1
+SFX 5088 0 ışları .
+SFX 5087 N 1
+SFX 5087 0 lemedi .
+SFX 5089 N 1
+SFX 5089 0 amayız .
+SFX 5090 N 1
+SFX 5090 0 lanışına .
+SFX 5091 N 1
+SFX 5091 0 lemede .
+SFX 5092 N 1
+SFX 5092 0 amayıp .
+SFX 5093 N 1
+SFX 5093 0 lanabileceğinin .
+SFX 5094 N 1
+SFX 5094 0 uşa .
+SFX 5096 N 1
+SFX 5096 0 mamasına .
+SFX 5095 N 1
+SFX 5095 0 nmasıdır .
+SFX 5097 N 1
+SFX 5097 0 'sını .
+SFX 5098 N 1
+SFX 5098 0 lenemiyor .
+SFX 5099 N 1
+SFX 5099 0 eceği .

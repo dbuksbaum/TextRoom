@@ -1,0 +1,125 @@
+TextRoom v0.6.3 beta
+http://code.google.com/p/textroom/
+
+
+(C) by Omer Bahri Gordebak 2008 <gordebak at gmail dot com>
+(C) by Petar Toushkov 2008 <peter dot toushkov at gmail dot com>
+
+Released under terms of GNU General Public License v3
+
+Parts of this program's code are from the Phrasis project:
+http://code.google.com/p/phrasis/
+and are
+Copyright (C) 2006 Jacob R Rideout <jacob@jacobrideout.net>
+
+Code, artwork, help and insights by:
+adamvert - from http://ubuntuforums.org/
+Donny Lim - <donnylucky at gmail dot com>
+Magnus Edvardsson (a.k.a. zebulon M) - from http://ubuntuforums.org/
+
+
+1. Introduction
+---------------
+TextRoom is a basic full-screen rich text editor for writers.
+
+2. Requirements
+---------------
+ * Qt >= 4.5.1 
+ * SDL >= 1.2.13
+ * SDL_mixer >= 1.2.8
+ * hunspell >= 1.2.6
+
+3. Installation
+---------------
+To compile TextRoom, you will need the development packages
+(usually named -devel- or -dev in some distros) of the required packages. 
+
+Cd to the directory this README file is. Compilation includes three steps:
+
+qmake
+make
+sudo make install
+make clean
+
+You can run the program by entering "textroom" (without the quotes) in the command line, or simply by clicking the Linux menu entry under Office section.
+
+The program stores its preferences in ~/.config/textroom/TextRoom.conf, but you won't need to edit this file.
+
+4. Features
+-----------
+-Version 0.6.3
+
+ * Migrated spellcheck to Hunspell.
+ * Universal Linuz installer.
+ * Fixed some bugs.
+
+-Version 0.6.2
+
+ * Printing support.
+ * Spellcheck with aspell.
+ * Background images.
+ * More statusbar customizations, like transparency.
+ * File association with .txr files. 
+ * Restoring all settings to defaults.
+ * Plain text only or rich text options.
+
+-Version 0.6.1
+
+ * basic rich text editing: bold, italic, underline, and changing font, font size and color
+ * configurable statusbar colors and fonts
+ * configurable editor width and height
+ * configurable behavior: full-screen on/off, auto save, flow mode (disable delete and backspace keys), load last document on startup, remember position in text for the last file
+ * insert current time and/or date in a configurable fashion
+ * live word count for all text and selected text
+ * live character count option
+ * configurable page count option
+ * live clock on statusbar
+ * targets: setting deadline from a graphical calendar
+ * targets: setting a target word count
+ * targets: setting short deadlines to write in minutes
+ * keyboard shortcuts for the most common tasks (if you start the program for the first time, just press F1 for help)
+ * typing sounds similar to a typewriter which can be disabled.
+may be cross-platform: We are only supporting Linux right now. Because we don't have Windows or MacOSX.
+
+5. How to use TextRoom
+----------------------
+-Keyboard shortcuts:
+
+F1 ----------- Help screen
+F2 ----------- Options and Settings screen.
+F3 ----------- About
+F5 ----------- Check Spelling
+F11 ---------- Fullscreen on/off
+Escape ------- Quit or exit fullscreen, close About and Help dialogs 
+Ctrl+M ------- Minimize TextRoom
+Ctrl+Q ------- Quit
+
+Ctrl+N ------- New
+Ctrl+O ------- Open
+Ctrl+S ------- Save
+Ctrl+Shift+S - Save As
+Ctrl+P ------- Print
+
+Ctrl+X ------- Cut
+Ctrl+C ------- Copy
+Ctrl+V ------- Paste
+Ctrl+A ------- Select All
+Ctrl+Z ------- Undo
+Ctrl+Shift+Z - Redo
+
+Ctrl+W ------- Change the current format
+Ctrl+B ------- Bold
+Ctrl+I ------- Italic
+Ctrl+U ------- Underline
+Ctrl+Up/Down - Change font size
+
+Shift+F4 ----- Go back to cursor position
+Ctrl+F ------- Find
+F4 ----------- Find Next
+Ctrl+F4 ------ Find previous
+
+Ctrl+D ------- Insert Date
+Ctrl+T ------- Insert Time
+
+
+ 
