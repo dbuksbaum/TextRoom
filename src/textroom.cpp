@@ -353,6 +353,8 @@ void TextRoom::autoSave()
 void TextRoom::loadFile(const QString &fileName)
 {
 // Loads the file.
+	QApplication::setOverrideCursor(Qt::WaitCursor);
+
 	QFile file(fileName);
 	if (!file.open(QFile::ReadOnly | QFile::Text))
 	{
@@ -363,28 +365,30 @@ void TextRoom::loadFile(const QString &fileName)
 		newFile();
 		return;
 	}
-
-        QByteArray data = file.readAll();
+	
+	QByteArray data = file.readAll();
 	QTextCodec *codec = QTextCodec::codecForName("UTF-8");
-	QString strall = codec->toUnicode(data);
-	QStringList strlist = strall.split("\n<split>\n", QString::SkipEmptyParts);
-	QString strscratch = strlist.at(0);
-	QString strdoc = strlist.at(1);
 
-	QApplication::setOverrideCursor(Qt::WaitCursor);
-
-	file.seek(0);
 	textEdit->document()->blockSignals(true);
 	textEdit->setPlainText("");
 	textEdit->setUndoRedoEnabled(false);
-	textEdit->append(strdoc);
-	textEdit->moveCursor(QTextCursor::Start);
-	textEdit->setUndoRedoEnabled(true);
-	textEdit->document()->blockSignals(false);
 	scratchDialog->ui.scratchTextEdit->setPlainText("");
-	scratchDialog->ui.scratchTextEdit->append(strscratch);
 
-	QApplication::restoreOverrideCursor();
+	QString strall = codec->toUnicode(data);
+	QStringList strlist = strall.split("\n<split>\n", QString::SkipEmptyParts);
+	if (fileName.endsWith("txr") && strlist.length() > 1)
+	{
+		QString strscratch = strlist.at(0);
+		QString strdoc = strlist.at(1);
+
+		//file.seek(0); // why?
+		textEdit->append(strdoc);
+		scratchDialog->ui.scratchTextEdit->append(strscratch);
+	}
+	else
+	{
+		textEdit->append(strall);
+	}
 
 	setCurrentFile(fileName);
 	if (fileName.endsWith("txt"))
@@ -392,10 +396,17 @@ void TextRoom::loadFile(const QString &fileName)
 		textEdit->setFont(defaultFont);
 	}
 	QString text = textEdit->document()->toPlainText();
+
+	textEdit->moveCursor(QTextCursor::Start);
+	textEdit->setUndoRedoEnabled(true);
+	textEdit->document()->blockSignals(false);
+
 	parasold = text.count("\n", Qt::CaseSensitive);
 	indentLines(indentValue);
 	vPositionChanged();
 	getFileStatus();
+
+	QApplication::restoreOverrideCursor();
 }
 
 bool TextRoom::maybeSave()
@@ -1022,71 +1033,71 @@ void TextRoom::spellCheck()
 	}
 	else
 		silent = true;
-              QString textVar = textEdit->document()->toPlainText();
-              textVar.replace(" ", "+");
-              textVar.replace("\n", "+");
-              textVar.replace("\t", "+");
-              textVar.replace("\r", "+");
-              textVar.replace(".", "+");
-              textVar.replace(",", "+");
-              textVar.replace(";", "+");
-              textVar.replace("!", "+");
-              textVar.replace("?", "+");
-              textVar.replace("(", "+");
-              textVar.replace(")", "+");
-              textVar.replace(":", "+");
-              textVar.replace("@", "+");
-              textVar.replace("&", "+");
-              textVar.replace("$", "+");
-              textVar.replace("%", "+");
-              textVar.replace("\"", "+");
-              QStringList wordList = textVar.split("+", QString::SkipEmptyParts);
-
-              char * affFile = (char *) "/usr/share/myspell/dicts/en_US.aff";
-              char * dicFile = (char *) "/usr/share/myspell/dicts/en_US.dic";
-              if (language == 0)
-              {
-                    affFile = (char *) "/usr/share/myspell/dicts/en_US.aff";
-                    dicFile = (char *) "/usr/share/myspell/dicts/en_US.dic";
-              }
-              else if (language == 1)
-              {
-                    affFile = (char *) "/usr/share/myspell/dicts/tr.aff";
-                    dicFile = (char *) "/usr/share/myspell/dicts/tr.dic";
-              }
-
-              pMS= new Hunspell(affFile, dicFile);
-              QTextCharFormat highlightFormat;
-              highlightFormat.setUnderlineColor(Qt::red);
-              highlightFormat.setUnderlineStyle(QTextCharFormat::SpellCheckUnderline);
-              QTextCharFormat defaultFormat;
-              defaultFormat.setUnderlineStyle(QTextCharFormat::NoUnderline);
-              if ( !isHighlighted )
-                 isHighlighted = true;
-              else
-              {
-                  isHighlighted = false;
-              }
-              QTextCursor findCursor(textEdit->document());
-              findCursor.movePosition(QTextCursor::Start);
-
-              foreach (QString word, wordList)
-              {
-              QTextCursor highlightCursor(textEdit->document()->find(word, findCursor));
-              findCursor.setPosition(highlightCursor.position());
-              findCursor.movePosition(QTextCursor::EndOfWord);
-              QByteArray ba = word.toUtf8();
-              char * wordChar = ba.data();
-              int correct = pMS->spell(wordChar);
-              if ( !correct && isHighlighted )
-                    highlightCursor.mergeCharFormat(highlightFormat);
-              else
-              {
-                    QTextCursor notUnderlined(textEdit->document()->find(" ", findCursor));
-                    notUnderlined.mergeCharFormat(defaultFormat);
-                    highlightCursor.mergeCharFormat(defaultFormat);
-                }
-              }
+	QString textVar = textEdit->document()->toPlainText();
+	textVar.replace(" ", "+");
+	textVar.replace("\n", "+");
+	textVar.replace("\t", "+");
+	textVar.replace("\r", "+");
+	textVar.replace(".", "+");
+	textVar.replace(",", "+");
+	textVar.replace(";", "+");
+	textVar.replace("!", "+");
+	textVar.replace("?", "+");
+	textVar.replace("(", "+");
+	textVar.replace(")", "+");
+	textVar.replace(":", "+");
+	textVar.replace("@", "+");
+	textVar.replace("&", "+");
+	textVar.replace("$", "+");
+	textVar.replace("%", "+");
+	textVar.replace("\"", "+");
+	QStringList wordList = textVar.split("+", QString::SkipEmptyParts);
+	
+	char * affFile = (char *) "/usr/share/myspell/dicts/en_US.aff";
+	char * dicFile = (char *) "/usr/share/myspell/dicts/en_US.dic";
+	if (language == 0)
+	{
+		affFile = (char *) "/usr/share/myspell/dicts/en_US.aff";
+		dicFile = (char *) "/usr/share/myspell/dicts/en_US.dic";
+	}
+	else if (language == 1)
+	{
+		affFile = (char *) "/usr/share/myspell/dicts/tr.aff";
+		dicFile = (char *) "/usr/share/myspell/dicts/tr.dic";
+	}
+	
+	pMS= new Hunspell(affFile, dicFile);
+	QTextCharFormat highlightFormat;
+	highlightFormat.setUnderlineColor(Qt::red);
+	highlightFormat.setUnderlineStyle(QTextCharFormat::SpellCheckUnderline);
+	QTextCharFormat defaultFormat;
+	defaultFormat.setUnderlineStyle(QTextCharFormat::NoUnderline);
+	if ( !isHighlighted )
+		isHighlighted = true;
+	else
+	{
+		isHighlighted = false;
+	}
+	QTextCursor findCursor(textEdit->document());
+	findCursor.movePosition(QTextCursor::Start);
+	
+	foreach (QString word, wordList)
+	{
+		QTextCursor highlightCursor(textEdit->document()->find(word, findCursor));
+		findCursor.setPosition(highlightCursor.position());
+		findCursor.movePosition(QTextCursor::EndOfWord);
+		QByteArray ba = word.toUtf8();
+		char * wordChar = ba.data();
+		int correct = pMS->spell(wordChar);
+		if ( !correct && isHighlighted )
+			highlightCursor.mergeCharFormat(highlightFormat);
+		else
+		{
+			QTextCursor notUnderlined(textEdit->document()->find(" ", findCursor));
+			notUnderlined.mergeCharFormat(defaultFormat);
+			highlightCursor.mergeCharFormat(defaultFormat);
+		}
+	}
 	if (silent)
 		isSound = false;
 	else
@@ -1095,18 +1106,18 @@ void TextRoom::spellCheck()
 
 void TextRoom::showScratchPad()
 {
-        if (!scratchDialog->isVisible())
-        {
+	if (!scratchDialog->isVisible())
+	{
         int x = (width()/2)-171;
         int y = (height()/2)-171;
-	scratchDialog->move(x, y);
+		scratchDialog->move(x, y);
         scratchDialog->setWindowFlags(Qt::FramelessWindowHint);
         scratchDialog->showNormal();
-        }
-        else
-        {
+	}
+	else
+	{
         scratchDialog->hide();
-        }
+	}
 }
 
 void TextRoom::indentLines(int value)
@@ -1122,13 +1133,13 @@ void TextRoom::indentLines(int value)
 	QString text = textEdit->document()->toPlainText();
 	int paras = text.count("\n", Qt::CaseSensitive)+1;
 	QTextCursor tc = textEdit->textCursor();
-        tc.movePosition(QTextCursor::Start);
+	tc.movePosition(QTextCursor::Start);
 	for (int i=0; i<paras; i++)
 	{
-	QTextBlockFormat tfor;
-	tfor.setTextIndent(value);
-	tc.mergeBlockFormat(tfor);
-	tc.movePosition(QTextCursor::NextBlock);
+		QTextBlockFormat tfor;
+		tfor.setTextIndent(value);
+		tc.mergeBlockFormat(tfor);
+		tc.movePosition(QTextCursor::NextBlock);
 	}
 	if (silent)
 		isSound = false;
