@@ -69,8 +69,8 @@ private slots:
 	void find_next();
 	void find_previous();
 	void sCursor();
-	void togleFullScreen();
-	void togleEscape();
+	void toggleFullScreen();
+	void toggleEscape();
 	void documentWasModified();	
 	void getFileStatus();
 	void readSettings();
@@ -97,6 +97,7 @@ private:
 	void setCurrentFile(const QString &fileName);
 	void mergeFormatOnWordOrSelection(const QTextCharFormat &format);
 	void indentLines(int value);
+	int getWordCount(const QString &text);
 
 	HelpDialog *helpDialog;
 	OptionsDialog *optionsDialog;
@@ -110,7 +111,6 @@ private:
 	QString curFile;
 	QString curDir;
 	QString lastSearch;
-	QString text;
 	QString deadlinetext;
 	QDate deadline;
 	QDate today;
@@ -119,10 +119,11 @@ private:
 	QString timeFormat;
 	QString defaultDir;
 	QString shownName;
+	bool wordCountChanged;
+	int words;
 	int wordcount;
 	int parasold;
 	int parasnew;
-	QString wordcounttext;
 	QFont defaultFont;
 	QPixmap bg;
 	int alarm;
@@ -146,11 +147,6 @@ private:
 	int characterCount;
 	int language;
 	int indentValue;
-	QString pageCountText;
-	QString pageText;
-	QString characterCountText;
-	QString characterText;
-	QString selectedText;
 	QString backgroundImage;
 	int pageCountFormula;
 	bool ind;

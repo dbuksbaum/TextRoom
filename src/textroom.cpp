@@ -89,12 +89,20 @@ TextRoom::TextRoom(QWidget *parent, Qt::WFlags f)
 	}
 
 // Load sounds.
+#ifdef Q_OS_WIN32
+	soundenter = Mix_LoadWAV("sounds/keyenter.wav");
+#else
 	soundenter = Mix_LoadWAV("/usr/share/sounds/keyenter.wav");
+#endif
 	if(soundenter == NULL) {
 		printf("Unable to load WAV file: %s\n", Mix_GetError());
 	}
 
+#ifdef Q_OS_WIN32
+	soundany = Mix_LoadWAV("sounds/keyany.wav");
+#else
 	soundany = Mix_LoadWAV("/usr/share/sounds/keyany.wav");
+#endif
 	if(soundany == NULL) {
 		printf("Unable to load WAV file: %s\n", Mix_GetError());
 	}
@@ -115,8 +123,8 @@ TextRoom::TextRoom(QWidget *parent, Qt::WFlags f)
 	new QShortcut ( QKeySequence(tr("Ctrl+Q", "Quit Application")) , this, SLOT( close() ) );
 	new QShortcut ( QKeySequence(tr("Alt+F4", "Quit Application")) , this, SLOT( close() ) );
 	new QShortcut ( QKeySequence(tr("Ctrl+F", "Find Text")) , this, SLOT( find() ) );
-	new QShortcut ( QKeySequence(tr("F11", "Toggle Fullscreen")) , this, SLOT( togleFullScreen() ) );
-	new QShortcut ( QKeySequence(tr("Esc", "Toggle Fullscreen")) , this, SLOT( togleEscape() ) );
+	new QShortcut ( QKeySequence(tr("F11", "Toggle Fullscreen")) , this, SLOT( toggleFullScreen() ) );
+	new QShortcut ( QKeySequence(tr("Esc", "Toggle Fullscreen")) , this, SLOT( toggleEscape() ) );
 	new QShortcut ( QKeySequence(tr("Ctrl+M", "Minimize TextRoom")) , this, SLOT( showMinimized() ) );
 	new QShortcut ( QKeySequence(tr("F4", "Find Next")) , this, SLOT( find_next() ) );
 	new QShortcut ( QKeySequence(tr("Ctrl+F4", "Find Previous")) , this, SLOT( find_previous() ) );
@@ -186,7 +194,7 @@ void TextRoom::playSound(Mix_Chunk *sound)
 	}
 }
 
-void TextRoom::togleEscape()
+void TextRoom::toggleEscape()
 {
 // Toggle Fullscreen or if visible hide Help when ESC is pressed.
 	if ( helpDialog->isVisible() || aboutDialog->isVisible() || scratchDialog->isVisible() )
@@ -196,7 +204,7 @@ void TextRoom::togleEscape()
 		scratchDialog->hide();
 	}
 	else if ( isFullScreen() )
-		togleFullScreen();
+		toggleFullScreen();
 	else
 		close();
 
@@ -222,7 +230,7 @@ void TextRoom::insertTime()
 	textEdit->insertPlainText(clock);
 }
 
-void TextRoom::togleFullScreen()
+void TextRoom::toggleFullScreen()
 {
 // Toggle Full Screen.
 
@@ -273,6 +281,7 @@ void TextRoom::newFile()
 		textEdit->verticalScrollBar()->setValue(0);
 		textEdit->setFont(defaultFont);
 		indentLines(indentValue);
+		wordCountChanged = true;
 	}
 }
 
@@ -390,13 +399,14 @@ void TextRoom::loadFile(const QString &fileName)
 	QString text = textEdit->document()->toPlainText();
 
 	textEdit->moveCursor(QTextCursor::Start);
-	setCurrentFile(fileName);
 
-	parasold = text.count("\n", Qt::CaseSensitive);
+	parasold = textEdit->document()->blockCount();
 	indentLines(indentValue);
+	setCurrentFile(fileName);
 	textEdit->setUndoRedoEnabled(true);
 	textEdit->document()->blockSignals(false);
 	vPositionChanged();
+	wordCountChanged = true;
 	getFileStatus();
 
 	QApplication::restoreOverrideCursor();
@@ -492,7 +502,6 @@ void TextRoom::getFileStatus()
 {
 // Calculate deadline
 	QString showdeadline;
-	QString target;
 	int daysremaining;
 	QString todaytext = QDate::currentDate().toString("yyyyMMdd");
 	today = QDate::fromString(todaytext, "yyyyMMdd");
@@ -507,81 +516,82 @@ void TextRoom::getFileStatus()
 	{
 		showdeadline = daysto + " Days remaining. ";
 	}
-	int percent;
-	QString percenttext;
-	QString statsLabelStr;
-	QString statsLabelToolTip;
-// Show clock.
+// Show deadline + clock
 	QDateTime now = QDateTime::currentDateTime();
 	QString clock = now.toString( timeFormat );
-
-	const QString text( textEdit->document()->toPlainText() );
+	deadlineLabel->setText(showdeadline + clock);
 
 //Compute word count
-	QRegExp wordsRX("\\s+");
-	QStringList list = text.split(wordsRX,QString::SkipEmptyParts);
-	QStringList listSelected = textEdit->textCursor().selection().toPlainText().split(wordsRX, QString::SkipEmptyParts);
-	const int words = list.count();
-	const int wordsSelected = listSelected.count();
-	if (wordsSelected == 0)
+	QString text, target, selectedText, pageText, characterText;
+	text = textEdit->document()->toPlainText();
+
+	if (wordCountChanged)
+		words = getWordCount(text);
+	if (textEdit->textCursor().hasSelection())
 	{
-		selectedText = "";
+		const int wordsSelected = getWordCount(textEdit->textCursor().selection().toPlainText());
+		if (wordsSelected > 0)
+			selectedText = selectedText.setNum(wordsSelected) + "/";
 	}
-	else
-	{
-		selectedText = selectedText.setNum(wordsSelected);
-		selectedText = selectedText + "/";
-	}
+// Compute page count
 	if (isPageCount)
 	{
-		float pageC = ((words/pageCountFormula)+1);
-		pageCount = (int)pageC;
-		pageCountText = pageCountText.setNum(pageCount);
-                pageText = " Pages:" + pageCountText;
+		pageCount = (int)((words/pageCountFormula)+1);
+		pageText = tr(" Pages: %1").arg(pageCount);
 	}
-	else
-	{
-		pageText = "";
-	}
-// Compute Character Count
+// Compute character count
 	if (isCharacterCount)
 	{
-		QStringList charsWithoutLineEnds = text.split("\n", QString::SkipEmptyParts);
-		QString charsCombined = charsWithoutLineEnds.join("");
-		QStringList charsWithoutReturns = charsCombined.split("\r", QString::SkipEmptyParts);
-		charsCombined = charsWithoutReturns.join("");
-		QStringList charsWithoutTabs = charsCombined.split("\t", QString::SkipEmptyParts);
-		charsCombined = charsWithoutTabs.join("");
-		characterCount = charsCombined.size();
-		characterCountText = characterCountText.setNum(characterCount);
-		characterText = " Characters:" + characterCountText;
+		if (wordCountChanged)
+			characterCount = textEdit->document()->characterCount() - parasold;
+		characterText = tr(" Characters: %1").arg(characterCount);
 	}
-	else
+	if (wordcount > 0)
 	{
-		characterText = "";
+		int percent = (int)(words*100/wordcount);
+		target = tr(" Target: %1 (%2%)").arg(wordcount).arg(percent);
 	}
-	if (wordcount == 0)
-	{
-                        target = characterText + pageText;
-	}
-	else if (words < wordcount || words > wordcount)
-	{
-		float f = words*100/wordcount;
-		percent = (int)f;
-		percenttext = percenttext.setNum(percent);
-        target = " Target:" + wordcounttext + "(%" + percenttext + ")" + characterText + pageText;
-	}
-    deadlineLabel->setText(showdeadline + clock);
-    statsLabel->setText("Words:" + selectedText + tr("%1").arg(words) + target);
+	statsLabel->setText(tr("Words: %1%2%3%4%5").arg(selectedText).arg(words).arg(target).arg(characterText).arg(pageText));
+	wordCountChanged = false;
 }
+
+int TextRoom::getWordCount(const QString &text)
+{
+	int words = 0;
+	bool lastWasWhitespace = false;
+
+	for (int i = 0; i < text.count(); i++)
+	{
+		if (text.at(i).isSpace())
+		{
+			if (!lastWasWhitespace)
+			{
+				words++;
+			}
+			lastWasWhitespace = true;
+		}
+		else
+		{
+			lastWasWhitespace = false;
+		}
+	}
+
+	if ((!lastWasWhitespace) && (text.count() > 0))
+	{
+		// one more if the last character is not a whitespace
+		words++;
+	}
+
+	return words;
+}
+
 
 void TextRoom::documentWasModified()
 {
 // If document is modified, do stuff.
 	setWindowModified(textEdit->document()->isModified());
 	
-	QString text = textEdit->document()->toPlainText();
-	parasnew = text.count("\n", Qt::CaseSensitive);
+	parasnew = textEdit->document()->blockCount();
 
 	if (isAutoSave && numChanges++ > 200) {
 		numChanges = 0;	
@@ -603,6 +613,8 @@ void TextRoom::documentWasModified()
 	parasold = parasnew;
 
 	vPositionChanged();
+
+	wordCountChanged = true;
 }
 
 void TextRoom::alarmTime()
@@ -620,7 +632,7 @@ void TextRoom::readSettings()
 	QFile file( settings->fileName() );
 	if ( !file.exists() )
 	{
-		togleFullScreen();
+		toggleFullScreen();
 		writeSettings();
 		return;
 	}
@@ -670,7 +682,6 @@ void TextRoom::readSettings()
 	deadlinetext = settings->value("Deadline", todaytext).toString();
 	deadline = QDate::fromString(deadlinetext, "yyyyMMdd");
 	wordcount = settings->value("WordCount", 0).toInt();
-	wordcounttext = settings->value("WordCount", 0).toString();
 	editorWidth = settings->value("EditorWidth", 800).toInt();
 	editorTopSpace = settings->value("EditorTopSpace", 0).toInt();
 	editorBottomSpace = settings->value("EditorBottomSpace", 0).toInt();
@@ -684,7 +695,7 @@ void TextRoom::readSettings()
 	language = settings->value("Language", 0).toInt();
 	indentValue = settings->value("Indent", 50).toInt();
 
-	indentLines(indentValue);
+	textEdit->setMaximumWidth(editorWidth);
 
 	textEdit->document()->blockSignals(true);
 	bool modified = textEdit->document()->isModified();
@@ -699,6 +710,9 @@ void TextRoom::readSettings()
 	{
 		textEdit->setAcceptRichText( true );
 	}
+
+	indentLines(indentValue);
+
 	setWindowModified(modified);
 	textEdit->document()->setModified(modified);
 	textEdit->document()->blockSignals(false);
@@ -725,15 +739,16 @@ void TextRoom::readSettings()
 		QTimer::singleShot(timeOut, this, SLOT(alarmTime()));
 	}
 	
-	textEdit->setMaximumWidth(editorWidth);
-
-
 	if ( (optOpenLastFile = settings->value("RecentFiles/OpenLastFile", true).toBool()) )
 	{
 		curFile = settings->value("RecentFiles/LastFile", curFile).toString();
 		if ( (isSaveCursor = settings->value("RecentFiles/SavePosition", true).toBool() ))
 			cPosition = settings->value("RecentFiles/AtPosition", cPosition).toInt();
 	}
+
+	wordCountChanged = true;
+	getFileStatus();
+	sCursor();
 }
 
 void TextRoom::writeSettings()
@@ -1000,14 +1015,7 @@ void TextRoom::about()
 
 void TextRoom::spellCheck()
 {
-	bool silent = true;
-	if (isSound)
-	{
-		isSound = false;
-		silent = false;
-	}
-	else
-		silent = true;
+	textEdit->document()->blockSignals(true);
 	QString textVar = textEdit->document()->toPlainText();
 	textVar.replace(" ", "+");
 	textVar.replace("\n", "+");
@@ -1028,20 +1036,28 @@ void TextRoom::spellCheck()
 	textVar.replace("\"", "+");
 	QStringList wordList = textVar.split("+", QString::SkipEmptyParts);
 	
-	char * affFile = (char *) "/usr/share/myspell/dicts/en_US.aff";
-	char * dicFile = (char *) "/usr/share/myspell/dicts/en_US.dic";
+	QString affFileName;
+	QString dicFileName;
+#ifdef Q_OS_WIN32
+	affFileName = "dict/";
+	dicFileName = "dict/";
+#else
+	affFileName = "/usr/share/myspell/dicts/";
+	dicFileName = "/usr/share/myspell/dicts/";
+#endif
+
 	if (language == 0)
 	{
-		affFile = (char *) "/usr/share/myspell/dicts/en_US.aff";
-		dicFile = (char *) "/usr/share/myspell/dicts/en_US.dic";
+		affFileName.append("en_US.aff");
+		dicFileName.append("en_US.dic");
 	}
 	else if (language == 1)
 	{
-		affFile = (char *) "/usr/share/myspell/dicts/tr.aff";
-		dicFile = (char *) "/usr/share/myspell/dicts/tr.dic";
+		affFileName.append("tr.aff");
+		dicFileName.append("tr.dic");
 	}
 	
-	pMS= new Hunspell(affFile, dicFile);
+	pMS= new Hunspell(affFileName.toLocal8Bit(), dicFileName.toLocal8Bit());
 	QTextCharFormat highlightFormat;
 	highlightFormat.setUnderlineColor(Qt::red);
 	highlightFormat.setUnderlineStyle(QTextCharFormat::SpellCheckUnderline);
@@ -1073,10 +1089,7 @@ void TextRoom::spellCheck()
 			highlightCursor.mergeCharFormat(defaultFormat);
 		}
 	}
-	if (silent)
-		isSound = false;
-	else
-		isSound = true;
+	textEdit->document()->blockSignals(true);
 }
 
 void TextRoom::showScratchPad()
@@ -1097,14 +1110,7 @@ void TextRoom::showScratchPad()
 
 void TextRoom::indentLines(int value)
 {
-/*	bool silent = true;
-	if (isSound)
-	{
-		isSound = false;
-		silent = false;
-	}
-	else
-		silent = true;
+	textEdit->document()->blockSignals(true);
 	QString text = textEdit->document()->toPlainText();
 	int paras = text.count("\n", Qt::CaseSensitive)+1;
 	QTextCursor tc = textEdit->textCursor();
@@ -1116,8 +1122,5 @@ void TextRoom::indentLines(int value)
 		tc.mergeBlockFormat(tfor);
 		tc.movePosition(QTextCursor::NextBlock);
 	}
-	if (silent)
-		isSound = false;
-	else
-		isSound = true;*/
+	textEdit->document()->blockSignals(false);
 }
