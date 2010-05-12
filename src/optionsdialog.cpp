@@ -68,9 +68,8 @@ void OptionsDialog::selectDir()
 void OptionsDialog::reaSettings()
 {
 #ifdef Q_OS_WIN32
-	QSettings settings(QDir::homePath()+"/Application Data/"+qApp->applicationName()+".ini", QSettings::IniFormat);
+	QSettings settings(QSettings::IniFormat, QSettings::UserScope, QApplication::organizationName());
 #else
-
 	QSettings settings;
 #endif
 
@@ -144,15 +143,14 @@ void OptionsDialog::writSettings()
 {
 
 #ifdef Q_OS_WIN32
-	QSettings settings(QDir::homePath()+"/Application Data/"+qApp->applicationName()+".ini", QSettings::IniFormat);
+	QSettings settings(QSettings::IniFormat, QSettings::UserScope, QApplication::organizationName());
 #else
-
 	QSettings settings;
 #endif
 
-        settings.setValue("Colors/FontColor", fcolor.name() );
-        settings.setValue("Colors/Background", bgcolor.name() );
-        settings.setValue("Colors/StatusColor", scolor.name() );
+	settings.setValue("Colors/FontColor", fcolor.name() );
+	settings.setValue("Colors/Background", bgcolor.name() );
+	settings.setValue("Colors/StatusColor", scolor.name() );
 
 	settings.setValue("RecentFiles/OpenLastFile", ui.loadOnStartCheckBox->isChecked() );
 	settings.setValue("RecentFiles/SavePosition", ui.saveCursorCheckBox->isChecked() );
@@ -172,32 +170,32 @@ void OptionsDialog::writSettings()
 	settings.setValue("EditorTopSpace", ui.editorTopSpaceSpinBox->value() );
 	settings.setValue("EditorBottomSpace", ui.editorBottomSpaceSpinBox->value() );
 	settings.setValue("PageCountFormula", ui.pageCountSpinBox->value() );
-        settings.setValue("DateFormatInt", ui.dateComboBox->currentIndex() );
-        settings.setValue("DateFormat", ui.dateComboBox->currentText() );
+	settings.setValue("DateFormatInt", ui.dateComboBox->currentIndex() );
+	settings.setValue("DateFormat", ui.dateComboBox->currentText() );
 	settings.setValue("DefaultDirectory", ui.defaultSaveLocationLineEdit->text() );
-        settings.setValue("24-Hour", ui.twentyfourCheckBox->isChecked() );
-        settings.setValue("BackgroundImage", ui.backgroundLineEdit->text() );
-        settings.setValue("BoldStatus", ui.statusbarBoldCheckBox->isChecked() );
-        settings.setValue("ItalicStatus", ui.statusbarItalicCheckBox->isChecked() );
-        settings.setValue("SizeStatus", ui.statusbarSpinBox->value() );
-        settings.setValue("DefaultFontSize", ui.fontSizeSpinBox->value() );
-        settings.setValue("PlainText", ui.plaintextCheckBox->isChecked() );
-        settings.setValue("Language", ui.languageComboBox->currentIndex() );
+	settings.setValue("24-Hour", ui.twentyfourCheckBox->isChecked() );
+	settings.setValue("BackgroundImage", ui.backgroundLineEdit->text() );
+	settings.setValue("BoldStatus", ui.statusbarBoldCheckBox->isChecked() );
+	settings.setValue("ItalicStatus", ui.statusbarItalicCheckBox->isChecked() );
+	settings.setValue("SizeStatus", ui.statusbarSpinBox->value() );
+	settings.setValue("DefaultFontSize", ui.fontSizeSpinBox->value() );
+	settings.setValue("PlainText", ui.plaintextCheckBox->isChecked() );
+	settings.setValue("Language", ui.languageComboBox->currentIndex() );
 	settings.setValue("Indent", ui.indentSpinBox->value() );
 	
 	QFont font;
 	QFont defaultFont;
 	
 	font = ui.statusbarFontComboBox->currentFont();
-        font.setBold( ui.statusbarBoldCheckBox->isChecked() );
-        font.setItalic( ui.statusbarItalicCheckBox->isChecked() );
+	font.setBold( ui.statusbarBoldCheckBox->isChecked() );
+	font.setItalic( ui.statusbarItalicCheckBox->isChecked() );
 	font.setPointSize(ui.statusbarSpinBox->value() );
-        settings.setValue("StatusFont", font.toString() );
+	settings.setValue("StatusFont", font.toString() );
 
 	defaultFont = ui.fontComboBox->currentFont();
 	defaultFont.setPointSize(ui.fontSizeSpinBox->value() );
-        settings.setValue("DefaultFont", defaultFont.toString() );
-   	
+	settings.setValue("DefaultFont", defaultFont.toString() );
+
 }
 
 void OptionsDialog::on_pushButtonOk_clicked()
@@ -280,11 +278,10 @@ void OptionsDialog::on_backgroundImagePushButton_clicked()
 void OptionsDialog::on_restorePushButton_clicked()
 {
 #ifdef Q_OS_WIN32
-        QSettings settings(QDir::homePath()+"/Application Data/"+qApp->applicationName()+".ini", QSettings::IniFormat);
+	QSettings settings(QSettings::IniFormat, QSettings::UserScope, QApplication::organizationName());
 #else
-
-        QSettings settings;
+	QSettings settings;
 #endif
-        settings.clear();
-        reaSettings();
-    }
+	settings.clear();
+	reaSettings();
+}

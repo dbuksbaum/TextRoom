@@ -47,9 +47,6 @@ TextRoom::TextRoom(QWidget *parent, Qt::WFlags f)
 {
 	setupUi(this);
 	setObjectName("textroom");
-	
-// Read settings saved by Options Dialog.
-	readSettings();
 
 // Set the default values for variables.
 	numChanges = 0;
@@ -57,39 +54,47 @@ TextRoom::TextRoom(QWidget *parent, Qt::WFlags f)
 	wordcount = 0;
 	alarm = 0;
 	parasold = 0;
-        isHighlighted = false;
+	isHighlighted = false;
+
+// Read settings saved by Options Dialog.
+#ifdef Q_OS_WIN32
+	settings = new QSettings(QSettings::IniFormat, QSettings::UserScope, QApplication::applicationName());
+#else
+	settings = new QSettings();
+#endif
+	readSettings();
 
 // Create the dialog windows.
 	optionsDialog = new OptionsDialog(this);
 	helpDialog = new HelpDialog(this);
 	selectFont = new SelectFont(this);
-        aboutDialog = new AboutDialog(this);
+	aboutDialog = new AboutDialog(this);
 	scratchDialog = new ScratchDialog(this);
 
 // Sound adjustments.
-        int audio_rate = 11025;
-        Uint16 audio_format = AUDIO_S16SYS;
-        int audio_channels = 2;
+	int audio_rate = 11025;
+	Uint16 audio_format = AUDIO_S16SYS;
+	int audio_channels = 2;
 	int audio_buffers = 1024;
 	
 	if ( SDL_Init(SDL_INIT_AUDIO) < 0 ) {
-	fprintf(stderr, "Unable to init SDL: %s\n", SDL_GetError());
-	exit(1);
+		fprintf(stderr, "Unable to init SDL: %s\n", SDL_GetError());
+		exit(1);
 	}
 	atexit(SDL_Quit);
 	
 	if(Mix_OpenAudio(audio_rate, audio_format, audio_channels, audio_buffers) != 0) {
-	printf("Unable to initialize audio: %s\n", Mix_GetError());
-	exit(1);
+		printf("Unable to initialize audio: %s\n", Mix_GetError());
+		exit(1);
 	}
 
 // Load sounds.
-        soundenter = Mix_LoadWAV("/usr/share/sounds/keyenter.wav");
+	soundenter = Mix_LoadWAV("/usr/share/sounds/keyenter.wav");
 	if(soundenter == NULL) {
 		printf("Unable to load WAV file: %s\n", Mix_GetError());
 	}
 
-        soundany = Mix_LoadWAV("/usr/share/sounds/keyany.wav");
+	soundany = Mix_LoadWAV("/usr/share/sounds/keyany.wav");
 	if(soundany == NULL) {
 		printf("Unable to load WAV file: %s\n", Mix_GetError());
 	}
@@ -99,11 +104,11 @@ TextRoom::TextRoom(QWidget *parent, Qt::WFlags f)
 	new QShortcut ( QKeySequence(QKeySequence::Open), this, SLOT( open() ) );
 	new QShortcut ( QKeySequence(QKeySequence::Save), this, SLOT( save() ) );
 	new QShortcut ( QKeySequence(QKeySequence::HelpContents), this, SLOT( help() ) );
-        new QShortcut ( QKeySequence(tr("F2", "Options")), this, SLOT( options() ) );
-        new QShortcut ( QKeySequence(tr("F3", "About")), this, SLOT( about() ) );
-        new QShortcut ( QKeySequence(tr("F5", "Spell Check")), this, SLOT( spellCheck() ) );
-        new QShortcut ( QKeySequence(tr("F6", "Scratch Pad")), this, SLOT( showScratchPad() ) );
-        new QShortcut ( QKeySequence(tr("Ctrl+P", "Print")), this, SLOT( print() ) );
+	new QShortcut ( QKeySequence(tr("F2", "Options")), this, SLOT( options() ) );
+	new QShortcut ( QKeySequence(tr("F3", "About")), this, SLOT( about() ) );
+	new QShortcut ( QKeySequence(tr("F5", "Spell Check")), this, SLOT( spellCheck() ) );
+	new QShortcut ( QKeySequence(tr("F6", "Scratch Pad")), this, SLOT( showScratchPad() ) );
+	new QShortcut ( QKeySequence(tr("Ctrl+P", "Print")), this, SLOT( print() ) );
 	new QShortcut ( QKeySequence(tr("Shift+Ctrl+S", "Save As")), this, SLOT( saveAs() ) );
 	new QShortcut ( QKeySequence(tr("Ctrl+D", "Insert Date")), this, SLOT( insertDate() ) );
 	new QShortcut ( QKeySequence(tr("Ctrl+T", "Insert Time")), this, SLOT( insertTime() ) );	
@@ -113,8 +118,8 @@ TextRoom::TextRoom(QWidget *parent, Qt::WFlags f)
 	new QShortcut ( QKeySequence(tr("F11", "Toggle Fullscreen")) , this, SLOT( togleFullScreen() ) );
 	new QShortcut ( QKeySequence(tr("Esc", "Toggle Fullscreen")) , this, SLOT( togleEscape() ) );
 	new QShortcut ( QKeySequence(tr("Ctrl+M", "Minimize TextRoom")) , this, SLOT( showMinimized() ) );
-        new QShortcut ( QKeySequence(tr("F4", "Find Next")) , this, SLOT( find_next() ) );
-        new QShortcut ( QKeySequence(tr("Ctrl+F4", "Find Previous")) , this, SLOT( find_previous() ) );
+	new QShortcut ( QKeySequence(tr("F4", "Find Next")) , this, SLOT( find_next() ) );
+	new QShortcut ( QKeySequence(tr("Ctrl+F4", "Find Previous")) , this, SLOT( find_previous() ) );
 	new QShortcut ( QKeySequence(tr("Ctrl+B", "Bold")) , this, SLOT( textBold() ) );
 	new QShortcut ( QKeySequence(tr("Ctrl+I", "Italic")) , this, SLOT( textItalic() ) );
 	new QShortcut ( QKeySequence(tr("Ctrl+Up", "Increase Text Size")) , this, SLOT( textSizeUp() ) );
@@ -124,22 +129,12 @@ TextRoom::TextRoom(QWidget *parent, Qt::WFlags f)
 	// Service: show cursor
 	new QShortcut ( QKeySequence(tr("Shift+F4", "Show Cursor")) , this, SLOT( sCursor() ) );
 
-// Adjust the settings file for Windows.
-#ifdef Q_OS_WIN32
-	QSettings settings(QDir::homePath()+"/Application Data/"+qApp->applicationName()+".ini", QSettings::IniFormat);
-#else
+	//fw = new QFileSystemWatcher(this);
+	//fw->addPath( settings->fileName() );
 
-// Create the settings file.
-	QSettings settings;
-#endif	
-
-
-	fw = new QFileSystemWatcher(this);
-	fw->addPath( settings.fileName() );
-
-// If file is changed, read the settings.
-	connect(fw, SIGNAL(fileChanged(const QString)),
-			this, SLOT(readSettings()));
+// If file is changed, read the settings->
+	//connect(fw, SIGNAL(fileChanged(const QString)),
+	//		this, SLOT(readSettings()));
 // If the document is changed, do some stuff.
 	connect(textEdit->document(), SIGNAL(contentsChanged()),
 			this, SLOT(documentWasModified()));
@@ -156,8 +151,8 @@ TextRoom::TextRoom(QWidget *parent, Qt::WFlags f)
 	if (args.count() == 2)
 	{
 		QFile file( args.at(1) );
-			if ( file.exists() )
-				curFile = args.at(1);
+		if ( file.exists() )
+			curFile = args.at(1);
 	}
 	
 	if (!curFile.isEmpty())
@@ -169,10 +164,7 @@ TextRoom::TextRoom(QWidget *parent, Qt::WFlags f)
 	// set cursor position
 	if ( isSaveCursor )
 	{
-		QTextCursor c;
-		c = textEdit->textCursor();
-		c.setPosition(cPosition);
-		textEdit->setTextCursor(c);
+		textEdit->textCursor().setPosition(cPosition);
 	}
 
 	writeSettings();
@@ -188,20 +180,20 @@ void TextRoom::playSound(Mix_Chunk *sound)
 // Play the sounds if sound is enabled.
 	if(isSound)
 	{
-	channel = Mix_PlayChannel(-1, sound, 0);
-	if(channel == -1) {
-	printf("Unable to play WAV file: %s\n", Mix_GetError()); }
+		channel = Mix_PlayChannel(-1, sound, 0);
+		if(channel == -1) 
+			printf("Unable to play WAV file: %s\n", Mix_GetError());
 	}
 }
 
 void TextRoom::togleEscape()
 {
 // Toggle Fullscreen or if visible hide Help when ESC is pressed.
-        if ( helpDialog->isVisible() || aboutDialog->isVisible() || scratchDialog->isVisible() )
+	if ( helpDialog->isVisible() || aboutDialog->isVisible() || scratchDialog->isVisible() )
 	{
-	helpDialog->hide();
-        aboutDialog->hide();
-	scratchDialog->hide();
+		helpDialog->hide();
+		aboutDialog->hide();
+		scratchDialog->hide();
 	}
 	else if ( isFullScreen() )
 		togleFullScreen();
@@ -217,7 +209,7 @@ void TextRoom::insertDate()
 	QString date = today.toString(dateFormat);
 	setWindowModified(textEdit->document()->isModified());
 
-        textEdit->insertPlainText(date);
+	textEdit->insertPlainText(date);
 }
 
 void TextRoom::insertTime()
@@ -227,7 +219,7 @@ void TextRoom::insertTime()
 	QString clock = now.toString(timeFormat);
 	setWindowModified(textEdit->document()->isModified());
 
-        textEdit->insertPlainText(clock);
+	textEdit->insertPlainText(clock);
 }
 
 void TextRoom::togleFullScreen()
@@ -246,7 +238,7 @@ void TextRoom::closeEvent(QCloseEvent *event)
 //	qDebug() << "closing";
 	if (maybeSave())
 	{
-		fw->disconnect();
+		//fw->disconnect();
 
 		// save cursor position
 		if ( isSaveCursor )
@@ -279,7 +271,7 @@ void TextRoom::newFile()
 		textEdit->setUndoRedoEnabled(true);
 		textEdit->document()->setModified(false);
 		textEdit->verticalScrollBar()->setValue(0);
-                textEdit->setFont(defaultFont);
+		textEdit->setFont(defaultFont);
 		indentLines(indentValue);
 	}
 }
@@ -307,7 +299,7 @@ void TextRoom::open()
 
 bool TextRoom::save()
 {
-        if (curFile.isEmpty() || !QFileInfo(curFile).isWritable() || shownName == "Untitled.txr")
+	if (curFile.isEmpty() || !QFileInfo(curFile).isWritable() || shownName == "Untitled.txr")
 	{
 		return saveAs();
 	}
@@ -319,16 +311,16 @@ bool TextRoom::save()
 
 bool TextRoom::saveAs()
 {
-        QString extension;
-        if ( isPlainText )
-        {
-            extension = "*.txt";
-        }
-        else
-        {
-            extension = "*.txr";
-        }
-        QString fileName = QFileDialog::getSaveFileName(this, "Save As", defaultDir + "/" + extension, "TextRoom Documents (*.txr);;Html Files (*.htm *.html);;Text Documents (*.txt)");
+	QString extension;
+	if ( isPlainText )
+	{
+		extension = "*.txt";
+	}
+	else
+	{
+		extension = "*.txr";
+	}
+	QString fileName = QFileDialog::getSaveFileName(this, "Save As", defaultDir + "/" + extension, "TextRoom Documents (*.txr);;Html Files (*.htm *.html);;Text Documents (*.txt)");
 	if (!fileName.isEmpty())
 	{
 		return saveFile(fileName);
@@ -372,8 +364,8 @@ void TextRoom::loadFile(const QString &fileName)
 	QTextCodec *codec = QTextCodec::codecForName("UTF-8");
 
 	textEdit->document()->blockSignals(true);
-	textEdit->setPlainText("");
 	textEdit->setUndoRedoEnabled(false);
+	textEdit->setPlainText("");
 	scratchDialog->ui.scratchTextEdit->setPlainText("");
 
 	QString strall = codec->toUnicode(data);
@@ -383,7 +375,6 @@ void TextRoom::loadFile(const QString &fileName)
 		QString strscratch = strlist.at(0);
 		QString strdoc = strlist.at(1);
 
-		//file.seek(0); // why?
 		textEdit->append(strdoc);
 		scratchDialog->ui.scratchTextEdit->append(strscratch);
 	}
@@ -392,7 +383,6 @@ void TextRoom::loadFile(const QString &fileName)
 		textEdit->append(strall);
 	}
 
-	setCurrentFile(fileName);
 	if (fileName.endsWith("txt"))
 	{
 		textEdit->setFont(defaultFont);
@@ -400,11 +390,12 @@ void TextRoom::loadFile(const QString &fileName)
 	QString text = textEdit->document()->toPlainText();
 
 	textEdit->moveCursor(QTextCursor::Start);
-	textEdit->setUndoRedoEnabled(true);
-	textEdit->document()->blockSignals(false);
+	setCurrentFile(fileName);
 
 	parasold = text.count("\n", Qt::CaseSensitive);
 	indentLines(indentValue);
+	textEdit->setUndoRedoEnabled(true);
+	textEdit->document()->blockSignals(false);
 	vPositionChanged();
 	getFileStatus();
 
@@ -448,7 +439,7 @@ bool TextRoom::saveFile(const QString &fileName)
 
 // If filename extension is .txt then convert to plain text or Only Plain Text Option is selected.
 	QApplication::setOverrideCursor(Qt::WaitCursor);
-        if (fileName.endsWith("txt") || isPlainText )
+	if (fileName.endsWith("txt") || isPlainText )
 	{
 		out << textEdit->document()->toPlainText();
 	}
@@ -481,7 +472,7 @@ void TextRoom::setCurrentFile(const QString &fileName)
 
 	if (curFile.isEmpty())
 	{
-                shownName = "Untitled.txr";
+		shownName = "Untitled.txr";
    	}
 	else
 	{
@@ -502,29 +493,29 @@ void TextRoom::getFileStatus()
 // Calculate deadline
 	QString showdeadline;
 	QString target;
-        int daysremaining;
-        QString todaytext = QDate::currentDate().toString("yyyyMMdd");
-        today = QDate::fromString(todaytext, "yyyyMMdd");
-        daysremaining = today.daysTo(deadline);
+	int daysremaining;
+	QString todaytext = QDate::currentDate().toString("yyyyMMdd");
+	today = QDate::fromString(todaytext, "yyyyMMdd");
+	daysremaining = today.daysTo(deadline);
 	QString daysto;
 	daysto.setNum(daysremaining);
-        if (daysremaining <= 0)
-        {
-            showdeadline = "";
-        }
-        else
-        {
-            showdeadline = daysto + " Days remaining. ";
-        }
+	if (daysremaining <= 0)
+	{
+		showdeadline = "";
+	}
+	else
+	{
+		showdeadline = daysto + " Days remaining. ";
+	}
 	int percent;
 	QString percenttext;
 	QString statsLabelStr;
 	QString statsLabelToolTip;
 // Show clock.
 	QDateTime now = QDateTime::currentDateTime();
-        QString clock = now.toString( timeFormat );
+	QString clock = now.toString( timeFormat );
 
-        const QString text( textEdit->document()->toPlainText() );
+	const QString text( textEdit->document()->toPlainText() );
 
 //Compute word count
 	QRegExp wordsRX("\\s+");
@@ -555,15 +546,15 @@ void TextRoom::getFileStatus()
 // Compute Character Count
 	if (isCharacterCount)
 	{
-             QStringList charsWithoutLineEnds = text.split("\n", QString::SkipEmptyParts);
-	     QString charsCombined = charsWithoutLineEnds.join("");
-             QStringList charsWithoutReturns = charsCombined.split("\r", QString::SkipEmptyParts);
-	     charsCombined = charsWithoutReturns.join("");
-             QStringList charsWithoutTabs = charsCombined.split("\t", QString::SkipEmptyParts);
-	     charsCombined = charsWithoutTabs.join("");
+		QStringList charsWithoutLineEnds = text.split("\n", QString::SkipEmptyParts);
+		QString charsCombined = charsWithoutLineEnds.join("");
+		QStringList charsWithoutReturns = charsCombined.split("\r", QString::SkipEmptyParts);
+		charsCombined = charsWithoutReturns.join("");
+		QStringList charsWithoutTabs = charsCombined.split("\t", QString::SkipEmptyParts);
+		charsCombined = charsWithoutTabs.join("");
 		characterCount = charsCombined.size();
 		characterCountText = characterCountText.setNum(characterCount);
-                characterText = " Characters:" + characterCountText;
+		characterText = " Characters:" + characterCountText;
 	}
 	else
 	{
@@ -578,10 +569,10 @@ void TextRoom::getFileStatus()
 		float f = words*100/wordcount;
 		percent = (int)f;
 		percenttext = percenttext.setNum(percent);
-                target = " Target:" + wordcounttext + "(%" + percenttext + ")" + characterText + pageText;
+        target = " Target:" + wordcounttext + "(%" + percenttext + ")" + characterText + pageText;
 	}
-        deadlineLabel->setText(showdeadline + clock);
-        statsLabel->setText("Words:" + selectedText + tr("%1").arg(words) + target);
+    deadlineLabel->setText(showdeadline + clock);
+    statsLabel->setText("Words:" + selectedText + tr("%1").arg(words) + target);
 }
 
 void TextRoom::documentWasModified()
@@ -612,7 +603,6 @@ void TextRoom::documentWasModified()
 	parasold = parasnew;
 
 	vPositionChanged();
-
 }
 
 void TextRoom::alarmTime()
@@ -626,14 +616,8 @@ void TextRoom::alarmTime()
 
 void TextRoom::readSettings()
 {
-#ifdef Q_OS_WIN32
-	QSettings settings(QDir::homePath()+"/Application Data/"+qApp->applicationName()+".ini", QSettings::IniFormat);
-#else
-
-	QSettings settings;
-#endif
-
-	QFile file( settings.fileName() );
+	qDebug() << "readSettings";
+	QFile file( settings->fileName() );
 	if ( !file.exists() )
 	{
 		togleFullScreen();
@@ -641,7 +625,7 @@ void TextRoom::readSettings()
 		return;
 	}
 
-	if ( settings.value("WindowState/ShowFullScreen", true).toBool() )
+	if ( settings->value("WindowState/ShowFullScreen", true).toBool() )
 	{
 		if ( !isFullScreen() )
 			showFullScreen();
@@ -649,81 +633,86 @@ void TextRoom::readSettings()
 	else
 	{
 		showNormal();
-		QPoint pos = settings.value("WindowState/TopLeftPosition", QPoint(100, 100)).toPoint();
-		QSize size = settings.value("WindowState/WindowSize", QSize(300, 200)).toSize();
+		QPoint pos = settings->value("WindowState/TopLeftPosition", QPoint(100, 100)).toPoint();
+		QSize size = settings->value("WindowState/WindowSize", QSize(300, 200)).toSize();
 		resize(size);
 		move(pos);
 	}
 
-        QString foregroundColor = settings.value("Colors/FontColor", "#808080" ).toString();
-        QString back = settings.value("Colors/Background", "#000000" ).toString();
-        QString status_c = settings.value("Colors/StatusColor", "#202020" ).toString();
+	QString foregroundColor = settings->value("Colors/FontColor", "#808080" ).toString();
+	QString back = settings->value("Colors/Background", "#000000" ).toString();
+	QString status_c = settings->value("Colors/StatusColor", "#202020" ).toString();
 
-        loadStyleSheet(foregroundColor, back, status_c);
+	loadStyleSheet(foregroundColor, back, status_c);
 
 	// oxygen does weird stuff with the background
 	QApplication::setStyle("plastique");
 
-        QFont font;
-        font.fromString( settings.value("StatusFont").toString());
-        defaultFont.fromString( settings.value("DefaultFont").toString() );
+	QFont font;
+	font.fromString( settings->value("StatusFont").toString());
+	defaultFont.fromString( settings->value("DefaultFont").toString() );
 
-        statsLabel->setFont( font );
-        deadlineLabel->setFont ( font ) ;
+	statsLabel->setFont( font );
+	deadlineLabel->setFont ( font ) ;
 
-	curDir = settings.value("RecentFiles/LastDir", curDir).toString();
-	lastSearch = settings.value("TextSearch/LastPhrase", lastSearch).toString();
+	curDir = settings->value("RecentFiles/LastDir", curDir).toString();
+	lastSearch = settings->value("TextSearch/LastPhrase", lastSearch).toString();
 
 	QDateTime today = QDateTime::currentDateTime();
 	QString todaytext = today.toString("yyyyMMdd");
 	
-// Read all the settings.
-	isAutoSave = settings.value("AutoSave", false).toBool();
-	isFlowMode = settings.value("FlowMode", false).toBool();
-	isSound = settings.value("Sound", true).toBool();
-	isPageCount = settings.value("PageCount", false).toBool();
-	isCharacterCount = settings.value("CharacterCount", false).toBool();
-	deadlinetext = settings.value("Deadline", todaytext).toString();
+// Read all the settings->
+	isAutoSave = settings->value("AutoSave", false).toBool();
+	isFlowMode = settings->value("FlowMode", false).toBool();
+	isSound = settings->value("Sound", true).toBool();
+	isPageCount = settings->value("PageCount", false).toBool();
+	isCharacterCount = settings->value("CharacterCount", false).toBool();
+	deadlinetext = settings->value("Deadline", todaytext).toString();
 	deadline = QDate::fromString(deadlinetext, "yyyyMMdd");
-	wordcount = settings.value("WordCount", 0).toInt();
-	wordcounttext = settings.value("WordCount", 0).toString();
-	editorWidth = settings.value("EditorWidth", 800).toInt();
-	editorTopSpace = settings.value("EditorTopSpace", 0).toInt();
-	editorBottomSpace = settings.value("EditorBottomSpace", 0).toInt();
-	alarm = settings.value("TimedWriting", 0).toInt();
-	pageCountFormula = settings.value("PageCountFormula", 250).toInt();
-        dateFormat = settings.value("DateFormat", "d MMMM yyyy dddd").toString();
-        timeFormatBool = settings.value("24-Hour", true ).toBool();
-	defaultDir = settings.value("DefaultDirectory", QDir::homePath()).toString();
-        backgroundImage = settings.value("BackgroundImage", "").toString();
-        isPlainText = settings.value("PlainText", false).toBool();
-        language = settings.value("Language", 0).toInt();
-	indentValue = settings.value("Indent", 50).toInt();
+	wordcount = settings->value("WordCount", 0).toInt();
+	wordcounttext = settings->value("WordCount", 0).toString();
+	editorWidth = settings->value("EditorWidth", 800).toInt();
+	editorTopSpace = settings->value("EditorTopSpace", 0).toInt();
+	editorBottomSpace = settings->value("EditorBottomSpace", 0).toInt();
+	alarm = settings->value("TimedWriting", 0).toInt();
+	pageCountFormula = settings->value("PageCountFormula", 250).toInt();
+	dateFormat = settings->value("DateFormat", "d MMMM yyyy dddd").toString();
+	timeFormatBool = settings->value("24-Hour", true ).toBool();
+	defaultDir = settings->value("DefaultDirectory", QDir::homePath()).toString();
+	backgroundImage = settings->value("BackgroundImage", "").toString();
+	isPlainText = settings->value("PlainText", false).toBool();
+	language = settings->value("Language", 0).toInt();
+	indentValue = settings->value("Indent", 50).toInt();
 
 	indentLines(indentValue);
 
-        if ( isPlainText )
-        {
-            QString text( textEdit->document()->toPlainText() );
-            textEdit->document()->clear();
-            textEdit->insertPlainText(text);
-            textEdit->setAcceptRichText( false );
-        }
-        else
-        {
-            textEdit->setAcceptRichText( true );
-        }
+	textEdit->document()->blockSignals(true);
+	bool modified = textEdit->document()->isModified();
+	if ( isPlainText )
+	{
+		QString text( textEdit->document()->toPlainText() );
+		textEdit->document()->clear();
+		textEdit->insertPlainText(text);
+		textEdit->setAcceptRichText( false );
+	}
+	else
+	{
+		textEdit->setAcceptRichText( true );
+	}
+	setWindowModified(modified);
+	textEdit->document()->setModified(modified);
+	textEdit->document()->blockSignals(false);
 
-        if ( timeFormatBool )
-        {
-            timeFormat = "h:mm";
-        }
-        else
-        {
-            timeFormat = "h:mm AP";
-        }
+	if ( timeFormatBool )
+	{
+		timeFormat = "h:mm";
+	}
+	else
+	{
+		timeFormat = "h:mm AP";
+	}
 
-	horizontalSlider->setVisible( settings.value("ScrollBar", true).toBool() );
+	horizontalSlider->setVisible( settings->value("ScrollBar", true).toBool() );
 	isScrollBarVisible = horizontalSlider->isVisible();
 	vPositionChanged();
 
@@ -739,53 +728,45 @@ void TextRoom::readSettings()
 	textEdit->setMaximumWidth(editorWidth);
 
 
-	if ( (optOpenLastFile = settings.value("RecentFiles/OpenLastFile", true).toBool()) )
+	if ( (optOpenLastFile = settings->value("RecentFiles/OpenLastFile", true).toBool()) )
 	{
-		curFile = settings.value("RecentFiles/LastFile", curFile).toString();
-		if ( (isSaveCursor = settings.value("RecentFiles/SavePosition", true).toBool() ))
-			cPosition = settings.value("RecentFiles/AtPosition", cPosition).toInt();
+		curFile = settings->value("RecentFiles/LastFile", curFile).toString();
+		if ( (isSaveCursor = settings->value("RecentFiles/SavePosition", true).toBool() ))
+			cPosition = settings->value("RecentFiles/AtPosition", cPosition).toInt();
 	}
 }
 
 void TextRoom::writeSettings()
 {
-
-#ifdef Q_OS_WIN32
-	QSettings settings(QDir::homePath()+"/Application Data/"+qApp->applicationName()+".ini", QSettings::IniFormat);
-#else
-
-	QSettings settings;
-#endif
-
+	qDebug() << "writeSettings";
 	if ( !isFullScreen() )
 	{
-		settings.setValue("WindowState/TopLeftPosition", pos());
-		settings.setValue("WindowState/WindowSize", size());
+		settings->setValue("WindowState/TopLeftPosition", pos());
+		settings->setValue("WindowState/WindowSize", size());
 	}
 
-	settings.setValue("WindowState/ShowFullScreen", isFullScreen());
-	settings.setValue("RecentFiles/LastFile", curFile);
-	settings.setValue("RecentFiles/LastDir", curDir);
-	settings.setValue("TextSearch/LastPhrase", lastSearch);
-	settings.setValue("TimedWriting", alarm);
+	settings->setValue("WindowState/ShowFullScreen", isFullScreen());
+	settings->setValue("RecentFiles/LastFile", curFile);
+	settings->setValue("RecentFiles/LastDir", curDir);
+	settings->setValue("TextSearch/LastPhrase", lastSearch);
+	settings->setValue("TimedWriting", alarm);
 
 	int maxEditorWidth = width();
 	int maxEditorTopSpace = (int)((height() - 56)/2) ;
 	int maxEditorBottomSpace = (int)((height() - 56)/2);
-	settings.setValue("MaxEditorWidth", maxEditorWidth);
-	settings.setValue("MaxEditorTopSpace", maxEditorTopSpace);
-	settings.setValue("MacEditorBottomSpace", maxEditorBottomSpace);
+	settings->setValue("MaxEditorWidth", maxEditorWidth);
+	settings->setValue("MaxEditorTopSpace", maxEditorTopSpace);
+	settings->setValue("MacEditorBottomSpace", maxEditorBottomSpace);
 
-
-	settings.setValue("RecentFiles/OpenLastFile", optOpenLastFile);
+	settings->setValue("RecentFiles/OpenLastFile", optOpenLastFile);
 	if ( optOpenLastFile )
 	{
-		settings.setValue("RecentFiles/SavePosition", isSaveCursor);
+		settings->setValue("RecentFiles/SavePosition", isSaveCursor);
 		if ( isSaveCursor )
-			settings.setValue("RecentFiles/AtPosition", cPosition);
+			settings->setValue("RecentFiles/AtPosition", cPosition);
 	}
 
-	settings.setValue("README","Please read the help file"
+	settings->setValue("README","Please read the help file"
 					  " by pressing F1, the help key, for"
 					  " instructions on how to modify this file.");
 }
@@ -804,52 +785,52 @@ void TextRoom::help()
 {
 	if (!helpDialog->isVisible())
 	{
-	int x = (width()/2)-351;
-	int y = (height()/2)-150;
-	helpDialog->move(x,y);
-	helpDialog->setWindowFlags(Qt::FramelessWindowHint);
-	helpDialog->showNormal();
+		int x = (width()/2)-351;
+		int y = (height()/2)-150;
+		helpDialog->move(x,y);
+		helpDialog->setWindowFlags(Qt::FramelessWindowHint);
+		helpDialog->showNormal();
 	}
 	else
 	{
-	helpDialog->hide();
+		helpDialog->hide();
 	}
 }
 
 void TextRoom::loadStyleSheet(const QString &fcolor, const QString &bcolor, const QString &scolor)
 {
 
-        QColor textColor;
-        textColor.setNamedColor(fcolor);
-        QColor backgroundColor;
-        backgroundColor.setNamedColor(bcolor);
-        QColor statusbarColor;
-        statusbarColor.setNamedColor(scolor);
-        QPalette palette;
-        palette.setColor(QPalette::Text, textColor);
-        palette.setColor(QPalette::Base, QColor(0, 0, 0, 0));
+	QColor textColor;
+	textColor.setNamedColor(fcolor);
+	QColor backgroundColor;
+	backgroundColor.setNamedColor(bcolor);
+	QColor statusbarColor;
+	statusbarColor.setNamedColor(scolor);
+	QPalette palette;
+	palette.setColor(QPalette::Text, textColor);
+	palette.setColor(QPalette::Base, QColor(0, 0, 0, 0));
 	textEdit->setPalette(palette);
 
-        QPalette bgPalette;
-        if ( backgroundImage == 0 )
-        {
-        bgPalette.setColor(QPalette::Window, backgroundColor);
-        }
-        else
-        {
-        QPixmap bgmain;
-        bgmain.load( backgroundImage );
-        QDesktopWidget* desktopWidget = QApplication::desktop();
-        QRect rect = desktopWidget->geometry();
-        QSize size(rect.width() , rect.height());
-        QPixmap bg(bgmain.scaled(size));
-        bgPalette.setBrush(QPalette::Window, bg);
-        }
-        TextRoom::setPalette(bgPalette);
+	QPalette bgPalette;
+	if ( backgroundImage == 0 )
+	{
+		bgPalette.setColor(QPalette::Window, backgroundColor);
+	}
+	else
+	{
+		QPixmap bgmain;
+		bgmain.load( backgroundImage );
+		QDesktopWidget* desktopWidget = QApplication::desktop();
+		QRect rect = desktopWidget->geometry();
+		QSize size(rect.width() , rect.height());
+		QPixmap bg(bgmain.scaled(size));
+		bgPalette.setBrush(QPalette::Window, bg);
+	}
+	TextRoom::setPalette(bgPalette);
 
 	QPalette palette2;
-        palette2.setColor(QPalette::WindowText, statusbarColor);
-        palette2.setColor(QPalette::Window, QColor(0, 0, 0, 0));
+	palette2.setColor(QPalette::WindowText, statusbarColor);
+	palette2.setColor(QPalette::Window, QColor(0, 0, 0, 0));
 
 	horizontalSlider->setPalette(palette2);
 	statsLabel->setPalette(palette2);
@@ -960,17 +941,9 @@ void TextRoom::changeFont()
 {
 	if (selectFont->exec() == QDialog::Accepted)
 	{
-	
-	#ifdef Q_OS_WIN32
-		QSettings settings(QDir::homePath()+"/Application Data/"+qApp->applicationName()+".ini", QSettings::IniFormat);
-	#else
-
-		QSettings settings;
-	#endif
-
-                QString currentFormat = settings.value("FontFamily", textEdit->textCursor().charFormat().fontFamily() ).toString();
+		QString currentFormat = settings->value("FontFamily", textEdit->textCursor().charFormat().fontFamily() ).toString();
 		QTextCharFormat fmt;
-                QString fontcolor = settings.value("FontColor", "000000").toString();
+		QString fontcolor = settings->value("FontColor", "000000").toString();
 		QColor color;
 		color.setNamedColor(fontcolor);
 		QBrush brush(color, Qt::SolidPattern);
@@ -1011,18 +984,18 @@ void TextRoom::print()
 
 void TextRoom::about()
 {
-        if (!aboutDialog->isVisible())
-        {
-        int x = (width()/2)-171;
-        int y = (height()/2)-171;
-        aboutDialog->move(x,y);
-        aboutDialog->setWindowFlags(Qt::FramelessWindowHint);
-        aboutDialog->showNormal();
-        }
-        else
-        {
-        aboutDialog->hide();
-        }
+	if (!aboutDialog->isVisible())
+	{
+		int x = (width()/2)-171;
+		int y = (height()/2)-171;
+		aboutDialog->move(x,y);
+		aboutDialog->setWindowFlags(Qt::FramelessWindowHint);
+		aboutDialog->showNormal();
+	}
+	else
+	{
+		aboutDialog->hide();
+	}
 }
 
 void TextRoom::spellCheck()
@@ -1124,7 +1097,7 @@ void TextRoom::showScratchPad()
 
 void TextRoom::indentLines(int value)
 {
-	bool silent = true;
+/*	bool silent = true;
 	if (isSound)
 	{
 		isSound = false;
@@ -1146,5 +1119,5 @@ void TextRoom::indentLines(int value)
 	if (silent)
 		isSound = false;
 	else
-		isSound = true;
+		isSound = true;*/
 }

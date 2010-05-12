@@ -42,15 +42,15 @@ int main(int argc, char ** argv)
 	app.setOrganizationDomain("petartoushkov.hit.bg");
 	app.setApplicationName("TextRoom");
 
-       QTextCodec::setCodecForCStrings(QTextCodec::codecForName("utf8"));
+	QTextCodec::setCodecForCStrings(QTextCodec::codecForName("utf8"));
 	
 	// show splashscreen
 #ifdef Q_OS_WIN32
-	QSettings settings(QDir::homePath()+"/Application Data/"+qApp->applicationName()+".ini", QSettings::IniFormat);
+	QSettings settings(QSettings::IniFormat, QSettings::UserScope, QApplication::organizationName());
 #else
-
 	QSettings settings;
 #endif
+
 	QSplashScreen *splash = NULL;
 	if ( settings.value( "WindowState/ShowSplashScreen", true ).toBool() )
 	{

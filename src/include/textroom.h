@@ -105,6 +105,7 @@ private:
 	AboutDialog *aboutDialog;
 	ScratchDialog * scratchDialog;
 	Hunspell * pMS;
+	QSettings *settings;
 	Ui::TextRoomMain ui;
 	QString curFile;
 	QString curDir;
