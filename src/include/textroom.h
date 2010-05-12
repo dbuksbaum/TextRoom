@@ -33,10 +33,6 @@
 #include <QtGui>
  
 #include "ui_textroom.h"
-#include "SDL/SDL.h"
-// *** IF USING XCODE ON MACOS X, CHANGE THE FOLLOWING LINE TO:  #include "SDL_mixer/SDL_mixer.h"
-#include "SDL/SDL_mixer.h"
-#include "hunspell/hunspell.hxx"
 
 class QShortcut;
 class QFileSystemWatcher;
@@ -45,10 +41,9 @@ class HelpDialog;
 class SearchDialog;
 class SelectFont;
 class AboutDialog;
-class AspellConfig;
-class AspellSpeller;
 class ScratchDialog;
 class Hunspell;
+struct Mix_Chunk;
 
 class TextRoom : public QWidget, public Ui::TextRoomMain
 {
@@ -66,8 +61,8 @@ private slots:
 	void options();
 	void newFile();
 	void help();
-        void about();
-        void print();
+	void about();
+	void print();
 	void insertDate();
 	void insertTime();
 	void find();
@@ -80,7 +75,7 @@ private slots:
 	void getFileStatus();
 	void readSettings();
 	void alarmTime();
-        void loadStyleSheet(const QString &fcolor, const QString &bcolor, const QString &scolor);
+	void loadStyleSheet(const QString &fcolor, const QString &bcolor, const QString &scolor);
 	void textBold();
 	void textItalic();
 	void textSizeUp();
@@ -89,7 +84,7 @@ private slots:
 	void vPositionChanged();
 	void hSliderPositionChanged();
 	void showScratchPad();
-        void spellCheck();
+	void spellCheck();
 	 
 private:
 	bool maybeSave();
@@ -107,11 +102,9 @@ private:
 	OptionsDialog *optionsDialog;
 	SearchDialog *searchDialog;
 	SelectFont *selectFont;
-        AboutDialog *aboutDialog;
-        AspellConfig * spell_config;
-        AspellSpeller * spell_checker;
+	AboutDialog *aboutDialog;
 	ScratchDialog * scratchDialog;
-        Hunspell * pMS;
+	Hunspell * pMS;
 	Ui::TextRoomMain ui;
 	QString curFile;
 	QString curDir;
@@ -120,27 +113,27 @@ private:
 	QString deadlinetext;
 	QDate deadline;
 	QDate today;
-        QString dateFormat;
-        bool timeFormatBool;
-        QString timeFormat;
- 	QString defaultDir;
-        QString shownName;
+	QString dateFormat;
+	bool timeFormatBool;
+	QString timeFormat;
+	QString defaultDir;
+	QString shownName;
 	int wordcount;
 	int parasold;
 	int parasnew;
 	QString wordcounttext;
 	QFont defaultFont;
-        QPixmap bg;
+	QPixmap bg;
 	int alarm;
 	int timeOut;
 	int sentenceTally;
 	QFileSystemWatcher* fw;
 	bool optOpenLastFile;
 	bool isSaveCursor;
-        bool isBackgroundImage;
-        bool isPlainText;
-        bool isHighlighted;
-        int bgIndex;
+	bool isBackgroundImage;
+	bool isPlainText;
+	bool isHighlighted;
+	int bgIndex;
 	int editorWidth;
 	int editorTopSpace;
 	int editorBottomSpace;
@@ -150,14 +143,14 @@ private:
 	int textSize;
 	int pageCount;
 	int characterCount;
-        int language;
+	int language;
 	int indentValue;
 	QString pageCountText;
 	QString pageText;
 	QString characterCountText;
 	QString characterText;
 	QString selectedText;
-        QString backgroundImage;
+	QString backgroundImage;
 	int pageCountFormula;
 	bool ind;
 	bool isAutoSave;
@@ -167,12 +160,6 @@ private:
 	bool isScrollBarVisible;
 	bool isPageCount;
 	bool isCharacterCount;
-	QString filename1;
-	QString filename2;
-	QByteArray ba1;
-	QByteArray ba2;
-	const char *filename1_char;
-	const char *filename2_char;
 	int channel;
 	Mix_Chunk *soundenter;
 	Mix_Chunk *soundany;

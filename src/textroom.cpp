@@ -28,6 +28,11 @@
 ****************************************************************************/
 
 #include <QtGui> 
+#include <SDL/SDL.h>
+// *** IF USING XCODE ON MACOS X, CHANGE THE FOLLOWING LINE TO:  #include "SDL_mixer/SDL_mixer.h"
+#include <SDL/SDL_mixer.h>
+#include <hunspell/hunspell.hxx>
+#include <iostream>
 #include "textroom.h"
 #include "optionsdialog.h"
 #include "helpdialog.h"
@@ -35,10 +40,7 @@
 #include "font.h"
 #include "about.h"
 #include "scratchpad.h"
-#include "SDL/SDL.h"
-// *** IF USING XCODE ON MACOS X, CHANGE THE FOLLOWING LINE TO:  #include "SDL_mixer/SDL_mixer.h"
-#include "SDL/SDL_mixer.h"
-#include "iostream"
+
 
 TextRoom::TextRoom(QWidget *parent, Qt::WFlags f)
 		: QWidget(parent, f), sentenceTally(0)
