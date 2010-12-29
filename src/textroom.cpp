@@ -90,7 +90,7 @@ TextRoom::TextRoom(QWidget *parent, Qt::WFlags f)
 
 // Load sounds.
 #ifdef Q_OS_WIN32
-	soundenter = Mix_LoadWAV("sounds/keyenter.wav");
+	soundenter = Mix_LoadWAV("keyenter.wav");
 #else
 	soundenter = Mix_LoadWAV("/usr/share/sounds/keyenter.wav");
 #endif
@@ -99,7 +99,7 @@ TextRoom::TextRoom(QWidget *parent, Qt::WFlags f)
 	}
 
 #ifdef Q_OS_WIN32
-	soundany = Mix_LoadWAV("sounds/keyany.wav");
+	soundany = Mix_LoadWAV("keyany.wav");
 #else
 	soundany = Mix_LoadWAV("/usr/share/sounds/keyany.wav");
 #endif

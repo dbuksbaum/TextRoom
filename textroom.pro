@@ -47,6 +47,7 @@ INSTALLS += data \
     mime \
     icon
 LIBS = -lSDL \
+    -lSDLmain \
     -lSDL_mixer \
     -lhunspell
 QT += core \
