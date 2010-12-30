@@ -8,8 +8,10 @@ INCLUDEPATH += . \
     src \
     src/include \
     /usr/include \
-    /usr/include/hunspell \
-    /usr/include/SDL
+    /usr/include/hunspell
+!macx {
+    INCLUDEPATH += /usr/include/SDL
+}
 DESTDIR += .
 OBJECTS_DIR += temp
 MOC_DIR += temp
@@ -37,38 +39,82 @@ SOURCES += src/helpdialog.cpp \
     src/scratchpad.cpp \
     src/about.cpp
 RESOURCES += resource/textroom.qrc
-CONFIG += release \
-    build_all
-INSTALLS += data \
-    dict \
-    target \
-    desktop \
-    uninstaller \
-    mime \
-    icon
-LIBS = -lSDL \
-    -lSDLmain \
-    -lSDL_mixer \
-    -lhunspell
+!macx {
+    CONFIG += release \
+        build_all
+
+    INSTALLS += data \
+        dict \
+        target \
+        desktop \
+        uninstaller \
+        mime \
+        icon
+    LIBS = -lSDL \
+        -lSDL_mixer \
+        -lhunspell
+}
+macx {
+    CONFIG += release \
+        build_all 
+
+    QMAKE_LFLAGS += -F/Library/Frameworks/SDL.framework \
+        -F/Library/Frameworks/SDL_mixer.framework
+
+    LIBS += -framework SDL \
+        -framework SDL_mixer \
+        -lhunspell-1.2 
+
+    RC_FILE=MacOS/resource/textroom.icns
+    QMAKE_MACOSX_DEPLOYMENT_TARGET=10.6
+    QMAKE_POST_LINK=strip textroom.app/Contents/MacOS/textroom
+    QMAKE_INFO_PLIST=MacOS/resource/Info.plist
+
+    INSTALLS += sounds \ 
+	dict \
+	sdl \
+	sdl_mixer \
+	mikmod \
+	smpeg
+
+    sdl.path = textroom.app/Contents/Frameworks/SDL.framework/Versions/A
+    sdl.files = /Library/Frameworks/SDL.framework/Versions/A/SDL
+
+    sdl_mixer.path = textroom.app/Contents/Frameworks/SDL_mixer.framework/Versions/A
+    sdl_mixer.files = /Library/Frameworks/SDL_mixer.framework/Versions/A/SDL_mixer
+
+    mikmod.path = textroom.app/Contents/Frameworks/SDL_mixer.framework/Versions/A/Frameworks/mikmod.framework/Versions/A
+    mikmod.files = /Library/Frameworks/SDL_mixer.framework/Frameworks/mikmod.framework/Versions/A/mikmod
+
+    smpeg.path = textroom.app/Contents/Frameworks/SDL_mixer.framework/Versions/A/Frameworks/smpeg.framework/Versions/A
+    smpeg.files = /Library/Frameworks/SDL_mixer.framework/Frameworks/smpeg.framework/Versions/A/smpeg
+
+    dict.path = textroom.app/Contents/Resources/dict
+    dict.files = resource/dict/* MacOS/resource/dict/*
+
+    sounds.path = textroom.app/Contents/Resources/sounds
+    sounds.files = resource/sounds/*
+}
 QT += core \
     gui
 
-data.path = /usr/share/sounds
-data.files = resource/sounds/*
-target.path = /usr/bin
-desktop.path = /usr/share/applications
-desktop.files = resource/desktop/textroom.desktop
-doc-icon.path = /usr/share/textroom
-doc-icon.files = resource/images/textroom-doc.png
-mime.path = /usr/share/textroom
-mime.files = resource/desktop/textroom-txr-mime.xml
-uninstaller.path = /usr/bin
-uninstaller.files = resource/desktop/textroom-uninstall
-dict.path = /usr/share/myspell/dicts
-dict.files = resource/dict/*
-icon.path = /usr/share/pixmaps
-icon.files = resource/images/textroom.png
-
-unix:system(xdg-icon-resource install --context mimetypes --size 48 ./resource/images/textroom-doc.png application/x-txr)
-unix:system(xdg-mime install ./resource/desktop/textroom-txr-mime.xml)
-unix:system(xdg-mime default textroom.desktop application/x-txr)	
+!macx {
+    data.path = /usr/share/sounds
+    data.files = resource/sounds/*
+    target.path = /usr/bin
+    desktop.path = /usr/share/applications
+    desktop.files = resource/desktop/textroom.desktop
+    doc-icon.path = /usr/share/textroom
+    doc-icon.files = resource/images/textroom-doc.png
+    mime.path = /usr/share/textroom
+    mime.files = resource/desktop/textroom-txr-mime.xml
+    uninstaller.path = /usr/bin
+    uninstaller.files = resource/desktop/textroom-uninstall
+    dict.path = /usr/share/myspell/dicts
+    dict.files = resource/dict/*
+    icon.path = /usr/share/pixmaps
+    icon.files = resource/images/textroom.png
+}
+unix!macx:system(xdg-icon-resource install --context mimetypes --size 48 ./resource/images/textroom-doc.png application/x-txr)
+unix!macx:system(xdg-mime install ./resource/desktop/textroom-txr-mime.xml)
+unix!macx:system(xdg-mime default textroom.desktop application/x-txr)	

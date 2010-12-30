@@ -119,6 +119,9 @@ private:
 	QString timeFormat;
 	QString defaultDir;
 	QString shownName;
+#ifdef Q_OS_MACX
+	QString resourcesDir;
+#endif
 	bool wordCountChanged;
 	int words;
 	int wordcount;

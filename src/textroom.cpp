@@ -29,8 +29,11 @@
 
 #include <QtGui> 
 #include <SDL/SDL.h>
-// *** IF USING XCODE ON MACOS X, CHANGE THE FOLLOWING LINE TO:  #include "SDL_mixer/SDL_mixer.h"
-#include <SDL/SDL_mixer.h>
+#ifdef Q_OS_MACX
+# include <SDL_mixer/SDL_mixer.h>
+#else
+# include <SDL/SDL_mixer.h>
+#endif
 #include <hunspell/hunspell.hxx>
 #include <iostream>
 #include "textroom.h"
@@ -55,6 +58,16 @@ TextRoom::TextRoom(QWidget *parent, Qt::WFlags f)
 	alarm = 0;
 	parasold = 0;
 	isHighlighted = false;
+
+#ifdef Q_OS_MACX
+	// Find the path for the app path 
+	QDir tmpDir = QDir(QCoreApplication::applicationDirPath());
+	// go into Resources folder
+	tmpDir.cdUp();
+	tmpDir.cd("Resources");
+	// get the full path for the resources
+	resourcesDir = tmpDir.path();
+#endif
 
 // Read settings saved by Options Dialog.
 #ifdef Q_OS_WIN32
@@ -91,6 +104,10 @@ TextRoom::TextRoom(QWidget *parent, Qt::WFlags f)
 // Load sounds.
 #ifdef Q_OS_WIN32
 	soundenter = Mix_LoadWAV("keyenter.wav");
+#elif defined(Q_OS_MACX)
+	QString tmp = resourcesDir;
+	tmp.append("/sounds/keyenter.wav");
+	soundenter = Mix_LoadWAV(tmp.toAscii());
 #else
 	soundenter = Mix_LoadWAV("/usr/share/sounds/keyenter.wav");
 #endif
@@ -100,6 +117,10 @@ TextRoom::TextRoom(QWidget *parent, Qt::WFlags f)
 
 #ifdef Q_OS_WIN32
 	soundany = Mix_LoadWAV("keyany.wav");
+#elif defined(Q_OS_MACX)
+	tmp = resourcesDir;
+	tmp.append("/sounds/keyany.wav");
+	soundany = Mix_LoadWAV(tmp.toAscii());
 #else
 	soundany = Mix_LoadWAV("/usr/share/sounds/keyany.wav");
 #endif
@@ -140,19 +161,19 @@ TextRoom::TextRoom(QWidget *parent, Qt::WFlags f)
 	//fw = new QFileSystemWatcher(this);
 	//fw->addPath( settings->fileName() );
 
-// If file is changed, read the settings->
+	// If file is changed, read the settings->
 	//connect(fw, SIGNAL(fileChanged(const QString)),
 	//		this, SLOT(readSettings()));
-// If the document is changed, do some stuff.
+	// If the document is changed, do some stuff.
 	connect(textEdit->document(), SIGNAL(contentsChanged()),
-			this, SLOT(documentWasModified()));
+		this, SLOT(documentWasModified()));
 
-// If position is changed, scroll.
+	// If position is changed, scroll.
 	connect(textEdit->verticalScrollBar(), SIGNAL(valueChanged(int)),
-			this, SLOT(vPositionChanged()));
-// If horizontal scrollar is changed, scroll.
+		this, SLOT(vPositionChanged()));
+	// If horizontal scrollar is changed, scroll.
 	connect(horizontalSlider, SIGNAL(valueChanged(int)),
-			this, SLOT(hSliderPositionChanged()));
+		this, SLOT(hSliderPositionChanged()));
 
 	// check if we need to open some file at startup
 	const QStringList args = QCoreApplication::arguments();
@@ -628,7 +649,6 @@ void TextRoom::alarmTime()
 
 void TextRoom::readSettings()
 {
-	qDebug() << "readSettings";
 	QFile file( settings->fileName() );
 	if ( !file.exists() )
 	{
@@ -753,7 +773,6 @@ void TextRoom::readSettings()
 
 void TextRoom::writeSettings()
 {
-	qDebug() << "writeSettings";
 	if ( !isFullScreen() )
 	{
 		settings->setValue("WindowState/TopLeftPosition", pos());
@@ -1041,6 +1060,8 @@ void TextRoom::spellCheck()
 #ifdef Q_OS_WIN32
 	affFileName = "dict/";
 	dicFileName = "dict/";
+#elif defined(Q_OS_MACX)
+	affFileName = dicFileName = resourcesDir+"/dict/";
 #else
 	affFileName = "/usr/share/myspell/dicts/";
 	dicFileName = "/usr/share/myspell/dicts/";

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist SYSTEM "file://localhost/System/Library/DTDs/PropertyList.dtd">
+<plist version="0.9">
+<dict>
+        <key>CFBundleTypeIconFile</key>
+        <string>textroom.icns</string>
+	<key>CFBundleIconFile</key>
+	<string>textroom.icns</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+        <key>CFBundleShortVersionString</key>
+	<string>0.6.5</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>Textroom devs 2010</string>
+	<key>CFBundleSignature</key>
+	<string>txrm</string>
+	<key>CFBundleExecutable</key>
+	<string>textroom</string>
+	<key>CFBundleVersion</key>
+	<string>0.6.5</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.textroom.TextRoom</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleDisplayName</key>
+	<string>Textroom v0.6.5</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>Textroom</string>
+	<key>CFBundleDocumentTypes</key>
+	<array>
+	  <dict>
+            <key>CFBundleTypeExtensions</key>
+            <array>
+              <string>txr</string>
+            </array>
+            <key>CFBundleTypeIconFile</key>
+            <string>textroom</string>
+            <key>CFBundleTypeName</key>
+            <string>Textroom File</string>
+            <key>CFBundleTypeRole</key>
+            <string>Editor</string>
+	  </dict>
+	</array>
+</dict>
+</plist>

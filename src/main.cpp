@@ -39,7 +39,11 @@ int main(int argc, char ** argv)
 	QApplication app(argc, argv);
 	app.setQuitOnLastWindowClosed(true);
 	app.setOrganizationName("textroom");
+#ifdef Q_OS_MACX
+	app.setOrganizationDomain("textroom");
+#else
 	app.setOrganizationDomain("petartoushkov.hit.bg");
+#endif
 	app.setApplicationName("TextRoom");
 
 	QTextCodec::setCodecForCStrings(QTextCodec::codecForName("utf8"));

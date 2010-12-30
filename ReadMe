@@ -1,4 +1,4 @@
-TextRoom v0.6.3 beta
+TextRoom v0.6.5
 http://code.google.com/p/textroom/
 
 
@@ -35,6 +35,8 @@ To compile TextRoom, you will need the development packages
 (usually named -devel- or -dev in some distros) of the required packages. 
 
 Cd to the directory this README file is. Compilation includes three steps:
+
+NOTE to developers on MacOS X: You can just install the Qt framework followed by a deployment of the SDL and SDL_mixer frameworks. In the end issue ./MacOS/build-mac-bundle.sh from this folder.
 
 qmake
 make
