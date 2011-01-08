@@ -56,7 +56,9 @@ RESOURCES += resource/textroom.qrc
 }
 macx {
     CONFIG += release \
-        build_all 
+        build_all \
+	x86 \
+	ppc
 
     QMAKE_LFLAGS += -F/Library/Frameworks/SDL.framework \
         -F/Library/Frameworks/SDL_mixer.framework
