@@ -6,7 +6,7 @@
 ** adamvert - from http://ubuntuforums.org/
 ** zebulon M - from http://ubuntuforums.org/
 **
-** Artwork by Edward Solorukhin <arch1000@gmail.com>
+** Artwork by Edward Solodukhin <arch1000@gmail.com>
 **
 ** Parts of the following code are from the Phrasis project:
 **
@@ -78,6 +78,10 @@ private slots:
 	void loadStyleSheet(const QString &fcolor, const QString &bcolor, const QString &scolor);
 	void textBold();
 	void textItalic();
+        void alignRight();
+        void alignLeft();
+        void alignJustify();
+        void alignCenter();
 	void textSizeUp();
 	void textSizeDown();
 	void changeFont();
@@ -148,7 +152,7 @@ private:
 	int textSize;
 	int pageCount;
 	int characterCount;
-	int language;
+        QString language;
 	int indentValue;
 	QString backgroundImage;
 	int pageCountFormula;
@@ -160,6 +164,9 @@ private:
 	bool isScrollBarVisible;
 	bool isPageCount;
 	bool isCharacterCount;
+        bool rtlDirection;
+        bool ltrDirection;
+        bool autoDirection;
 	int channel;
 	Mix_Chunk *soundenter;
 	Mix_Chunk *soundany;

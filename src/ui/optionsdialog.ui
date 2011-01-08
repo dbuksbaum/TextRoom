@@ -258,7 +258,7 @@ p, li { white-space: pre-wrap; }
        <property name="geometry">
         <rect>
          <x>300</x>
-         <y>90</y>
+         <y>80</y>
          <width>261</width>
          <height>32</height>
         </rect>
@@ -294,7 +294,7 @@ p, li { white-space: pre-wrap; }
        <property name="geometry">
         <rect>
          <x>300</x>
-         <y>140</y>
+         <y>120</y>
          <width>264</width>
          <height>35</height>
         </rect>
@@ -384,7 +384,7 @@ p, li { white-space: pre-wrap; }
        <property name="geometry">
         <rect>
          <x>300</x>
-         <y>190</y>
+         <y>160</y>
          <width>261</width>
          <height>32</height>
         </rect>
@@ -417,7 +417,7 @@ p, li { white-space: pre-wrap; }
        <property name="geometry">
         <rect>
          <x>300</x>
-         <y>240</y>
+         <y>200</y>
          <width>261</width>
          <height>61</height>
         </rect>
@@ -466,22 +466,22 @@ p, li { white-space: pre-wrap; }
       <widget class="QPushButton" name="restorePushButton">
        <property name="geometry">
         <rect>
-         <x>350</x>
-         <y>380</y>
-         <width>201</width>
+         <x>470</x>
+         <y>370</y>
+         <width>151</width>
          <height>27</height>
         </rect>
        </property>
        <property name="text">
-        <string>Restore Everything to Defaults</string>
+        <string>Restore to Defaults</string>
        </property>
       </widget>
       <widget class="QWidget" name="horizontalLayoutWidget_2">
        <property name="geometry">
         <rect>
          <x>300</x>
-         <y>320</y>
-         <width>266</width>
+         <y>270</y>
+         <width>271</width>
          <height>41</height>
         </rect>
        </property>
@@ -501,16 +501,6 @@ p, li { white-space: pre-wrap; }
             <height>0</height>
            </size>
           </property>
-          <item>
-           <property name="text">
-            <string>US English</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>Türkçe</string>
-           </property>
-          </item>
          </widget>
         </item>
        </layout>
@@ -540,6 +530,61 @@ p, li { white-space: pre-wrap; }
          </widget>
         </item>
        </layout>
+      </widget>
+      <widget class="QGroupBox" name="groupBox">
+       <property name="geometry">
+        <rect>
+         <x>290</x>
+         <y>320</y>
+         <width>141</width>
+         <height>111</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>Direction:</string>
+       </property>
+       <widget class="QRadioButton" name="rtlRadioButton">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>20</y>
+          <width>115</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>RTL</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="ltrRadioButton">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>50</y>
+          <width>115</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>LTR</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="autoRadioButton">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>80</y>
+          <width>115</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Auto</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
       </widget>
      </widget>
      <widget class="QWidget" name="tab">
@@ -1429,7 +1474,7 @@ p, li { white-space: pre-wrap; }
         <rect>
          <x>310</x>
          <y>40</y>
-         <width>284</width>
+         <width>308</width>
          <height>251</height>
         </rect>
        </property>
@@ -1448,8 +1493,7 @@ p, li { white-space: pre-wrap; }
         <item>
          <layout class="QHBoxLayout">
           <item>
-           <widget class="QCalendarWidget" name="calendarWidget">
-           </widget>
+           <widget class="QCalendarWidget" name="calendarWidget"/>
           </item>
          </layout>
         </item>

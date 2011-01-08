@@ -37,12 +37,37 @@ OptionsDialog::OptionsDialog(QWidget *parent)
 {
 	ui.setupUi(this);
 	reaSettings();
+        readLanguages();
         QPlastiqueStyle * style = new QPlastiqueStyle();
         OptionsDialog::setStyle(style);
 
 	connect(ui.pushButton, SIGNAL( clicked() ), this, SLOT( startAlarm() ) );
 	connect(ui.browseButton, SIGNAL( clicked() ), this, SLOT( selectDir() ) );
 }
+
+void OptionsDialog::readLanguages()
+{
+    QString dirName;
+    #ifdef Q_OS_WIN32
+        dirName = ".";
+    #elif defined(Q_OS_MACX)
+	dirName = resourcesDir+"/dict/";
+    #else
+        dirName = "/usr/share/hunspell/";
+    #endif
+    QDir dicDirectory( dirName );
+    dicDirectory.setFilter(QDir::Files|QDir::NoSymLinks);
+    QStringList fileList = dicDirectory.entryList();
+    QStringList dicList = fileList.filter(".dic");
+    dicList.removeDuplicates();
+    for (int i = 0; i < dicList.count(); ++i)
+    {
+        QString str =  dicList[i];
+        str.chop(4);
+        ui.languageComboBox->insertItem(i, str);
+    }
+}
+
 
 void OptionsDialog::startAlarm()
 {
@@ -121,6 +146,9 @@ void OptionsDialog::reaSettings()
         ui.plaintextCheckBox->setChecked( settings.value("PlainText", false).toBool() );
         ui.languageComboBox->setCurrentIndex( settings.value("Language", 0).toInt() );
 	ui.indentSpinBox->setValue( settings.value("Indent", 50).toInt() );
+        ui.rtlRadioButton->setChecked( settings.value("RTL", false).toBool() );
+        ui.ltrRadioButton->setChecked( settings.value("LTR", false).toBool() );
+        ui.autoRadioButton->setChecked( settings.value("AutoDirection", true).toBool() );
 
 	QPalette palette;
 	
@@ -181,7 +209,11 @@ void OptionsDialog::writSettings()
 	settings.setValue("DefaultFontSize", ui.fontSizeSpinBox->value() );
 	settings.setValue("PlainText", ui.plaintextCheckBox->isChecked() );
 	settings.setValue("Language", ui.languageComboBox->currentIndex() );
+        settings.setValue("LanguageName", ui.languageComboBox->currentText() );
 	settings.setValue("Indent", ui.indentSpinBox->value() );
+        settings.setValue("RTL", ui.rtlRadioButton->isChecked() );
+        settings.setValue("LTR", ui.ltrRadioButton->isChecked() );
+        settings.setValue("AutoDirection", ui.autoRadioButton->isChecked() );
 	
 	QFont font;
 	QFont defaultFont;

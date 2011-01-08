@@ -6,7 +6,7 @@
 ** adamvert - from http://ubuntuforums.org/
 ** zebulon M - from http://ubuntuforums.org/
 **
-** Artwork by Edward Solorukhin <arch1000@gmail.com>
+** Artwork by Edward Solodukhin <arch1000@gmail.com>
 **
 ** Parts of the following code are from the Phrasis project:
 **
@@ -154,6 +154,10 @@ TextRoom::TextRoom(QWidget *parent, Qt::WFlags f)
 	new QShortcut ( QKeySequence(tr("Ctrl+Up", "Increase Text Size")) , this, SLOT( textSizeUp() ) );
 	new QShortcut ( QKeySequence(tr("Ctrl+Down", "Decrease Text Size")) , this, SLOT( textSizeDown() ) );	
 	new QShortcut ( QKeySequence(tr("Ctrl+W", "Select Font")) , this, SLOT( changeFont() ) );	
+        new QShortcut ( QKeySequence(tr("Ctrl+R", "Align Right")) , this, SLOT( alignRight() ) );
+        new QShortcut ( QKeySequence(tr("Ctrl+L", "Align Left")) , this, SLOT( alignLeft() ) );
+        new QShortcut ( QKeySequence(tr("Ctrl+J", "Align Justify")) , this, SLOT( alignJustify() ) );
+        new QShortcut ( QKeySequence(tr("Ctrl+E", "Align Center")) , this, SLOT( alignCenter() ) );
 	
 	// Service: show cursor
 	new QShortcut ( QKeySequence(tr("Shift+F4", "Show Cursor")) , this, SLOT( sCursor() ) );
@@ -675,8 +679,6 @@ void TextRoom::readSettings()
 	QString back = settings->value("Colors/Background", "#000000" ).toString();
 	QString status_c = settings->value("Colors/StatusColor", "#202020" ).toString();
 
-	loadStyleSheet(foregroundColor, back, status_c);
-
 	// oxygen does weird stuff with the background
 	QApplication::setStyle("plastique");
 
@@ -712,9 +714,21 @@ void TextRoom::readSettings()
 	defaultDir = settings->value("DefaultDirectory", QDir::homePath()).toString();
 	backgroundImage = settings->value("BackgroundImage", "").toString();
 	isPlainText = settings->value("PlainText", false).toBool();
-	language = settings->value("Language", 0).toInt();
+	language = settings->value("LanguageName", "en_US").toString();
 	indentValue = settings->value("Indent", 50).toInt();
 
+        rtlDirection = settings->value("RTL", false).toBool();
+        ltrDirection = settings->value("LTR", false).toBool();
+        autoDirection = settings->value("AutoDirection", true).toBool();
+
+        if(rtlDirection)
+            textEdit->setLayoutDirection(Qt::RightToLeft);
+        if(ltrDirection)
+            textEdit->setLayoutDirection(Qt::LeftToRight);
+        if(autoDirection)
+            textEdit->setLayoutDirection(Qt::LayoutDirectionAuto);
+
+	loadStyleSheet(foregroundColor, back, status_c);
 	textEdit->setMaximumWidth(editorWidth);
 
 	textEdit->document()->blockSignals(true);
@@ -953,6 +967,38 @@ void TextRoom::textItalic()
 	mergeFormatOnWordOrSelection(fmt);
 }
 
+void TextRoom::alignRight()
+{
+        QTextBlockFormat fmt;
+        QTextCursor tc = textEdit->textCursor();
+        fmt.setAlignment(Qt::AlignRight);
+        tc.mergeBlockFormat(fmt);
+}
+
+void TextRoom::alignLeft()
+{
+    QTextBlockFormat fmt;
+    QTextCursor tc = textEdit->textCursor();
+    fmt.setAlignment(Qt::AlignLeft);
+    tc.mergeBlockFormat(fmt);
+}
+
+void TextRoom::alignJustify()
+{
+    QTextBlockFormat fmt;
+    QTextCursor tc = textEdit->textCursor();
+    fmt.setAlignment(Qt::AlignJustify);
+    tc.mergeBlockFormat(fmt);
+}
+
+void TextRoom::alignCenter()
+{
+    QTextBlockFormat fmt;
+    QTextCursor tc = textEdit->textCursor();
+    fmt.setAlignment(Qt::AlignHCenter);
+    tc.mergeBlockFormat(fmt);
+}
+
 void TextRoom::textSizeUp()
 {
 	textSize = textEdit->currentFont().pointSize();
@@ -1054,30 +1100,20 @@ void TextRoom::spellCheck()
 	textVar.replace("%", "+");
 	textVar.replace("\"", "+");
 	QStringList wordList = textVar.split("+", QString::SkipEmptyParts);
-	
+
 	QString affFileName;
 	QString dicFileName;
 #ifdef Q_OS_WIN32
-	affFileName = "dict/";
-	dicFileName = "dict/";
+	affFileName = language+".aff";
+	dicFileName = language+".dic";
 #elif defined(Q_OS_MACX)
-	affFileName = dicFileName = resourcesDir+"/dict/";
+	affFileName = resourcesDir+"/dict/"+language+".aff";
+	dicFileName = resourcesDir+"/dict/"+language+".dic";
 #else
-	affFileName = "/usr/share/myspell/dicts/";
-	dicFileName = "/usr/share/myspell/dicts/";
+	affFileName = "/usr/share/hunspell/"+language+".aff";
+	dicFileName = "/usr/share/hunspell/"+language+".dic";
 #endif
 
-	if (language == 0)
-	{
-		affFileName.append("en_US.aff");
-		dicFileName.append("en_US.dic");
-	}
-	else if (language == 1)
-	{
-		affFileName.append("tr.aff");
-		dicFileName.append("tr.dic");
-	}
-	
 	pMS= new Hunspell(affFileName.toLocal8Bit(), dicFileName.toLocal8Bit());
 	QTextCharFormat highlightFormat;
 	highlightFormat.setUnderlineColor(Qt::red);

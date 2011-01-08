@@ -1,4 +1,4 @@
-TextRoom v0.6.5
+TextRoom v0.7RC1
 http://code.google.com/p/textroom/
 
 
@@ -16,6 +16,8 @@ Code, artwork, help and insights by:
 adamvert - from http://ubuntuforums.org/
 Donny Lim - <donnylucky at gmail dot com>
 Magnus Edvardsson (a.k.a. zebulon M) - from http://ubuntuforums.org/
+
+Artwork by Edward Solodukhin
 
 
 1. Introduction
@@ -36,8 +38,6 @@ To compile TextRoom, you will need the development packages
 
 Cd to the directory this README file is. Compilation includes three steps:
 
-NOTE to developers on MacOS X: You can just install the Qt framework followed by a deployment of the SDL and SDL_mixer frameworks. In the end issue ./MacOS/build-mac-bundle.sh from this folder.
-
 qmake
 make
 sudo make install
@@ -49,24 +49,13 @@ The program stores its preferences in ~/.config/textroom/TextRoom.conf, but you 
 
 4. Features
 -----------
--Version 0.6.3
+ ** What's New in 0.6.6?
+ * Fixed background image loading at startup bug.
+ * Fixed scratchpad background image bug.
+ * Added functions to look for the installed hunspell dictionaries. Now it's possible to use more dictionaries. On Windows, simply put the .dic and .aff file of hunspell dictionary in the folder in which the program is.
+ * Added RTL direction support.
 
- * Migrated spellcheck to Hunspell.
- * Universal Linuz installer.
- * Fixed some bugs.
-
--Version 0.6.2
-
- * Printing support.
- * Spellcheck with aspell.
- * Background images.
- * More statusbar customizations, like transparency.
- * File association with .txr files. 
- * Restoring all settings to defaults.
- * Plain text only or rich text options.
-
--Version 0.6.1
-
+ ** In 0.6.5
  * basic rich text editing: bold, italic, underline, and changing font, font size and color
  * configurable statusbar colors and fonts
  * configurable editor width and height
@@ -80,8 +69,19 @@ The program stores its preferences in ~/.config/textroom/TextRoom.conf, but you 
  * targets: setting a target word count
  * targets: setting short deadlines to write in minutes
  * keyboard shortcuts for the most common tasks (if you start the program for the first time, just press F1 for help)
- * typing sounds similar to a typewriter which can be disabled.
-may be cross-platform: We are only supporting Linux right now. Because we don't have Windows or MacOSX.
+ * typing sounds similar to a typewriter which can be disabled
+ * cross-platform, TextRoom works on Windows, Mac OS X, Linux and FreeBSD.
+ * Spellcheck with hunspell (US English and Turkish, for now.).
+ * Universal Linux installer.
+ * Printing support.
+ * Background images.
+ * Transparent statusbar.
+ * File association with .txr files.
+ * Restoring all settings to defaults.
+ * Plain text only or rich text options.
+ * Scratchpad.
+ * Line indent (Shift+Enter ignores Indent).
+
 
 5. How to use TextRoom
 ----------------------
@@ -91,6 +91,7 @@ F1 ----------- Help screen
 F2 ----------- Options and Settings screen.
 F3 ----------- About
 F5 ----------- Check Spelling
+F6 ----------- Scratchpad
 F11 ---------- Fullscreen on/off
 Escape ------- Quit or exit fullscreen, close About and Help dialogs 
 Ctrl+M ------- Minimize TextRoom
@@ -114,6 +115,10 @@ Ctrl+B ------- Bold
 Ctrl+I ------- Italic
 Ctrl+U ------- Underline
 Ctrl+Up/Down - Change font size
+Ctrl+R ------- Align Right
+Ctrl+L ------- Align Left
+Ctrl+J ------- Align Justify
+Ctrl+E ------- Align Center
 
 Shift+F4 ----- Go back to cursor position
 Ctrl+F ------- Find

@@ -43,6 +43,7 @@ public:
 
 private slots:
 	void reaSettings();
+        void readLanguages();
 	void writSettings();
 	void on_pushButtonOk_clicked();
 	void on_pbFontColor_clicked();

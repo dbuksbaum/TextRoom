@@ -39,22 +39,25 @@
     <rect>
      <x>10</x>
      <y>10</y>
-     <width>351</width>
-     <height>351</height>
+     <width>341</width>
+     <height>341</height>
     </rect>
    </property>
    <property name="styleSheet">
     <string notr="true">background-image: url(:/images/textroom-about.png);
-color: rgb(255, 255, 255);
-background-repeat: no-repeat;</string>
+color: rgb(255, 255, 255);</string>
    </property>
    <property name="frameShape">
     <enum>QFrame::NoFrame</enum>
    </property>
+   <property name="verticalScrollBarPolicy">
+    <enum>Qt::ScrollBarAlwaysOff</enum>
+   </property>
+   <property name="horizontalScrollBarPolicy">
+    <enum>Qt::ScrollBarAlwaysOff</enum>
+   </property>
   </widget>
  </widget>
- <resources>
-  <include location="../../resource/textroom.qrc"/>
- </resources>
+ <resources/>
  <connections/>
 </ui>
