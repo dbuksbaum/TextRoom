@@ -4,14 +4,38 @@ DEPENDPATH += . \
     resource \
     src \
     ui
-INCLUDEPATH += . \
-    src \
-    src/include \
-    /usr/include \
-    /usr/include/hunspell
-!macx {
-    INCLUDEPATH += /usr/include/SDL
+
+linux-g++ {
+	INCLUDEPATH += . \
+	    src \
+	    src/include \
+	    /usr/include \
+	    /usr/include/hunspell \
+	    /usr/include/SDL
+	
 }
+
+macx {
+	INCLUDEPATH += . \
+	    src \
+	    src/include \
+	    /usr/include \
+	    /usr/include/hunspell \
+}
+
+win32 {
+	INCLUDEPATH += . \
+	     src \
+ 	     src/include \
+	     "C:\Qt\2010.02.1\mingw\include" \
+ 	     "C:\Qt\2010.02.1\mingw\include\hunspell" \
+	 RC_FILE +=  resource/images/textroom.rc
+	 CONFIG +=  release  build_all
+         LIBS = -lSDL \
+              -lSDL_mixer \
+              -lhunspell
+}
+
 DESTDIR += .
 OBJECTS_DIR += temp
 MOC_DIR += temp
@@ -39,10 +63,10 @@ SOURCES += src/helpdialog.cpp \
     src/scratchpad.cpp \
     src/about.cpp
 RESOURCES += resource/textroom.qrc
-!macx {
+
+linux-g++ {
     CONFIG += release \
         build_all
-
     INSTALLS += data \
         dict \
         target \
@@ -53,12 +77,26 @@ RESOURCES += resource/textroom.qrc
     LIBS = -lSDL \
         -lSDL_mixer \
         -lhunspell
+    data.path = /usr/share/sounds
+    data.files = resource/sounds/*
+    target.path = /usr/bin
+    desktop.path = /usr/share/applications
+    desktop.files = resource/desktop/textroom.desktop
+    doc-icon.path = /usr/share/textroom
+    doc-icon.files = resource/images/textroom-doc.png
+    mime.path = /usr/share/textroom
+    mime.files = resource/desktop/textroom-txr-mime.xml
+    uninstaller.path = /usr/bin
+    uninstaller.files = resource/desktop/textroom-uninstall
+    dict.path = /usr/share/hunspell
+    dict.files = resource/dict/*
+    icon.path = /usr/share/pixmaps
+    icon.files = resource/images/textroom.png
 }
+
 macx {
     CONFIG += release \
         build_all \
-	x86 \
-	ppc
 
     QMAKE_LFLAGS += -F/Library/Frameworks/SDL.framework \
         -F/Library/Frameworks/SDL_mixer.framework
@@ -97,26 +135,10 @@ macx {
     sounds.path = textroom.app/Contents/Resources/sounds
     sounds.files = resource/sounds/*
 }
+
 QT += core \
     gui
 
-!macx {
-    data.path = /usr/share/sounds
-    data.files = resource/sounds/*
-    target.path = /usr/bin
-    desktop.path = /usr/share/applications
-    desktop.files = resource/desktop/textroom.desktop
-    doc-icon.path = /usr/share/textroom
-    doc-icon.files = resource/images/textroom-doc.png
-    mime.path = /usr/share/textroom
-    mime.files = resource/desktop/textroom-txr-mime.xml
-    uninstaller.path = /usr/bin
-    uninstaller.files = resource/desktop/textroom-uninstall
-    dict.path = /usr/share/hunspell
-    dict.files = resource/dict/*
-    icon.path = /usr/share/pixmaps
-    icon.files = resource/images/textroom.png
-}
-unix!macx:system(xdg-icon-resource install --context mimetypes --size 48 ./resource/images/textroom-doc.png application/x-txr)
-unix!macx:system(xdg-mime install ./resource/desktop/textroom-txr-mime.xml)
-unix!macx:system(xdg-mime default textroom.desktop application/x-txr)	
+linux-g++:system(xdg-icon-resource install --context mimetypes --size 48 ./resource/images/textroom-doc.png application/x-txr)
+linux-g++:system(xdg-mime install ./resource/desktop/textroom-txr-mime.xml)
+linux-g++:system(xdg-mime default textroom.desktop application/x-txr)	
