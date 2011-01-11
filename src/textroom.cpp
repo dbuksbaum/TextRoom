@@ -717,16 +717,7 @@ void TextRoom::readSettings()
 	language = settings->value("LanguageName", "en_US").toString();
 	indentValue = settings->value("Indent", 50).toInt();
 
-        rtlDirection = settings->value("RTL", false).toBool();
-        ltrDirection = settings->value("LTR", false).toBool();
-        autoDirection = settings->value("AutoDirection", true).toBool();
-
-        if(rtlDirection)
-            textEdit->setLayoutDirection(Qt::RightToLeft);
-        if(ltrDirection)
-            textEdit->setLayoutDirection(Qt::LeftToRight);
-        if(autoDirection)
-            textEdit->setLayoutDirection(Qt::LayoutDirectionAuto);
+        textEdit->setLayoutDirection(Qt::LayoutDirectionAuto);
 
 	loadStyleSheet(foregroundColor, back, status_c);
 	textEdit->setMaximumWidth(editorWidth);

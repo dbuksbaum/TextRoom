@@ -531,61 +531,6 @@ p, li { white-space: pre-wrap; }
         </item>
        </layout>
       </widget>
-      <widget class="QGroupBox" name="groupBox">
-       <property name="geometry">
-        <rect>
-         <x>290</x>
-         <y>320</y>
-         <width>141</width>
-         <height>111</height>
-        </rect>
-       </property>
-       <property name="title">
-        <string>Direction:</string>
-       </property>
-       <widget class="QRadioButton" name="rtlRadioButton">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>20</y>
-          <width>115</width>
-          <height>22</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>RTL</string>
-        </property>
-       </widget>
-       <widget class="QRadioButton" name="ltrRadioButton">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>50</y>
-          <width>115</width>
-          <height>22</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>LTR</string>
-        </property>
-       </widget>
-       <widget class="QRadioButton" name="autoRadioButton">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>80</y>
-          <width>115</width>
-          <height>22</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>Auto</string>
-        </property>
-        <property name="checked">
-         <bool>true</bool>
-        </property>
-       </widget>
-      </widget>
      </widget>
      <widget class="QWidget" name="tab">
       <attribute name="title">

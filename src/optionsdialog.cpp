@@ -146,9 +146,6 @@ void OptionsDialog::reaSettings()
         ui.plaintextCheckBox->setChecked( settings.value("PlainText", false).toBool() );
         ui.languageComboBox->setCurrentIndex( settings.value("Language", 0).toInt() );
 	ui.indentSpinBox->setValue( settings.value("Indent", 50).toInt() );
-        ui.rtlRadioButton->setChecked( settings.value("RTL", false).toBool() );
-        ui.ltrRadioButton->setChecked( settings.value("LTR", false).toBool() );
-        ui.autoRadioButton->setChecked( settings.value("AutoDirection", true).toBool() );
 
 	QPalette palette;
 	
@@ -211,9 +208,6 @@ void OptionsDialog::writSettings()
 	settings.setValue("Language", ui.languageComboBox->currentIndex() );
         settings.setValue("LanguageName", ui.languageComboBox->currentText() );
 	settings.setValue("Indent", ui.indentSpinBox->value() );
-        settings.setValue("RTL", ui.rtlRadioButton->isChecked() );
-        settings.setValue("LTR", ui.ltrRadioButton->isChecked() );
-        settings.setValue("AutoDirection", ui.autoRadioButton->isChecked() );
 	
 	QFont font;
 	QFont defaultFont;

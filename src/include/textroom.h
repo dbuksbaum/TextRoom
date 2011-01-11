@@ -164,9 +164,6 @@ private:
 	bool isScrollBarVisible;
 	bool isPageCount;
 	bool isCharacterCount;
-        bool rtlDirection;
-        bool ltrDirection;
-        bool autoDirection;
 	int channel;
 	Mix_Chunk *soundenter;
 	Mix_Chunk *soundany;
