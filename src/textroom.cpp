@@ -393,6 +393,13 @@ void TextRoom::loadFile(const QString &fileName)
 		newFile();
 		return;
 	}
+	else if (fileName.endsWith("odt"))
+	{
+		QMessageBox::warning(this, qApp->applicationName(),
+							tr("Cannot read odt files."));
+		newFile();
+		return;
+	}
 	
 	QByteArray data = file.readAll();
 	QTextCodec *codec = QTextCodec::codecForName("UTF-8");
