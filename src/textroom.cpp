@@ -158,7 +158,7 @@ TextRoom::TextRoom(QWidget *parent, Qt::WFlags f)
         new QShortcut ( QKeySequence(tr("Ctrl+L", "Align Left")) , this, SLOT( alignLeft() ) );
         new QShortcut ( QKeySequence(tr("Ctrl+J", "Align Justify")) , this, SLOT( alignJustify() ) );
         new QShortcut ( QKeySequence(tr("Ctrl+E", "Align Center")) , this, SLOT( alignCenter() ) );
-	
+
 	// Service: show cursor
 	new QShortcut ( QKeySequence(tr("Shift+F4", "Show Cursor")) , this, SLOT( sCursor() ) );
 
@@ -354,7 +354,7 @@ bool TextRoom::saveAs()
 	{
 		extension = "*.txr";
 	}
-	QString fileName = QFileDialog::getSaveFileName(this, "Save As", defaultDir + "/" + extension, "TextRoom Documents (*.txr);;Html Files (*.htm *.html);;Text Documents (*.txt)");
+        QString fileName = QFileDialog::getSaveFileName(this, "Save As", defaultDir + "/" + extension, "TextRoom Documents (*.txr);;Html Files (*.htm *.html);;Text Documents (*.txt);;Open Document Text (*.odt)");
 	if (!fileName.isEmpty())
 	{
 		return saveFile(fileName);
@@ -484,7 +484,11 @@ bool TextRoom::saveFile(const QString &fileName)
 		
 		out <<scratchDialog->ui.scratchTextEdit->document()->toHtml(ba) << "\n<split>\n" << textEdit->document()->toHtml(ba);
 	}
-	else
+        else if (fileName.endsWith("odt"))
+        {
+                QTextDocumentWriter writer(fileName, "odf");
+                writer.write(textEdit->document());
+        }
 	{
 		QByteArray ba = "utf-8";
 		out << textEdit->document()->toHtml(ba);
