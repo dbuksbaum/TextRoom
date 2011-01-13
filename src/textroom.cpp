@@ -158,6 +158,7 @@ TextRoom::TextRoom(QWidget *parent, Qt::WFlags f)
         new QShortcut ( QKeySequence(tr("Ctrl+L", "Align Left")) , this, SLOT( alignLeft() ) );
         new QShortcut ( QKeySequence(tr("Ctrl+J", "Align Justify")) , this, SLOT( alignJustify() ) );
         new QShortcut ( QKeySequence(tr("Ctrl+E", "Align Center")) , this, SLOT( alignCenter() ) );
+        new QShortcut ( QKeySequence(tr("Ctrl+Alt+I", "Insert Image")) , this, SLOT( insertImage() ) );
 
 	// Service: show cursor
 	new QShortcut ( QKeySequence(tr("Shift+F4", "Show Cursor")) , this, SLOT( sCursor() ) );
@@ -728,8 +729,11 @@ void TextRoom::readSettings()
 	isPlainText = settings->value("PlainText", false).toBool();
 	language = settings->value("LanguageName", "en_US").toString();
 	indentValue = settings->value("Indent", 50).toInt();
+        paragraphSpacing = settings->value("ParagraphSpacing", 20).toInt();
+        tabStopWidth = settings->value("TabStopWidth", 80).toInt();
 
         textEdit->setLayoutDirection(Qt::LayoutDirectionAuto);
+        textEdit->setTabStopWidth(tabStopWidth);
 
 	loadStyleSheet(foregroundColor, back, status_c);
 	textEdit->setMaximumWidth(editorWidth);
@@ -1179,8 +1183,28 @@ void TextRoom::indentLines(int value)
 	{
 		QTextBlockFormat tfor;
 		tfor.setTextIndent(value);
+                tfor.setBottomMargin(paragraphSpacing);
 		tc.mergeBlockFormat(tfor);
 		tc.movePosition(QTextCursor::NextBlock);
 	}
 	textEdit->document()->blockSignals(false);
+}
+
+void TextRoom::insertImage()
+{
+    QString dirToOpen;
+    if ( curDir.isEmpty() )
+    {
+            dirToOpen = QDir::homePath();
+    }
+    else
+    {
+            dirToOpen = curDir;
+    }
+    QString fileName = QFileDialog::getOpenFileName(this, tr("Select Image"), dirToOpen);
+    if (!fileName.isEmpty())
+    {
+      textEdit->insertHtml("<img src="+fileName+">");
+    }
+
 }

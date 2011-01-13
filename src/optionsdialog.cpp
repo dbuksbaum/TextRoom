@@ -146,6 +146,8 @@ void OptionsDialog::reaSettings()
         ui.plaintextCheckBox->setChecked( settings.value("PlainText", false).toBool() );
         ui.languageComboBox->setCurrentIndex( settings.value("Language", 0).toInt() );
 	ui.indentSpinBox->setValue( settings.value("Indent", 50).toInt() );
+        ui.paraSpacingSpinBox->setValue( settings.value("ParagraphSpacing", 20).toInt() );
+        ui.tabWidthSpinBox->setValue( settings.value("TabStopWidth" ,80).toInt() );
 
 	QPalette palette;
 	
@@ -208,6 +210,8 @@ void OptionsDialog::writSettings()
 	settings.setValue("Language", ui.languageComboBox->currentIndex() );
         settings.setValue("LanguageName", ui.languageComboBox->currentText() );
 	settings.setValue("Indent", ui.indentSpinBox->value() );
+        settings.setValue("ParagraphSpacing", ui.paraSpacingSpinBox->value() );
+        settings.setValue("TabStopWidth", ui.tabWidthSpinBox->value() );
 	
 	QFont font;
 	QFont defaultFont;

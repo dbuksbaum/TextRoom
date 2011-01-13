@@ -88,7 +88,8 @@ private slots:
 	void vPositionChanged();
 	void hSliderPositionChanged();
 	void showScratchPad();
-	void spellCheck();
+        void spellCheck();
+        void insertImage();
 	 
 private:
 	bool maybeSave();
@@ -152,6 +153,8 @@ private:
 	int textSize;
 	int pageCount;
 	int characterCount;
+        int paragraphSpacing;
+        int tabStopWidth;
         QString language;
 	int indentValue;
 	QString backgroundImage;

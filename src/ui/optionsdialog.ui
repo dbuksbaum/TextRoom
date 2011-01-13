@@ -467,7 +467,7 @@ p, li { white-space: pre-wrap; }
        <property name="geometry">
         <rect>
          <x>470</x>
-         <y>370</y>
+         <y>400</y>
          <width>151</width>
          <height>27</height>
         </rect>
@@ -531,6 +531,69 @@ p, li { white-space: pre-wrap; }
         </item>
        </layout>
       </widget>
+      <widget class="QWidget" name="horizontalLayoutWidget_4">
+       <property name="geometry">
+        <rect>
+         <x>300</x>
+         <y>320</y>
+         <width>271</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_5">
+        <item>
+         <widget class="QLabel" name="label_12">
+          <property name="text">
+           <string>Paragraph Spacing: </string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QSpinBox" name="paraSpacingSpinBox">
+          <property name="value">
+           <number>20</number>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="horizontalLayoutWidget_5">
+       <property name="geometry">
+        <rect>
+         <x>300</x>
+         <y>360</y>
+         <width>271</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_6">
+        <item>
+         <widget class="QLabel" name="label_14">
+          <property name="text">
+           <string>Tab Width:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QSpinBox" name="tabWidthSpinBox">
+          <property name="value">
+           <number>80</number>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <zorder>layoutWidget</zorder>
+      <zorder>layoutWidget_5</zorder>
+      <zorder>layoutWidget_6</zorder>
+      <zorder>layoutWidget_7</zorder>
+      <zorder>horizontalLayoutWidget</zorder>
+      <zorder>restorePushButton</zorder>
+      <zorder>horizontalLayoutWidget_2</zorder>
+      <zorder>horizontalLayoutWidget_3</zorder>
+      <zorder>horizontalLayoutWidget_4</zorder>
+      <zorder>horizontalLayoutWidget_5</zorder>
+      <zorder></zorder>
      </widget>
      <widget class="QWidget" name="tab">
       <attribute name="title">
