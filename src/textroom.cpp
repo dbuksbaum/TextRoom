@@ -489,6 +489,7 @@ bool TextRoom::saveFile(const QString &fileName)
                 QTextDocumentWriter writer(fileName, "odf");
                 writer.write(textEdit->document());
         }
+	else
 	{
 		QByteArray ba = "utf-8";
 		out << textEdit->document()->toHtml(ba);
