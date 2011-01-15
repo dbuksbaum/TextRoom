@@ -1,4 +1,4 @@
-/****************************************************************************
+f/****************************************************************************
 ** Copyright (C) 2008 Petar Toushkov <peter dot toushkov at gmail.com>
 ** Copyright (C) 2008 Omer Bahri Gordebak <gordebak at gmail.com>
 **
@@ -93,7 +93,7 @@ void OptionsDialog::selectDir()
 void OptionsDialog::reaSettings()
 {
 #ifdef Q_OS_WIN32
-	QSettings settings(QSettings::IniFormat, QSettings::UserScope, QApplication::organizationName());
+	QSettings settings(QDir::currentPath()+"/TextRoom.ini", QSettings::IniFormat);
 #else
 	QSettings settings;
 #endif
@@ -170,7 +170,7 @@ void OptionsDialog::writSettings()
 {
 
 #ifdef Q_OS_WIN32
-	QSettings settings(QSettings::IniFormat, QSettings::UserScope, QApplication::organizationName());
+	QSettings settings(QDir::currentPath()+"/TextRoom.ini", QSettings::IniFormat);
 #else
 	QSettings settings;
 #endif
@@ -308,7 +308,7 @@ void OptionsDialog::on_backgroundImagePushButton_clicked()
 void OptionsDialog::on_restorePushButton_clicked()
 {
 #ifdef Q_OS_WIN32
-	QSettings settings(QSettings::IniFormat, QSettings::UserScope, QApplication::organizationName());
+	QSettings settings(QDir::currentPath()+"/TextRoom.ini", QSettings::IniFormat);
 #else
 	QSettings settings;
 #endif
