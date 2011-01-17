@@ -1,4 +1,4 @@
-TextRoom v0.7RC1
+TextRoom v0.7.1
 http://code.google.com/p/textroom/
 
 
@@ -26,7 +26,7 @@ TextRoom is a basic full-screen rich text editor for writers.
 
 2. Requirements
 ---------------
- * Qt >= 4.5.1 
+ * Qt >= 4.6.2 
  * SDL >= 1.2.13
  * SDL_mixer >= 1.2.8
  * hunspell >= 1.2.6
@@ -49,13 +49,12 @@ The program stores its preferences in ~/.config/textroom/TextRoom.conf, but you 
 
 4. Features
 -----------
- ** What's New in 0.6.6?
- * Fixed background image loading at startup bug.
- * Fixed scratchpad background image bug.
- * Added functions to look for the installed hunspell dictionaries. Now it's possible to use more dictionaries. On Windows, simply put the .dic and .aff file of hunspell dictionary in the folder in which the program is.
- * Added RTL direction support.
-
- ** In 0.6.5
+ Version 0.7.1
+ * .odt export
+ * Adjustable paragraph spacing and tab stop width.
+ * Inserting images.
+ * Functions to look for the installed hunspell dictionaries. Now it's possible to use more dictionaries. On Windows, simply put the .dic and .aff file of hunspell dictionary in the folder in which the program is.
+ * RTL direction support.
  * basic rich text editing: bold, italic, underline, and changing font, font size and color
  * configurable statusbar colors and fonts
  * configurable editor width and height
@@ -102,6 +101,7 @@ Ctrl+O ------- Open
 Ctrl+S ------- Save
 Ctrl+Shift+S - Save As
 Ctrl+P ------- Print
+Ctrl+Alt+I --- Insert Image
 
 Ctrl+X ------- Cut
 Ctrl+C ------- Copy

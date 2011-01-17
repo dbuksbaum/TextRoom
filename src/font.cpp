@@ -41,7 +41,7 @@ SelectFont::SelectFont(QWidget *parent) : QDialog(parent)
 void SelectFont::readSettings()
 {
 #ifdef Q_OS_WIN32
-	QSettings settings(QDir::currentPath()+"/TextRoom.ini", QSettings::IniFormat);
+	QSettings settings(QSettings::IniFormat, QSettings::UserScope, QApplication::organizationName());
 #else
 	QSettings settings;
 #endif
@@ -65,7 +65,7 @@ void SelectFont::readSettings()
 void SelectFont::writeSettings()
 {
 #ifdef Q_OS_WIN32
-	QSettings settings(QDir::currentPath()+"/TextRoom.ini", QSettings::IniFormat);
+	QSettings settings(QSettings::IniFormat, QSettings::UserScope, QApplication::organizationName());
 #else
 	QSettings settings;
 #endif

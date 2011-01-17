@@ -36,6 +36,7 @@ OptionsDialog::OptionsDialog(QWidget *parent)
 	: QDialog(parent)
 {
 	ui.setupUi(this);
+	resourcesDir = ((TextRoom *)parent)->resourcesDir;
 	reaSettings();
         readLanguages();
         QPlastiqueStyle * style = new QPlastiqueStyle();
@@ -93,7 +94,7 @@ void OptionsDialog::selectDir()
 void OptionsDialog::reaSettings()
 {
 #ifdef Q_OS_WIN32
-	QSettings settings(QDir::currentPath()+"/TextRoom.ini", QSettings::IniFormat);
+	QSettings settings(QSettings::IniFormat, QSettings::UserScope, QApplication::organizationName());
 #else
 	QSettings settings;
 #endif
@@ -170,7 +171,7 @@ void OptionsDialog::writSettings()
 {
 
 #ifdef Q_OS_WIN32
-	QSettings settings(QDir::currentPath()+"/TextRoom.ini", QSettings::IniFormat);
+	QSettings settings(QSettings::IniFormat, QSettings::UserScope, QApplication::organizationName());
 #else
 	QSettings settings;
 #endif
@@ -308,7 +309,7 @@ void OptionsDialog::on_backgroundImagePushButton_clicked()
 void OptionsDialog::on_restorePushButton_clicked()
 {
 #ifdef Q_OS_WIN32
-	QSettings settings(QDir::currentPath()+"/TextRoom.ini", QSettings::IniFormat);
+	QSettings settings(QSettings::IniFormat, QSettings::UserScope, QApplication::organizationName());
 #else
 	QSettings settings;
 #endif

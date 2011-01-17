@@ -44,6 +44,7 @@
 #include "about.h"
 #include "scratchpad.h"
 
+
 TextRoom::TextRoom(QWidget *parent, Qt::WFlags f)
 		: QWidget(parent, f), sentenceTally(0)
 {
@@ -70,7 +71,7 @@ TextRoom::TextRoom(QWidget *parent, Qt::WFlags f)
 
 // Read settings saved by Options Dialog.
 #ifdef Q_OS_WIN32
-	settings = new QSettings(QDir::currentPath()+"/TextRoom.ini", QSettings::IniFormat);
+	settings = new QSettings(QSettings::IniFormat, QSettings::UserScope, QApplication::applicationName());
 #else
 	settings = new QSettings();
 #endif
@@ -158,6 +159,8 @@ TextRoom::TextRoom(QWidget *parent, Qt::WFlags f)
         new QShortcut ( QKeySequence(tr("Ctrl+J", "Align Justify")) , this, SLOT( alignJustify() ) );
         new QShortcut ( QKeySequence(tr("Ctrl+E", "Align Center")) , this, SLOT( alignCenter() ) );
         new QShortcut ( QKeySequence(tr("Ctrl+Alt+I", "Insert Image")) , this, SLOT( insertImage() ) );
+
+	// Service: show cursor
 	new QShortcut ( QKeySequence(tr("Shift+F4", "Show Cursor")) , this, SLOT( sCursor() ) );
 
 	//fw = new QFileSystemWatcher(this);

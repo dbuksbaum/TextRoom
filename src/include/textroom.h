@@ -51,6 +51,11 @@ class TextRoom : public QWidget, public Ui::TextRoomMain
  
 public:
 	TextRoom(QWidget *parent = 0, Qt::WFlags f = 0 );
+#ifdef Q_OS_MACX
+	// make it available to options dialog.
+	QString resourcesDir;
+#endif
+
 
 private slots:
 
@@ -124,9 +129,6 @@ private:
 	QString timeFormat;
 	QString defaultDir;
 	QString shownName;
-#ifdef Q_OS_MACX
-	QString resourcesDir;
-#endif
 	bool wordCountChanged;
 	int words;
 	int wordcount;

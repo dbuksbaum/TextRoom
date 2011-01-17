@@ -65,6 +65,7 @@ private:
 	int setAlarm;
 	QString dirSelected;
         QDate date;
+	QString resourcesDir;
 
 private:
 

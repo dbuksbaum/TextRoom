@@ -96,7 +96,7 @@ linux-g++ {
 
 macx {
     CONFIG += release \
-        build_all \
+        build_all
 
     QMAKE_LFLAGS += -F/Library/Frameworks/SDL.framework \
         -F/Library/Frameworks/SDL_mixer.framework
