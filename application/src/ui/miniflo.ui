@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MiniFlo</class>
+ <widget class="QDialog" name="MiniFlo">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>883</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../../resource/images/icons-app.qrc">
+    <normaloff>:/application/icons/flo.svg</normaloff>:/application/icons/flo.svg</iconset>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QToolBar" name="blockToolBar">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="windowTitle">
+      <string>Object Operations</string>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <addaction name="actionNew"/>
+     <addaction name="actionLoad"/>
+     <addaction name="actionSave"/>
+     <addaction name="actionCopy"/>
+     <addaction name="actionCut"/>
+     <addaction name="actionPaste"/>
+     <addaction name="actionAddIdea"/>
+     <addaction name="actionRemoveIdea"/>
+     <addaction name="actionProperties"/>
+     <addaction name="actionColorIdea"/>
+     <addaction name="actionChangeType"/>
+     <addaction name="actionReparentIdea"/>
+     <addaction name="actionSelectAll"/>
+     <addaction name="actionArrangeChildren"/>
+     <addaction name="actionQuit"/>
+     <addaction name="actionInsertAsOutline"/>
+    </widget>
+   </item>
+   <item>
+    <widget class="MindMapView" name="graphicsView">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+    </widget>
+   </item>
+  </layout>
+  <action name="actionQuit">
+   <property name="icon">
+    <iconset resource="../../resource/images/icons-app.qrc">
+     <normaloff>:/application/icons/process-stop.svg</normaloff>:/application/icons/process-stop.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Close</string>
+   </property>
+   <property name="shortcut">
+    <string>Esc</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::QuitRole</enum>
+   </property>
+  </action>
+  <action name="actionArrangeChildren">
+   <property name="icon">
+    <iconset resource="../../resource/images/icons-app.qrc">
+     <normaloff>:/application/icons/align-autoplace.svg</normaloff>:/application/icons/align-autoplace.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Arrange</string>
+   </property>
+  </action>
+  <action name="actionReparentIdea">
+   <property name="icon">
+    <iconset resource="../../resource/images/icons-app.qrc">
+     <normaloff>:/application/icons/block-reparent.svg</normaloff>:/application/icons/block-reparent.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Reparent</string>
+   </property>
+  </action>
+  <action name="actionRemoveIdea">
+   <property name="icon">
+    <iconset resource="../../resource/images/icons-app.qrc">
+     <normaloff>:/application/icons/list-remove.svg</normaloff>:/application/icons/list-remove.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Remove</string>
+   </property>
+  </action>
+  <action name="actionCut">
+   <property name="icon">
+    <iconset resource="../../resource/images/icons-app.qrc">
+     <normaloff>:/application/icons/edit-cut.svg</normaloff>:/application/icons/edit-cut.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Cut</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+X</string>
+   </property>
+  </action>
+  <action name="actionCopy">
+   <property name="icon">
+    <iconset resource="../../resource/images/icons-app.qrc">
+     <normaloff>:/application/icons/edit-copy.svg</normaloff>:/application/icons/edit-copy.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Copy</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+C</string>
+   </property>
+  </action>
+  <action name="actionPaste">
+   <property name="icon">
+    <iconset resource="../../resource/images/icons-app.qrc">
+     <normaloff>:/application/icons/edit-paste.svg</normaloff>:/application/icons/edit-paste.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Paste</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+V</string>
+   </property>
+  </action>
+  <action name="actionSelectAll">
+   <property name="icon">
+    <iconset resource="../../resource/images/icons-app.qrc">
+     <normaloff>:/application/icons/edit-selectall.svg</normaloff>:/application/icons/edit-selectall.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Select All</string>
+   </property>
+  </action>
+  <action name="actionAddIdea">
+   <property name="icon">
+    <iconset resource="../../resource/images/icons-app.qrc">
+     <normaloff>:/application/icons/list-add.svg</normaloff>:/application/icons/list-add.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Add</string>
+   </property>
+  </action>
+  <action name="actionReload">
+   <property name="icon">
+    <iconset resource="../../resource/images/icons-app.qrc">
+     <normaloff>:/application/icons/document-reload.svg</normaloff>:/application/icons/document-reload.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Reload</string>
+   </property>
+  </action>
+  <action name="actionColorIdea">
+   <property name="icon">
+    <iconset resource="../../resource/images/icons-app.qrc">
+     <normaloff>:/application/icons/block-color.svg</normaloff>:/application/icons/block-color.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Color</string>
+   </property>
+  </action>
+  <action name="actionChangeType">
+   <property name="icon">
+    <iconset resource="../../resource/images/icons-app.qrc">
+     <normaloff>:/application/icons/block-shape.svg</normaloff>:/application/icons/block-shape.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Type</string>
+   </property>
+  </action>
+  <action name="actionProperties">
+   <property name="icon">
+    <iconset resource="../../resource/images/icons-app.qrc">
+     <normaloff>:/application/icons/document-properties.svg</normaloff>:/application/icons/document-properties.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Properties</string>
+   </property>
+  </action>
+  <action name="actionInsertAsOutline">
+   <property name="icon">
+    <iconset>
+     <normalon>:/application/icons/edit-redo.svg</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Export as Text Outline</string>
+   </property>
+   <property name="toolTip">
+    <string>Export as Text Outline</string>
+   </property>
+  </action>
+  <action name="actionNew">
+   <property name="icon">
+    <iconset>
+     <normalon>:/application/icons/document-new.svg</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>New</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="icon">
+    <iconset>
+     <normalon>:/application/icons/document-save.svg</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Save</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionLoad">
+   <property name="icon">
+    <iconset>
+     <normalon>:/application/icons/document-open.svg</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Load</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>MindMapView</class>
+   <extends>QGraphicsView</extends>
+   <header>mindmapview.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="../../resource/images/icons-app.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/library" >
+        <file>icons/document-open.svg</file>
+        <file>icons/edit-redo.svg</file>
+        <file>icons/edit-undo.svg</file>
+        <file>icons/list-add.svg</file>
+        <file>icons/list-remove.svg</file>
+    </qresource>
+</RCC>

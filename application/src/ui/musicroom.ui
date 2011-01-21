@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MusicRoom</class>
+ <widget class="QDialog" name="MusicRoom">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>98</width>
+    <height>58</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MusicRoom</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QToolBar" name="toolBar">
+     <property name="windowTitle">
+      <string>toolBar</string>
+     </property>
+     <addaction name="actionPlay"/>
+     <addaction name="actionLoad"/>
+    </widget>
+   </item>
+  </layout>
+  <action name="actionPlay">
+   <property name="icon">
+    <iconset resource="../../resource/images/icons-app.qrc">
+     <normaloff>:/application/icons/media-playback-start.png</normaloff>:/application/icons/media-playback-start.png</iconset>
+   </property>
+   <property name="text">
+    <string>Play</string>
+   </property>
+   <property name="toolTip">
+    <string>Play</string>
+   </property>
+  </action>
+  <action name="actionPause">
+   <property name="icon">
+    <iconset resource="../../resource/images/icons-app.qrc">
+     <normaloff>:/application/icons/media-playback-pause.png</normaloff>:/application/icons/media-playback-pause.png</iconset>
+   </property>
+   <property name="text">
+    <string>Pause</string>
+   </property>
+   <property name="toolTip">
+    <string>Pause</string>
+   </property>
+  </action>
+  <action name="actionStop">
+   <property name="icon">
+    <iconset resource="../../resource/images/icons-app.qrc">
+     <normaloff>:/application/icons/media-playback-stop.png</normaloff>:/application/icons/media-playback-stop.png</iconset>
+   </property>
+   <property name="text">
+    <string>Stop</string>
+   </property>
+   <property name="toolTip">
+    <string>Stop</string>
+   </property>
+  </action>
+  <action name="actionRewind">
+   <property name="icon">
+    <iconset resource="../../resource/images/icons-app.qrc">
+     <normaloff>:/application/icons/media-seek-backward.png</normaloff>:/application/icons/media-seek-backward.png</iconset>
+   </property>
+   <property name="text">
+    <string>Rewind</string>
+   </property>
+   <property name="toolTip">
+    <string>Rewind</string>
+   </property>
+  </action>
+  <action name="actionNext">
+   <property name="icon">
+    <iconset resource="../../resource/images/icons-app.qrc">
+     <normaloff>:/application/icons/media-seek-forward.png</normaloff>:/application/icons/media-seek-forward.png</iconset>
+   </property>
+   <property name="text">
+    <string>Next</string>
+   </property>
+   <property name="toolTip">
+    <string>Next</string>
+   </property>
+  </action>
+  <action name="actionLoad">
+   <property name="icon">
+    <iconset resource="../../resource/images/icons-app.qrc">
+     <normaloff>:/application/icons/document-open.svg</normaloff>:/application/icons/document-open.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Load</string>
+   </property>
+   <property name="toolTip">
+    <string>Load</string>
+   </property>
+  </action>
+  <action name="actionHide">
+   <property name="icon">
+    <iconset resource="../../resource/images/icons-app.qrc">
+     <normaloff>:/application/icons/edit-undo.svg</normaloff>:/application/icons/edit-undo.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Hide</string>
+   </property>
+   <property name="toolTip">
+    <string>Hide</string>
+   </property>
+  </action>
+  <action name="actionOpenUrl">
+   <property name="icon">
+    <iconset resource="../../resource/images/icons-app.qrc">
+     <normaloff>:/application/icons/creole.svg</normaloff>:/application/icons/creole.svg</iconset>
+   </property>
+   <property name="text">
+    <string>OpenUrl</string>
+   </property>
+   <property name="toolTip">
+    <string>Open Url</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="../../resource/images/icons-app.qrc"/>
+  <include location="../../resource/textroom.qrc"/>
+ </resources>
+ <connections/>
+</ui>

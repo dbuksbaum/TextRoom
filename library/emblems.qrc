@@ -1,0 +1,41 @@
+<RCC>
+    <qresource prefix="/" >
+		<file>emblems/add.svg</file>
+		<file>emblems/audio.svg</file>
+		<file>emblems/certificate.svg</file>
+		<file>emblems/clear.svg</file>
+		<file>emblems/delete.svg</file>
+		<file>emblems/development.svg</file>
+		<file>emblems/error.svg</file>
+		<file>emblems/face-sad.svg</file>
+		<file>emblems/face-smile.svg</file>
+		<file>emblems/favorite.svg</file>
+		<file>emblems/games.svg</file>
+		<file>emblems/go-home.svg</file>
+		<file>emblems/important.svg</file>
+		<file>emblems/important.png</file>
+		<file>emblems/information.svg</file>
+		<file>emblems/internet.svg</file>
+		<file>emblems/mail-attachment.svg</file>
+		<file>emblems/multimedia.svg</file>
+		<file>emblems/network-server.svg</file>
+		<file>emblems/photos.svg</file>
+		<file>emblems/preferences.svg</file>
+		<file>emblems/readonly.svg</file>
+		<file>emblems/refresh.svg</file>
+		<file>emblems/remove.svg</file>
+		<file>emblems/search.svg</file>
+		<file>emblems/shutdown.svg</file>
+		<file>emblems/start.svg</file>
+		<file>emblems/stop.svg</file>
+		<file>emblems/symbolic-link.svg</file>
+		<file>emblems/system.svg</file>
+		<file>emblems/trash-full.svg</file>
+		<file>emblems/trash.svg</file>
+		<file>emblems/unreadable.svg</file>
+		<file>emblems/video.svg</file>
+		<file>emblems/warning.svg</file>
+		<file>emblems/workgroup.svg</file>
+		<file>emblems/none.svg</file>
+    </qresource>
+</RCC>

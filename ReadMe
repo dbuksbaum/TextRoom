@@ -1,4 +1,4 @@
-TextRoom v0.7.1
+TextRoom v0.8.1
 http://code.google.com/p/textroom/
 
 
@@ -26,7 +26,7 @@ TextRoom is a basic full-screen rich text editor for writers.
 
 2. Requirements
 ---------------
- * Qt >= 4.6.2 
+ * Qt >= 4.7 with opengl, svg and xml libraries.
  * SDL >= 1.2.13
  * SDL_mixer >= 1.2.8
  * hunspell >= 1.2.6
@@ -49,9 +49,12 @@ The program stores its preferences in ~/.config/textroom/TextRoom.conf, but you 
 
 4. Features
 -----------
- Version 0.7.1
- * .odt export
- * Adjustable paragraph spacing and tab stop width.
+ Version 0.8.1
+ * MiniFlo Mindmapper based on Flo by Ian Reinhart Geiser.
+ * GetAWord random word generator for creative writers.
+ * MusicRoom very basic music player. (Can't play mp3, but you are good with ogg).
+ * OpenOffice, Writer Document (odt) export.
+ * Adjustable paragraph spacing, cursor width and tab stop width.
  * Inserting images.
  * Functions to look for the installed hunspell dictionaries. Now it's possible to use more dictionaries. On Windows, simply put the .dic and .aff file of hunspell dictionary in the folder in which the program is.
  * RTL direction support.
@@ -91,6 +94,9 @@ F2 ----------- Options and Settings screen.
 F3 ----------- About
 F5 ----------- Check Spelling
 F6 ----------- Scratchpad
+F7 ----------- MiniFlo
+F8 ----------- GetAWord
+F9 ----------- MusicRoom
 F11 ---------- Fullscreen on/off
 Escape ------- Quit or exit fullscreen, close About and Help dialogs 
 Ctrl+M ------- Minimize TextRoom

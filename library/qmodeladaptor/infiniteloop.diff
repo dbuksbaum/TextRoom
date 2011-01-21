@@ -1,0 +1,14 @@
+Index: qadaptor.cpp
+===================================================================
+--- qadaptor.cpp	(revision 2048)
++++ qadaptor.cpp	(working copy)
+@@ -107,7 +107,8 @@
+ 			if(  m_model->flags( currentIndex() ) & Qt::ItemIsEditable )
+ 			{
+ // Wont work on Qt 4.2 because of != in QVariant with custom types
+-// 				if( m_model->data(index, Qt::EditRole) != m_editor->property(m_property.constData()))
++ 				if( m_model->data(index, Qt::EditRole) != m_editor->property(m_property.constData()) ||
++					m_editor->property(m_property.constData()).type() > 127 )
+ 					m_model->setData(index, m_editor->property(m_property.constData()), Qt::EditRole );
+ 			}
+ 		}
