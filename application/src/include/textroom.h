@@ -46,6 +46,7 @@ class Hunspell;
 class MiniFlo;
 class GetAWord;
 class MusicRoom;
+class GoogleDocsDialog;
 struct Mix_Chunk;
 
 class TextRoom : public QWidget, public Ui::TextRoomMain
@@ -58,6 +59,7 @@ public:
 	// make it available to options dialog.
 	QString resourcesDir;
 #endif
+	Ui::TextRoomMain ui;
 
 
 private slots:
@@ -101,6 +103,7 @@ private slots:
 	void showMiniFlo();
 	void showGetAWord();
 	void showMusicRoom();
+	void exportToGoogle();
 
 private:
 	bool maybeSave();
@@ -121,12 +124,12 @@ private:
 	SelectFont *selectFont;
 	AboutDialog *aboutDialog;
 	ScratchDialog * scratchDialog;
+	GoogleDocsDialog * googleDocsDialog;
 	Hunspell * pMS;
 	MiniFlo * miniFlo;
 	GetAWord * getAWord;
 	MusicRoom * musicRoom;
 	QSettings *settings;
-	Ui::TextRoomMain ui;
 	QString curFile;
 	QString curDir;
 	QString lastSearch;

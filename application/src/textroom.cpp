@@ -46,6 +46,7 @@
 #include "miniflo.h"
 #include "getaword.h"
 #include "musicroom.h"
+#include "googledocs.h"
 
 TextRoom::TextRoom(QWidget *parent, Qt::WFlags f)
 		: QWidget(parent, f), sentenceTally(0)
@@ -80,6 +81,7 @@ TextRoom::TextRoom(QWidget *parent, Qt::WFlags f)
 	miniFlo = new MiniFlo(this);
 	getAWord = new GetAWord(this);
 	musicRoom = new MusicRoom(this);
+	googleDocsDialog = new GoogleDocsDialog(this);	
 
 // Read settings saved by Options Dialog.
 #ifdef Q_OS_WIN32
@@ -167,6 +169,7 @@ TextRoom::TextRoom(QWidget *parent, Qt::WFlags f)
         new QShortcut ( QKeySequence(tr("F7", "Show MiniFlo")) , this, SLOT( showMiniFlo() ) );
         new QShortcut ( QKeySequence(tr("F8", "Get A Word")) , this, SLOT( showGetAWord() ) );
         new QShortcut ( QKeySequence(tr("F9", "MusicRoom")) , this, SLOT( showMusicRoom() ) );
+        new QShortcut ( QKeySequence(tr("F10", "Google Docs")) , this, SLOT( exportToGoogle() ) );
 	// Service: show cursor
 	new QShortcut ( QKeySequence(tr("Shift+F4", "Show Cursor")) , this, SLOT( sCursor() ) );
 
@@ -865,6 +868,24 @@ void TextRoom::help()
 	else
 	{
 		helpDialog->hide();
+	}
+}
+
+void TextRoom::exportToGoogle()
+{
+	if (!googleDocsDialog->isVisible())
+	{
+		QTextDocumentWriter writer(QDir::homePath()+"/tmp.googledocs.odt", "odf");
+        	writer.write(textEdit->document());
+		if(googleDocsDialog->exec() == QDialog::Accepted)
+		{
+		QDir home = QDir::homePath();
+		home.remove("tmp.googledocs.odt");
+		}
+	}
+	else
+	{
+		googleDocsDialog->hide();
 	}
 }
 

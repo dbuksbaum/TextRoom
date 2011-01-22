@@ -10,6 +10,12 @@ linux-g++ {
 	    src/include \
 	    /usr/include \
 	    /usr/include/hunspell \
+	    /usr/include/libxml++-2.6 \
+	    /usr/include/glibmm-2.4 \
+	    /usr/lib/glibmm-2.4/include \
+	    /usr/include/glib-2.0 \
+	    /usr/lib/glib-2.0/include \
+	    /usr/lib/libxml++-2.6/include \
 	    /usr/include/SDL
 	
 }
@@ -42,6 +48,11 @@ HEADERS += src/include/helpdialog.h \
     src/include/asciiexportdialog.h \
     src/include/getaword.h \
     src/include/musicroom.h \
+    src/include/googledocs.h \
+    src/gdata/atom_helper.h \
+    src/gdata/client/doc_list_service.h \
+    src/gdata/client/service.h \
+    src/gdata/util/string_utils.h \
     src/include/asciireporter.h
 FORMS += ui/optionsdialog.ui \
     src/ui/textroom.ui \
@@ -52,6 +63,7 @@ FORMS += ui/optionsdialog.ui \
     src/ui/miniflo.ui \
     src/ui/getaword.ui \
     src/ui/musicroom.ui \
+    src/ui/googledocs.ui \
     src/ui/asciiexport.ui
 SOURCES += src/helpdialog.cpp \
     src/main.cpp \
@@ -65,6 +77,11 @@ SOURCES += src/helpdialog.cpp \
     src/asciiexportdialog.cpp \
     src/getaword.cpp \
     src/musicroom.cpp \
+    src/googledocs.cpp \
+    src/gdata/atom_helper.cc \
+    src/gdata/client/doc_list_service.cc \
+    src/gdata/client/service.cc \
+    src/gdata/util/string_utils.cc \
     src/asciireporter.cpp
 RESOURCES += resource/textroom.qrc \
 	resource/images/icons-app.qrc 
@@ -82,6 +99,9 @@ linux-g++ {
     LIBS = -lSDL_mixer \
 	-lSDL \
         -lhunspell \
+	-lglibmm-2.4 \
+	-lcurl \
+	-lxml++-2.6 \
 	$$TOPDIR/lib/libflo.a
     data.path = /usr/share/sounds
     data.files = resource/sounds/*
