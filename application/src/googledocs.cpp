@@ -49,8 +49,9 @@ GoogleDocsDialog::GoogleDocsDialog(QWidget *parent)
 	:QDialog(parent)
 {
 	ui.setupUi(this);
-	connect(ui.okPushButton, SIGNAL(clicked()), this, SLOT(exporttogoogle()));
-	connect(ui.cancelPushButton, SIGNAL(clicked()), this, SLOT(reject()));
+	connect(ui.listPushButton, SIGNAL(clicked()), this, SLOT(listDocs()));
+	connect(ui.exportPushButton, SIGNAL(clicked()), this, SLOT(exporttogoogle()));
+	connect(ui.closePushButton, SIGNAL(clicked()), this, SLOT(accept()));
 }
 
 void GoogleDocsDialog::exporttogoogle()
@@ -61,5 +62,25 @@ void GoogleDocsDialog::exporttogoogle()
 	std::string fileName = (QDir::homePath()+"/tmp.googledocs.odt").toStdString();
 	DocListService service(email, password, "TextRoom");
         service.UploadDoc(fileName, doc_title);
-	accept();
+	listDocs();
+}
+
+void GoogleDocsDialog::listDocs()
+{
+	items.clear();
+	ui.listWidget->clear();
+	std::string email = ui.emailLineEdit->text().toStdString();
+	std::string password = ui.passLineEdit->text().toStdString();
+	std::string fileName = (QDir::homePath()+"/tmp.googledocs.odt").toStdString();
+	DocListService service(email, password, "TextRoom");
+	vector< string > doc_listing;
+	string doc_list_feed = DocListService::kDocListScope +
+                           DocListService::kDocListFeed;
+	doc_listing = service.ListDocuments(doc_list_feed, false);
+	for (unsigned int i = 0; i < doc_listing.size(); ++i)
+	{
+	QString current;
+	items << current.fromStdString(doc_listing[i]);
+	}
+	ui.listWidget->addItems(items);
 }

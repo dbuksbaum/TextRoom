@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>408</width>
-    <height>228</height>
+    <width>406</width>
+    <height>368</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -83,30 +83,59 @@
     </item>
    </layout>
   </widget>
-  <widget class="QPushButton" name="okPushButton">
+  <widget class="QPushButton" name="exportPushButton">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>330</y>
+     <width>98</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Export</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="closePushButton">
    <property name="geometry">
     <rect>
      <x>290</x>
-     <y>180</y>
+     <y>330</y>
      <width>98</width>
      <height>27</height>
     </rect>
    </property>
    <property name="text">
-    <string>OK</string>
+    <string>Close</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="cancelPushButton">
+  <widget class="QPushButton" name="listPushButton">
    <property name="geometry">
     <rect>
-     <x>170</x>
-     <y>180</y>
+     <x>70</x>
+     <y>330</y>
      <width>98</width>
      <height>27</height>
     </rect>
    </property>
    <property name="text">
-    <string>Cancel</string>
+    <string>List Docs</string>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="listWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>170</y>
+     <width>381</width>
+     <height>151</height>
+    </rect>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="horizontalScrollBarPolicy">
+    <enum>Qt::ScrollBarAlwaysOff</enum>
    </property>
   </widget>
  </widget>

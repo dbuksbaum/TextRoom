@@ -28,8 +28,10 @@
 #include <vector>
 #include <curl/curl.h>
 
-#include "../client/service.h"
+#include "service.h"
 #include "../util/string_utils.h"
+
+class GoogleDocsDialog;
 
 namespace gdata {
 namespace client {
@@ -56,7 +58,7 @@ class DocListService : public Service {
   DocListService(string email, string password, string application_name);
   ~DocListService() {}
 
-  vector< map<string, string> > ListDocuments(string url, bool output=true);
+  vector< string > ListDocuments(string url, bool output=true);
   void ListAcls(string url);
   void UploadDoc(string filename, string title);
   void DeleteDoc(string url, string etag) const;

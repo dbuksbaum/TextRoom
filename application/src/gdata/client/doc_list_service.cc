@@ -1,4 +1,5 @@
 #include "doc_list_service.h"
+#include "googledocs.h"
 
 namespace gdata {
 namespace client {
@@ -27,9 +28,9 @@ DocListService::DocListService(
   atom_helper_.RegisterNamespaces(doclist_namespaces);
 }
 
-vector< map<string, string> > DocListService::ListDocuments(
+vector< string > DocListService::ListDocuments(
     string url, bool output/*=true*/) {
-  vector< map<string, string> > docs;
+  vector< string > docs;
 
   atom_helper_.Parse(HttpRequest("GET", url));
   xmlpp::NodeSet entries = atom_helper_.Entries();
@@ -40,34 +41,13 @@ vector< map<string, string> > DocListService::ListDocuments(
   }
 
   for (unsigned int i = 0; i < entries.size(); ++i) {
-    map<string, string> data;
+    string data;
 
-    data["category"] = atom_helper_.CategoryLabel(entries[i]);
-    data["content_src"] = atom_helper_.ContentSrc(entries[i]);
-    data["edit_link"] = atom_helper_.EditLinkHref(entries[i]);
-    data["etag"] = atom_helper_.ETag(entries[i]);
-    data["id"] = atom_helper_.Id(entries[i]);
-    data["title"] = atom_helper_.Title(entries[i]);
-    data["acl_feedLink"] = atom_helper_.FeedLinkHref(entries[i]);
-    
-    string doc_type = "U";
-    if (data["category"] == "document") {
-      doc_type = "doc";
-    } else if (data["category"] == "spreadsheet") {
-      doc_type = "spre";
-    } else if (data["category"] == "presentation") {
-      doc_type = "pres";
-    } else if (data["category"] == "folder") {
-      doc_type = "fol";
-    } else if (data["category"] == "pdf") {
-      doc_type = "pdf";
-    }
-
+    data = atom_helper_.Title(entries[i]);
     if (output) {
-      cout << "[" << doc_type << "] \t" << data["title"] << endl;
+      cout << data << endl;
     }
 
-    data["doc_type"] = doc_type;
     docs.push_back(data);
   }
 
