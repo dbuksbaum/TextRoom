@@ -21,7 +21,12 @@ GetAWord::GetAWord(QWidget *parent)
     : QDialog(parent)
 {
         setupUi(this);
-        dictionary = "/usr/share/textroom/words.txt";
+#ifdef Q_OS_MACX
+        resourcesDir = ((TextRoom *)parent)->resourcesDir;
+        dictionary = resourcesDir + "/words/words.txt";
+#else
+	dictionary = "/usr/share/textroom/words.txt";
+#endif
 	readFile(dictionary);
         newWord();
 
