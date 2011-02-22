@@ -11,11 +11,11 @@ INCLUDEPATH += $$TOPDIR/library \
 	$$TOPDIR/library/qdomutils \
 	$$TOPDIR/library/extra/creole \
 	$$TOPDIR/library/sxfile \
-	src/include \
-	src \
-	/usr/include \
-	/usr/include/hunspell \
-	/usr/include/SDL
+	$$TOPDIR/application/src/include \
+	$$TOPDIR/application/src \
+	$$TOPDIR/application/usr/include \
+	$$TOPDIR/application/usr/include/hunspell \
+	$$TOPDIR/application/usr/include/SDL
 
 CONFIG += release depend_includepath warn_on
 win32:CONFIG += windows
