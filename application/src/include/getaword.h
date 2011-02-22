@@ -36,6 +36,9 @@ private:
 	QString allWords;
 	QStringList wordList;
 	QString currentWord;
+#ifdef Q_OS_MACX
+	QString resourcesDir;
+#endif
 };
 
 #endif
