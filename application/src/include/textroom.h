@@ -186,9 +186,6 @@ private:
 	Mix_Chunk *soundenter;
 	Mix_Chunk *soundany;
 
-public:
-	QString resourcesDir;
-
 protected:
 	void closeEvent(QCloseEvent *event);
 	void resizeEvent(QResizeEvent *event);	
