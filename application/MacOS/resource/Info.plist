@@ -9,21 +9,21 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
         <key>CFBundleShortVersionString</key>
-	<string>0.6.5</string>
+	<string>0.8.2</string>
 	<key>NSHumanReadableCopyright</key>
-	<string>Textroom devs 2010</string>
+	<string>Textroom devs 2011</string>
 	<key>CFBundleSignature</key>
 	<string>txrm</string>
 	<key>CFBundleExecutable</key>
 	<string>textroom</string>
 	<key>CFBundleVersion</key>
-	<string>0.6.5</string>
+	<string>0.8.2</string>
 	<key>CFBundleIdentifier</key>
 	<string>com.textroom.TextRoom</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
-	<string>Textroom v0.6.5</string>
+	<string>Textroom v0.8.2</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
