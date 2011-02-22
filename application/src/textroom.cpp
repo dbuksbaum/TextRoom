@@ -140,6 +140,9 @@ TextRoom::TextRoom(QWidget *parent, Qt::WFlags f)
 	new QShortcut ( QKeySequence(QKeySequence::Open), this, SLOT( open() ) );
 	new QShortcut ( QKeySequence(QKeySequence::Save), this, SLOT( save() ) );
 	new QShortcut ( QKeySequence(QKeySequence::HelpContents), this, SLOT( help() ) );
+#ifdef Q_OS_MACX
+	new QShortcut ( QKeySequence(tr("F1", "Help")), this, SLOT( help() ) );
+#endif
 	new QShortcut ( QKeySequence(tr("F2", "Options")), this, SLOT( options() ) );
 	new QShortcut ( QKeySequence(tr("F3", "About")), this, SLOT( about() ) );
 	new QShortcut ( QKeySequence(tr("F5", "Spell Check")), this, SLOT( spellCheck() ) );
