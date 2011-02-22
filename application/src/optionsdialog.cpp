@@ -36,7 +36,9 @@ OptionsDialog::OptionsDialog(QWidget *parent)
 	: QDialog(parent)
 {
 	ui.setupUi(this);
+#ifdef Q_OS_MACX
 	resourcesDir = ((TextRoom *)parent)->resourcesDir;
+#endif
 	reaSettings();
         readLanguages();
         QPlastiqueStyle * style = new QPlastiqueStyle();
