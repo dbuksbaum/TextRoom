@@ -45,12 +45,12 @@ class GoogleDocsDialog: public QDialog
 public:
 	GoogleDocsDialog(QWidget *parent = 0);
 	TextRoom * textRoom;
-	Ui::GoogleDocsDialog ui;
-	QStringList items;
 
 public slots:
 	void exporttogoogle();
-	void listDocs();
+
+private:
+	Ui::GoogleDocsDialog ui;
 };
 
 #endif
