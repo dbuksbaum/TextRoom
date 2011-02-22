@@ -1,4 +1,4 @@
-TextRoom v0.8.1
+TextRoom v0.8.2
 http://code.google.com/p/textroom/
 
 
@@ -49,7 +49,8 @@ The program stores its preferences in ~/.config/textroom/TextRoom.conf, but you 
 
 4. Features
 -----------
- Version 0.8.1
+ Version 0.8.2
+ * Export your documents to Google Docs.
  * MiniFlo Mindmapper based on Flo by Ian Reinhart Geiser.
  * GetAWord random word generator for creative writers.
  * MusicRoom very basic music player. (Can't play mp3, but you are good with ogg).
@@ -97,6 +98,7 @@ F6 ----------- Scratchpad
 F7 ----------- MiniFlo
 F8 ----------- GetAWord
 F9 ----------- MusicRoom
+F10 ---------- Export to Google Docs
 F11 ---------- Fullscreen on/off
 Escape ------- Quit or exit fullscreen, close About and Help dialogs 
 Ctrl+M ------- Minimize TextRoom
