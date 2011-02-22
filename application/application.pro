@@ -17,7 +17,6 @@ linux-g++ {
 	    /usr/lib/glib-2.0/include \
 	    /usr/lib/libxml++-2.6/include \
 	    /usr/include/SDL
-	
 }
 
 macx {
@@ -26,6 +25,12 @@ macx {
 	    src/include \
 	    /usr/include \
 	    /usr/include/hunspell \
+	    /sw/include/libxml++-2.6 \
+            /sw/lib/libxml++-2.6/include \
+            /sw/include/glibmm-2.4 \
+	    /sw/lib/glibmm-2.4/include \
+	    /sw/include/glib-2.0 \
+	    /sw/lib/glib-2.0/include
 }
 
 win32 {
@@ -131,11 +136,16 @@ macx {
 
     LIBS += -framework SDL \
         -framework SDL_mixer \
-        -lhunspell-1.2 
+	-lcurl \
+        -lhunspell-1.2 \
+	-L/sw/lib -lxml++-2.6 \
+	-lglibmm-2.4 \
+	-lglib-2.0 \
+	$$TOPDIR/lib/libflo.a
 
     RC_FILE=MacOS/resource/textroom.icns
     QMAKE_MACOSX_DEPLOYMENT_TARGET=10.6
-    QMAKE_POST_LINK=strip textroom.app/Contents/MacOS/textroom
+    QMAKE_POST_LINK=strip $$TOPDIR/textroom.app/Contents/MacOS/textroom
     QMAKE_INFO_PLIST=MacOS/resource/Info.plist
 
     INSTALLS += sounds \ 
@@ -143,25 +153,29 @@ macx {
 	sdl \
 	sdl_mixer \
 	mikmod \
-	smpeg
+	smpeg \
+        words
 
-    sdl.path = textroom.app/Contents/Frameworks/SDL.framework/Versions/A
+    sdl.path = $$TOPDIR/textroom.app/Contents/Frameworks/SDL.framework/Versions/A
     sdl.files = /Library/Frameworks/SDL.framework/Versions/A/SDL
 
-    sdl_mixer.path = textroom.app/Contents/Frameworks/SDL_mixer.framework/Versions/A
+    sdl_mixer.path = $$TOPDIR/textroom.app/Contents/Frameworks/SDL_mixer.framework/Versions/A
     sdl_mixer.files = /Library/Frameworks/SDL_mixer.framework/Versions/A/SDL_mixer
 
-    mikmod.path = textroom.app/Contents/Frameworks/SDL_mixer.framework/Versions/A/Frameworks/mikmod.framework/Versions/A
+    mikmod.path = $$TOPDIR/textroom.app/Contents/Frameworks/SDL_mixer.framework/Versions/A/Frameworks/mikmod.framework/Versions/A
     mikmod.files = /Library/Frameworks/SDL_mixer.framework/Frameworks/mikmod.framework/Versions/A/mikmod
 
-    smpeg.path = textroom.app/Contents/Frameworks/SDL_mixer.framework/Versions/A/Frameworks/smpeg.framework/Versions/A
+    smpeg.path = $$TOPDIR/textroom.app/Contents/Frameworks/SDL_mixer.framework/Versions/A/Frameworks/smpeg.framework/Versions/A
     smpeg.files = /Library/Frameworks/SDL_mixer.framework/Frameworks/smpeg.framework/Versions/A/smpeg
 
-    dict.path = textroom.app/Contents/Resources/dict
+    dict.path = $$TOPDIR/textroom.app/Contents/Resources/dict
     dict.files = resource/dict/* MacOS/resource/dict/*
 
-    sounds.path = textroom.app/Contents/Resources/sounds
+    sounds.path = $$TOPDIR/textroom.app/Contents/Resources/sounds
     sounds.files = resource/sounds/*
+
+    words.path = $$TOPDIR/textroom.app/Contents/Resources/words
+    words.files = resource/words.txt
 }
 
 QT += core \
